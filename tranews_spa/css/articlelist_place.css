@@ -1,0 +1,87 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "微軟正黑體";
+	background-image: url(../pics/bg.jpg);
+}
+
+.grid-item {
+	float: left; 
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.solid {
+	border: 1px solid #CCC;
+}
+
+#all{
+	margin-top: -20px;
+}
+
+#newsarea {
+	background-color: #FFF;
+}
+
+
+
+.news_title {
+	width: 100%;
+	height: 40px;
+	background-color: #B99200;
+	padding-top: 7px;
+	padding-left: 10px; 
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+
+#headerimg_news{
+	width: 100%;
+	height:40vh ;
+	background-image: url(../pics/header.jpg);
+	background-position:right bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.newslistbox_title {
+	color:#000;
+	font-size: 1.5em;
+	font-weight: bolder;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+
+.newslistbox_text{
+	color:gray;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 1em;
+}
+
+.newslistbox_img {
+	width: 100%;
+	height: 250px;
+	background-image: url(../pics/travelplace-1.jpg);
+	background-size: cover;
+}
+
+
+#footer {
+	background-color: #000;
+	height: 120px;
+	color: #FFF;
+}
+
+#footer a:link, #footer a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFF;
+}
+
