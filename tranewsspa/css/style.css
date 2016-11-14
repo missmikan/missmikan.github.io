@@ -190,26 +190,25 @@ body {
 	background-size: cover;
 }
 
-
-.slider_1{
-	background-image: url(../pics/slider1.JPG);
-	background-size: cover;
+.slider_1 {
+	background-image: url(../pics/slider1.jpg);
 	width: 100%;
 	height: 80vh;
+	background-size: cover;
 }
 
-.slider_2{
-	background-image: url(../pics/slider2.JPG);
-	background-size: cover;
+.slider_2 {
+	background-image: url(../pics/slider2.jpg);
 	width: 100%;
 	height: 80vh;
+	background-size: cover;
 }
 
-.slider_3{
-	background-image: url(../pics/slider1.JPG);
-	background-size: cover;
+.slider_3 {
+	background-image: url(../pics/slider3.jpg);
 	width: 100%;
 	height: 80vh;
+	background-size: cover;
 }
 
 
