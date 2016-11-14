@@ -11,6 +11,7 @@ body {
 
 #all{
 	margin-top: -20px;
+	padding-top: 50px;
 }
 
 #newsarea {
@@ -39,7 +40,7 @@ body {
 
 #newsarea_left {
 	background-color: #FFF;
-	padding: 4em;
+	padding: 2em;
 }
 
 #news_title{
@@ -63,6 +64,7 @@ body {
 	line-height: 2em;
 	color: #000;
 	margin-bottom: 2em;
+	text-align: justify;
 }
 
 
