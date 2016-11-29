@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ying-Hsuan - 陳瀅亘個人作品</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/web.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">關於我</a>
+  <a href="graphicdesign.html">平面設計</a>
+  <a href="webdesign.html">網頁設計</a>
+</div>
+
+<span id="burger" onclick="openNav()">&#9776;</span>
+
+<div id="main">
+  <div id="header">YING-HSUAN'S 網頁作品</div>
+  <div id="header_phone"></div>
+  <div class="container" style="background-color: #FFF;">
+    <div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="thumbnail">
+      <img data-src="hoder.js/300x300" src="imgs/web_1.jpg" alt=" ">
+      <div class="caption" style="text-align: center;">
+        <h3>台灣溫泉之旅</h3>
+        <p>為以前服務過的公司製作旅遊主題網站</p>
+        <p><a href="https://missmikan.github.io/tranewsspa/index.html" class="btn btn-warning" role="button">網頁展示</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>

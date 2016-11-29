@@ -1,0 +1,300 @@
+@charset "utf-8"
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+*{
+	font-family: 'Noto Sans TC', sans-serif;
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+#header{
+	width: 100%;
+	height: 7vh;
+	background-color: #000;
+	color: #FFF;
+	padding-top: 0.8em;
+	padding-left: 5.2em;
+	font-size: 1.2em;
+	display: none;
+}
+#header_phone{
+	width: 100%;
+	height: 7vh;
+	background-color: #000;
+	color: #FFF;
+	padding-top: 0.8em;
+	padding-left: 5.2em;
+	font-size: 1.2em;
+}
+
+#left_area {
+	width: 100%;
+	height: 93vh;
+	float: none;
+	position: relative;
+	z-index: -99;
+
+}
+
+#left_top {
+	width: 100%;
+	height: 68vh;
+	background-color: #C7B299;
+	position: relative;
+
+}
+
+#head_pic {
+	width: 20vh;
+	height: 20vh;
+	border-radius: 10vh;
+	border: 0.2em solid #E8E9E2;
+	background-image: url(../imgs/myhead.jpg);
+	background-size: 100%;
+	background-position: top;
+	position: absolute;
+	top: 10vh;
+	left: 50%;
+	margin-left: -10vh;
+}
+
+#left_bottom {
+	width: 100%;
+	height: 25vh;
+	background-color: #D7C9A1;
+}
+
+#myname{
+	width: 100%;
+	height: 30vh;
+	position: absolute;
+	top: 37vh;
+	text-align: center;
+	color: #FFF;
+	line-height: 2em;
+	letter-spacing: 3px;
+}
+
+#en_name{
+	font-size: 0.9em
+}
+
+#birth{
+	font-size: 0.9em
+}
+
+#ch_name{
+	font-size: 1.1em;
+}
+
+#left_bottom{
+	text-align: center;
+	padding-top: 11vh;
+	color: #FFF;
+
+
+
+}
+
+#school_a {
+	font-size: 1em;
+	letter-spacing: 14px;
+	line-height: 1em
+	margin-bottom: 1.2em;
+}
+#school_b {
+	font-size: 0.9em;
+	letter-spacing: 11px;
+	line-height: 1em
+}
+
+#right_area {
+	width: 100%;
+	height: 93vh;
+	background-color: #E8E9E2;
+	float: none;
+	padding-top: 6vh;
+	padding-left: 5%;
+}
+
+#right_all {
+	width: 90%;
+	height: 80vh;
+}
+
+.resume_title{
+	width: 100%;
+	height:6vh ;
+	background-color: #C7B299;
+	font-size: 1.1em;
+	color: #FFF;
+	padding-top: 0.7em;
+	padding-left: 1.2em;
+}
+
+.resume_text {
+	width: 100%;
+	height: 20vh;
+	font-size: 0.9em;
+	color: #4C4948;
+	letter-spacing: 3px;
+	line-height: 2.2em;
+	padding-left: 1.4em;
+	padding-top: 0.8em;
+}
+}
+
+@media screen and (min-width: 769px) {
+#header{
+	width: 100%;
+	height: 7vh;
+	background-color: #000;
+	color: #FFF;
+	padding-top: 0.8em;
+	padding-left: 5.2em;
+	font-size: 1.2em;
+	display: block;
+}
+#header_phone{
+	width: 100%;
+	height: 7vh;
+	background-color: #000;
+	color: #FFF;
+	padding-top: 0.8em;
+	padding-left: 5.2em;
+	font-size: 1.2em;
+	display: none;
+}
+
+#left_area {
+	width: 40%;
+	height: 93vh;
+	float: left;
+	position: relative;
+	z-index: -99;
+
+}
+
+#left_top {
+	width: 100%;
+	height: 68vh;
+	background-color: #C7B299;
+	position: relative;
+
+}
+
+#head_pic {
+	width: 20vh;
+	height: 20vh;
+	border-radius: 10vh;
+	border: 0.2em solid #E8E9E2;
+	background-image: url(../imgs/myhead.jpg);
+	background-size: 100%;
+	background-position: top;
+	position: absolute;
+	top: 10vh;
+	left: 50%;
+	margin-left: -10vh;
+}
+
+#left_bottom {
+	width: 100%;
+	height: 25vh;
+	background-color: #D7C9A1;
+}
+
+#myname{
+	width: 100%;
+	height: 30vh;
+	position: absolute;
+	top: 37vh;
+	text-align: center;
+	color: #FFF;
+	line-height: 2em;
+	letter-spacing: 3px;
+}
+
+#en_name{
+	font-size: 0.9em
+}
+
+#birth{
+	font-size: 0.9em
+}
+
+#ch_name{
+	font-size: 1.1em;
+}
+
+#left_bottom{
+	text-align: center;
+	padding-top: 11vh;
+	color: #FFF;
+
+
+
+}
+
+#school_a {
+	font-size: 1em;
+	letter-spacing: 14px;
+	line-height: 1em
+	margin-bottom: 1.2em;
+}
+#school_b {
+	font-size: 0.9em;
+	letter-spacing: 11px;
+	line-height: 1em
+}
+
+#right_area {
+	width: 60%;
+	height: 93vh;
+	background-color: #E8E9E2;
+	float: left;
+	padding-top: 6vh;
+	padding-left: 5%;
+}
+
+#right_all {
+	width: 90%;
+	height: 80vh;
+}
+
+.resume_title{
+	width: 100%;
+	height:6vh ;
+	background-color: #C7B299;
+	font-size: 1.1em;
+	color: #FFF;
+	padding-top: 0.7em;
+	padding-left: 1.2em;
+}
+
+.resume_text {
+	width: 100%;
+	height: 20vh;
+	font-size: 0.9em;
+	color: #4C4948;
+	letter-spacing: 3px;
+	line-height: 2.2em;
+	padding-left: 1.4em;
+	padding-top: 0.8em;
+}
+}
+
+
+
+
+
+
+

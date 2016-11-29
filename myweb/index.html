@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ying-Hsuan - 陳瀅亘個人簡歷</title>
+  <link rel="stylesheet" type="text/css" href="css/navstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">關於我</a>
+  <a href="graphicdesign.html">平面設計</a>
+  <a href="webdesign.html">網頁設計</a>
+</div>
+
+<span id="burger" onclick="openNav()">&#9776;</span>
+
+<div id="main">
+  <div id="header">YING-HSUAN'S RESUME</div>
+  <div id="header_phone"></div>
+  <div id="left_area">
+    <div id="left_top">
+      <div id="head_pic"></div>
+      <div id="myname">
+        <div id="en_name">Ying-Hsuan Chen</div>
+        <div id="birth">1988.09.26</div>
+        <div id="ch_name">陳瀅亘</div><br>
+        <div id="en_name">您好，我是瀅亘</div>
+      </div>
+    </div>
+    <div id="left_bottom">
+      <div id="school_a">嶺東科技大學
+      </div>
+      <div id="school_b">視覺傳達設計系
+      </div>
+    </div>
+  </div>
+  <div id="right_area">
+    <div id="right_all">
+      <div class="resume_title">經歷</div>
+      <div class="resume_text" style="margin-bottom: 3em;">
+        廣告行銷公司平面設計美編<br>
+        出版社排版美編<br>
+        網拍工作室平面美工<br>
+        網路旅遊媒體公司網路平面設計<br>
+        職訓課程「響應式網頁RWD設計實務班」320小時
+      </div>
+      <div class="resume_title">證照</div>
+      <div class="resume_text">
+        全國技術士檢定廣告設計丙級<br>
+        全國技術士檢定圖文組版乙級
+      </div>
+      <div class="resume_title">專長</div>
+      <div class="resume_text">
+      影像編修 Photoshop、Lightroom<br>
+      平面排版 illustrator、Indesign<br>
+      電腦繪圖 illustrator<br>
+      網頁設計 Ｄreamweaver、Sublime Text</div>
+    </div>
+  </div>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
