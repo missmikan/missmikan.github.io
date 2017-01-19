@@ -53,6 +53,16 @@
 		#QA_area {
 			width:95%;
 		}
+		
+		.QA_title {
+			width: 100%;
+			text-align: center;
+			color: #FFF;
+			background-color: skyblue;
+			font-size: 1.6em;
+			margin: 2em auto 0.5em auto;
+		}
+
 
 		#flow {
 			width: 100%;
@@ -171,6 +181,10 @@
 			float: left;
 		}
 
+		#alle_number a:link ,  #alle_number a:visited {
+			color: #FFFFA3;
+		  }
+
 
 		@media screen and (max-width:680px) {
 		  ul.topnav li:not(:first-child) {
@@ -214,4 +228,6 @@
 			width: 100%;
 			margin: 0 auto;
 		}
+
+
 }
