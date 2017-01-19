@@ -5,12 +5,20 @@
 			background-color: #F7F9F5;
 			font-family:'微軟正黑體',Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 		}
+		#myTopnav {
+			position: fixed;
+    		width: 100%;
+    		z-index: 1000;
+		}
+
+
 		ul.topnav {
 		  list-style-type: none;
 		  margin: 0;
 		  padding: 0;
 		  overflow: hidden;
 		  background-color: #4C8DCB;
+
 		}
 
 		ul.topnav li {
@@ -35,7 +43,9 @@
 			display: none;
 		}
 
-
+		.container {
+			padding-top: 50px;
+		}
 
 		#VS {
 			width: 100%;
