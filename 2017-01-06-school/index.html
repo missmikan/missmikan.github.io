@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中小學社團選課系統 - 委外雲端服務 - 全誼資訊</title>
+	<meta name="description" content="課外活動社團報名委外雲服務，代辦開課、報名、製作繳費單、銷帳對帳、表單製作，免建置主機、免專人維護、免註冊會員，開課不再一團亂，全誼資訊幫您全程辦到好">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="padding-top: 50px">
+	<header id="header">
+<!--NAV-->
+		<ul class="topnav navbar-fixed-top" id="myTopnav">
+		  <li><a class="active" href="#header">中小學社團選課系統</a></li>
+		  <li><a href="#VS">
+		  <span class="glyphicon glyphicon-menu-hamburger" style="margin-right:0.2em"></span>
+		  報名比較</a></li>
+		  
+		  <li><a href="#flow">
+		  <span class="glyphicon glyphicon-retweet" style="margin-right:0.2em"></span>
+		  簡易流程</a></li>
+		  
+		  <li><a href="#QA">
+		  <span class="glyphicon glyphicon-comment" style="margin-right:0.2em"></span>
+		  常見問題</a></li>
+		  
+		  <li><a href="#footer">
+		  <span class="glyphicon glyphicon-envelope" style="margin-right:0.2em"></span>
+		  聯絡我們</a></li>
+
+		  <li class="icon">
+		    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+		  </li>
+		</ul>
+<!--NAV End-->
+	</header>
+
+<!--輪播Start-->
+	<main class="container">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="img/header_ad.jpg" alt="課外社團活動報名-委外雲服務">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/header_ad_01.jpg" alt="課外社團活動報名-委外雲服務">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	     <div class="item">
+	      <img src="img/header_ad_02.jpg" alt="課外社團活動報名-委外雲服務">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	  </div>
+
+  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+<!--輪播End-->
+	<div id="VS">
+		<div class="title" style="width:100%;border:none;">報名方式比較</div>
+		<div>
+			<table width="90%" border="1" align="center">
+		    <colgroup span="1" class="traditional">
+		    <colgroup span="2" class="mode">
+		    <colgroup span="3" class="cloud">
+
+		    <tr>
+		      <th>人工報名 </th>
+		      <th> </th>
+		      <th>雲端報名 </th>
+		    </tr>
+		    <tr>
+		      <td>動員多位老師協助報名作業、印製開班簡章發放，流程繁雜費時</td>
+		      <td>作業人力</td>
+		      <td>無需熟悉系統，由專員幫學校快速完成開課</td>
+		    </tr>
+		    <tr>
+		      <td>紙本報名、人工登打分類，作業時間長，耗費人力除錯又不環保</td>
+		      <td>報名方式</td>
+		      <td>電腦、平板瀏覽器皆可使用，隨時線上報名選社，家長學生免排隊</td>
+		    </tr>
+		    <tr>
+		      <td>手動排序錄取名單還要排除時段衝突，作業費時繁瑣，徒增困擾</td>
+		      <td>錄取模式</td>
+		      <td>報名時段衝突檢查、多元錄取方式(依序錄取、亂數抽籤)，全部交給系統自動完成</td>
+		    </tr>
+		    <tr>
+		      <td>錄取名單逐筆核對後再等出納製單，印單，延長作業流程</td>
+		      <td>繳費製單</td>
+		      <td>家長線上印單後直接至<span style="color:#4C8DCB;font-weight: bold;">超商繳費</span>，免除學校收現金負擔</td>
+		    </tr>
+		    <tr>
+		      <td>報名期間每天和出納數錢對帳，收費核銷傷腦筋，數錢數到手抽筋
+		</td>
+			  <td>收費對帳</td>
+		      <td>繳費多元管道直接匯入學校公庫，系統自動銷帳核帳，快速又確實
+		</td>
+		    </tr>
+		    <tr>
+		      <td>學校系統資源有限，免費報名軟體功能不足，大量家長湧入報名常塞車，引起民怨
+		</td>
+			  <td>系統主機</td>
+		      <td>高階伺服器、全功能報名系統、專業工程師隨時待命，提供資訊專業服務</td>
+		    </tr>
+		     <tr>
+		      <td>家長諮詢電話繁雜，大幅增加工作量，直接影響行政作業效率
+		</td>
+			  <td>電話諮詢</td>
+		      <td>報名期間提供電話專線，協助家長排除報名操作問題，減少學校電話接聽負擔</td>
+		    </tr>   
+		</table>
+		</div>
+	</div>
+	
+	<div id="flow">
+	<div class="title">開課簡易流程</div>
+		<div class="flow_pic"><img src="img/flow_1.jpg" alt="" class="img-responsive"></div>
+		<div class="flow_pic"><img src="img/flow_2.jpg" alt="" class="img-responsive"></div>
+		<div class="flow_pic"><img src="img/flow_3.jpg" alt="" class="img-responsive"></div>
+	</div>
+	<div id="special"></div>
+	<div id="QA">
+		
+
+		<!--折疊效果Start-->
+		<div id="QA_area">
+		<div class="title">Ｑ＆Ａ常見問答</div>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Q1：我們學校的課後社團很多，不知道要怎麼開
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body ">
+        A：只要把開課簡章提供給全誼，全誼會依學校需求把課程開設妥當
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Q2：學生、家長需要事先註冊嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        A：不用唷，報名資料與校務系統整合，以個人資料即可直接登入。
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Q3：相同時段的課後社團，能重複報名嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        A：若是依報名順序限額錄取的社團，系統會自動阻檔報名時段衝突的課程。
+      </div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Q4：請問系統有那些錄取方式？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        A：有依報名順序限額錄取，亂數抽籤、教師選定的錄取方式。
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Q5：報名時家長很擁躍，會造成報名系統大塞車嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        A：不會的，報名系統架設於專業高階伺服器上，可使搶課順暢。
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Q6：請問系統有備取的機制嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        A：有，錄取名額可細分正取和備取名額。
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Q7：報名可以分二階段嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+        A：可以的，系統可客製流程符合學校開課需求。
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          Q8：報名可以結合午餐統計嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+        A：可以的，報名時一併選擇是否加定午餐，以及葷素選擇
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          Q9：請問家長可以線上自印繳費單嗎？
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+      <div class="panel-body">
+        A：可以的，報名截止並開班完成後，家長即可登入列印繳費單。
+      </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingTen">
+	      <h4 class="panel-title">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+	          Q10：繳費單可以去那裡繳？
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+	      <div class="panel-body">
+	        A：超商、銀行ATM、銀行臨櫃、信用卡皆可以繳交課程費用
+	      </div>
+	    </div>
+	</div>
+
+    <div class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingEleven">
+	      <h4 class="panel-title">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+	          Q11：繳費單可設定期限嗎？
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+	      <div class="panel-body">
+	        A：可以的，可限定繳費期限，方便統計開班人數
+	      </div>
+	    </div>
+	</div>
+
+    <div class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingTwelve">
+	      <h4 class="panel-title">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+	          Q12：課程費用是直接入學校公庫嗎？
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+	      <div class="panel-body">
+	        A：是的，不經過第三方，家長繳費直接進學校公庫
+	      </div>
+	    </div>
+	</div>
+
+    <div class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingThirteen">
+	      <h4 class="panel-title">
+	        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+	          Q13：可以設定低收入戶或原住民等特殊學生的收費標準嗎？
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+	      <div class="panel-body">
+	        A：可以的。系統具備七種特殊身份選項，可個別設定特殊金額。(低收入戶、中低收入戶、身心障礙、原住民、家戶所得在新臺幣30萬元以下、清寒或經濟困難、情況特殊、突遭變故)
+	      </div>
+	    </div>
+	</div>
+
+
+
+</div>
+</div>
+		<!--折疊效果End-->
+</div>
+
+
+	<footer id="footer">
+		<div id="contact_me">Contact | 聯絡我們</div>
+		<div id="tel_number">客服專線 0800-880-928</div>
+		<div id="alle_number">TEL | 02-2264-2345<br>
+		                      FAX | 02-2265-4316</div>
+		<div id="alle_add">台北 | 236新北市土城區忠義路21號<br>
+						   台中 | 402台中市南區樹義一巷26-1號3樓</div>
+		<div class="clearfix"></div>
+	</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+<!--NAV的JS-->
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+<!--NAV的JS End-->
+
+<!--輪播的js-->
+	<script>$('.carousel').carousel({
+	  interval: 5000
+	})
+	</script>
+<!--輪播的End-->
+
+<!--Scroll smooth 滑動效果Start-->
+<script>
+	$(function() {
+  $('#header a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!--Scroll smooth 滑動效果End-->
+
+</body>
+</html>
