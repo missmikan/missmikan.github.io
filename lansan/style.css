@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /*
 Template Name: WpF BGness - Business & Blog Bootstrap HTML5/CSS3 Template
 Author: WpFreeware Team
@@ -37,7 +39,7 @@ body {
   color: #333;
   background-color: #f0f0f0;
   overflow-x: hidden !important;
-  font-family: '微軟正黑體' !important;  
+  font-family: '微軟正黑體','Open Sans', sans-serif;  
 }
 
 ul{
