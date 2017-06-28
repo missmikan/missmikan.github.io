@@ -63,7 +63,7 @@ a:focus{
 }
 h1,h2,h3,h4,h5,h6{
  
- font-family: "Raleway",sans-serif;
+ font-family: "微軟正黑體","Raleway",sans-serif;
 }
 h2{ 
   line-height: 50px;
@@ -263,7 +263,7 @@ img{
 }
 .navbar-brand{
   font-size: 25px;
-  font-family: "Raleway",sans-serif;
+  font-family: "微軟正黑體","Raleway",sans-serif;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -297,7 +297,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .navbar-default .navbar-nav > li > a {
   color: #5e5e5e;
   text-transform: capitalize;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "微軟正黑體",'Open Sans', sans-serif;
   font-weight: bold;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -331,7 +331,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .dropdown-menu > li > a {
   color: #5e5e5e;  
   padding: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "微軟正黑體",'Open Sans', sans-serif;
   font-weight: bold;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -385,7 +385,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   font-weight: 800;
   line-height: 50px;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-family: "微軟正黑體",'Raleway', sans-serif;
   margin-bottom: 18px;
 }
 .slider_caption > h2 span{
@@ -395,12 +395,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   color: #fff;
    font-size: 18px;
   line-height: 22px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "微軟正黑體",'Raleway', sans-serif;
 }
 .slider_btn { 
   color: #fff;
   display: inline-block;
-  font-family: "Raleway",sans-serif;
+  font-family: "微軟正黑體","Raleway",sans-serif;
   font-size: 18px;
   margin-top: 40px;
   padding: 10px 15px;
@@ -513,7 +513,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   text-align: center;
   background-color: #8c8c8c;
   color: #fff;  
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "微軟正黑體","Helvetica Neue",Helvetica,Arial,sans-serif;
   -webkit-transition:   all 0.5s;
   -moz-transition:  all 0.5s;
   -ms-transition:  all 0.5s;
@@ -572,7 +572,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   font-weight: bold;
   height: 34px;
   margin-left: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "微軟正黑體",'Open Sans', sans-serif;
   padding-right: 22px;
   padding-top: 7px;
   position: absolute;
