@@ -1396,11 +1396,11 @@ transition: all 0.5s;
   width: 100%;
 }
 .imgbanner_1 {
-  background-image: url("img/submit-photos-1.jpg");
+  background-image: url("img/submit-photos-2.jpg");
 
 }
 .imgbanner_2 {
-  background-image: url("img/submit-photos-2.jpg");
+  background-image: url("img/submit-photos-1.jpg");
 }
 #imgbanner h2{
   color: #fff;
