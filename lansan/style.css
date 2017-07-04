@@ -1384,8 +1384,20 @@ transition: all 0.5s;
   color: #fff;
   font-size: 18px;
 }
-#imgbanner {
-  background-image: url("img/submit-photos.jpg");
+#imgbanner_1 {
+  background-image: url("img/submit-photos-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline;
+  float: left;
+  height: 300px;
+  margin-top: 77px;
+  padding: 118px 0;
+  text-align: center;
+  width: 100%;
+}
+#imgbanner_2 {
+  background-image: url("img/submit-photos-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline;
