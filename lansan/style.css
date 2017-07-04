@@ -1395,11 +1395,11 @@ transition: all 0.5s;
   text-align: center;
   width: 100%;
 }
-#imgbanner_1 {
+.imgbanner_1 {
   background-image: url("img/submit-photos-1.jpg");
 
 }
-#imgbanner_2 {
+.imgbanner_2 {
   background-image: url("img/submit-photos-2.jpg");
 }
 #imgbanner h2{
