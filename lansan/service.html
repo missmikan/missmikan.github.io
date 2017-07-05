@@ -64,7 +64,7 @@
         <ul class="nav navbar-nav navbar-right custom_nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="company_intro.html">公司介紹</a></li> 
-          <li class="active"><a href="service.html">服務介紹</a></li>
+          <li class="active"><a href="#service.html#content2">服務介紹</a></li>
           <li><a href="contact.html">聯絡我們</a></li>
           <li><a href="https://www.facebook.com/%E9%96%80%E7%A6%81%E6%99%BA%E6%85%A7%E6%95%B4%E5%90%88%E6%87%89%E7%94%A8-1924855931085554/" target="_blank">Facebook</a></li>                
         </ul>
@@ -343,6 +343,43 @@
     //     $tabAnchors.eq(0).trigger('click');
     //   });
     // });
+    // Select all links with hashes
+  
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
   </script>
   <script>
 $(document).ready(function(){
