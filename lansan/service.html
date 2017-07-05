@@ -88,9 +88,9 @@
          <div class="blogArchive_area">
          <section id="work">
          <ul class="catg_nav">
-              <li><a href="#content1">RFID數位感應卡</a></li>
-              <li><a href="#content2">RFID智慧化應用系統</a></li>
-              <li><a href="#content3">RFID系統設備</a></li>
+              <li id="tag1"><a href="#content1">RFID數位感應卡</a></li>
+              <li id="tag2"><a href="#content2">RFID智慧化應用系統</a></li>
+              <li id="tag3"><a href="#content3">RFID系統設備</a></li>
           </ul>
          <!-- start page left side -->
           <div class="single_archiveblog">         
@@ -305,44 +305,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
   <script>
-    $(function(){
-      // tabs
-      $('#work').each(function(){
-        //將tab各元素jquery物件化
-        var $tabList =$(this).find('.catg_nav'),
-            $tabAnchors =$tabList.find('a'),
-            $tabPanels = $(this).find('.service_content');
+    // $(function(){
+    //   // tabs
+    //   $('#work').each(function(){
+    //     //將tab各元素jquery物件化
+    //     var $tabList =$(this).find('.catg_nav'),
+    //         $tabAnchors =$tabList.find('a'),
+    //         $tabPanels = $(this).find('.service_content');
 
-        //點擊tab時的處理
-        //接收作為參數的事件物件
-        $tabList.on('click','a',function(event){
+    //     //點擊tab時的處理
+    //     //接收作為參數的事件物件
+    //     $tabList.on('click','a',function(event){
 
-          //取消點擊link時的預設動作
-          event.preventDefault();
+    //       //取消點擊link時的預設動作
+    //       event.preventDefault();
 
-          //將點擊的頁次jquery物件化
-          var $this = $(this);
+    //       //將點擊的頁次jquery物件化
+    //       var $this = $(this);
 
-          //如果是目前的頁次,則不做任何處理
-          if ($this.hasClass('active')){
-            retutn;
-          }
+    //       //如果是目前的頁次,則不做任何處理
+    //       if ($this.hasClass('active')){
+    //         retutn;
+    //       }
 
-          //去除所有頁次選取狀態
-          //將被點擊頁次附加點擊狀態
-          $tabAnchors.removeClass('active');
-          $this.addClass('active');
+    //       //去除所有頁次選取狀態
+    //       //將被點擊頁次附加點擊狀態
+    //       $tabAnchors.removeClass('active');
+    //       $this.addClass('active');
 
-          //將所有頁次設定不顯示
-          //顯示被點擊頁次所對應的面板
-          $tabPanels.hide();
-          $($this.attr('href')).show();
-        });
+    //       //將所有頁次設定不顯示
+    //       //顯示被點擊頁次所對應的面板
+    //       $tabPanels.hide();
+    //       $($this.attr('href')).show();
+    //     });
 
-        //設定初始顯示頁次的狀態
-        $tabAnchors.eq(0).trigger('click');
-      });
-    });
+    //     //設定初始顯示頁次的狀態
+    //     $tabAnchors.eq(0).trigger('click');
+    //   });
+    // });
   </script>
   <script>
 $(document).ready(function(){
