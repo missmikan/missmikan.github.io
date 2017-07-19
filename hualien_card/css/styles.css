@@ -735,11 +735,12 @@ Main
 /* line 226, ../sass/_main.scss */
 #Slider_nav ul li.icon-msg a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 236, ../sass/_main.scss */
@@ -750,10 +751,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 #Slider_nav ul li.icon-card1 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
 background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 249, ../sass/_main.scss */
@@ -763,11 +766,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 252, ../sass/_main.scss */
 #Slider_nav ul li.icon-card2 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 262, ../sass/_main.scss */
@@ -777,11 +781,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 265, ../sass/_main.scss */
 #Slider_nav ul li.icon-card3 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 275, ../sass/_main.scss */
@@ -791,11 +796,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 278, ../sass/_main.scss */
 #Slider_nav ul li.icon-card4 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 288, ../sass/_main.scss */
@@ -805,11 +811,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 291, ../sass/_main.scss */
 #Slider_nav ul li.icon-card5 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 301, ../sass/_main.scss */
@@ -819,11 +826,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 304, ../sass/_main.scss */
 #Slider_nav ul li.icon-card6 a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 314, ../sass/_main.scss */
@@ -833,11 +841,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', end
 /* line 317, ../sass/_main.scss */
 #Slider_nav ul li.icon-download a {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b6eae1+1,61c8cc+50,00a7ad+53,99bdc4+100 */
-background: #b6eae1; /* Old browsers */
-background: -moz-linear-gradient(top,  #b6eae1 1%, #61c8cc 50%, #00a7ad 53%, #99bdc4 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b6eae1 1%,#61c8cc 50%,#00a7ad 53%,#99bdc4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6eae1', endColorstr='#99bdc4',GradientType=0 ); /* IE6-9 */
+background: #0094d9;
+  background-image: -webkit-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -moz-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -ms-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: -o-linear-gradient(top, #0094d9, #00c4ff);
+  background-image: linear-gradient(to bottom, #0094d9, #00c4ff);
 
 }
 /* line 327, ../sass/_main.scss */
