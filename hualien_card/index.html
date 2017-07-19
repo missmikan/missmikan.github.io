@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>花蓮雲端製卡系統</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<!-- include basic plugin -->
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!-- include photos plugin -->
+<script src="js/jquery.cycle.all.2.72.js" type="text/javascript"></script>
+<!-- include box plugin -->
+<link href="js/colorbox.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+<script language="JavaScript" src="/js/login.js"></script>
+</head>
+
+<body>
+<div id="Wrapper" class="clearfix">
+<div id="Container" class="clearfix">
+	<div id="Header" class="clearfix">
+		<div class="block clearfix">
+			<div id="Title">
+				<h1 id="Site-name"><a href="index.html" title="本站首頁" rel="home"><span>花蓮雲端製卡系統</span></a></h1>
+				<h2 id="Site-slogan"></h2>
+			</div>
+			<div id="Menu"></div>
+			<div id="Account">
+				<div class="block clearfix">
+					<div class="box">
+						<form name="LoginForm" action="/Login.do" method="post" style="margin-top:0;margin-bottom:0">
+                    <div id="login"></div>
+                    <input type="hidden" name="showTitle" value="0" />
+                 </form>
+
+	<!--					<p>歡迎使用本系統！</p>
+						<p>
+							<form name="LoginForm" action="/Login.do" method="post" style="margin-top:10px;margin-bottom:25px">
+								<table>
+									<tr class="tableInput">
+										<td><input type="text" name="username" placeholder="請輸入帳號" onkeydown="check_key(event);" size="20" /></td>
+									</tr>
+									<tr class="tableInput">
+										<td><input type="password" name="password" placeholder="請輸入密碼" onkeydown="check_key(event);" size="20" /></td>
+									</tr>
+									<tr class="tableInput">
+										<td><sapn id="randomNum"></sapn><span onclick="getImg();" style="cursor:pointer;cursor:hand;color:0099CC;font-size:13px; font-family:Verdana;">重新產生</span></td>
+									</tr>
+									<tr class="tableInput">
+										<td><input type="text" maxlength="5" size="20" name="checkNumber" id="checkNumber" autocomplete="off" onkeydown="check_key(event)" placeholder="請輸入驗證碼"/></td>
+									</tr>
+								</table>
+							</form>
+						</p>
+						<p><a href="#" class="btn" onclick="sendPage();" style="left: 175px;">登入</a></p>
+						</ul>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Main" class="clearfix"> 
+			<!-- Slider Start -->
+			<div id="Slider" class="clearfix">
+				<div id="Slider_nav" class="sg-8">
+					<ul>
+						<li class="icon-msg"> <a href="#" title="本站最新訊息公告">訊息快遞</a> </li>
+						<!-- <li class="icon-card1"> <a href="#" title="年滿七歲以上至六十五歲以下，且不具備前三款資格，並於申請時設籍本縣之縣民。但年滿七歲以上之未成年人，應得法定代理人之同意。">一般卡</a> </li>
+						<li class="icon-card2"> <a href="#" title="設籍本縣且年滿六十五歲以上之市民。">敬老卡</a> </li>
+						<li class="icon-card3"> <a href="#" title="設籍本縣且領有身心障礙手冊或證明之市民。">愛心卡</a> </li>
+						<li class="icon-card4"> <a href="#" title="愛心卡之照顧陪伴者，隨愛心卡申辦。">愛心陪伴卡</a> </li> -->
+						<li class="icon-card5"> <a href="#" title="本縣縣立國民小學、國民中學及高級中學之學生。">學生卡</a> </li>
+						<!-- <li class="icon-card6"> <a href="#" title="本府暨所屬機關學校、本縣各鄉鎮市公所及代表會員工。">員工卡</a> </li> -->
+						<li class="icon-download"> <a href="#" title="請按右鍵另存新檔，下載系統帳號申請表。">系統帳號申請表下載</a> </li>
+						<li class="icon-download"> <a href="#" title="請按右鍵另存新檔，下載本系統操作手冊。">系統操作手冊下載</a> </li>
+					</ul>
+				</div>
+				<div id="Slider_content" class="sg-26">
+					<div class="box">
+						<div class="box-title">
+							<h3>訊息快遞</h3>
+						</div>
+						<div class="box-subtitle">
+							<p style="font-size: 80px; font-family: Century Gothic; color: #EEE; text-align: right; margin-top: 10px;">Message</p>
+						</div>
+						<div class="box-list">
+							<ul class="list" style="width: 668px;">
+								<!-- <li><span class="listColor2">印卡機及色帶問題：</span>07-227-1668</li>
+								<li><span class="listColor2">靠卡設備異常：</span>07-227-1668</li>
+								<li><span class="listColor2">卡片管理系統：</span>02-2264-5411 分機5</li>
+								<li><span class="listColor2">攝影機問題：</span>02-2264-5411 分機5</li>
+								<li><span class="listColor2">一卡通相關問題：</span>07-793-3000</li> -->
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="box">
+						<div class="box-title">
+							<h3>一般卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">年滿七歲以上至六十五歲以下，且不具備前三款資格，並於申請時設籍本縣之縣民。但年滿七歲以上之未成年人，應得法定代理人之同意。</div>
+					</div>
+					<div class="box">
+						<div class="box-title">
+							<h3>敬老卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">設籍本縣且年滿六十五歲以上之市民。</div>
+					</div>
+					<div class="box">
+						<div class="box-title">
+							<h3>愛心卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">設籍本縣且領有身心障礙手冊或證明之市民。</div>
+					</div>
+					<div class="box">
+						<div class="box-title">
+							<h3>愛心陪伴卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">愛心卡之照顧陪伴者，隨愛心卡申辦。</div>
+					</div> -->
+					<div class="box">
+						<div class="box-title">
+							<h3>學生卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">本縣縣立國民小學、國民中學及高級中學之學生。</div>
+					</div>
+					<!-- <div class="box">
+						<div class="box-title">
+							<h3>員工卡</h3>
+						</div>
+						<div class="box-subtitle">
+							<p></p>
+						</div>
+						<div class="box-list">本府暨所屬機關學校、本縣各鄉鎮市公所及代表會員工。</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- Slider End --> 
+		</div>
+		<div id="Footer" class="clearfix">
+			<div id="Copyright" class="clearfix" style="display: none;">
+				<p>Copyright © 2014 XXXXXXXX All Right Reserved. <br />
+					連絡電話: (00)0000-0000   傳真號碼: (00)0000-0000   E-mail: XXX@XXX,gov.tw</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	/*Slider*/
+	$('#Slider_content').cycle({ 
+		fx: 'fade',
+		speed: 500,
+		timeout: 0,
+		pager: '#Slider_nav',
+		pagerAnchorBuilder: function(idx, slide) { 
+			/* return selector string for existing anchor*/ 
+			return '#Slider_nav li:eq(' + idx + ')'; 
+		} 
+	});
+	/*jQurey的fx輪播效果有以下這幾種：
+	blindX	blindY	blindZ
+	cover	uncover
+	curtainX	curtainY
+	fade	fadeZoom
+	growX	growY
+	scrollUp	scrollDown	scrollLeft	scrollRight	scrollHorz	scrollVert
+	shuffle
+	slideX	slideY
+	toss
+	turnUp	turnDown	turnLeft	turnRight
+	wipe
+	zoom
+	*/
+	
+	/* 開啟連結boxs*/
+	$("a[class^='box_page']").colorbox({
+		iframe:true,
+		innerWidth: 800,
+		innerHeight: 450,
+		opacity: 0.75,
+		title: ' '
+	});
+	
+	/* 開啟圖片boxs */
+	$("a[class^='box_pic']").colorbox({
+		opacity: 0.5
+	});	
+	
+});
+
+</script>
