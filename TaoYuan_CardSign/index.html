@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body onLoad="document.getElementById('inputArea').focus();">
+	<!-- 頂端標題 -->
+	<div class="TopTitle">
+		<img src="img/taoyuan_logo.png" alt="桃園">
+		<span>桃園市活動管理系統 快速簽到退</span>
+	</div>
+	<!-- 白色區塊內容 -->
+	<div class="content">
+		<!-- 感應卡片輸入框 -->
+		<div class="Fixed">
+			<div class="Card_sign">
+				<img src="img/card_reader.png" alt="">
+				<div class="Card_sign_area">
+					<div class="BigTitle">請感應市民卡</div>
+					<div class="smallTitle">※將市民卡放置「讀卡機」上進行感應</div>
+					<input id="inputArea" type="text" value="感應市民卡，直接輸入卡號" onfocus="this.value='';this.onfocus='';">
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!-- 已報名參加活動 簽到 -->
+		<div class="activity_yes">
+			<div class="Fixed2">
+				<div class="WelcomeBar">
+					<!-- <span><span class="MyName">陳Ｏ亘</span>您好！</span> -->
+					<span class="timer">
+						<!-- 秒數倒數 -->
+						<span style="color:yellow;">30</span>
+						秒內返回首頁
+					</span>
+				</div>
+				<!-- 按鈕區塊 -->
+				<div class="Buttons" >
+
+					<a href="#"><span class="BackToIndex"><i class="fa fa-sign-out" aria-hidden="true"></i> 離開服務</span></a>
+					<a href="#"><span class="moreActivity"><i class="fa fa-bell" aria-hidden="true"></i> 選擇其他活動</span></a>
+					<!-- <a href="#"><span class="Refresh"><i class="fa fa-refresh" aria-hidden="true"></i> 更新資料</span></a> -->
+				</div>
+			</div>
+			<!-- 已報名活動 -->
+			<ul class="MyActivity">
+				<!-- 標題 -->
+				<li class="Titles">
+					<ul>
+						<li>報名單位</li>
+						<li>已報名活動</li>
+						<li>動作</li>
+					</ul>
+				</li>
+				<!-- 內容 -->
+				<li class="Content">
+					<ul>
+						<li>健康局</li>
+						<li>跟著老師動茲動</li>
+						<li>
+							<a href="#" class="SignIn"><span>簽到</span></a>
+						</li>
+					</ul>
+				</li>
+				<!-- 內容End -->
+				<!-- 內容 -->
+				<li class="Content">
+					<ul>
+						<li>經濟局</li>
+						<li>小錢變大錢</li>
+						<li>
+							<a href="#" class="SignIn"><span>簽到</span></a>
+						</li>
+					</ul>
+				</li>
+				<!-- 內容End -->
+			</ul>
+			<div class="SignInfo">
+				<ul>
+					<li>現正進行 <span class="Department">社會局</span>
+							<span class="ActivityName"> 早安您好志工活動</span>
+					</li>
+					<li>請感應您的卡片進行<span>簽到</span></li>
+					
+					<li class="warning">如果不是您要簽到的活動，請點選「其他活動」按鈕</li>
+					<li>歡迎 <span class="MyName">陳Ｏ亘</span> 簽到</li>
+					
+					<li class="card_type">卡別：<span>一般卡</span></li>
+					<li class="card_number" >外觀碼：<span>12321415****34235</span></li>
+					<li class="card_time">時間：<span>106/08/01 09:01:53</span></li>
+				</ul>
+				<ul>
+					<li><span class="MyName">陳Ｏ亘</span></li>
+					<li>您已簽到 <span class="Department">社會局</span>
+							<span class="ActivityName"> 早安您好志工活動</span>
+					</li>
+					<li>請問您是要進行<span>簽退</span>嗎？</li>
+					<li>
+						<a href="#" class="SignOut"><span>簽退</span></a>
+						<a href="#" class="Change"><span>變更簽到紀錄至其他活動</span></a>
+						<a href="#" class="Cancel"><span>取消</span></a>
+					</li>
+					<li class="warning">若要進行其他活動，請按「變更簽到紀錄至其他活動」，將覆蓋目前簽到紀錄</li>
+					
+					
+					<li class="card_type">卡別：<span>一般卡</span></li>
+					<li class="card_number" >外觀碼：<span>12321415****34235</span></li>
+					<li class="card_time">時間：<span>106/08/01 09:01:53</span></li>
+				</ul>
+				<ul>
+					<li>現正進行 <span class="Department">社會局</span>
+							<span class="ActivityName"> 早安您好志工活動</span>
+					</li>
+					<li>請感應您的卡片進行<span>簽退</span></li>
+					
+					<li class="warning">簽退成功，謝謝您今天前來參加活動！</li>
+					<li><span class="MyName">陳Ｏ亘</span></li>
+					
+					<li class="card_type">卡別：<span>一般卡</span></li>
+					<li class="card_number" >外觀碼：<span>12321415****34235</span></li>
+					<li class="card_time">時間：<span>106/08/01 09:01:53</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body onLoad="document.getElementById('inputArea').focus();">
+	<!-- 頂端標題 -->
+	<div class="TopTitle">
+		<img src="img/taoyuan_logo.png" alt="桃園">
+		<span>桃園市活動管理系統 快速簽到退</span>
+	</div>
+	<!-- 白色區塊內容 -->
+	<div class="content">
+		<!-- 感應卡片輸入框 -->
+		<div class="Card_sign">
+			<img src="img/card_reader.png" alt="">
+			<div class="Card_sign_area">
+				<div class="BigTitle">請感應市民卡</div>
+				<div class="smallTitle">※將市民卡放置「讀卡機」上感應卡號以啟動快速簽到/退作業</div>
+				<input id="inputArea" type="text" value="感應市民卡，直接輸入卡號" onfocus="this.value='';this.onfocus='';">
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+	
+</body>
+</html>
