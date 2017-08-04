@@ -1241,6 +1241,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .social_nav li:first-child a{
   padding: 5px 12px;
 }
+.contact_mail{
+  padding-top: 1em;
+}
 
 
 /*--------------------*/
