@@ -2,7 +2,7 @@
 body{
 	background: url('images/background.png') no-repeat;
 	height: 100%;
-	background-size: 100% 100vh;
+	background-size: 101% 100vh;
 	margin: 0;
 }
 .clearfix{
