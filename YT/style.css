@@ -269,6 +269,9 @@ footer .footer_text{
 		padding-top: 6px;
 		clear: both;
 	}
+	.footer_text span{
+		display: block;
+	}
 }
 @media screen and (min-width: 769px) and (max-width: 930px){
 	.right_content .big_title{
