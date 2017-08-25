@@ -75,6 +75,12 @@ body{
     left: -23px;
     top: 1px;
 }
+.talkbubble_left ul {
+	list-style: none;
+	padding-left: 0;
+	text-decoration: none;
+	line-height: 1.9em;
+}
 .talkbubble_right{
 	display: inline-block;
 	max-width:400px; 
