@@ -40,7 +40,7 @@ body{
 	color: #A3A3A3 ;
     position: sticky;
     left: 0;
-	bottom: -13px;
+	bottom: -5px;
     display: block;
     height: 31px;
     line-height: 31px;
@@ -270,4 +270,64 @@ body{
 	-ms-transform:scale(1.05);
 	transform:scale(1.05);
 	transition: all 200ms ease-out;
+}
+.onebyone{
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	background-color: #556276;
+	border-radius: 0.5em;
+	color: #FFF;
+	margin-top: 1em;
+	cursor: pointer;
+}
+.onebyone:hover{
+	background-color: #F49200;
+}
+.systemline{
+	position: relative;
+    text-align: center;
+    height: 45px;
+    color: #999;
+    /* margin-bottom: 0.5em; */
+}
+.systemline hr{
+	position: absolute;
+	width: 100%;
+	top: 6px;
+	background-color: #CCC;
+	height: 1px;
+	border: 0;
+}
+.systemline_text{
+	position: relative;
+	background-color: #EEF1F6;
+	top: 6px;
+	padding: 0px 17px;
+
+}
+.systemline .monitor_yes a:link,.systemline .monitor_yes a:visited{
+	padding: 0.2em 0.5em;
+	color: blue;
+}
+.systemline .monitor_no a:link,.systemline .monitor_no a:visited{
+	color: red;
+}
+.send_file div{
+	display: block;
+	float: left;
+}
+.send_file div:first-child{
+	padding-top: 0.4em;
+	margin-right: 0.5em;
+}
+.send_file .file_name{
+	color: #999999;
+}
+.send_file div:nth-child(3){
+	margin-left: 1.5em;
+	padding-top: 0.8em;
+}
+.send_file .download a:link,.send_file .download a:visited{
+	color: #0071BC;
+	text-decoration: none;
 }
