@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background-image: url('ilanbg-1.jpg');
+			background-size: 100% 100vh;
+			background-attachment: fixed;
+			margin: 0;
+			padding-top: 10px;
+			font-family: "微軟正黑體";
+			color: #FFF;
+		}
+		.outter{
+			width: 320px;
+			height: 480px;
+			margin: 0 auto;
+			padding: 10px;
+			box-sizing: border-box;
+			text-align: center;
+			margin-bottom: 100px;
+			position: relative;
+		}
+		.welcomepage{
+			padding-top: 25px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+		.bolder{
+			font-weight: 900;
+		}
+		.bigtitle{
+			font-size: 24px;
+			text-align: center;
+		}
+		.login{
+			border: 0;
+			background-color: #FF7024;
+			width: 150px;
+			height: 50px;
+			color: #FFF;
+			font-size: 24px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		}
+		.signup{
+			border: 0;
+			background-color: #8CC63F;
+			width: 150px;
+			height:50px;
+			color: #FFF;
+			font-size: 24px;
+		    margin-bottom: 15px;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		}
+		.next{
+			border: 0;
+			background-color: #005785;
+			width: 150px;
+			height:50px;
+			color: #FFF;
+			font-size: 24px;
+		    margin-bottom: 15px;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		}
+		.nosign{
+			border: 0;
+			background-color: #808080;
+			width: 150px;
+			height:50px;
+			color: #FFF;
+			font-size: 24px;
+		    margin-bottom: 15px;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		}
+		.md_title{
+			font-size: 20px;
+			color: #FBFFB9;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		.line{
+			display: inline-block;
+			width: 45%;
+			border-bottom: 1px solid #CCC;
+		}
+		.title{
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+		.input{
+			width: 90%;
+			height: 35px;
+			border: 0;
+			background-color: rgba(255, 255, 255, 0.6);
+			margin-bottom: 15px;
+			border-radius: 5px;
+			box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+			text-align: center;
+			font-size: 18px;
+		}
+		.forget_password a:link,.forget_password a:visited{
+			color: #FFF;
+
+		}
+		.smalltext{
+			font-size: 14px;
+			color: #EFEFEF;
+			margin-bottom: 15px;
+		}
+		.send_again{
+			border: 0;
+			background-color: #22B573;
+			width: 200px;
+			height:50px;
+			color: #FFF;
+			font-size: 20px;
+		    margin-bottom: 15px;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		    margin-bottom: 30px;
+		}
+		select{
+			width: 80px;
+			height: 30px;
+			border: 0;
+			background-color: rgba(255, 255, 255, 0.6);
+			font-size: 16px;
+		}
+		.card_pic{
+			position: relative;
+		}
+		.card_pic img{
+			margin: 0 auto;
+			width: 300px;
+		}
+		.add_card{
+			border: 0;
+			background-color: #22B573;
+			width: 300px;
+			height:50px;
+			color: #FFF;
+			font-size: 20px;
+		    margin-bottom: 15px;
+		    border-radius: 5px;
+		    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+		    margin-bottom: 30px;
+		}
+		.greencard{
+			display: inline-block;
+			padding: 10px;
+			background-color: rgba(57, 181 , 74, 0.8);
+			border-radius: 5px;
+		}
+		.library{
+			display: inline-block;
+			padding: 10px;
+			background-color: rgba(241, 90 , 36, 0.8);
+			border-radius: 5px;
+		}
+		.bar_code{
+			background-color: #FFF;
+			height: 30px;
+			margin-bottom: 10px;
+		}
+		.card_button button{
+			display: inline-block;
+			border: 0;
+		    width: 146px;
+			height: 40px;
+			background-color: #CCC;
+			border-radius: 5px;
+			color: #FFF;
+			font-size: 18px;
+		}
+		.layer{
+			width: 300px;
+			padding: 10px 20px;
+			background-color: rgba(255, 255, 255, 0.9);
+			border-radius: 5px;
+			position: absolute;
+			top: 10px;
+			color: #999;
+			box-sizing: border-box;
+			margin: 0 auto;
+		}
+		.layer .title{
+			color: orange;
+			font-size: 24px;
+		}
+		.password_bar{
+			width: 300px;
+			color: lightyellow;
+		}
+		.password_bar img{
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 畫面一 -->
+	<div class="outter welcomepage">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<button class="signup">新手註冊</button>
+		<div style="margin-bottom: 15px;"><span class="line"></span>or<span class="line"></span></div>
+		<div style="margin-bottom: 5px">
+			<div class="title">帳號（電子郵件）</div>
+			<input class="input" type="text">
+		</div>
+		<div style="margin-bottom: 10px">
+			<div class="title">密碼</div>
+			<input class="input" type="password">
+		</div>
+		<button class="login" style="margin-bottom: 15px;">登入</button><br>
+		<div class="forget_password"><a href="#">忘記密碼</a></div>
+	</div>
+	<!-- 畫面二 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">請進行縣民卡註冊</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">身分證號</div>
+			<input class="input" type="text">
+		</div>
+		<div style="margin-bottom: 5px">
+			<div><img src="100.png" alt="" style="width:100px;max-width: 100%"></div>
+			<div class="title">請輸入上方圖片數字</div>
+			<input class="input" type="text">
+		</div>	
+		<div class="smalltext">註冊流程需要手機號碼進行簡訊驗證<br>請確認身旁有能接收簡訊的手機號碼<br>再進行註冊流程</div>
+		<button class="next">下一步</button>
+	</div>
+	<!-- 畫面三 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">請進行縣民卡註冊驗證</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">行動電話號碼</div>
+			<input class="input" type="text" placeholder="例：0912-345678">
+		</div>
+		<div class="smalltext">將會發送簡訊驗證碼至此號碼，請務必填寫您收得到簡訊的號碼</div>
+		<button class="next">開始驗證</button>
+	</div>
+	<!-- 畫面四 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">請進行縣民卡註冊驗證</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">已發送驗證碼至</div>
+			<div style="color:#CCC; margin-bottom:15px;">0912-***-678</div>
+			<!-- <div class="smalltext">沒收到簡訊？</div> -->
+			<button class="send_again">重新發送簡訊驗證</button>
+			
+		</div>
+		<div class="smalltext">請在10分鐘內輸入簡訊驗證碼</div>
+		<input class="input" type="text">
+		<button class="next">送出驗證</button>
+	</div>
+	<!-- 畫面五 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 5px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">請進行縣民卡資料註冊</div>
+		<div>
+			<div class="title">姓名</div>
+			<input class="input" type="text">
+		</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">出生年月日</div>
+			<select name=" " id="">
+				<option value="1990">1990</option>
+				<option value="1990">1991</option>
+			</select>
+			<select name=" " id="">
+				<option value="01">01</option>
+				<option value="02">02</option>
+			</select>
+			<select name=" " id="">
+				<option value="01">01</option>
+				<option value="02">02</option>
+			</select>
+		</div>
+		<div style="margin-bottom: 10px">
+			<div class="title">通訊地址</div>
+			<select name=" " id="">
+				<option value=" ">宜蘭縣</option>
+				<option value=" ">嘉義縣</option>
+			</select>
+			<select name=" " id="">
+				<option value=" ">宜蘭市</option>
+				<option value=" ">冬山鄉</option>
+			</select>
+			<select name=" " id="">
+				<option value=" ">建業里</option>
+				<option value="  ">忠孝里</option>
+			</select>
+		</div>
+		<div>
+			<div class="title">行動電話號碼</div>
+			<input class="input" type="text" style="margin-bottom: 1px;">
+			<div class="smalltext">可在此變更您的手機號碼</div>
+		</div>
+		<button class="next">送出</button>
+	</div>
+	<!-- 畫面六 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">請進行縣民卡註冊驗證</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">電子郵件地址</div>
+			<input class="input" type="text" style="margin-bottom: 1px;">
+			<div class="smalltext">電子郵件日後將作為您的帳號使用<br>請謹慎輸入</div>
+			<div class="line" style="width:100%;"></div>
+		</div>
+		<div style="margin-bottom: 15px">
+			<div class="title">設定密碼<span class="smalltext">（英數混雜密碼6位數以上</span></div>
+			<input class="input" type="password" style="margin-bottom: 1px;">
+			<!-- 密碼強度 -->
+			<div class="password_bar"><img src="password-bar-3.png" alt="">強</div>
+			<!-- <div class="password_bar"><img src="password-bar-2.png" alt="">中</div>
+			<div class="password_bar"><img src="password-bar-1.png" alt="">弱</div> -->
+		</div>		
+		<div style="margin-bottom: 5px">
+			<div class="title">再次確認密碼</div>
+			<input class="input" type="password" style="margin-bottom: 1px;">
+		</div>			
+		<button class="next">送出</button>
+	</div>
+	<!-- 畫面七 -->
+	<div class="outter">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">完成註冊！</div>
+		<div style="margin-bottom: 20px">
+			<div class="title">謝謝您！<br>您已完成縣民卡資料註冊<br>請登入新增您的縣民卡</div>
+		</div>
+		<button class="login">開始使用</button>
+	</div>
+	<!-- 畫面八 -->
+	<div class="outter welcomepage">
+		<div class="bigtitle">Welcome!</div>
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">登入/LOGIN</div>
+		<div style="margin-bottom: 5px">
+			<div class="title">帳號（電子郵件）</div>
+			<input class="input" type="text">
+		</div>
+		<div style="margin-bottom: 10px">
+			<div class="title">密碼</div>
+			<input class="input" type="password">
+		</div>
+		<button class="login" style="margin-bottom: 15px;">登入</button><br>
+		<div class="forget_password"><a href="#">忘記密碼</a></div>
+	</div>
+	<!-- 畫面九 -->
+	<div class="outter welcomepage">
+		<!-- <div class="bigtitle">Welcome!</div> -->
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">歡迎，陳Ｏ亘</div>
+		<div style="margin-bottom: 5px">
+			<div class="card_pic">
+				<!-- 正常狀態縣民卡 -->
+				<img src="card.png" alt="">
+				<!-- 未開通的縣民卡 -->
+				<img src="card-bk.png" alt="" style="display: none;">
+
+				<!--  -->
+				<div style="position: absolute;bottom:15px;left:10px;">
+					<span class="greencard">宜蘭綠卡</span>
+					<span class="library">圖書館借閱證</span>
+				</div>
+			</div>
+		</div>
+		<!-- 新增縣民卡後，顯示請至戶所或圖書館感應卡片 -->
+		<button class="add_card" style="margin-bottom: 15px;">新增縣民卡</button><br>
+		<button class="add_card" style="margin-bottom: 15px;display: none;">請至戶所或圖書館綁定卡片</button><br>
+		<!--  -->
+
+
+		<div style="margin-bottom: 10px;">縣民卡號 <span style="color:#CCC;">暫無資料</span></div>
+		<div class="bar_code">
+			<img src="#" alt="">
+		</div>
+		<div class="card_button">
+			<button style="background-color: #ED1C24">註銷縣民卡</button>
+			<button style="background-color: #29ABE2">開通共用卡別</button>
+		</div>
+		<div style="padding-top: 10px;font-size: 18px;">
+			<span>□</span>
+			<span>宜蘭綠卡 </span>
+			<span>■</span>
+			<span>宜蘭公共圖書館 </span>
+		</div>
+		<div style="color:#CCC;font-size: 18px;">（本張卡可作為綠卡或借閱證使用）</div>
+		<div class="layer">
+			<div class="title">開通共用卡</div>
+			<div style="font-size: 18px;">您可以將此張縣民卡同時註冊為「宜蘭綠卡」以及「宜蘭公共圖書館借閱證」，開通請於下方勾選卡別</div>
+			<div><input type="checkbox"> 宜蘭綠卡<br>
+			     <input type="checkbox"> 宜蘭公共圖書館借閱證
+		     </div>
+		     <div style="color:red;margin-bottom:10px;">註冊後不可取消</div>
+		     <button class="next">確定開通</button>
+		     <button class="signup">取消</button>
+		</div>
+	</div>
+	<!-- 畫面十 -->
+	<div class="outter welcomepage">
+		<!-- <div class="bigtitle">Welcome!</div> -->
+		<div class="bigtitle" style="margin-bottom: 15px;">歡迎使用<span class="bolder">宜蘭縣民卡</span></div>
+		<div class="md_title">陳Ｏ亘，您好</div>
+		<div style="margin-bottom: 10px;">
+			<div class="title">請註冊您的卡片資料</div>
+			<input class="input" type="text" style="margin-bottom: 1px;">
+		</div>
+		<div style="margin-bottom: 10px;">
+			<div class="title">卡片外碼<span>（<a href="#">卡片外觀碼說明</a>）</span></div>
+			<input class="input" type="text" style="margin-bottom: 1px;">
+		</div>
+		<div style="margin-bottom: 10px;">
+			<div class="title">卡片內碼</div>
+			<input class="input" type="text" style="margin-bottom: 1px;">
+		</div>
+		<div class="smalltext">請將卡片靠近讀卡機進行感應內碼</div>
+		<button class="next">送出綁定</button>
+		<button class="nosign">暫不註冊</button>
+	</div>
+</body>
+</html>
