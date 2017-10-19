@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公告編輯頁</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+</head>
+<body>
+	<div class="topheader">
+		<div class="top_header">
+			<div class="TitleName" style="float: left;"><img src="trophy.svg" alt="榮譽榜圖示" width="30px" height="30px"> 競賽獎勵榮譽榜</div>
+			<button class="btn btn-sm btn-default">取消</button>
+			<button class="btn btn-sm btn-info">儲存競賽資料</button>
+			
+		</div>
+		<div class="table-responsive" style="padding:0em 2em;">
+		  <table class="table">
+		    <tbody>
+		    	<tr>
+		    		<td>競賽資料</td>
+		    		<td>
+		    			<form action=" " method="post">
+			    			<select class="form-control input-sm" style="width:20%;display: inline-block;">
+								<optgroup label="競賽等級選擇">
+									<option value=" " selected>國際級</option>
+									<option value=" ">區域</option>
+									<option value=" ">縣市</option>
+									<option value=" ">校內</option>
+									<option value=" ">年級</option>
+								</optgroup>
+							</select>
+							<select class="form-control input-sm" style="width:20%;display: inline-block;">
+								<optgroup label="學年期選擇">
+									<option value=" " selected>106學年-上學期</option>
+									<option value=" ">106學年-下學期</option>
+									<option value=" ">105學年-下學期</option>
+									<option value=" ">105學年-上學期</option>
+									<option value=" ">104學年-下學期</option>
+								</optgroup>
+							</select>
+							<span>
+								<input type="radio" name=" " value=" " checked> 個人
+								<input type="radio" name=" " value=" "> 團體
+								<input type="radio" name=" " value=" "> 班級
+								<input type="radio" name=" " value=" "> 全校
+							</span>
+						</form>
+		    		</td>
+		    	</tr>
+		    	<tr>
+		    		<td>競賽名稱</td>
+		    		<td><input type="text" name=" "  class="form-control" value="104年度板橋區國語文競賽" style="width:100%"></td>
+		    	</tr>
+		    	<tr>
+		    		<td>主辦單位</td>
+		    		<td><input type="text" name=" "  class="form-control" placeholder="請輸入主辦單位"></td>
+		    		<td>地點</td>
+		    		<td><input type="text" name=" "  class="form-control" placeholder="請輸入辦理地點"></td>
+		    	</tr>
+		    </tbody>
+		  </table>
+		</div>
+		<div class="all_link">
+			<a href="#tag1">參賽單位或師生</a>
+			<a href="#tag2">榮譽榜公告</a>
+			<a href="#tag3">競賽照片</a>
+			<button class="btn btn-sm btn-default" style="float:right">操作說明</button>
+		</div>
+	</div>
+	<div class="content">
+		
+		<div class="team_info" style="padding-top: 250px;">
+			<a class="target">
+			<span id="tag1"></span>
+			</a>
+			<div class="Big_title"><span class="glyphicon glyphicon-user"></span> 參賽單位或師生</div>
+			<div style="float: left;color:#FFAB91">輸入學生參加競賽獲獎項目，可於學期成績通知單中列印。</div>
+    		<button class="add_record btn btn-sm btn-success" style="float:right">新增獲獎紀錄</button>
+			<button class="add_record btn btn-sm btn-default" style="float:right">批次匯入</button>
+			<table class="table table-striped">
+			 <thead>
+			 	<tr>
+			 		<th>序號</th>
+			 		<th>獲獎項目</th>
+			 		<th>獲獎名次</th>
+			 		<th>參加單位或師生</th>
+			 		<th>指導老師</th>
+			 		<th>作業</th>
+			 	</tr>
+			 </thead>
+			 <tbody>
+			 		<tr>
+			 			<th scope="row">1</th>
+			 			<td>中年級國語朗讀</td>
+			 			<td>第一名</td>
+			 			<td>30502郭忠斌</td>
+			 			<td>李大同</td>
+			 			<td>
+			 				<button class="btn btn-sm btn-warning">修改</button>
+			 				<button class="btn btn-sm btn-danger">刪除</button>
+		 				</td>
+			 		</tr>
+			 		<tr>
+			 			<th scope="row">2</th>
+			 			<td><input type="text" name=" "  class="form-control" placeholder="請輸入競賽項目"></td>
+			 			<td>
+			 				<button class="btn btn-md btn-primary">選擇</button>
+			 				<span>第一名</span>
+		 				</td>
+			 			<td>
+			 				<button class="btn btn-md btn-primary">選擇</button>
+			 			</td>
+			 			<td>
+			 				<button class="btn btn-md btn-primary">選擇</button>
+			 			</td>
+			 			<td>
+			 				<button class="btn btn-sm btn-info">儲存</button>
+			 				<button class="btn btn-sm btn-default">取消</button>
+		 				</td>
+			 		</tr>
+			 </tbody>
+			</table>
+		</div>
+		
+		<div class="honor_news position">
+			<a class="target">
+				<span id="tag2"></span>
+			</a>
+			<div class="Big_title"><span class="glyphicon glyphicon-bookmark"></span> 榮譽榜公告</div>
+			<div style="float: left;color:#FFAB91">
+				<input type="checkbox"> 帶入競賽主題與參加人員獲獎資料
+			</div>
+			<button class="btn btn-sm btn-default" style="float:right;margin-left: 5px;">取消</button>
+			<button class="btn btn-sm btn-info" style="float:right">儲存說明報導資料</button>
+			<div class="clearfix"></div>
+			<table class="table table-condensed">
+				<tbody>
+					<tr>
+						<th scope="row">公告主題</th>
+						<td><input type="text" name=" "  class="form-control" value="賀！本校參加 104年度板橋區國語文競賽 成績優異"></td>
+					</tr>
+					<tr>
+						<th scope="row">公告說明</th>
+						<td>
+							<textarea name="" id="" cols="30" rows="6" class="form-control"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">媒體報導連結</th>
+						<td>
+							<ol>
+								<!-- 報導連結輸入完結果 -->
+								<li>
+									<span>中國時報</span>
+									<span><a href="#">報導連結</a></span>
+									<a href="#"><span class="glyphicon glyphicon-remove"></a>
+								</li>
+								<!-- 報導連結未輸入結果 -->
+								<li>
+									<input type="text" class="form-control" placeholder="請輸入媒體名稱">
+									<input type="text" class="form-control" placeholder="請貼上媒體報導網址">
+									<button class="btn btn-sm btn-info">儲存</button>
+									<button class="btn btn-sm btn-default">取消</button>
+								</li>
+							</ol>
+						</td>
+					</tr>
+				</tbody>	
+			</table>	
+		</div>
+		
+		<div class="race_picture position">
+			<a class="target">
+				<span id="tag3"></span>
+			</a>
+			<div class="Big_title"><span class="glyphicon glyphicon-picture"></span> 競賽照片</div>
+
+			<button class="btn btn-sm btn-default" style="float:right;margin-left: 5px;">取消</button>
+			<button class="btn btn-sm btn-info" style="float:right">全部上傳</button>
+			<div class="clearfix"></div>
+			<div style="width:90%;height:150px;border:3px dotted #E3E3E3;text-align: center;padding-top: 2em;color:#666;margin: 1em auto 1em;">
+				<div>請拖曳圖片到這裡</div>
+				<div>or</div>
+				<div><button class="btn btn-sm btn-default">選擇檔案</button></div>
+			</div>
+			<div class="all_pic">
+				<div class="pic_box col-md-3 col-sm-4 col-xd-6">
+					<img src="1507713167058.jpg" alt="" class="img-responsive">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<div class="pic_box col-md-3 col-sm-4 col-xd-6">
+					<img src="1507713167058.jpg" alt="" class="img-responsive">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<div class="pic_box col-md-3 col-sm-4 col-xd-6">
+					<img src="1507713167058.jpg" alt="" class="img-responsive">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<div class="pic_box col-md-3 col-sm-4 col-xd-6">
+					<img src="1507713167058.jpg" alt="" class="img-responsive">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Scroll to specific values
+		// scrollTo is the same
+		window.scroll({
+		  top: 5000, 
+		  left: 0, 
+		  behavior: 'smooth' 
+		});
+
+		// Scroll certain amounts from current position 
+		window.scrollBy({ 
+		  top: 100, // could be negative value
+		  left: 0, 
+		  behavior: 'smooth' 
+		});
+
+		// Scroll to a certain element
+		document.querySelector('.hello').scrollIntoView({ 
+		  behavior: 'smooth' 
+		});
+	</script>
+	<script>
+		// Select all links with hashes
+		$('a[href*="#"]')
+		  // Remove links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    // On-page links
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      // Figure out element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Checking if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+	</script>
+</body>
+</html>

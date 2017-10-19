@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+</head>
+<body>
+	<!-- Small modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">點我</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content" style="padding:1em;">
+		           	<div class="newspage_top">
+				<span class="title"><img src="trophy.svg" alt="榮譽榜圖示" width="30px" height="30px"> 榮譽榜公告</span>
+				<div class="place">
+						<span>教務處</span>
+						<span class="date">107-10-10</span>
+						<span class="click_times">49</span>
+				</div>
+			</div>
+			<div class="newspage_title">
+				<span class="badge badge-secondary color_1">國際級</span>
+				<span style="display: block;float:left;width:calc(100% - 85px)">
+				賀！本校參加 新北市104年度國語文競賽，成績優異！</span>
+				<div class="clearfix"></div>
+			</div>
+			
+			<div class="news_content">
+				本校參加104年度板橋區國語文競賽 成績優異，獲獎名單如下：<br>
+		中年級國語朗讀 第一名 三年五班 郭忠斌、三年六班 林秋君 指導老師：李大同
+
+			</div>
+			<div class="newspaperlink">
+					<a href="#">自由時報</a>
+					<a href="#">聯合報</a>
+			</div>
+			<div class="newspage_top">
+				<span class="title"><img src="trophy.svg" alt="榮譽榜圖示" width="30px" height="30px"> 競賽照片</span>
+			</div>
+
+		<div class="row pic_bigger">
+			<div class="col-sm-3 col-xs-6"><a href="1507713167058.jpg" class="group3"><img src="1507713167058.jpg" alt="" title="拉紙筆" class="img-responsive"></a></div>
+			<div class="col-sm-3 col-xs-6"><a href="1507713167058.jpg" class="group3"><img src="1507713167058.jpg" alt="" title="拉紙筆" class="img-responsive"></a></div>
+			<div class="col-sm-3 col-xs-6"><a href="1507713167058.jpg" class="group3"><img src="1507713167058.jpg" alt="" title="拉紙筆" class="img-responsive"></a></div>
+			<div class="col-sm-3 col-xs-6"><a href="1507713167058.jpg" class="group3"><img src="1507713167058.jpg" alt="" title="拉紙筆" class="img-responsive"></a></div>
+
+			<div class="col-sm-3 col-xs-6"><a href="1507713167058.jpg" class="group3"><img src="1507713167058.jpg" alt="" title="拉紙筆" class="img-responsive"></a></div>
+		</div>
+    </div>
+  </div>
+</div>
+
+  
+</body>
+</html>

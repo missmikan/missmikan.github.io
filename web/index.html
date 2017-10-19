@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>競賽獎勵榮譽榜</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 上方Title -->
+	<div class="topfix">
+	<div class="top_header">
+		<span><img src="trophy.svg" alt="榮譽榜圖示" width="30px" height="30px"></span>
+		<span class="TitleName">競賽獎勵榮譽榜</span>
+		<button class="btn btn-sm btn-default" style="margin-left: 0.5em;"><span class="glyphicon glyphicon-cog"></span> 設定</button>
+		<span class="linkout">已啟用<a href="#">外部查詢</a>服務</span>
+		
+	</div>
+
+	<!-- 標籤Tag -->
+	<div class="Tool_Bar">
+		<div class="Tools">
+			顯示：
+			<span><img src="p_list.png" alt="圖文列表模式"></span>
+			<span><img src="t_list.png" alt="文字列表模式"></span>
+
+			<button class="btn btn-sm btn-info mix_search">複合查詢</button>
+			<button class="btn btn-sm btn-success">新增</button>
+		</div>
+		<select class="form-control input-sm years">
+			<optgroup label="公告年度選擇">
+				<option value="all" selected>全部</option>
+				<option value="106">106年</option>
+				<option value="105">105年</option>
+				<option value="104">104年</option>
+			</optgroup>
+		</select>
+
+		<button class="btn btn-sm color_7">
+		  全部 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_1">
+		  國際 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_2">
+		  全國 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_3">
+		  縣市 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_4">
+		  區域 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_5">
+		  全校 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+		<button class="btn btn-sm color_6">
+		  年級 <span class="badge badge-secondary ">9</span>
+		  <span class="sr-only">公告分類選項</span>
+		</button>
+
+
+		
+		<div class="list_tools_open_area col-sm-12" style="display: none;margin-top:1em">
+			<form action="cgi-bin/formsample.cgi" method="post">
+				<p class="col-sm-4 col-xs-12"><input type="checkbox">
+				<label for="">公告日期</label><br> 
+				<input type="date" name="dd" class="form-control date input-sm"> 至 <input type="date" name="dd" class="form-control date input-sm"></p>
+				<p class="col-sm-3 col-xs-12">
+					<input type="checkbox">
+					<label for="">競賽等級</label>  
+						<select class="form-control input-sm drop_down">
+							<optgroup label="請選擇公告等級">
+								<option value="1" selected>國際級</option>
+								<option value="2">全國級</option>
+								<option value="3">縣市級</option>
+								<option value="4">區域級</option>
+								<option value="5">全校</option>
+								<option value="6">年級</option>
+							</optgroup>
+						</select>
+				</p>
+				<p class="col-sm-5 col-xs-12 keyword_search">
+					<input type="checkbox"> 
+					<label for="">關鍵字查詢</label> 
+						<input type="search" name="search" placeholder="請輸入公告主旨、內容進行關鍵字搜尋" class="form-control people input-sm">
+				</p>
+				<div class="col-sm-1 col-xs-12 gosearch" >
+					<button class="btn btn-danger"><span class="glyphicon glyphicon-search"></span> 開始查詢</button>	
+				</div>
+				<div class="clearfix"></div>
+			</form>			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	</div>
+	<!-- 文字列表 -->
+	<div class="news_outter">
+		<!-- 單則公告 -->
+		<div class="news_p">
+			<span class="badge badge-secondary color_1">國際級</span>
+			<span class="title"><a href="#">賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異</a></span>
+			<div class="place">
+				<span>教務處</span>
+				<span class="date">107-10-10</span>
+				<span class="click_times">49</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<!-- 單則公告 -->
+		<div class="news_p">
+			<span class="badge badge-secondary color_1">國際級</span>
+			<span class="title"><a href="#">賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異</a></span>
+			<div class="place">
+				<span>教務處</span>
+				<span class="date">107-10-10</span>
+				<span class="click_times">49</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- 單則公告 -->
+		<div class="news_p">
+			<span class="badge badge-secondary color_2">全國級</span>
+			<span class="title"><a href="#">賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異</a></span>
+			<div class="place">
+				<span>教務處</span>
+				<span class="date">107-10-10</span>
+				<span class="click_times">49</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<!-- 圖文列表 -->
+	<div class="news_outter" style="display: none;">
+		<!-- 單則公告 -->
+		<div class="news_p_t">
+			<div class="news_pic">
+			  <img class="mySlides" src="1507713167058.jpg" style="width:100%">
+			  <img class="mySlides" src="test1.png" style="width:100%">
+			</div>
+			<span class="badge badge-secondary color_1">國際級</span>
+			<span class="title"><a href="#">賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異</a></span>
+				<div class="news_text">本校參加104年度板橋區國語文競賽 成績優異，獲獎名單如下：
+				中年級國語朗讀 第一名 三年五班 郭忠斌、三年六班 林秋君 指導老師：李大同
+				</div>
+			<div class="place">
+				<span>教務處</span>
+				<span class="date">107-10-10</span>
+				<span class="click_times">49</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="news_p_t">
+			<div class="news_pic">
+			  <img class="mySlides" src="1507713167058.jpg" style="width:100%">
+			  <img class="mySlides" src="test1.png" style="width:100%">
+			</div>
+			<span class="badge badge-secondary color_1">國際級</span>
+			<span class="title"><a href="#">賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異賀！本校參加新北市104年度國語文競賽，成績優異</a></span>
+			<div class="news_text">本校參加104年度板橋區國語文競賽 成績優異，獲獎名單如下：
+				中年級國語朗讀 第一名 三年五班 郭忠斌、三年六班 林秋君 指導老師：李大同本校參加104年度板橋區國語文競賽 成績優異，獲獎名單如下：
+				中年級國語朗讀 第一名 三年五班 郭忠斌、三年六班 林秋君 指導老師：李大同本校參加104年度板橋區國語文競賽 成績優異，獲獎名單如下：
+				中年級國語朗讀 第一名 三年五班 郭忠斌、三年六班 林秋君
+				</div>
+			<div class="newspaperlink">
+				<a href="#">自由時報</a>
+				<a href="#">聯合報</a>
+			</div>
+			<div class="place">
+				<span>教務處</span>
+				<span class="date">107-10-10</span>
+				<span class="click_times">49</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3000); // Change image every 2 seconds
+		}
+	</script>
+	<script>
+		$(".mix_search").click(function(){
+		    $(".list_tools_open_area").slideToggle();
+		});
+	</script>
+</body>
+</html>
