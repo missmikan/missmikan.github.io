@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>網頁套件</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		body{
+			/*background-color: rgb(251,233,231);*/
+			font-size: 13px;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.box_2_2{
+			width: 190px;
+			height: 190px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_2_4{
+			width: 190px;
+			height: 390px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_2_6{
+			width: 190px;
+			height: 590px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_4_2{
+			width: 390px;
+			height: 190px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_4_4{
+			width: 390px;
+			height: 390px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_4_6{
+			width: 390px;
+			height: 390px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_6_2{
+			width: 590px;
+			height: 190px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_6_4{
+			width: 590px;
+			height: 390px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box_6_6{
+			width: 590px;
+			height: 590px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.outter{
+			width: 100%;
+    		height: 100%;
+			background-color: rgba(255, 255, 255, 1);
+			border-radius: 5px;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			border: 1px solid #EAEAEA;
+		}
+		.outter .title{
+			width: 100%;
+			height: 30px;
+			background-color: #81C7D4;/*統一改標題列配色*/
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+			line-height: 30px;
+			color: #FFF;
+			font-size: 1.2em;
+			padding-left: 10px;
+			box-sizing: border-box;
+			letter-spacing: 0.15em;
+		}
+		.outter .title span img{
+			width: 22px;
+		    height: 22px;
+		    position: relative;
+		    top: 1px;
+		    margin-right: 5px;
+		}
+
+		.newsbox .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.newsbox .outter ul li{
+			padding: 4px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.newsbox .outter ul li a:link,.newsbox .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.newsbox .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.newsbox .outter ul li:last-child{
+			border-bottom: 0;
+		}
+
+		.messagebox02 .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.messagebox02 .outter ul li{
+			padding: 6px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.messagebox02 .outter ul li a:link,.messagebox .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.messagebox02 .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.messagebox02 .outter ul li:last-child{
+			border-bottom: 0;
+		}
+
+		.messagebox .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.messagebox .outter ul li{
+			padding: 4px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.messagebox .outter ul li a:link,.messagebox .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.messagebox .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.messagebox .outter ul li:last-child{
+			border-bottom: 0;
+		}
+
+		.fast_link .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.fast_link .outter ul li{
+			padding: 4px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.fast_link .outter ul li a:link,.fast_link .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.fast_link .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.fast_link .outter ul li:last-child{
+			border-bottom: 0;
+		}
+
+		.fast_link02 .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.fast_link02 .outter ul li{
+			padding: 5px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.fast_link02 .outter ul li a:link,.fast_link02 .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.fast_link02 .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.fast_link02 .outter ul li:last-child{
+			border-bottom: 0;
+		}		
+		.photos .outter .picture{
+			padding: 5px;
+			display: flex;
+			align-items: center;
+		}
+		.photos .outter .picture img{
+			width: 100%;
+			height: 100%;
+		}
+		.videos_01 iframe{
+			width: 390px;
+			height: 160px;
+		}
+		.videos_02 iframe{
+			width: 590px;
+			height: 360px;
+		}
+		.newsbox10 .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.newsbox10 .outter ul li{
+			padding: 6px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+		}
+		.newsbox10 .outter ul li a:link,.newsbox10 .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.newsbox10 .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.newsbox10 .outter ul li:last-child{
+			border-bottom: 0;
+		}
+		.out_link .outter ul{
+			list-style: none;
+			padding-left: 0;
+		}
+		.out_link .outter ul li{
+			margin-bottom: 5px;
+			text-align: center;
+		}
+		.out_link .outter ul li img{
+			width: 180px;
+			height: 60px;
+		}
+		.picture01 .outter img{
+			width: 100%;
+			height: 160px;
+		}
+		@media screen and (max-width: 767px){
+			.box_2_2,.box_2_4,.box_2_6,.box_4_2,.box_4_4,.box_4_6,.box_6_2,.box_6_4,.box_6_6{
+				width: 100%;
+				height: auto;
+			}
+			.out_link .outter ul li{
+				margin-bottom: 5px;
+				text-align: center;
+				width: 49%;
+				display: inline-block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box_4_2 newsbox">
+		<div class="outter">
+			<div class="title"><span><img src="image/interview-microphone.svg" alt=""></span>最新公告(4X2)</div>
+			<ul>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_6_2 messagebox">
+		<div class="outter">
+			<div class="title"><span><img src="image/close-envelope.svg" alt=""></span>訊息看板(6X2)</div>
+			<ul>
+				<li>第一則訊息～！TEST</li>
+				<li>我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題</li>
+				<li>第三則！</li>
+				<li>第四則</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">第五則</a></li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_6_4 messagebox02">
+		<div class="outter">
+			<div class="title"><span><img src="image/close-envelope.svg" alt=""></span>訊息看板(6X4)</div>
+			<ul>
+				<li>第一則訊息～！TEST</li>
+				<li>我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題</li>
+				<li>第三則！</li>
+				<li>第四則</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">第五則</a></li>
+				<li>第一則訊息～！TEST</li>
+				<li>我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題我是訊息看板的標題</li>
+				<li>第三則！</li>
+				<li>第四則</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">第五則</a></li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_2_2 fast_link">
+		<div class="outter">
+			<div class="title"><span><img src="image/external-link-square-with-an-arrow-in-right-diagonal.svg" alt=""></span>快速連結(2X2)</div>
+			<ul>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_2_2 photos">
+		<div class="outter">
+			<div class="title"><span><img src="image/frame-landscape.svg" alt=""></span>家長會授證典禮(2X2)</div>
+			<div class="picture">
+				<img class="mySlides w3-animate-fading" id="photos_pic" src="1.png">
+				<img class="mySlides w3-animate-fading" id="photos_pic" src="2.png">
+				<img class="mySlides w3-animate-fading" id="photos_pic" src="3.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="box_4_2 videos_01">
+		<div class="outter">
+			<div class="title"><span><img src="image/youtube-logo.svg" alt=""></span>校園影片分享(4X2)</div>
+			<iframe src="https://www.youtube.com/embed/YCELm4LIiQQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="box_4_2 picture01">
+		<div class="outter">
+			<div class="title"><span><img src="image/youtube-logo.svg" alt=""></span>校園相片分享(4X2)</div>
+			<div class="w3-content w3-display-container">
+			  <img class="mySlides" id="picture01_pic" src="1.png" style="width:100%">
+			  <img class="mySlides" id="picture01_pic" src="2.png" style="width:100%">
+			  <img class="mySlides" id="picture01_pic" src="3.png" style="width:100%">
+
+			  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="box_6_4 picture02">
+		<div class="outter">
+			<div class="title"><span><img src="image/youtube-logo.svg" alt=""></span>校園相片分享(6X4)</div>
+			<div class="w3-content w3-display-container">
+			  <img class="mySlides" id="picture01_pic" src="1.png" style="width:100%">
+			  <img class="mySlides" id="picture01_pic" src="2.png" style="width:100%">
+			  <img class="mySlides" id="picture01_pic" src="3.png" style="width:100%">
+
+			  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="box_6_4 videos_02">
+		<div class="outter">
+			<div class="title"><span><img src="image/youtube-logo.svg" alt=""></span>校園影片分享(6X4)</div>
+			<iframe src="https://www.youtube.com/embed/YCELm4LIiQQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+		</div>
+	</div>
+
+	<div class="box_4_4 newsbox10">
+		<div class="outter">
+			<div class="title"><span><img src="image/interview-microphone.svg" alt=""></span>最新公告(4X4)</div>
+			<ul>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_6_4">
+		<div class="outter">
+			<div class="title"><span><img src="image/calendar-with-spring-binder-and-date-blocks.svg" alt=""></span>校園行事曆(6X4)</div>
+		</div>
+	</div>
+
+	<div class="box_2_4 fast_link02">
+		<div class="outter">
+			<div class="title"><span><img src="image/external-link-square-with-an-arrow-in-right-diagonal.svg" alt=""></span>快速連結(2X4)</div>
+			<ul>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<li>這裡是標題一這裡是標題一這裡是標題一這裡是標題一</li>
+				<li>這裡是標題二</li>
+				<li>我是標題二哈哈</li>
+				<li>Hello我是標題四唷</li>
+				<!-- 如果有連結 -->
+				<li><a href="#">安安我是連結過的標題五</a></li>
+				<li>Hello我是標題四唷</li>
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_2_4 out_link">
+		<div class="outter">
+			<div class="title"><span><img src="image/external-link-square-with-an-arrow-in-right-diagonal.svg" alt=""></span>站外連結(2X4)</div>
+			<ul>
+				<li><img src="1.png" alt=""></li>
+				<li><img src="3.png" alt=""></li>
+				<li><img src="1.png" alt=""></li>
+				<li><img src="3.png" alt=""></li>
+				<li><img src="3.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassId("photos_pic");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3000);    
+		}
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassId("picture01_pic");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 8000);    
+		}
+	</script>
+
+
+</body>
+</html>
