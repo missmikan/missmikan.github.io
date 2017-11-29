@@ -187,6 +187,67 @@
 			border-bottom: 0;
 		}
 
+		.honor01 .outter ul{
+			color: #2B5F75;
+			font-size: 1.1em;
+			margin-top: 6px;
+			list-style: none;
+			padding: 0 10px;
+		}
+		.honor01 .outter ul li{
+			padding: 5px 2px;
+			border-bottom: 1px dotted #81C7D4;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			letter-spacing: 0.07em;
+
+		}
+		.honor01 .outter ul li a:link,.honor01 .outter ul li a:visited{
+			color: #1E88A8;
+			text-decoration: none;
+			font-weight: 400;
+			font-size: 1.05em;
+		}
+		.honor01 .outter ul li a:hover{
+			color: #7BA23F;
+			font-weight: 600;
+		}		
+		.honor01 .outter ul li:last-child{
+			border-bottom: 0;
+		}
+		.honor01 .outter ul li span:first-child{
+			display: inline-block;
+			width: 12em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.honor01 .outter ul li span:nth-child(2){
+			display: inline-block;
+			width: 4em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			color: #F75C2F;
+			font-weight: 600;
+			text-align: center;
+		}
+		.honor01 .outter ul li span:nth-child(3){
+			display: inline-block;
+			width: 4em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.honor01 .outter ul li span:nth-child(4){
+			display: inline-block;
+			width: 6em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			font-weight:  600;
+		}
 		.fast_link .outter ul{
 			color: #2B5F75;
 			font-size: 1.1em;
@@ -318,6 +379,12 @@
 		.marquee .title{
 			background-color: #F75C2F;
 		}
+		.abgne-news-scroll {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+		}
 		@media screen and (max-width: 767px){
 			.box_2_2,.box_2_4,.box_2_6,.box_4_2,.box_4_4,.box_4_6,.box_6_2,.box_6_4,.box_6_6,.box_10_1{
 				width: 100%;
@@ -331,6 +398,10 @@
 			}
 		}
 	</style>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="box_10_1 marquee">
@@ -352,6 +423,54 @@
 				<li><a href="#">安安我是連結過的標題五</a></li>
 				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
 			</ul>
+		</div>
+	</div>
+	<div class="box_4_2 honor01">
+		<div class="outter">
+			<div class="title"><span><img src="image/close-envelope.svg" alt=""></span>榮譽榜(4X2)</div>
+			<div class="abgne-news-scroll"> 
+			<ul>
+				<li>
+					<span>全國跆拳道競賽</span>
+					<span>第二名</span>
+					<span>1年3班</span>
+					<span>王小明</span>
+				</li>
+				<li>
+					<span>校內二年級英文歌唱比賽</span>
+					<span>冠軍</span>
+					<span>2年4班</span>
+					<span>楊咩咩</span>
+				</li>
+				<li>
+					<span>全國跆拳道競賽</span>
+					<span>第一名</span>
+					<span>1年3班</span>
+					<span>王小明</span>
+				</li>
+				<li>
+					<span>台中市小學國文朗讀比賽</span>
+					<span>冠軍</span>
+					<span>2年4班</span>
+					<span>張凱莉</span>
+				</li>
+				<li>
+					<span>全國跆拳道競賽</span>
+					<span>第一名</span>
+					<span>1年3班</span>
+					<span>王小明</span>
+				</li>
+				<li>
+					<span>校內二年級英文歌唱比賽</span>
+					<span>第一名</span>
+					<span>2年4班</span>
+					<span>楊咩咩</span>
+				</li>
+				<!-- 如果有連結 -->
+				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
+			</ul>
+		</div>
+
 		</div>
 	</div>
 
@@ -553,6 +672,41 @@
 		}
 	</script>
 
+	<script>
+		$(function(){
+	// 先取得 .abgne-news-scroll ul 及 li 的高度
+	// 並設定訊息移動, 淡入及輪播時間
+	var $news = $('.abgne-news-scroll ul'), 
+		scrollHeight = $news.find('li').outerHeight(true), 
+		scrollSpeed = 600, fadeInSpeed = 600, 
+		timer, speed = 3000;
+ 
+	// 用來控制輪播用
+	function newsScroll(){
+		// 先把 .abgne-news-scroll ul 往下移
+		$news.animate({
+			top: scrollHeight + 'px'
+		}, scrollSpeed, function(){
+			// 當 .abgne-news-scroll ul 移動到定點後
+			// 先找出最後一個 li
+			var $last = $news.find('li:last');
+			// 複製一份並先隱藏起來
+			// 接著把它加到 .abgne-news-scroll ul 中的第一個項目
+			// 最後用淡入的方式顯示, 當顯示完後繼續輪播
+			$last.clone().hide().prependTo($news).fadeIn(fadeInSpeed, function(){
+				timer = setTimeout(newsScroll, speed);
+			});
+			// 馬上把 .abgne-news-scroll ul 移到 top 等於 0 的位置
+			$news.css('top', 0);
+			// 把 $last 移除掉
+			$last.remove();
+		});
+	}
+ 
+	// 啟動輪播計時器
+	timer = setTimeout(newsScroll, speed);
+});
+	</script>
 
 </body>
 </html>
