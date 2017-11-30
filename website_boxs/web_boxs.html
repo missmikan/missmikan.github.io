@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<title>網頁套件</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" href="css/weather-icons-wind.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
 	<style>
 		body{
 			/*background-color: rgb(251,233,231);*/
@@ -96,7 +105,7 @@
 			width: 22px;
 		    height: 22px;
 		    position: relative;
-		    top: 1px;
+		    top: -3px;
 		    margin-right: 5px;
 		}
 
@@ -385,6 +394,51 @@
 			overflow: hidden;
 			position: relative;
 		}
+		.weather2{
+
+			background-image: url('UK-weather-982784.jpg');
+			background-position: center;
+			background-size: cover;
+			border-radius: 0.5em;
+			padding: 1.5em;
+			box-sizing: border-box;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+		}
+		.weather2 .left_area{
+			width: calc(40% - 1px);
+			height: 100%;
+			display: flex;
+			float: left;
+			justify-content: center;
+			align-items: center;
+			color: #FAFAFA;
+			font-size: 6em;
+			border-right: 1px solid #FAFAFA;
+		}
+		.weather2 .right_area{
+			width: 60%;
+			height: 100%;
+			float: left;
+			padding-top:5px ;
+			padding-left: 30px;
+			box-sizing: border-box;
+		}
+		.weather2 .right_area div{
+			width: 100%;
+			min-height: 55px;
+			font-size: 1.6em;
+			color: #FAFAFA;
+		}
+		.weather2 .right_area div span{
+			width: 100%;
+			min-height: 70px;
+			font-size: 1.1em;
+		}
+		.modal.in .modal-dialog {
+		    width: 80%;
+		    margin-left:auto;
+		    margin-right: auto;
+		}
 		@media screen and (max-width: 767px){
 			.box_2_2,.box_2_4,.box_2_6,.box_4_2,.box_4_4,.box_4_6,.box_6_2,.box_6_4,.box_6_6,.box_10_1{
 				width: 100%;
@@ -395,6 +449,28 @@
 				text-align: center;
 				width: 49%;
 				display: inline-block;
+			}
+			.weather2 .left_area{
+				width: 100%;
+				float: none;
+				border-right: 0;
+			}
+			.weather2 .right_area{
+				width: 100%;
+				float: none;
+				padding-top:40px ;
+				padding-left: 0;
+			}
+			.weather2 .right_area div{
+				width: calc(100% / 3);
+				float: left;
+				text-align: center;
+			}
+			.weather2 .right_area div span{
+				display: block;
+				width: 100%;
+				min-height: 70px;
+				font-size: 1.1em;
 			}
 		}
 	</style>
@@ -473,6 +549,30 @@
 
 		</div>
 	</div>
+
+	<!-- 4x2套件 天氣 Start-->
+		<div class="weather2 box_4_2">
+			<div class="left_area">
+				<i class="wi wi-night-snow-wind"></i>
+			</div>
+			<div class="right_area">
+				<div class="aqi">
+					<i class="wi wi-sandstorm"></i>AQI 
+					<span>122</span>
+				</div>
+				<div class="temperature">
+					<i class="wi wi-thermometer"></i> 溫度
+					<span>80</span>
+				</div>
+				<div class="humidity">
+					<i class="wi wi-humidity"></i> 濕度
+					<span>26%</span>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	<!-- 4x2套件 天氣 End -->
+
 
 	<div class="box_6_2 messagebox">
 		<div class="outter">
@@ -597,7 +697,7 @@
 				<li>我是標題二哈哈</li>
 				<li>Hello我是標題四唷</li>
 				<!-- 如果有連結 -->
-				<li><a href="#">安安我是連結過的標題五</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#myModal">點擊這筆可以跳出視窗</a></li>
 				<!-- <li>目前沒有任何資料哦！</li> 無資料時請顯示-->
 			</ul>
 		</div>
@@ -643,6 +743,26 @@
 			</ul>
 		</div>
 	</div>
+
+	<!-- 跳出訊息 -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">點擊這筆可以跳出視窗</h4>
+	      </div>
+	      <div class="modal-body">
+	        天上的星星不說話
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 
 	<script>
 		var myIndex = 0;
