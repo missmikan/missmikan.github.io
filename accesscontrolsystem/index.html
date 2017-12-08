@@ -21,6 +21,17 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
   </head>
 
   <body id="page-top">
@@ -51,13 +62,13 @@
           <a class="js-scroll-trigger" href="#contact"><i class="fa fa-cog" aria-hidden="true"></i> 軟體功能</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top"><i class="fa fa-cogs" aria-hidden="true"></i> 系統建置服務</a>
+          <a class="js-scroll-trigger" href="#system_setting"><i class="fa fa-cogs" aria-hidden="true"></i> 系統建置服務</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about"><i class="fa fa-wrench" aria-hidden="true"></i> 施工項目</a>
+          <a class="js-scroll-trigger" href="#work_list"><i class="fa fa-wrench" aria-hidden="true"></i> 施工項目</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 施工期程</a>
+          <a class="js-scroll-trigger" href="#workdays"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 施工期程</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#service"><i class="fa fa-shield" aria-hidden="true"></i> 售後服務</a>
@@ -83,14 +94,16 @@
       <div class="overlay"></div>
     </header>
 
-    <!-- About -->
+    <!-- 公司簡介 -->
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>公司簡介</h2>
+            <h2><i class="fa fa-list-alt" aria-hidden="true"></i> 公司簡介</h2>
             <p class="lead mb-5">
-            	全誼資訊，專注於校務系統的研發，30年來深耕於全台灣各中小學，服務項目不斷推陳出新。為因應數位化時代趨勢，近年來更致力於推展校園資訊化整合方案，持續創新，精益求精，「數位門禁」於是誕生。「數位門禁」運用了資訊特性的便利快速，和門禁設備的安全進步，融合出了獨特的數位管理系統，為追求「智慧校園」的里程碑邁出了成功的第一步。
+            	全誼資訊，專注於校務系統的研發，30年來深耕於全台灣各中小學，服務項目不斷推陳出新。<br>為因應數位化時代趨勢，近年來更致力於推展校園資訊化整合方案，持續創新，精益求精，「數位門禁」於是誕生。<br>
+              「數位門禁」運用了資訊特性的便利快速，和門禁設備的安全進步，融合出了獨特的數位管理系統，<br>
+              為追求「智慧校園」的里程碑邁出了成功的第一步。
           	</p>
             <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">往下看更多</a> -->
           </div>
@@ -98,14 +111,231 @@
       </div>
     </section>
 
+    <!-- 軟體功能 -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <h2 style="margin-bottom: 1em;"><i class="fa fa-cog" aria-hidden="true"></i> 軟體功能</h2>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/work_slider1.png" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/work_slider2.png" alt="...">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+        <table class="table">
+          <thead>
+              <th>模組名稱</th>
+              <th>模組功能</th>
+              <th>功能說明</th>
+          </thead>
+          <tbody>
+              <tr>
+                <td rowspan="3">場地預約</td>
+                <td>場地預約借用</td>
+                <td>線上登記預約使用電梯或場地</td>
+              </tr>
+              <tr>
+                <td>通行記錄查詢</td>
+                <td>可隨時查看通行記錄</td>
+              </tr>
+              <tr>
+                <td>永久通行設定</td>
+                <td>可設定永久通行人員</td>
+              </tr>
+              <tr>
+                <td rowspan="2">單位人事製卡</td>
+                <td>手動開卡/停卡</td>
+                <td>通行卡片遺失時可進行卡片補發</td>
+              </tr>
+              <tr>
+                <td>卡片補登</td>
+                <td>將新辦的卡片資料匯入系統</td>
+              </tr>
+              <tr>
+                <td>請假管理</td>
+                <td>差勤記錄</td>
+                <td>藉由卡片感應完成上下班打卡或點名</td>
+              </tr>
+          </tbody>
+        </table>        
+      </div>
+    </section>
+
+
+   <!-- 系統建置服務 -->
+    <section class="content-section text-white bg_purple_cyan" id="system_setting">
+      <div class="container text-center">
+        <h2 class="mb-4 text_shadow"><i class="fa fa-cogs" aria-hidden="true"></i>
+          系統建置服務
+        </h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+              <div class="circle_items">
+                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div>
+              <div>在讀卡機雲端系統建置學校的設備資訊<br>
+                  (包括 TCP/IP 控制轉換器、讀卡機)
+              </div>  
+          </div>
+          <div class="col-md-4 col-sm-12">
+              <div class="circle_items">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+              </div>
+              <div>開通門禁管理的模組 <br>(包括場地預約、單位人事製卡、<br>請假管理)</div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+              <div class="circle_items">
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+              </div>
+              <div>設定可通行場地的卡片</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- 施工項目 -->
+  <section class="content-section bg-light text-center" id="work_list">
+      <div class="container">
+        <div class="content-section-heading">
+          <h2><i class="fa fa-wrench" aria-hidden="true"></i> 施工項目</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>1.網路和電源佈線</strong>
+            </h4>
+            <p class="text-faded mb-0">為門禁系統設置網路及電源線路</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>2.讀卡機安裝設定</strong>
+            </h4>
+            <p class="text-faded mb-0">將讀卡機安裝到定點，並設定完畢</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>3.門鎖安裝</strong>
+            </h4>
+            <p class="text-faded mb-0">將磁力鎖安裝在門上</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>4.開門按鈕安裝</strong>
+            </h4>
+            <p class="text-faded mb-0">內側開門按鈕安裝</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>5.TCP/IP安裝和設定</strong>
+            </h4>
+            <p class="text-faded mb-0">TCP/IP 控制轉換器安裝和設定</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+             <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>6.設備刷卡測試</strong>
+            </h4>
+            <p class="text-faded mb-0">靠卡測試讀卡機是否正常運作</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <img src="img/work4.png" alt="">
+            </span>
+            <h4>
+              <strong>7.系統連線測通</strong>
+            </h4>
+            <p class="text-faded mb-0">檢查系統是否有測試通行紀錄</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!--     <section class="content-section" id="workdays">
+      <div class="container text-center">
+        <h2 class="mb-4"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+          施工項目
+        </h2>
+         <table class="table">
+          <tbody>
+              <tr>
+                <td>網路和電源佈線</td>
+              </tr>
+              <tr>
+                <td>讀卡機安裝和設定</td>
+              </tr>
+              <tr>
+                <td>門鎖安裝</td>
+              </tr>
+              <tr>
+                <td>開門按鈕安裝</td>
+              </tr>
+              <tr>
+                <td>TCP/IP 控制轉換器安裝和設定</td>
+              </tr>
+              <tr>
+                <td>門禁設備刷卡測試</td>
+              </tr>
+              <tr>
+                <td>系統連線測通</td>
+              </tr>
+          </tbody>
+        </table>         
+      </div>
+    </section> -->
+
    <!-- 施工期程 -->
-    <section class="content-section text-white bg-primary" id="workdays">
+    <section class="content-section text-white bg_purple_cyan" id="workdays">
       <div class="container text-center">
         <h2 class="mb-4 text_shadow"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
           施工期程
         </h2>
         <div class="row">
-          <div class="box_1">
+          <div class="box_1 col-md-4">
               <div class="s_title">評估階段</div>
               <ul>
                 <li>訪談學校裝設數位門禁的需求</li>
@@ -113,7 +343,7 @@
                 <li>數位門禁報價</li>
               </ul>
           </div>
-          <div class="box_1">
+          <div class="box_1 col-md-4">
             <div class="s_title">建置階段</div>
               <ul>
                 <li>學校確認報價後回簽</li>
@@ -122,7 +352,7 @@
                 <li>開通門禁系統模組及測通</li>
               </ul>
           </div>
-          <div class="box_1">
+          <div class="box_1 col-md-4">
             <div class="s_title">完工階段</div>
               <ul>
                 <li>學校驗收</li>
@@ -131,7 +361,7 @@
           </div>
 
         </div>
-        <div style="padding:20px;font-size: 1.2em;">約25-30個工作天<div style="font-size: 0.7em">詳細估算須視現場環境</div></div>
+      
       </div>
     </section>
 
@@ -241,16 +471,11 @@
       <i class="fa fa-angle-up"></i>
     </a>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
-
+    <script>
+      $('.carousel').carousel({
+        interval: 2000
+      })
+    </script>
   </body>
 
 </html>

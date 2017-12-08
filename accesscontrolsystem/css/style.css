@@ -72,22 +72,52 @@
 #workdays .box_1{
 	border: 1px solid #FFF;
 	padding: 30px 15px;
-	width: calc((100% - 1em) / 3)!important;
-	margin-right: 0.5em;
+/* 	width: calc((100% - 1em) / 3)!important; */
+/* 	margin-right: 0.5em; */
 	box-sizing: border-box;
 }
 #workdays .box_1 .s_title{
-	font-size: 1.2em;
+	font-size: 1.4em;
 	border-bottom: 1px solid #FFF;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
+	font-weight: 800;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
-#workdays .box ul{
-	list-style: none;
+#workdays .box_1 ul{
+	/* list-style: none; */
+	text-align: left !important;
+	font-size: 1.2em;
 }
 #workdays .box_1 ul li{
 	margin-bottom: 1em;
 }
-#workdays .box_1:last-child{
-	margin-right: 0 !important;
+.text-faded {
+    color: #666;
+    font-weight: 300;
+}
+#system_setting .row > div{
+	margin-bottom: 1em;
+}
+#system_setting .circle_items{
+	height: 14rem;
+    width: 14rem;
+    border-radius: 8.5em;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 0 auto;
+	color: purple;
+	font-size: 1.4em;
+	margin-bottom: 1em;
+}
+.circle_items i{
+	font-size: 5em;
+	color: #00ACC1;
+}
+
+
+@media (min-width: 992px){
+
 }
