@@ -116,7 +116,28 @@
 	font-size: 5em;
 	color: #00ACC1;
 }
-
+#all_machine .box_1 .s_title{
+	font-weight: 600;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 0.5em;
+	font-size: 1.2em;
+}
+#all_machine ul {
+	list-style: none;
+	font-size: 0.9em;
+}
+#all_machine .box_1 .xs_title{
+	display:block;
+	color: dimgray;
+	font-weight: 600;
+	padding: 0.5em 0;
+}
+#all_machine .box_1 img{
+	max-height: 200px;
+}
+@media (max-width: 767px){
+	
+}
 
 @media (min-width: 992px){
 
