@@ -121,24 +121,39 @@
 	border-bottom: 1px solid #FFF;
 	padding-bottom: 0.5em;
 	font-size: 1.2em;
+    margin-bottom: 0.5em;	
 }
 #all_machine ul {
 	list-style: none;
 	font-size: 0.9em;
+	padding-left: 0;
+	line-height: 2em;
 }
 #all_machine .box_1 .xs_title{
 	display:block;
 	color: dimgray;
 	font-weight: 600;
 	padding: 0.5em 0;
+	background-color: yellow;
+    margin-bottom: 0.5em;
 }
 #all_machine .box_1 img{
 	max-height: 200px;
 }
 @media (max-width: 767px){
-	
+	#systemplan .sm_picture{
+		display: block;
+	}
+	#systemplan .md_picture{
+		display: none;
+	}
 }
 
-@media (min-width: 992px){
-
+@media (min-width: 768px){
+	#systemplan .sm_picture{
+		display: none;
+	}
+	#systemplan .md_picture{
+		display: block;
+	}
 }
