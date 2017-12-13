@@ -94,7 +94,7 @@ h6 {
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
-  right: 0;
+  left: -500px;
   width: 250px;
   height: 100%;
   -webkit-transition: all 0.4s ease 0s;
@@ -136,7 +136,7 @@ h6 {
   line-height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 15px; }
+  padding-left: 72px; }
 
 .sidebar-nav > .sidebar-brand a {
   color: #fff; }
@@ -146,7 +146,7 @@ h6 {
   background: none; }
 
 #sidebar-wrapper.active {
-  right: 250px;
+  left: -250px;
   width: 250px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -156,7 +156,7 @@ h6 {
 
 .menu-toggle {
   position: fixed;
-  right: 15px;
+  left: 15px;
   top: 15px;
   width: 50px;
   height: 50px;

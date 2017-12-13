@@ -130,15 +130,35 @@
 	line-height: 2em;
 }
 #all_machine .box_1 .xs_title{
-	display:block;
-	color: dimgray;
-	font-weight: 600;
-	padding: 0.5em 0;
-	background-color: yellow;
-    margin-bottom: 0.5em;
-}
+    display: block;
+    color: #0097A7;
+    font-weight: 600;
+    padding: 0.1em 0;
+    background-color: rgba(178,235,242 ,0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5em;}
 #all_machine .box_1 img{
 	max-height: 200px;
+}
+#about .lead{
+	font-size: 1.2em;
+    line-height: 2.4em;
+    margin-bottom: 1em;
+    letter-spacing: 0.1em;
+}
+#about h2{
+	color: orange;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+#all_machine ul li{
+	margin-bottom: 1em;
+}
+#software .carousel{
+	border: 40px solid #333;
+    border-radius: 36px;
+    margin-bottom: 2em;
 }
 @media (max-width: 767px){
 	#systemplan .sm_picture{
