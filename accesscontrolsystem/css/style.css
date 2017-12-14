@@ -116,6 +116,12 @@
 	font-size: 5em;
 	color: #00ACC1;
 }
+#all_machine .box_1{
+	text-align: left;
+	margin-bottom: 1em;
+	padding: 1.5em;
+	box-sizing: border-box;
+}
 #all_machine .box_1 .s_title{
 	font-weight: 600;
 	border-bottom: 1px solid #FFF;
@@ -123,6 +129,7 @@
 	font-size: 1.2em;
     margin-bottom: 0.5em;
     padding-top: 1em;	
+    text-align: center;
 }
 #all_machine ul {
 	list-style: none;
@@ -138,9 +145,13 @@
     background-color: rgba(178,235,242 ,0.6);
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
-    margin-bottom: 0.5em;}
+    margin-bottom: 0.5em;
+	text-align: center;
+}
 #all_machine .box_1 img{
 	max-height: 200px;
+	display: flex;
+	margin: 0 auto;
 }
 #about .lead{
 	font-size: 1.2em;
@@ -164,12 +175,20 @@ h2{
     border-radius: 36px;
     margin-bottom: 2em;
 }
+#software li img{
+	max-width: 100%;
+}
 @media (max-width: 767px){
 	#systemplan .sm_picture{
 		display: block;
 	}
 	#systemplan .md_picture{
 		display: none;
+	}
+	#software .carousel{
+		border: 20px solid #333;
+	    border-radius: 10px;
+	    margin-bottom: 2em;
 	}
 }
 
