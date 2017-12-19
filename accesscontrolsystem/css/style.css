@@ -139,7 +139,7 @@
 }
 #all_machine .box_1 .xs_title{
     display: block;
-    color: #0097A7;
+    color: #666;
     font-weight: 600;
     padding: 0.1em 0;
     background-color: rgba(178,235,242 ,0.6);
@@ -170,6 +170,13 @@ h2{
 #all_machine ul li{
 	margin-bottom: 1em;
 }
+#all_machine ul li a:hover{
+	text-decoration: none;
+}
+#all_machine ul li a:hover .xs_title{
+	background-color:rgba(178,235,242 ,0.9);
+	transition: 0.3s;
+}
 #software .carousel{
 	border: 40px solid #333;
     border-radius: 36px;
@@ -178,6 +185,16 @@ h2{
 #software li img{
 	max-width: 100%;
 }
+.contact_data ul{
+	list-style: none;
+	padding-left: 0;
+}
+.contact_data ul li{
+	padding: 0.5em;
+	font-size: 1.2em;
+	color: #666;
+}
+
 @media (max-width: 767px){
 	#systemplan .sm_picture{
 		display: block;
