@@ -149,7 +149,7 @@
 	text-align: center;
 }
 #all_machine .box_1 img{
-	max-height: 200px;
+	max-height: 235px;
 	display: flex;
 	margin: 0 auto;
 }
@@ -201,6 +201,50 @@ h2{
 	font-size: 1.2em;
 	color: #666;
 }
+.mb-md-0, .my-md-0 {
+    margin-bottom: 2em!important;
+}
+header .SystemPoints ul{
+	padding-left: 0;
+	list-style: none;
+}
+header .SystemPoints ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 2em;
+    padding: 0.5em 1em;
+    font-size: 2em;
+    color: #FFF;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+}
+header .SystemPoints_mobile ul li{
+    display: none;
+}
+header .SystemPoints ul li:first-child,header .SystemPoints_mobile ul li:first-child{
+    background-color: #FF7BAC;
+}
+header .SystemPoints ul li:nth-child(2),header .SystemPoints_mobile ul li:nth-child(2){
+    background-color: #92CE0B;
+}
+header .SystemPoints ul li:nth-child(3),header .SystemPoints_mobile ul li:nth-child(3){
+    background-color: #2E98FF;
+}
+header .SystemPoints ul li:nth-child(4),header .SystemPoints_mobile ul li:nth-child(4){
+    background-color: #FF8917;
+}
+header .title2{
+	background-color: rgba(255,255,255,0.4);
+	color:#4A6587;
+	padding:0.1em;
+	font-size: 3em;
+	font-weight: 500;
+	margin-bottom: 1em;
+}
+.img-thumbnail {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 
 @media (max-width: 767px){
 	#systemplan .sm_picture{
@@ -213,6 +257,20 @@ h2{
 		border: 20px solid #333;
 	    border-radius: 10px;
 	    margin-bottom: 2em;
+	}
+	header .SystemPoints ul li{
+    	display: none;
+	}
+	header .SystemPoints_mobile ul li{
+	    display: block;
+	    padding: 0.5em 1em;
+	    font-size: 1.2em;
+	    color: #FFF;
+	    border-radius: 0.3em;
+	    margin-bottom: 1em;
+	}
+	header .title2{
+		font-size: 2em;
 	}
 }
 

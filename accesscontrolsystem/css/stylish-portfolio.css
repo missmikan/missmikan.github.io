@@ -174,8 +174,8 @@ h6 {
 .service-icon {
   background-color: #fff;
   color: #1D809F;
-  height: 7rem;
-  width: 7rem;
+  height: 15rem;
+  width: 15rem;
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
@@ -185,8 +185,6 @@ h6 {
 .service-icon img{
   width: 100%;
   height: 100%;
-  position: relative;
-  bottom: 7px;
 }
 .callout {
   padding: 15rem 0;
