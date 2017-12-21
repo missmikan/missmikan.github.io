@@ -212,7 +212,7 @@ header .SystemPoints ul li{
     display: inline-flex;
     justify-content: space-between;
     margin-right: 2em;
-    padding: 0.5em 1em;
+    padding: 1.5em 1.2em;
     font-size: 2em;
     color: #FFF;
     border-radius: 0.3em;
@@ -239,7 +239,7 @@ header .title2{
 	padding:0.1em;
 	font-size: 3em;
 	font-weight: 500;
-	margin-bottom: 1em;
+	margin-bottom: 5em;
 }
 .img-thumbnail {
     background-color: rgba(255, 255, 255, 0.9);
@@ -275,6 +275,16 @@ header .title2{
 	header .title2{
 		font-size: 2em;
 	}
+	.hidden-xs{
+		display: none;
+	}
+	.visible-xs-12{
+		display: block;
+	}
+		header .title2{
+		margin-bottom: 1em;
+	}
+
 }
 
 @media (min-width: 768px){
@@ -283,5 +293,11 @@ header .title2{
 	}
 	#systemplan .md_picture{
 		display: block;
+	}
+	.hidden-xs{
+		display: block;
+	}
+	.visible-xs-12{
+		display: none;
 	}
 }
