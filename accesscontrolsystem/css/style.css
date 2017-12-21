@@ -261,6 +261,9 @@ header .title2{
 	header .SystemPoints ul li{
     	display: none;
 	}
+	header .SystemPoints_mobile ul{
+	   	padding-left: 0 !important;
+	}
 	header .SystemPoints_mobile ul li{
 	    display: block;
 	    padding: 0.5em 1em;
