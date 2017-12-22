@@ -217,6 +217,7 @@ header .SystemPoints ul li{
     color: #FFF;
     border-radius: 0.3em;
     margin-bottom: 1em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
 }
 header .SystemPoints_mobile ul li{
     display: none;
@@ -232,17 +233,64 @@ header .SystemPoints ul li:nth-child(3),header .SystemPoints_mobile ul li:nth-ch
 }
 header .SystemPoints ul li:nth-child(4),header .SystemPoints_mobile ul li:nth-child(4){
     background-color: #FF8917;
+    margin-right: 0;
 }
 header .title2{
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.24);
 	color:#4A6587;
 	padding:0.1em;
 	font-size: 3em;
 	font-weight: 500;
-	margin-bottom: 5em;
+	margin-bottom: 1em;
 }
 .img-thumbnail {
     background-color: rgba(255, 255, 255, 0.9);
+}
+.fast123{
+	background-color: #00BCD4;
+	color: #FFF;
+	font-size: 3em;
+	position: relative;
+	border-radius: 0.3em;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.fast123:hover{
+	background-color: #FFB74D;
+	transition: 0.5s;
+}
+#opener:hover {
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    opacity: 1;
+}
+#opener {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 4px solid #FFF;
+    border-right: 4px solid #FFF;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    -webkit-animation: opener .5s ease-in-out alternate infinite;
+    animation: opener .5s ease-in-out alternate infinite;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: opacity .2s ease-in-out, transform .5s ease-in-out .2s;
+    transition: opacity .2s ease-in-out, transform .5s ease-in-out .2s;
+}
+@-webkit-keyframes opener {
+    100% {
+        top: 25px
+    }
+}
+@keyframes opener {
+    100% {
+        top: 25px
+    }
 }
 
 
@@ -283,6 +331,14 @@ header .title2{
 	}
 		header .title2{
 		margin-bottom: 1em;
+	}
+	.fast123{
+		background-color: #00BCD4;
+		color: #FFF;
+		font-size: 2em;
+		position: relative;
+		border-radius: 0.3em;
+		box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 	}
 
 }
