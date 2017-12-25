@@ -4,6 +4,7 @@ body{
 	font-size: 13px;
 	max-width: 1000px;
 	margin: 0 auto;
+	background-color: #CCC;
 }
 .box_2_2{
 	width: 190px;
@@ -98,19 +99,18 @@ body{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(255, 255, 255, 1);
-	border-radius: 5px;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	/* border-radius: 5px; */
+/* 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
 	overflow: hidden;
-	border: 1px solid #EAEAEA;
+/* 	border: 1px solid #EAEAEA; */
 }
 .outter .title{
 	width: 100%;
     height: 36px;
-    background-color: #4D4F7A;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    /* background-color: #4D4F7A; */
+	border-bottom: 3px solid #4D4F7A;
     line-height: 36px;
-    color: #FFF;
+    color: #4D4F7A;
     font-size: 1.4em;
     padding-left: 10px;
     box-sizing: border-box;
