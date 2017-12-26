@@ -4,14 +4,9 @@ body{
 	font-size: 13px;
 	max-width: 1000px;
 	margin: 0 auto;
-	/* background-color: #CCC; */
+	background-color: #FFF;
 	font-family: 微軟正黑體,蘋方-簡,"Microsoft JhengHei",sans-serif;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
-background: #356aa0; /* Old browsers */
-background: -moz-linear-gradient(top, #356aa0 0%, #356aa0 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #356aa0 0%,#356aa0 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #356aa0 0%,#356aa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 ); /* IE6-9 */
+
 }
 
 
@@ -39,6 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 	max-width: 1000px;
 	background-color: #FFF ;
 	padding: 1em 0;
+	padding-left: 5px;
 }
 .container_left{
 	width: 200px;
@@ -49,7 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 	float: left;
 }
 .container_right{
-	width: 300px;
+	width: 295px;
 	float: right;
 }
 .box_2_2{
@@ -144,7 +140,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 .outter{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(250, 250, 250, 1);
 	/* border-radius: 5px; */
 /* 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); */
 	overflow: hidden;
@@ -153,7 +149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 .outter .title{
 	width: 100%;
     height: 36px;
-    /* background-color: #4D4F7A; */
+    background-color: #FFF;
     line-height: 36px;
     color: #4D4F7A;
     font-size: 1.6em;
@@ -745,31 +741,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', end
 
 .borrowbook_total .outter .title{
 	color: #558B2F !important;
-	border-bottom: 3px solid #558B2F !important;
+	border-left: 5px solid #558B2F !important;
+	border-bottom: 1px solid #558B2F !important;
 }
 .borrowbook_ranking .outter .title{
 	color:orange;
-	border-bottom: 3px solid orange !important;	
+	border-left: 5px solid orange !important;
+	border-bottom: 1px solid orange !important;		
 }
 .out_link .outter .title{
 	color: #4A148C;
-	border-bottom: 3px solid #4A148C !important;	
+	border-left: 5px solid #4A148C !important;	
+	border-bottom: 1px solid #4A148C !important;
 }
 .newsbox .outter .title{
 	color: #0288D1;
-	border-bottom: 3px solid #0288D1 !important;	
+	border-left: 5px solid #0288D1 !important;;
+	border-bottom: 1px solid #0288D1 !important;	
 }
 .newbook_message .outter .title{
 	color: #37474F;
-	border-bottom: 3px solid #37474F !important;	
+	border-left: 5px solid #37474F;
+	border-bottom: 1px solid #37474F !important;	
 }
 .goodbook_recommend .outter .title{
 	color: #D84315;
-	border-bottom: 3px solid #D84315 !important;	
+	border-left: 5px solid #D84315;
+	border-bottom: 1px solid #D84315 !important;	
 }
 .hot_book .outter .title{
 	color: #0097A7;
-	border-bottom: 3px solid #0097A7 !important;	
+	border-left: 5px solid #0097A7 !important;	
+	border-bottom: 1px solid #0097A7 !important;
 }
 
 @media screen and (max-width: 767px){
