@@ -179,7 +179,7 @@ body{
 	letter-spacing: 0.07em;
 }
 .newsbox .outter ul li:nth-child(odd){
-	width: 79%;
+	width: 78%;
 }
 .newsbox .outter ul li:nth-child(odd):before{
 	content: "";
