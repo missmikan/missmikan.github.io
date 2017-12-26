@@ -4,8 +4,14 @@ body{
 	font-size: 13px;
 	max-width: 1000px;
 	margin: 0 auto;
-	background-color: #CCC;
+	/* background-color: #CCC; */
 	font-family: 微軟正黑體,蘋方-簡,"Microsoft JhengHei",sans-serif;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
+background: #356aa0; /* Old browsers */
+background: -moz-linear-gradient(top, #356aa0 0%, #356aa0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #356aa0 0%,#356aa0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #356aa0 0%,#356aa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 ); /* IE6-9 */
 }
 
 
@@ -29,7 +35,8 @@ body{
 /* -------  */
 
 .container{
-	width: 1000px;
+	width: 100%;
+	max-width: 1000px;
 	background-color: #FFF ;
 	padding: 1em 0;
 }
@@ -147,7 +154,6 @@ body{
 	width: 100%;
     height: 36px;
     /* background-color: #4D4F7A; */
-	border-bottom: 3px solid #4D4F7A;
     line-height: 36px;
     color: #4D4F7A;
     font-size: 1.6em;
@@ -165,7 +171,7 @@ body{
 
 .newsbox .outter ul{
 	color: #2B5F75;
-	font-size: 1.1em;
+	font-size: 1.15em;
 	margin-top: 6px;
 	list-style: none;
 	padding: 0 10px;
@@ -179,26 +185,27 @@ body{
 	letter-spacing: 0.07em;
 }
 .newsbox .outter ul li:nth-child(odd){
-	width: 78%;
+	width: 75%;
 }
 .newsbox .outter ul li:nth-child(odd):before{
 	content: "";
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
-	border-left: 5px solid #7BA23F;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	border-left: 7px solid #0D47A1;
 	display:inline-block;
 	margin-right: 0.6em;
 }
 .newsbox .outter ul li:nth-child(even){
-	width: 20%;
+	width: 22%;
 	border-bottom: 0;
 	color: #999;
 }
 .newsbox .outter ul li a:link,.newsbox .outter ul li a:visited{
-	color: #4D4F7A;
+	color: #0D47A1;
 	font-weight: 400;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.05em;
+    letter-spacing: 0.04em;
 }
 .newsbox .outter ul li a:hover{
 	color: #7BA23F;
@@ -572,7 +579,7 @@ body{
 }
 .borrowbook_total ul li span:first-child{
 	font-size: 1.1em;
-	color: #4D4F7A;
+	color: #7CB342;
 	margin-bottom: 0.3em;
 }
 .borrowbook_ranking .tab{
@@ -606,6 +613,7 @@ body{
 	display: flex;
     padding: 0.7em 0.4em;
 	/* background-color: #E9FFF3; */
+    border-bottom: 1px solid #EFEFEF;
 }
 .borrowbook_ranking .ranking_box .champion_icon{
 	width: 45px;
@@ -631,9 +639,9 @@ body{
 	text-align: center;
 }
 .borrowbook_ranking .ranking_box .class_data .class_name{
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: 600;
-	color: #4D4F7A;
+	color: orange;
 }
 .borrowbook_times span{
 	color: #F15A24;
@@ -672,15 +680,16 @@ body{
 }
 .newbook_message .right_book_data .book_date{
 	font-size: 1.4em;
-	color: #4D4F7A;
+	color: #666;
 	font-weight: 400;
 	line-height: 2em;
 }
 .newbook_message .right_book_data .book_intro{
 	font-size: 1.1em;
 	color: #949494;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.7em;
+	letter-spacing: 0.1em;
 	width: 100%;
 	height: 8em;
 	overflow : hidden;
@@ -703,7 +712,7 @@ body{
 	width: 85%;
 	font-size: 1.5em;
 	font-weight: 500;
-	color: #4D4D4D;
+	color: #D84315;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -713,10 +722,11 @@ body{
 .goodbook_recommend  .book_intro{
 	font-size: 1.1em;
 	color: #949494;
-	font-weight: 400;
-	line-height: 1.6em;
+	font-weight: 300;
+	line-height: 1.7em;
+	letter-spacing: 0.07em;
 	width: 100%;
-	height: 6em;
+	height: 6.6em;
 	overflow : hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -731,6 +741,35 @@ body{
 }
 .clearfix{
 	clear: both;
+}
+
+.borrowbook_total .outter .title{
+	color: #558B2F !important;
+	border-bottom: 3px solid #558B2F !important;
+}
+.borrowbook_ranking .outter .title{
+	color:orange;
+	border-bottom: 3px solid orange !important;	
+}
+.out_link .outter .title{
+	color: #4A148C;
+	border-bottom: 3px solid #4A148C !important;	
+}
+.newsbox .outter .title{
+	color: #0288D1;
+	border-bottom: 3px solid #0288D1 !important;	
+}
+.newbook_message .outter .title{
+	color: #37474F;
+	border-bottom: 3px solid #37474F !important;	
+}
+.goodbook_recommend .outter .title{
+	color: #D84315;
+	border-bottom: 3px solid #D84315 !important;	
+}
+.hot_book .outter .title{
+	color: #0097A7;
+	border-bottom: 3px solid #0097A7 !important;	
 }
 
 @media screen and (max-width: 767px){
