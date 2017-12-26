@@ -156,6 +156,7 @@ body{
     padding-left: 10px;
     box-sizing: border-box;
     letter-spacing: 0.15em;
+    font-weight: 900;
 }
 .outter .title span img{
 	width: 22px;
