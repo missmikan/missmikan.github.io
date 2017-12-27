@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" href="css/weather-icons-wind.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/countUp-jquery.js"></script>
+	<script src="js/countUp.js"></script>
+</head>
+<body>
+
+	<div class="container">
+	<!-- 館藏借閱統計 -->
+	
+	<div class="container_left">
+
+	<div class="box_2_3 borrowbook_total">
+		<div class="outter">
+			<div class="title">借閱統計</div>
+			<ul>
+				<li>
+					<span>館藏數量統計</span>
+					<span id="myTargetElement" data-counter-time="5000" data-counter-delay="50">1185004</span>
+				</li>
+				<li>
+					<span>本日借閱人次</span>
+					<span id="myTargetElement" data-counter-time="5000" data-counter-delay="50">261</span>
+				</li>
+				<li>
+					<span>本日借閱冊次</span>
+					<span id="myTargetElement" data-counter-time="5000" data-counter-delay="50">1332</span>
+				</li>
+				<li>
+					<span>本月借閱人次</span>
+					<span id="myTargetElement" data-counter-time="5000" data-counter-delay="50">12670</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 借閱排行 -->
+	<div class="box_2_5 borrowbook_ranking">
+		<div class="outter">
+			<div class="title">借閱排行</div>
+			<div>
+
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-pills" role="tablist">
+			    <li role="presentation" class="active"><a href="#ClassRanking" aria-controls="ClassRanking" role="tab" data-toggle="tab">班級</a></li>
+			    <li role="presentation"><a href="#StudentRanking" aria-controls="StudentRanking" role="tab" data-toggle="tab">學生</a></li>
+			  </ul>
+				<!-- <div class="date">2017-09-01至2018-02-28</div> -->
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="ClassRanking">
+
+			    	<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">1</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									<span>3</span>年
+									<span>12</span>班
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+			    	<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">2</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									<span>3</span>年
+									<span>12</span>班
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+			    	<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">3</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									<span>3</span>年
+									<span>12</span>班
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+			    	<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">4</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									<span>3</span>年
+									<span>12</span>班
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+			    	<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">5</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									<span>3</span>年
+									<span>12</span>班
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+			    </div>
+			    <div role="tabpanel" class="tab-pane fade" id="StudentRanking">
+					
+					<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">1</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									3年1班 張小橋
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">2</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									3年1班 張小橋
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">3</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									3年1班 張小橋
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">4</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									3年1班 張小橋
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+
+					<div class="ranking_box_all">
+						<div class="ranking_box">
+							<div class="champion_icon">
+								<span class="ranking">5</span>
+							</div>
+							<div class="class_data">
+								<div class="class_name">
+									3年1班 張小橋
+								</div>
+								<div class="borrowbook_times">
+									借了<span>321</span>本書
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>	
+
+			    </div>
+			  </div>
+
+			</div>
+											
+		</div>
+	</div>
+
+	<div class="box_2_3 out_link">
+		<div class="outter">
+			<div class="title"><!-- <span><img src="image/external-link-square-with-an-arrow-in-right-diagonal.svg" alt=""></span> -->快速連結</div>
+			<ul>
+				<li><a href="#"><img src="image/link1.png" alt="當當"></a></li>
+				<li><a href="#"><img src="image/link2.png" alt="來山圖書館"></a></li>
+				<li><a href="#"><img src="image/link1.png" alt=""></a></li>
+				<li><a href="#"><img src="image/link2.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="container_middle">
+
+	<div class="box_5_3 newsbox">
+		<div class="outter">
+			<div class="title"><!-- <span><img src="image/close-envelope.svg" alt=""></span> -->最新信息</div>
+			<ul>
+				<li><a href="#">這裡是標題一這裡是標題一這裡是標題一這裡是標題一這裡是標題一這裡是標題一這裡是標題一這裡是標題一這裡是標題一</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">這裡是標題二</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">我是標題二哈哈</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">Hello我是標題四唷</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">這裡是標題二</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">我是標題二哈哈</a></li>
+				<li>2017-12-25</li>
+
+				<li><a href="#">Hello我是標題四唷</a></li>
+				<li>2017-12-25</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="box_5_3 newbook_message">
+		<div class="outter">
+			<div>
+				<div class="title"><!-- <span><img src="image/interview-microphone.svg" alt=""></span> -->新書快訊</div>
+			</div>
+			<div class="left_book_pic">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				<!--   <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol> -->
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="image/9789860512670.jpg" alt="...">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="image/9789863426790.jpg" alt="...">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+
+
+			</div>
+			<div class="right_book_data">
+				<div class="book_name"><a href="#">哈利·波特与密室：纪念哈利·波特与密室：纪念</a></div>
+				<div class="book_date">2017-12-30出版</div>
+				<div class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box_5_5 goodbook_recommend">
+		<div class="outter">
+			<div class="title"><!-- <span><img src="image/favorite-heart-button.svg" alt=""></span> -->好書推薦</div>
+			<div id="carousel">
+			<!-- 還想加入書名 -->
+				<div>
+				  <img class="cloud9-item" src="image/book1.jpg" alt="Item #1">
+				  <div style="position:sticky;top:0;"></div>
+			  	</div>
+				<div>
+				  <img class="cloud9-item" src="image/book2.png" alt="Item #2">
+			  	</div>
+			  	<div>
+				  <img class="cloud9-item" src="image/book3.jpg" alt="Item #3">
+				</div>	
+				<div>
+				  <img class="cloud9-item" src="image/book4.jpg" alt="Item #4">
+			  	</div>
+			  	<div>
+				  <img class="cloud9-item" src="image/book5.jpg" alt="Item #5">
+			  	</div>
+			  	<div>
+				  <img class="cloud9-item" src="image/book6.png" alt="Item #6">
+			  	</div>
+			  	<div>
+				   <img class="cloud9-item" src="image/book5.jpg" alt="Item #5">
+			   	</div>
+			   	<div>
+				  <img class="cloud9-item" src="image/book6.png" alt="Item #6">
+			  	</div>
+			</div>
+
+			<div id="buttons">
+			  <button class="left btn-warning">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </button>
+			  <div class="book_title"><a href="#">哈利·波特与密室：纪念版哈利·波特与密室：纪念版哈利·波特与密室：纪念版哈利·波特与密室：纪念版哈利·波特与密室：纪念版</a></div>
+			  <button class="right btn-warning">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </button>
+			</div>
+			<div class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</div>
+		</div>
+	</div>
+
+	</div>
+
+
+	<div class="container_right">
+
+	<div class="box_3_10 hot_book">
+		<div class="outter">
+			<div class="title"><!-- <span><img src="image/thumbs-up-hand-symbol.svg" alt=""></span> -->熱門書籍</div>
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-pills" role="tablist">
+			    <li role="presentation" class="active"><a href="#AllStudent" aria-controls="AllStudent" role="tab" data-toggle="tab">全校</a></li>
+			    <li role="presentation"><a href="#HighYear" aria-controls="HighYear" role="tab" data-toggle="tab">高年級</a></li>
+			     <li role="presentation"><a href="#LowYear" aria-controls="LowYear" role="tab" data-toggle="tab">低年級</a></li>
+			  </ul>
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane fade in active" id="AllStudent">
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>1</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>2</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>3</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>4</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>5</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>6</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				
+
+			    </div>
+			    
+			    <div role="tabpanel" class="tab-pane fade" id="HighYear">
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>1</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>2</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>3</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>4</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>5</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>6</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+
+			    </div>
+
+			    <div role="tabpanel" class="tab-pane fade" id="LowYear">
+										<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>1</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>2</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_1"><span>3</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>4</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>5</span></div>
+							<img src="image/9789863426790.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="hotbook_box">
+						<div class="left_pic">
+							<div class="cp_pic_2"><span>6</span></div>
+							<img src="image/9789860512670.jpg" alt="">
+						</div>
+						<div class="right_book_data">
+							<p class="book_title">成語故事彩圖版成語故事彩圖版成語故事彩圖版成語故事</p>
+							<p class="book_intro">《中国成语故事(彩图版)(套装共4册)》精选了我国古代 有经典性、哲理性、实用性、趣味性等特点的成语故事，生动有趣、通俗易懂、图文并茂，是少年儿童 课外读物。成语故事足中国五千年传统文化的精华，通过成语故事可以了解中华民族悠久的历史、深邃的智慧和历久弥新的语言魅力。</p>
+							<p class="borrowbook_times"><span>2301</span>人已借過</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			    </div>
+			  </div>
+
+		</div>
+	</div>
+
+	</div>
+
+	</div>
+
+	<script>
+		var options = {
+		  useEasing: true, 
+		  useGrouping: true, 
+		  separator: ',', 
+		  decimal: '.',
+			
+		};
+		var demo = new CountUp('myTargetElement', 0, 1257427, 0, 2.5, options);
+		if (!demo.error) {
+		  demo.start();
+		} else {
+		  console.error(demo.error);
+		}
+	</script>
+			<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+  		<script src="js/jquery.cloud9carousel.js"></script>
+
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassId("photos_pic");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3000);    
+		}
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassId("picture01_pic");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 8000);    
+		}
+	</script>
+
+	<script>
+		$(function(){
+	// 先取得 .abgne-news-scroll ul 及 li 的高度
+	// 並設定訊息移動, 淡入及輪播時間
+	var $news = $('.abgne-news-scroll ul'), 
+		scrollHeight = $news.find('li').outerHeight(true), 
+		scrollSpeed = 600, fadeInSpeed = 600, 
+		timer, speed = 3000;
+ 
+	// 用來控制輪播用
+	function newsScroll(){
+		// 先把 .abgne-news-scroll ul 往下移
+		$news.animate({
+			top: scrollHeight + 'px'
+		}, scrollSpeed, function(){
+			// 當 .abgne-news-scroll ul 移動到定點後
+			// 先找出最後一個 li
+			var $last = $news.find('li:last');
+			// 複製一份並先隱藏起來
+			// 接著把它加到 .abgne-news-scroll ul 中的第一個項目
+			// 最後用淡入的方式顯示, 當顯示完後繼續輪播
+			$last.clone().hide().prependTo($news).fadeIn(fadeInSpeed, function(){
+				timer = setTimeout(newsScroll, speed);
+			});
+			// 馬上把 .abgne-news-scroll ul 移到 top 等於 0 的位置
+			$news.css('top', 0);
+			// 把 $last 移除掉
+			$last.remove();
+		});
+	}
+ 
+	// 啟動輪播計時器
+	timer = setTimeout(newsScroll, speed);
+});
+	</script>
+
+
+	<script>
+		$("#carousel").Cloud9Carousel( {
+		  buttonLeft: $("#buttons > .left"),
+		  buttonRight: $("#buttons > .right"),
+		  autoPlay: 1,
+		  bringToFront: true
+		} );
+	</script>
+
+	<!-- BOOTSTRAP TAB -->
+	<script>
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+	</script>
+</body>
+</html>
