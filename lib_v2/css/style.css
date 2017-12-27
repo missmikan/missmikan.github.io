@@ -650,7 +650,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615da0', end
 	width: 100%;
 	float: left;
 	padding-left: 1em;
-	/* text-align: center; */
 }
 .borrowbook_ranking .ranking_box .class_data .class_name{
 	font-size: 1.4em;
@@ -961,5 +960,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615da0', end
 		height: 5em;
 		-webkit-line-clamp: 3;
 	}
-
+	.borrowbook_ranking .ranking_box .champion_icon {
+	    position: static;
+	}
+	.borrowbook_ranking .ranking_box .class_data{
+		text-align: center;
+	}
+	.borrowbook_ranking .ranking_box {
+	    justify-content: center;
+	}
+	.borrowbook_ranking .ranking_box .class_data {
+	    display: inline-block;
+	    width: auto;
+	}
+	.borrowbook_ranking .ranking_box .champion_icon .ranking {
+	    position: static;
+	    margin-left: 12px;
+	}
 }
