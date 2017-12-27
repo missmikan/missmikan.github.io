@@ -575,8 +575,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615da0', end
 }
 .borrowbook_total ul li{
 	margin-bottom: 0.5em;
-	/* border-bottom: 1px solid #EFEFEF; */
+	border-bottom: 1px solid #EFEFEF;
 	padding-top: 0.5em;
+	text-align: center;
 }
 .borrowbook_total ul li:last-child{
 	border-bottom: 0px;
