@@ -690,17 +690,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#615da0', end
 	color: #7BA23F;
 }
 .newbook_message .right_book_data .book_name{
-	font-size: 2em;
-	color: #4D4D4D;
-	font-weight: 600;
-	height: 2.7em;
-	line-height: 1.3em;
-	overflow : hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	margin-bottom: 0.6em;
+    font-size: 1.6em;
+    color: #4D4D4D;
+    font-weight: 600;
+    height: 2.7em;
+    line-height: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* margin-bottom: 0.6em; */
 }
 .newbook_message .right_book_data .book_date{
 	font-size: 1.4em;
