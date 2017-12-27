@@ -665,6 +665,10 @@ body{
 .newbook_message .right_book_data a:link,.newbook_message .right_book_data a:visited{
 	color: #4D4D4D;
 }
+.newbook_message .right_book_data a:hover{
+	text-decoration: none;
+	color: #7BA23F;
+}
 .newbook_message .right_book_data .book_name{
 	font-size: 2em;
 	color: #4D4D4D;
@@ -708,15 +712,19 @@ body{
 }
 .goodbook_recommend #buttons .book_title{
 	float: left;
-	width: 85%;
-	font-size: 1.5em;
-	font-weight: 500;
-	color: #D84315;
+	width: 83%;	
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	padding: 0 0.5em;
 	margin-bottom: 0.5em;
+	font-size: 1.5em;
+	font-weight: 500;
+	color: #D84315;
+}
+.goodbook_recommend #buttons .book_title a:link,.goodbook_recommend #buttons .book_title a:visited{
+	font-weight: 500;
+	color: #D84315;
 }
 .goodbook_recommend  .book_intro{
 	font-size: 1.1em;
@@ -744,38 +752,38 @@ body{
 
 .borrowbook_total .outter .title{
 	color: #558B2F !important;
-	border-left: 5px solid #558B2F !important;
-	border-bottom: 1px solid #558B2F !important;
+	border-left: 11px solid #558B2F !important;
+	border-bottom: 2px solid #558B2F !important;
 }
 .borrowbook_ranking .outter .title{
 	color:orange;
-	border-left: 5px solid orange !important;
-	border-bottom: 1px solid orange !important;		
+	border-left: 11px solid orange !important;
+	border-bottom: 2px solid orange !important;		
 }
 .out_link .outter .title{
 	color: #4A148C;
-	border-left: 5px solid #4A148C !important;	
-	border-bottom: 1px solid #4A148C !important;
+	border-left: 11px solid #4A148C !important;	
+	border-bottom: 2px solid #4A148C !important;
 }
 .newsbox .outter .title{
 	color: #0288D1;
-	border-left: 5px solid #0288D1 !important;;
-	border-bottom: 1px solid #0288D1 !important;	
+	border-left: 11px solid #0288D1 !important;;
+	border-bottom: 2px solid #0288D1 !important;	
 }
 .newbook_message .outter .title{
 	color: #37474F;
-	border-left: 5px solid #37474F;
-	border-bottom: 1px solid #37474F !important;	
+	border-left: 11px solid #37474F;
+	border-bottom: 2px solid #37474F !important;	
 }
 .goodbook_recommend .outter .title{
 	color: #D84315;
-	border-left: 5px solid #D84315;
-	border-bottom: 1px solid #D84315 !important;	
+	border-left: 11px solid #D84315;
+	border-bottom: 2px solid #D84315 !important;	
 }
 .hot_book .outter .title{
 	color: #0097A7;
-	border-left: 5px solid #0097A7 !important;	
-	border-bottom: 1px solid #0097A7 !important;
+	border-left: 11px solid #0097A7 !important;	
+	border-bottom: 2px solid #0097A7 !important;
 }
 .hotbook_box{
 	border-bottom: 1px solid #EAEAEA;
@@ -786,6 +794,7 @@ body{
 	width: 100px;
 	height: 100%;
 	float: left;
+	position: relative;
 }
 .hotbook_box .left_pic img{
 	max-width: 100%;
@@ -828,6 +837,8 @@ body{
 	background-image: url('../image/cp-1.png');
 	background-size: cover;
 	position: absolute;
+	top: -5px;
+	left: -10px;
 	text-align: center;
 }
 .cp_pic_1 span{
@@ -843,6 +854,8 @@ body{
 	background-image: url('../image/cp-2.png');
 	background-size: cover;
 	position: absolute;
+	top: -5px;
+	left: -10px;
 	text-align: center;
 }
 .cp_pic_2 span{
@@ -853,7 +866,7 @@ body{
 	color: #333;
 }
 @media screen and (max-width: 767px){
-	.box_2_2,.box_2_3,.box_2_4,.box_2_5,.box_2_6,.box_4_2,.box_4_4,.box_4_6,.box_5_3,.box_6_2,.box_6_4,.box_6_6,.box_10_1{
+	.box_2_2,.box_2_3,.box_2_4,.box_2_5,.box_2_6,.box_3_10,.box_4_2,.box_4_4,.box_4_6,.box_5_3,.box_5_5,.box_6_2,.box_6_4,.box_6_6,.box_10_1{
 		width: 100%;
 		height: auto;
 	}
@@ -888,4 +901,27 @@ body{
 	.borrowbook_ranking .tab span {
 	    width: 48%;
 	}
+	.container{
+		width: 100%;
+		max-width: 100%;
+		padding:0;
+		padding-left: 0px;
+	}
+	.container_left{
+		width: 100%;
+		float: none;
+	}
+	.container_middle{
+		width: 100%;
+		float: none;
+	}
+	.container_right{
+		width: 100%;
+		float: none;
+	}
+	.newbook_message .right_book_data .book_intro{
+		height: 5em;
+		-webkit-line-clamp: 3;
+	}
+
 }
