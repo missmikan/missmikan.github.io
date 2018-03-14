@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>新北市幼生查詢</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<style>
 		body{
@@ -171,13 +171,6 @@
 
 				<!-- 查詢條件 -->
 				<p>
-					<h3>欲查詢種類：</h3>
-					<p class="text">
-						<input type="radio"> 2歲專班
-						<input type="radio"> 3-5歲專班
-					</p>
-				</p>
-				<p>
 					<h3>您所在的區域：</h3>
 					<button class="btn btn-lg btn-default">萬里區</button>
 					<button class="btn btn-lg btn-default">金山區</button>
@@ -208,6 +201,13 @@
 					<button class="btn btn-lg btn-default">淡水區</button>
 					<button class="btn btn-lg btn-default">三芝區</button>
 					<button class="btn btn-lg btn-default">石門區</button>
+				</p>
+				<p>
+					<h3>欲查詢種類：</h3>
+					<p class="text">
+						<input type="radio"> 2歲專班
+						<input type="radio"> 3-5歲專班
+					</p>
 				</p>
 
 				<!-- 查詢結果 -->
@@ -300,8 +300,16 @@
 							</td>
 						</tr>
 						<tr>
-							<td>幼生身分證字號</td>
+							<td>身分證字號</td>
 							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>出生年月日</td>
+							<td><input type="date"></td>
+						</tr>
+						<tr>
+							<td>檢核碼</td>
+							<td><div style="width:100px;height:30px;overflow: hidden;"><img src="test.png" alt="" style="max-width: 100%;"></div><input type="text"></td>
 						</tr>
 					</table>
 					<input type="submit" value="查詢" class="btn btn-md btn-success">
