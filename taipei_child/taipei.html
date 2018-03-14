@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>新北市幼生查詢</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		body{
+			margin: 0;
+			font-size: 14px;
+			background-color: #EFEFEF;
+		}
+		header{
+			width: 100%;
+			height: 100px;
+			background-color: #4DD0E1;
+			color: #FFF;
+			font-size: 3em;
+			text-align: center;
+			line-height: 100px;
+		}
+		main{
+			max-width: 1000px;
+			background-color: #FFF;
+			margin: 0 auto;
+			padding: 1em;
+		}
+		main .nav-pills{
+			font-size: 1.4em;
+		}
+		.messages_content,.inquire_content,.result_content{
+			width: 100%;
+			padding: 1em;
+		}
+		.messages_content .title{
+			font-size: 2em;
+			color: #E64A19;
+			font-weight: 400;
+		}
+		.messages_content .text{
+			font-size: 1.2em;
+			color: #607D8B;
+			font-weight: 300;
+		}
+		.inquire_content button{
+			margin-right: 0.1em;
+			margin-bottom: 0.4em;
+		}
+		.inquire_content .text{
+			font-size: 1.6em;
+			color: #D84315;
+		}
+		.result_content{
+			text-align: center;
+		}
+		.result_content p{
+		 	font-size: 1.4em;
+		}
+		.result_content table{
+			width: 100%;
+			font-size: 1.4em;
+		}
+		.result_content table tr td{
+			padding:0.5em 1em;
+		}
+		.result_content table tr td:first-child{
+			text-align: right;
+			width: 40%;
+		}
+		.result_content table tr td:nth-child(2n){
+			text-align: left;
+		}
+		.table{
+			text-align: center;
+			font-size: 1.2em;
+		}
+		.table th{
+			text-align: center;
+			background-color: #FFAB91;
+			color: #FFF;
+			border-bottom: 0 !important;
+		}
+		.table tbody tr th{
+			background-color: #FBE9E7;
+			color: #ef5350;
+		}
+		footer{
+			width: 100%;
+			background-color: #006064;
+			padding: 0.5em 1em;
+			color: #FFF;
+			text-align: center;
+		}
+		.table-striped > tbody > tr:nth-of-type(odd) {
+		    background-color: #FFF8E1;
+		}
+
+		@media screen and (max-width: 767px){
+			header{
+				height: 50px;
+				font-size: 2em;
+				text-align: center;
+				line-height: 50px;
+			}
+			main .nav-tabs{
+				font-size: 1em;
+			}
+			.inquire_content button{
+				margin-right: 1em;
+				margin-bottom: 1em;
+			}
+			.result_content table{
+				font-size: 1.2em;
+			}
+			.result_content table tr td{
+				padding:0.2em;
+			}
+		}
+	</style>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+		<script>
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+	</script>
+
+</head>
+<body>
+	<header>
+		新北市幼生查詢
+	</header>
+	<main>
+		<div>
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-pills" role="tablist" id="myTabs">
+		    <li role="presentation" class="active"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">招生階段查詢</a></li>
+		    <li role="presentation"><a href="#inquire" aria-controls="inquire" role="tab" data-toggle="tab">各所員額查詢</a></li>
+		    <li role="presentation"><a href="#result" aria-controls="result" role="tab" data-toggle="tab">錄取結果查詢</a></li>
+
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane fade in active" id="messages">
+		    	<!-- 招生階段查詢內容 -->
+				<div class="messages_content">
+					<p class="title">長安國民小學107學年度教科書評選作業公告</p>
+					<p class="text">
+						(一)送評選科目：
+						1.一至六年級九年一貫課程所有科目（含上、下學期，以整套、一系列為原則，須經教育 
+						部審核通過並取得審定執照方可參加評選）。
+						2.英語教材：一至六年級（含上、下學期，三至六年級須經教育部審核通過並取得審定執
+						照方可參加評選；一、二年級樣書以整套、一系列為原則）。
+						3.閩南語教材：含一至六年級上、下學期。
+						4.電腦教材：適用三至六年級。
+						(二)樣書送達日期：107.04.13（五）16:00前。
+						(三)樣書送達地點：教務處設備組(1F)。
+						(四)樣書請一次送達，勿分批寄送，逾期則不受理評選。
+					</p>
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="inquire">
+		    	<!-- 各所員額查詢內容 -->
+				<div class="inquire_content">
+
+				<!-- 查詢條件 -->
+				<p>
+					<h3>欲查詢種類：</h3>
+					<p class="text">
+						<input type="radio"> 2歲專班
+						<input type="radio"> 3-5歲專班
+					</p>
+				</p>
+				<p>
+					<h3>您所在的區域：</h3>
+					<button class="btn btn-lg btn-default">萬里區</button>
+					<button class="btn btn-lg btn-default">金山區</button>
+					<button class="btn btn-lg btn-default">板橋區</button>
+					<button class="btn btn-lg btn-default">汐止區</button>
+					<button class="btn btn-lg btn-default">深坑區</button>
+					<button class="btn btn-lg btn-default">石碇區</button>
+					<button class="btn btn-lg btn-default">瑞芳區</button>
+					<button class="btn btn-lg btn-default">平溪區</button>
+					<button class="btn btn-lg btn-default">雙溪區</button>
+					<button class="btn btn-lg btn-default">貢寮區</button>
+					<button class="btn btn-lg btn-default">新店區</button>
+					<button class="btn btn-lg btn-default">坪林區</button>
+					<button class="btn btn-lg btn-default">烏來區</button>
+					<button class="btn btn-lg btn-default">永和區</button>
+					<button class="btn btn-lg btn-default">中和區</button>
+					<button class="btn btn-lg btn-default">土城區</button>
+					<button class="btn btn-lg btn-default">三峽區</button>
+					<button class="btn btn-lg btn-default">樹林區</button>
+					<button class="btn btn-lg btn-default">鶯歌區</button>
+					<button class="btn btn-lg btn-default">三重區</button>
+					<button class="btn btn-lg btn-default">新莊區</button>
+					<button class="btn btn-lg btn-default">泰山區</button>
+					<button class="btn btn-lg btn-default">林口區</button>
+					<button class="btn btn-lg btn-default">蘆洲區</button>
+					<button class="btn btn-lg btn-default">五股區</button>
+					<button class="btn btn-lg btn-default">八里區</button>
+					<button class="btn btn-lg btn-default">淡水區</button>
+					<button class="btn btn-lg btn-default">三芝區</button>
+					<button class="btn btn-lg btn-default">石門區</button>
+				</p>
+
+				<!-- 查詢結果 -->
+				<h3>查詢結果：</h3>
+				<table class="table table-striped">
+				  <thead>
+				  	<tr>
+				  		<th style="width:5%"></th>
+				  		<th style="width:35%">幼兒園</th>
+				  		<th style="width:25%">班別</th>
+				  		<th>缺額</th>
+				  		<th>已登記人數</th>
+				  	</tr>
+				  </thead>
+				  <tbody>
+				  	<tr>
+				  		<th scope="row">1</th>
+				  		<td>松山附幼</td>
+				  		<td>3-5歲班</td>
+				  		<td>2</td>
+				  		<td>20</td>
+				  	</tr>
+				  	<tr>
+				  		<th scope="row">2</th>
+				  		<td>松山附幼</td>
+				  		<td>3-5歲班</td>
+				  		<td>2</td>
+				  		<td>20</td>
+				  	</tr>
+				  	<tr>
+				  		<th scope="row">3</th>
+				  		<td>松山附幼</td>
+				  		<td>3-5歲班</td>
+				  		<td>2</td>
+				  		<td>20</td>
+				  	</tr>
+				  </tbody>
+				</table>
+
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="result">
+		    	<!-- 錄取結果查詢內容 -->
+				<div class="result_content">
+					<table>
+						<tr>
+							<td>區域查詢</td>
+							<td>
+								<select name="place">
+								<option>萬里區
+								<option>金山區
+								<option>板橋區
+								<option>汐止區
+								<option>深坑區
+								<option>石碇區
+								<option>瑞芳區
+								<option>平溪區
+								<option>雙溪區
+								<option>貢寮區
+								<option>新店區
+								<option>坪林區
+								<option>烏來區
+								<option>永和區
+								<option>中和區
+								<option>土城區
+								<option>三峽區
+								<option>樹林區
+								<option>鶯歌區
+								<option>三重區
+								<option>新莊區
+								<option>泰山區
+								<option>林口區
+								<option>蘆洲區
+								<option>五股區
+								<option>八里區
+								<option>淡水區
+								<option>三芝區
+								<option>石門區
+							</select>
+						</td>
+						</tr>
+						<tr>
+							<td>學校查詢</td>
+							<td>
+								<select name="place">
+									<option>123幼稚園
+									<option>456幼稚園
+									<option>789幼稚園
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>幼生身分證字號</td>
+							<td><input type="text"></td>
+						</tr>
+					</table>
+					<input type="submit" value="查詢" class="btn btn-md btn-success">
+
+					<hr>
+					<div class="result">
+					<p>查詢結果</p>
+					<p style="color:red;font-weight: bold;">恭喜已成功錄取<span>123幼稚園</span></p>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+	</main>
+	<footer>
+		<p>目前線上人數：<span>11</span></p>
+		<p>瀏覽人次：<span>1234567</span></p>
+	</footer>
+
+</body>
+</html>
