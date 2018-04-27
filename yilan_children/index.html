@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>宜蘭國際童玩藝術節購票系統</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		body{
+			font-family: 'Helvetica','微軟正黑體';
+		}
+		.Yilan_Children .navbar{
+			min-height: 74px;
+			padding-left: 20px;
+			margin-bottom: 0;
+		}
+		.Yilan_Children .navbar-default {
+		    background-color: #A5DEE4;
+		    border-color: rgba(0, 0, 0, 0);
+		}
+		.Yilan_Children .nav li a:link,.Yilan_Children .nav li a:visited{
+			color: #000;
+			font-size: 1.1em;
+			font-weight: 600;
+			padding: 26px 30px ;
+		}
+		.Yilan_Children .nav li a:hover{
+			background-color: rgba(0, 0, 0, 0.15);
+			color: #333;
+			transition: 0.5s;
+		}
+		.Yilan_Children .navbar-toggle {
+		    background-color: #4AC28A;
+		    border: 1px solid #FFF;
+		    border-radius: 4px;
+		    margin-top: 18px;
+		}
+		.Yilan_Children .navbar-default .navbar-toggle:hover,.Yilan_Children .navbar-default .navbar-toggle:focus {
+		    background-color: #4ACDA7;
+		}
+		.Yilan_Children .navbar-default .navbar-toggle .icon-bar {
+		    background-color: #FFF;
+		}
+		.Yilan_Children footer{
+			background-color: #1E203A;
+			padding: 1.5em;
+			color: #EAEAEA;
+		}
+		.Yilan_Children footer p{
+			max-width:1000px ;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 1.7em;
+		}
+		.Yilan_Children .AD_block{
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			background-image: url('img/banner_20160321_2.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		.Yilan_Children .AD_block img{
+			max-width: 100%;
+		}
+		.AD_block .GOBuy{
+			width: 100%;
+			height: 30px;
+			position: absolute;
+			top: 50%;
+			text-align: center;
+		}
+		.AD_block .GOBuy button{
+			border: 0;
+			background-color: #58B2DC;
+			color: #FFF;
+			font-size: 2em;
+			padding: 0.5em 2em;
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+		}
+		.AD_block .GOBuy button:hover{
+			background-color: rgba(3,169,244 ,0.9);
+			color: #FFF;
+			transition: 0.5s;
+		}
+		.Yilan_Children main .content{
+			padding: 2em;
+		}
+		.Yilan_Children .content .article_list{
+			padding: 1em;
+			background-color: #A5DEE4;
+			font-size: 1.1em;
+			border-radius: 0.3em;
+		}
+		.Yilan_Children .content .article_list a:link,.Yilan_Children .content .article_list a:visited{
+			color: #666;
+			font-weight: 600;
+			text-decoration: none;
+		}
+		.Yilan_Children .content .article_list a:hover{
+			color: #336774;
+		}
+		.Yilan_Children .content .article_list .table{
+			background-color: #FFF;
+		}
+		.Yilan_Children .content .article_list .newstitle{
+			font-size: 1.5em;
+			color: #336774;
+		}
+		.chart_title{
+			font-size: 1.5em;
+			padding-left: 25px;
+		}
+		.chartbox{
+			width: calc((100% - 2.5em) / 5);
+			float: left;
+			margin-left: 0.5em;
+			text-align: center;
+			position: relative;
+		}
+		.chart{
+			width: 110px;
+			height: 110px;
+			background-color: #A5DEE4;
+			border-radius: 65px;
+		    margin: 0 auto;
+		    margin-bottom: 1em;
+		}
+		.chart img{
+			width: 60px;
+			height: 60px;
+			margin-top: 25px;
+		}
+		.chartbox span{
+			position: relative;
+		    top: 75px;
+		    left: 70px;
+		    font-size: 2em;
+		}
+		.login_data{
+			padding: 1em;
+	    	background-color: #FAFAFA;
+    		border: 1px solid #e1e1e8;
+    		margin-bottom: 2em;
+		}
+		.login_data p{
+			font-size: 1.4em;
+		}
+		.content .table{
+			margin-bottom: 0;
+		}
+		/* 跑馬燈的CSS */
+		div.marquee,
+		div.marquee2 {
+			width: 100%;
+			background: #222222;
+			position: relative;
+			overflow: hidden;
+			height: 40px;
+			-moz-box-shadow:    1px 1px 1px #434343;
+			-webkit-box-shadow: 1px 1px 1px #434343;
+			box-shadow:         1px 1px 1px #434343;
+		}
+		span.marquee-message {
+			color: #ffffff;
+			font-family: 'Telex';
+			white-space: nowrap;
+			margin: 10px 0 0 0;
+			display: inline-block;
+		}
+		div.fade-left {
+			background: -moz-linear-gradient( left, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100% );
+			background: -webkit-gradient( linear, left top, right top, color-stop(12%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0)) );
+			background: -webkit-linear-gradient( left, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100% );
+			background: -o-linear-gradient( left, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100% );
+			background: -ms-linear-gradient( left, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100% );
+			background: linear-gradient( to right, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100% );
+			position: absolute;
+			left: 0;
+			height: 40px;
+			width: 10%;
+		}
+		@media screen and (max-width: 767px) {
+			.Yilan_Children .navbar-header{
+				height: 74px;
+			}
+			.Yilan_Children .nav li a:link,.Yilan_Children .nav li a:visited{
+				padding: 15px 15px ;
+			}
+			.Yilan_Children .navbar{
+				padding-left: 0px;
+			}
+			.AD_block .GOBuy button{
+				font-size: 1.5em;
+			}
+			.AD_block .GOBuy{
+				top: 30%;
+			}
+			.Yilan_Children .AD_block{
+				height: 250px;
+			}
+			.chartbox{
+				width: 100%;
+				float: none;
+				margin-left:0em;
+				padding-top: 3em;
+				position: relative;
+			}
+			.chartbox span{
+				position: relative;
+			    top: 190px;
+			    left: 0px;
+			    font-size: 2em;
+			    transform:rotate(90deg);
+			}
+		}
+	</style>
+</head>
+<body class="Yilan_Children">
+	<header>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<img src="img/logo.png" alt="" class="hidden-xs">
+		      	<img src="img/logo-mobile.png" alt="" class="visible-xs">
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">登入查詢</a>
+					<!-- <a href="#">歡迎！陳瀅亘</a> -->
+		        </li>
+		        <li><a href="#" data-toggle="modal" data-target="#myModal">票種說明</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+		<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">童玩護照(多次入園券)線上申辦說明</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<ol>
+	      		<li>您必須先註冊會員，登入後選擇您想購買多次入園券之票種及張數。</li>
+	      		<li>個別填寫資料並上傳所需資料及圖片。</li>
+	      		<li>填寫完成送出審核並確認購買資訊及總金額。</li>
+	      		<li>進入線上繳費畫面。</li>
+	      		<li>完成繳費後，童玩護照QR code電子票券將會寄送至您指定的電子信箱。</li>
+	      		<li>免票資格：(現場未帶相關證明文件者，請購買適用票券。)
+					<ul>
+						<li>115公分以下或6足歲以下（101年7月7日《含》以後出生；以年齡判定者需出示證明文件），如無證明文件，身高超高115公分以上者，需依規定購票。</li>
+						<li>65歲以上（42年12月31日《含》以前出生）之長者憑身分證免票。</li>
+						<li>持有宜蘭縣社會處核發之榮譽志工證者(限本人使用)。</li>
+						<li>持有交通部觀光局核發之導遊證者(限本人使用) 。</li>
+						<li>身心障礙者「本人」，持有我國主管機關核發之身心障礙證明，不論為舊制「身心障礙（殘障）手冊」（底圖為淡青色）或新制「身心障礙證明」（底圖為粉紅色），均享有免票優惠。</li>
+						<li>身心障礙者經評估認需人陪伴者，其必要陪伴者一人可免費入園(一天限一人陪伴)。</li>
+					</ul>
+	      		</li>
+	      		<li>活動現場請出示載具之電子QRCODE憑證提供工作人員掃瞄核對，或以紙本列印使用憑證。</li>
+	      	</ol>                                        
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<main>
+		<!-- 跑馬燈 -->
+		<div class="marquee">
+			<div class="fade-left"></div>
+			<div class="fade-right"></div>
+			<span class="marquee-message">2018宜蘭童玩節開放購票囉～</span>
+		</div>
+		<!-- 照片 -->
+		<div class="AD_block">
+			<div class="GOBuy">
+				<button>開始購票</button>
+			</div>	
+		</div>
+		<div class="content">
+			<div class="login_data">
+				<p class="pull-left">歡迎！ <span>陳瀅亘</span></p>
+				<div class="pull-right">
+						<button class="btn btn-primary btn-sm">修改資料</button>
+						<button class="btn btn-success btn-sm">變更密碼</button>
+						<button class="btn btn-default btn-sm">登出</button>
+				</div>
+				<table class="table table-striped table-responsive">
+					<thead>
+						<tr>
+							<th>身分證號</th>
+							<th>購票合計</th>
+							<th>資料驗證</th>
+							<th>繳費</th>
+							<th>動作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>A123456789</td>
+							<td>10張/2980元</td>
+							<td>完成審核</td>
+							<td>尚未付款</td>
+							<td><button class="btn btn-warning btn-sm">前往付款</button></td>
+						</tr>
+						<tr>
+							<td>A123456789</td>
+							<td>6張/1780元</td>
+							<td>審核中</td>
+							<td>付款完成</td>
+							<td><button class="btn btn-default btn-sm">查詢票券</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<!-- 公告 -->
+				<div class="article_list col-md-4 col-xs-12">
+					<div class="newstitle"><span class="glyphicon glyphicon-comment"></span> 最新公告</div>
+					<table class="table table-striped">
+					  <tbody>
+					    <tr>
+					      <td>107/05/01</td>
+					      <td><a href="#">107.06.01宜蘭童玩節開放購票</a></td>
+					    </tr>
+					    <tr>
+					      <td>106/06/08</td>
+					      <td><a href="#">票種購票詳細補充說明</a></td>
+					    </tr>
+					    <tr>
+					      <td>107/05/01</td>
+					      <td><a href="#">107.06.01宜蘭童玩節開放購票</a></td>
+					    </tr>
+					    <tr>
+					      <td>106/06/08</td>
+					      <td><a href="#">票種購票詳細補充說明</a></td>
+					    </tr>				    
+					  </tbody>
+					</table>
+				</div>
+				<div class="col-md-8 col-xs-12">
+					<div class="row">
+						<div class="chart_title">
+							<span class="glyphicon glyphicon-heart"></span> 購票流程
+						</div>
+						<div class="chartbox">
+							<span class="glyphicon glyphicon-arrow-right"></span>
+							<div class="chart">
+								<img src="img/1.png" alt="">
+							</div>
+							註冊/登入會員<br>
+							
+						</div>
+						<div class="chartbox">
+							<span class="glyphicon glyphicon-arrow-right"></span>
+							<div class="chart">
+								<img src="img/2.png" alt="">
+							</div>
+							選擇票種與張數
+							
+						</div>
+						<div class="chartbox">
+							<span class="glyphicon glyphicon-arrow-right"></span>
+							<div class="chart">
+								<img src="img/3.png" alt="">
+							</div>
+							填寫資料送出審核
+							
+						</div>
+						<div class="chartbox">
+							<span class="glyphicon glyphicon-arrow-right"></span>
+							<div class="chart">
+								<img src="img/4.png" alt="">
+							</div>
+							線上繳費
+						</div>
+						<div class="chartbox">
+							<span class="glyphicon glyphicon-arrow-right" style="visibility:hidden;"></span>
+							<div class="chart">
+								<img src="img/5.png" alt="">
+							</div>
+							完成購票
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>	
+		2018©宜蘭縣政府文化局 版權所有<br>
+		園區地址：宜蘭縣五結鄉親河路2段2號（冬山河親水公園） 電話：03-9600-322<br>
+		主辦單位：宜蘭縣政府 承辦單位：宜蘭縣政府文化局 合辦單位：財團法人蘭陽文教基金會
+		</p>
+	</footer>
+
+	<!-- 跑馬燈JS -->
+	<script>
+		$( document ).ready(
+	function () {
+		
+		function marquee ( bar, speed, direction ) { //main marquee function
+		
+			//marquee text width
+			var initWidth = $( bar + " .marquee-message" ).width();
+			
+			//initial position
+			$( bar + " .marquee-message" ).css( 'margin-left', function () {
+				return ( $( bar ).width() - initWidth ) / 2;
+			} );
+			
+			if ( direction == 'left' ) { //from left to right
+				//resetting the marquee element
+				function resMarquee_left () {
+					var left = -1 * initWidth;
+					$( bar + " .marquee-message" ).css( 'margin-left', left );
+				}
+				
+				//marquee function
+				function marquee_left () {
+					$( bar + " .marquee-message" ).css( 'margin-left', function ( index, val ) {
+						return parseInt( val, 10 ) + speed + 'px';
+					} );
+					
+					//reset the element if it's out of it's container
+					if ( parseInt ( $( bar + " .marquee-message" ).css( 'margin-left' ) ) > $( bar ).width() ) {
+						resMarquee_left ();
+					}
+				
+				}
+				
+				setInterval( marquee_left, 10 );
+			
+			} else { //default: from right to left
+				//marquee text width
+				var initWidth = $( bar + " .marquee-message" ).width();
+				
+				//initial position
+				$( bar + " .marquee-message" ).css( 'margin-left', function () {
+					return ( $( bar ).width() - initWidth ) / 2;
+				} );
+			
+				//resetting the marquee element
+				function resMarquee_right () {
+					$( bar + " .marquee-message" ).css( 'margin-left', $( bar ).width() );
+				}
+				
+				//marquee function
+				function marquee_right () {
+					$( bar + " .marquee-message" ).css( 'margin-left', function ( index, val ) {
+						return parseInt( val, 10 ) - speed + 'px';
+					} );
+					
+					//reset the element if it's out of it's container
+					if ( parseInt ( $( bar + " .marquee-message" ).css( 'margin-left' ) ) < -1 * $( bar + " .marquee-message" ).width() ) {
+						resMarquee_right ();
+					}
+				
+				}
+				
+				setInterval( marquee_right, 10 );
+			
+			}
+		
+			
+			
+		}
+		
+		
+		marquee( ".marquee", 1, 'left' );
+		marquee( ".marquee2", 3, 'right' );
+
+	}
+);
+	</script>
+</body>
+</html>
