@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		.buy_ticket{
+			max-width:1000px;
+			margin:0 auto;
+			font-size: 16px;
+		}
+		/* .buy_ticket tr td:nth-child(1){
+			width: 20%;
+			font-weight: bolder;
+		}
+		.buy_ticket tr td:nth-child(2){
+			width: 25%;
+			font-weight: 300;
+		}
+		.buy_ticket tr td:nth-child(3){
+			width: 20%;
+			text-align: center;
+		}
+		.buy_ticket tr td:nth-child(4){
+			width: 15%;
+		}
+		.buy_ticket tr td:nth-child(4) input{
+			width: 2em;
+			text-align: center;
+		} */
+		.buy_ticket .title{
+			background-color: #0288D1;
+			padding: 0.2em 1em;
+			clear: left;
+		}
+		.buy_ticket .title span{
+			font-size: 1.2em;
+			line-height: 1.8em;
+			color: #FFF;
+		}
+		.buy_ticket .step123 ul{
+			list-style: none;
+			padding-left: 0;
+		}
+		.buy_ticket .step123 ul li{
+			float: left;
+			width: calc(60% / 3);
+			padding: 0.6em 0.4em;
+			font-weight: 600;
+			color: #999;
+		}
+		.buy_ticket .step123 ul li.active{
+			color: #F57C00;
+			font-weight: 900;
+			border-bottom: 4px solid #F57C00;
+		}
+		.buy_ticket .ticket_type{
+			width: 20%;
+			font-weight: bolder;
+		}
+		.buy_ticket .ticket_info{
+			width: 25%;
+			font-weight: 300;
+		}
+		.buy_ticket .ticket_date{
+			width: 20%;
+			text-align: center;
+		}
+		.buy_ticket  .ticket_check{
+			width: 20%;
+			text-align: center;
+			color: #F57C00;
+		}
+		.buy_ticket .ticket_do{
+			width: 2em;
+			text-align: center;
+		}
+		.buy_ticket .ticket_list{
+			width: 10%;
+		}		
+		.buy_ticket .ticket_do input{
+			width: 2em;
+			text-align: center;
+		}
+		.buy_ticket .content{
+			padding: 2em 0em;
+			text-align: center;
+			font-size: 1.2em;
+			background-color: #FAFAFA;
+			color: #666;
+		}
+		.buy_ticket .content .paybox{
+			width: calc((100% - 1.5em) / 3);
+			height: 100px;
+			padding-top: 35px;
+			background-color: #FFA000;
+			border-radius: 10px;
+			margin-bottom: 1em;
+			margin-right: 0.5em;
+			float: left;
+		}
+		.buy_ticket .content a:link,.buy_ticket .content a:visited{
+			color: #FFF;
+			text-decoration: none;
+		}
+		.buy_ticket .all_paybox{
+			width: 60%;
+			margin: 0 auto;
+		}
+		.uploadimg{
+			min-height: 200px;
+		}
+		.uploadimg img{
+			max-width: 100%;
+		}
+		.all_tickets{
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			background-color: #EFEBE9;
+			font-size: 1.2em;
+			margin:0em 0 1.5em;
+		}
+		.all_tickets .order{
+			font-weight: 600;
+		}
+		.all_tickets .order:before{
+			content: "訂單編號：";
+		}
+		.all_tickets .number:before{
+			content: "購票數：";
+		}
+		.all_tickets .number:after{
+			content: "張";
+		}
+		.all_tickets .total:before{
+			content: "合計：";
+		}
+		.all_tickets .total:after{
+			content: "元，";
+		}
+		.all_tickets .check{
+			color: red;
+		}
+
+		@media screen and ( max-width:768px ){
+			.buy_ticket .step123 ul li{
+				width: calc(100% / 3);
+			}
+			.buy_ticket .content .paybox{
+				width: 100%;
+				float: none;
+			}
+			.all_tickets{
+				height: auto;
+				line-height: 1.6em;
+				text-align: center;
+				background-color: #EFEBE9;
+				font-size: 1.2em;
+				margin:0em 0 0.5em;
+			}
+		}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="buy_ticket">
+		<div class="title">
+			<span class="pull-left">2018年宜蘭童玩節線上購票</span>
+			<button class="btn btn-warning pull-right">返回</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="all_tickets">
+			<span class="order">A107328868</span>
+			<span class="number">16</span>
+			<span class="total">9,780</span>
+			<span class="check">資料審核通過</span>
+		</div>
+		<div class="step123">
+			<ul>
+				<li>1.選擇票種</li>
+				<li class="active">2.填寫資料</li>
+				<li>3.付款結帳</li>
+			</ul>
+			<div class="pull-right">
+				<!-- <button class="btn btn-default">批次匯入</button>
+				<button class="btn btn-default">送出審核</button>
+				<button class="btn btn-success">上一步</button> 
+				<button class="btn btn-success">下一步</button> -->
+				<button class="btn btn-success">前往付款</button>
+			</div>
+		</div>
+		<table class="table">
+			<tr>
+				<td class="ticket_list">第01張</td> 
+				<td class="ticket_type">宜蘭縣民優待票</td>
+				<td class="ticket_info">設籍宜蘭縣、年滿15至65歲、需審核</td>
+				<td class="ticket_date">05-01至07-15</td>
+				<td class="ticket_do">
+					<button class="btn btn-default btn-sm">-</button>
+					<input type="text" value="0">
+					<button class="btn btn-default btn-sm">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="ticket_list">第02張</td>
+				<td class="ticket_type">宜蘭縣民學生票</td>
+				<td class="ticket_info">陳瀅亘 / 77-09-26 / A123***789</td>
+				<td class="ticket_check">填寫完成，等待送出審核</td>
+				<td class="ticket_do">
+					<button class="btn btn-default" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span class="glyphicon glyphicon-pencil"></span> 修改資料</button>
+				</td>
+			</tr>
+
+			<!-- 點擊填寫or修改資料的話，展開這裡 -->
+			<tr class="collapse" id="collapseExample">
+				<td colspan="5" style="background-color: #EAEAEA">
+					<form action="" class="form-inline">
+						<table class="table">
+							<tr>
+								<th>姓名</th>
+								<td><input type="text" class="form-control" placeholder="請輸入真實姓名"></td>
+							</tr>
+							<tr>
+								<th>出生年月日</th>
+								<td><input type="date" class="form-control"></td>
+							</tr>
+							<tr>
+								<th>身分證字號</th>
+								<td><input type="text" class="form-control" placeholder="請輸入身分證字號，例：A123456789"></td>
+							</tr>	
+							<tr>
+								<th>戶籍地址</th>
+								<td><input type="checkbox"> 套用前一位 
+									<select name="" id="" class="form-control">
+										<option value="1">臺中市</option>
+										<option value="2">新北市</option>
+									</select>
+									<select name="" id="" class="form-control">
+										<option value="1">南區</option>
+										<option value="2">北區</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>身分證正面</th>
+								<td><input type="file" class="form-control"></td>
+							</tr>
+							<tr>
+								<th>身分證反面</th>
+								<td><input type="file" class="form-control"></td>
+							</tr>
+							<tr>
+								<th>健保卡正面</th>
+								<td><input type="file" class="form-control"></td>
+							</tr>
+							<tr>
+								<th>健保卡反面</th>
+								<td><input type="file" class="form-control"></td>
+							</tr>
+							<tr>
+								<th>2吋個人照片</th>
+								<td><input type="file" class="form-control"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="col-md-4 uploadimg">
+										<a href="#"><img src="img/banner_20160321_2.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4 uploadimg">
+										<a href="#"><img src="img/banner_20160321_2.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4 uploadimg">
+										<a href="#"><img src="img/banner_20160321_2.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4 uploadimg">
+										<a href="#"><img src="img/banner_20160321_2.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4 uploadimg">
+										<a href="#"><img src="img/banner_20160321_2.jpg" alt=""></a>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<button class="btn btn-primary pull-right">填寫完成</button>
+					</form>
+				</td>
+				  
+			</tr>
+			<tr>
+				<td class="ticket_list">第03張</td>
+				<td class="ticket_type">宜蘭縣民學生票</td>
+				<td class="ticket_info">請填寫購票者資料</td>
+				<td class="ticket_check"></td>
+				<td class="ticket_do">
+					<button class="btn btn-default btn-info"><span class="glyphicon glyphicon-pencil"></span> 填寫資料</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="ticket_list">第04張</td>
+				<td class="ticket_type">宜蘭縣民學生票</td>
+				<td class="ticket_info">陳瀅亘 / 77-09-26 / A123***789</td>
+				<td class="ticket_check">資格不符</td>
+				<td class="ticket_do">
+					<button class="btn btn-default btn-danger"><span class="glyphicon glyphicon-remove"></span> 取消購票</button>
+					<button class="btn btn-default btn-info"><span class="glyphicon glyphicon-pencil"></span> 重新填寫</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="ticket_list">第05張</td>
+				<td class="ticket_type">宜蘭縣民學生票</td>
+				<td class="ticket_info">50元 5張，合計250元</td>
+				<td class="ticket_check">多次入園</td>
+				<td class="ticket_do">
+					需就讀宜蘭縣內學校
+				</td>
+			</tr>
+		</table>
+		<div style="text-align: center;background-color: #EFEBE9;padding:0.5em 0">
+			<!-- <button class="btn btn-lg btn-success">下一步</button> -->
+			<button class="btn btn-lg btn-success">下一步(前往付款)</button>
+		</div>
+	</div>
+	<div class="buy_ticket">
+		<div class="title">
+			<span class="pull-left">2018年宜蘭童玩節線上購票</span>
+			<button class="btn btn-warning pull-right">返回</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="all_tickets">
+			<span class="order">A107328868</span>
+			<span class="number">16</span>
+			<span class="total">9,780</span>
+			<span class="check">資料審核通過</span>
+		</div>
+		<div class="step123">
+			<ul>
+				<li class="active">1.選擇票種</li>
+				<li>2.填寫資料</li>
+				<li>3.付款結帳</li>
+			</ul>
+			<div class="pull-right">
+				<!-- <button class="btn btn-default">批次匯入</button>
+				<button class="btn btn-default">送出審核</button>
+				<button class="btn btn-success">上一步</button> 
+				<button class="btn btn-success">下一步</button> -->
+				<button class="btn btn-success">前往付款</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="content">
+			<p style="margin-bottom: 2em;width:60%;margin:0 auto">本次購票<span style="color:red;font-weight: 900;">16</span>張，合計新台幣<span style="color:red;font-weight: 900;">$9780</span>元 可選擇以下方式付款，付款成功後，系統會將電子票證寄到您註冊所留下的郵件信箱中：
+			</p>
+			<div class="all_paybox">
+				<div class="paybox">
+					<a href="#">信用卡線上支付</a>
+				</div>
+				<div class="paybox">
+					<a href="#">WebATM</a>
+				</div>
+				<div class="paybox">
+					<a href="#">代收付款</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div style="text-align: center;background-color: #EFEBE9;padding:0.5em 0">
+			<!-- <button class="btn btn-lg btn-success">下一步</button> -->
+			<button class="btn btn-lg btn-success">下一步(前往付款)</button>
+		</div>
+	</div>
+</body>
+</html>
