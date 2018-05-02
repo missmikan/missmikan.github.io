@@ -81,6 +81,13 @@
 			padding: 0.5em;
 			box-sizing: border-box;
 		}
+		.tools{
+			list-style: none;
+			padding-left: 0;
+		}
+		.tools li{
+			float: left;
+		}
 		.card{
 			margin-bottom: 15px;
 		}
@@ -180,6 +187,10 @@
 			padding-top: 10px;
 
 		}
+		.search_book{
+				width: 79%;
+				display: inline-block;
+		}
 
 		@media screen and (max-width: 768px){
 			.main .nav > li > a {
@@ -190,6 +201,13 @@
 				height: 170px;
 				background-image: url('bookday_banner-m.jpg');
 				background-size: cover;
+			}
+			.search_book{
+				width: calc(100% - 50px);
+				display: inline-block;
+			}
+			.search_bar{
+				width: 100%;
 			}
 		}
 	</style>
@@ -208,466 +226,101 @@
 				<span class="book_select">20</span> 
 				<span class="money_original">12,345</span>
 				<span class="money_sale">6,600</span>
+				<button class="btn btn-primary">進入我的書單</button>
 			</p>
 			
 			<div>
-			  <!-- Nav tabs -->
-			  <ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">國中小適閱</a></li>
-			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">國小適閱</a></li>
-			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">國中適閱</a></li>
-			  </ul>
+			<div>
+			 <div class="pull-left" style="margin-bottom: 5px;">
+			    <button class="btn btn-default">最低價</button>
+			    <button class="btn btn-default">出版社名稱</button>
+			    <button class="btn btn-default">出版日期</button>
+			</div>    
+			  
+			</div> 
+			
+			<div class="pull-right search_bar">
+				<input type="search" placeholder="搜尋您要的書籍" class="form-control search_book">
+			    <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+			    
+			</div>
+			<div class="clearfix"></div>
+			</div>
 
-			  <!-- Tab panes -->
-			  <div class="tab-content">
-			    <div role="tabpanel" class="tab-pane active" id="home">
-			    	<div class="row">
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-default" disabled="disabled">已入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    	</div>
-			    </div>
-			    <div role="tabpanel" class="tab-pane" id="profile">
-		    		<div class="row">
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>					
-					</div>
-
-		    	</div>
-			    <div role="tabpanel" class="tab-pane" id="messages">
-		    		<div class="row">
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>	
-			    		<div class="col-md-3 col-xs-6">
-			    			<div class="card">
-			    				<div class="book_img">
-			    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
-			    				</div>
-			    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-			    				<p style="height:1em;">
-			    					<span class="date">107-04-03</span>
-									<span class="author">幾米</span>
-			    				</p>
-			    				<p class="press">大塊文化出版股份有限公司</p>
-			    				<p>
-			    					<span class="price_original">200</span>
-			    					<span class="price_sale">180</span>
-			    				</p>
-			    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
-			    			</div>
-			    		</div>					
-					</div>
-
-
-		    	</div>
-		    </div>
+			<div class="row">
+				<div class="col-md-3 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    				</div>
+	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+	    				<p style="height:1em;">
+	    					<span class="date">107-04-03</span>
+							<span class="author">幾米</span>
+	    				</p>
+	    				<p class="press">大塊文化出版股份有限公司</p>
+	    				<p>
+	    					<span class="price_original">200</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    			</div>
+	    		</div>
+				<div class="col-md-3 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    				</div>
+	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+	    				<p style="height:1em;">
+	    					<span class="date">107-04-03</span>
+							<span class="author">幾米</span>
+	    				</p>
+	    				<p class="press">大塊文化出版股份有限公司</p>
+	    				<p>
+	    					<span class="price_original">200</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    			</div>
+	    		</div>
+				<div class="col-md-3 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    				</div>
+	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+	    				<p style="height:1em;">
+	    					<span class="date">107-04-03</span>
+							<span class="author">幾米</span>
+	    				</p>
+	    				<p class="press">大塊文化出版股份有限公司</p>
+	    				<p>
+	    					<span class="price_original">200</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    			</div>
+	    		</div>
+				<div class="col-md-3 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    				</div>
+	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+	    				<p style="height:1em;">
+	    					<span class="date">107-04-03</span>
+							<span class="author">幾米</span>
+	    				</p>
+	    				<p class="press">大塊文化出版股份有限公司</p>
+	    				<p>
+	    					<span class="price_original">200</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    			</div>
+	    		</div>	    		
+			</div>
 		  </div>
 
 			</div>
