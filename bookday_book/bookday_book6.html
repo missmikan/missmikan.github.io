@@ -207,6 +207,19 @@
 			font-size: 1.1em;
 			font-weight: 900;
 		}
+		.back-top-top{
+			padding: 1em;
+			background-color: rgba(50,60,135,0.9);
+			color: #FFF;
+			position: fixed;
+			bottom: 1em;
+			right: 1em;
+			z-index: 999;
+		}
+		.back-top-top:hover{
+			color: #FFF;
+			background-color: rgba(244,81,30 ,0.9);
+		}
 
 		@media screen and (max-width: 768px){
 			.main .nav > li > a {
@@ -237,13 +250,14 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<a href="#top" class="back-top-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 	<div class="top_bar">
 			<a href="www.bookday.com.tw">返回Bookday</a>
 			<span style="color:#FFF59D;font-size: 1.2em">購書專線：(02)2264-5422</span>
 			<a href="#" class="pull-right">登入</a>
 	</div>
 	<div class="wrapper">
-		<div class="header">
+		<div class="header" id="top">
 		</div>
 		<div class="main">
 			<p class="bg-warning">
