@@ -9,6 +9,7 @@
 		.wrapper{
 			max-width: 1000px;
 			margin: 0 auto;
+			padding-top: 40px;
 		}
 		.header{
 			width: 100%;
@@ -45,7 +46,7 @@
 			font-size: 1.2em;
 		}
 		.main .bg-warning .money_sale:before{
-			content: "6折價 ";
+			content: "活動價 ";
 			color: #333;
 		}
 		.main .bg-warning .money_sale:after{
@@ -191,6 +192,21 @@
 				width: 79%;
 				display: inline-block;
 		}
+		.top_bar{
+			background-color: rgba(50,60,135,0.9);
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.top_bar a:link,.top_bar a:visited{
+			color: #FFF;
+			font-size: 1.1em;
+			font-weight: 900;
+		}
 
 		@media screen and (max-width: 768px){
 			.main .nav > li > a {
@@ -209,6 +225,9 @@
 			.search_bar{
 				width: 100%;
 			}
+			.select{
+				width: 100%;
+			}
 		}
 	</style>
 	<script
@@ -218,6 +237,11 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<div class="top_bar">
+			<a href="www.bookday.com.tw">返回Bookday</a>
+			<span style="color:#FFF59D;font-size: 1.2em">購書專線：(02)2264-5422</span>
+			<a href="#" class="pull-right">登入</a>
+	</div>
 	<div class="wrapper">
 		<div class="header">
 		</div>
@@ -225,16 +249,25 @@
 			<p class="bg-warning">
 				<span class="book_select">20</span> 
 				<span class="money_original">12,345</span>
+				<span style="color:#1565C0">符合滿2000再打96折</span>
+				<!-- <span style="color:#CCC">未符合滿2000再打96折</span> -->
 				<span class="money_sale">6,600</span>
 				<button class="btn btn-primary">進入我的書單</button>
 			</p>
 			
 			<div>
 			<div>
-			 <div class="pull-left" style="margin-bottom: 5px;">
-			    <button class="btn btn-default">最低價</button>
-			    <button class="btn btn-default">出版社名稱</button>
-			    <button class="btn btn-default">出版日期</button>
+			 <div class="pull-left select" style="margin-bottom: 5px;">
+			    <!-- <button class="btn btn-default">金額由低到高↑</button>
+			    <button class="btn btn-default">出版社排序/篩選</button>
+			    <button class="btn btn-default">出版日期新到舊</button> -->
+			    <select class="form-control">
+				  <option>依價格高到低排序</option>
+				  <option>依價格低到高排序</option>
+				  <option>依出版日期新到舊排序</option>
+				  <option>依出版日期舊到新排序</option>
+				  <option>依出版社名稱排序</option>
+				</select>
 			</div>    
 			  
 			</div> 
