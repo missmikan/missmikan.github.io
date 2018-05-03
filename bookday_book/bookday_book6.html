@@ -81,7 +81,9 @@
 			background-color: #F6F6F6;
 			padding: 0.5em;
 			box-sizing: border-box;
+    		padding-bottom: 1em;
 		}
+
 		.tools{
 			list-style: none;
 			padding-left: 0;
@@ -98,6 +100,31 @@
 			background-color: #FFF;
 			text-align: center;
 			padding: 0.5em;
+			position: relative;
+		}
+		.book_img .discount7{
+			display: inline-block;
+			padding: 0.4em 1em;
+			background-color: rgba(216,27,96 ,0.8);
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: #FFF;
+			font-weight: 600;
+			font-size: 1.2em;
+			border-radius: 5px;
+		}
+		.book_img .discount66{
+			display: inline-block;
+			padding: 0.4em 1em;
+			background-color: rgba(81,45,168 ,0.8);
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: #FFF;
+			font-weight: 600;
+			font-size: 1.2em;
+			border-radius: 5px;
 		}
 		.card .book_img img{
 			max-height: 185px;
@@ -188,6 +215,9 @@
 			padding-top: 10px;
 
 		}
+		.main .add_book{
+			text-align: center;
+		}
 		.search_book{
 				width: 79%;
 				display: inline-block;
@@ -212,13 +242,25 @@
 			background-color: rgba(50,60,135,0.9);
 			color: #FFF;
 			position: fixed;
-			bottom: 1em;
+			bottom: 4em;
 			right: 1em;
 			z-index: 999;
 		}
 		.back-top-top:hover{
 			color: #FFF;
 			background-color: rgba(244,81,30 ,0.9);
+		}
+		.bottom_footer{
+			background-color: #EAEAEA;
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			z-index: 500;
 		}
 
 		@media screen and (max-width: 768px){
@@ -241,6 +283,11 @@
 			.select{
 				width: 100%;
 			}
+			.wrapper{
+				height: calc(100vh - 40px);
+				overflow-y: scroll; 
+			}
+
 		}
 	</style>
 	<script
@@ -252,10 +299,12 @@
 <body>
 	<a href="#top" class="back-top-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
 	<div class="top_bar">
-			<a href="www.bookday.com.tw">返回Bookday</a>
-			<span style="color:#FFF59D;font-size: 1.2em">購書專線：(02)2264-5422</span>
-			<a href="#" class="pull-right">登入</a>
+			<a href="www.bookday.com.tw" style="font-size: 1.4em;font-weight: 300;letter-spacing: 0.05em;">Bookday</a>
+
+			<a href="#" class="pull-right" style="margin-right: 1em;">登入</a>
+			<a href="#" class="pull-right" style="margin-right: 1em;">我的書單</a>
 	</div>
+	<div class="bottom_footer"><span style="color:#666;font-size: 1.4em;font-weight: 600;">購書專線：(02)2264-5422</span></div>
 	<div class="wrapper">
 		<div class="header" id="top">
 		</div>
@@ -299,6 +348,7 @@
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
 	    				<p style="height:1em;">
@@ -310,13 +360,27 @@
 	    					<span class="price_original">200</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
-	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    				<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    加入書單 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
 	    			</div>
 	    		</div>
 				<div class="col-md-3 col-xs-6">
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    					<span class="discount66">66折</span>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
 	    				<p style="height:1em;">
@@ -328,13 +392,27 @@
 	    					<span class="price_original">200</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
-	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    				<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    加入書單 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
 	    			</div>
 	    		</div>
 				<div class="col-md-3 col-xs-6">
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
 	    				<p style="height:1em;">
@@ -346,13 +424,27 @@
 	    					<span class="price_original">200</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
-	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    				<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    加入書單 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
 	    			</div>
 	    		</div>
 				<div class="col-md-3 col-xs-6">
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
 	    				<p style="height:1em;">
@@ -364,7 +456,20 @@
 	    					<span class="price_original">200</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
-	    				<p class="add_book"><button class="btn btn-success">加入書單</button></p>
+	    				<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    加入書單 <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
 	    			</div>
 	    		</div>	    		
 			</div>
