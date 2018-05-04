@@ -272,6 +272,7 @@
 				height: 170px;
 				background-image: url('bookday_banner-m.jpg');
 				background-size: cover;
+			    background-position: center;
 			}
 			.search_book{
 				width: calc(100% - 50px);
@@ -304,7 +305,6 @@
 			<a href="#" class="pull-right" style="margin-right: 1em;">登入</a>
 			<a href="#" class="pull-right" style="margin-right: 1em;">我的書單</a>
 	</div>
-	<div class="bottom_footer"><span style="color:#666;font-size: 1.4em;font-weight: 600;">購書專線：(02)2264-5422</span></div>
 	<div class="wrapper">
 		<div class="header" id="top">
 		</div>
@@ -329,6 +329,8 @@
 				  <option>依價格低到高排序</option>
 				  <option>依出版日期新到舊排序</option>
 				  <option>依出版日期舊到新排序</option>
+				  <option>依折數由高到低排序</option>
+				  <option>依折數由低到高排序</option>
 				  <option>依出版社名稱排序</option>
 				</select>
 			</div>    
@@ -475,9 +477,17 @@
 			</div>
 		  </div>
 
-			</div>
+		</div>
+		<div class="bottom_footer">
+			<span style="color:#666;font-size: 1.1em;font-weight: 600;margin-right: 1em;">
+				<span class="glyphicon glyphicon-earphone"></span> 購書專線：(02)2264-5422
+			</span>
+			<span style="color:#666;font-size: 1.1em;font-weight: 600;">
+				<a href="mailto:bookday.service@gmail.com"><span class="glyphicon glyphicon-envelope"></span> 聯絡客服信箱</a>
+			</span>
 		</div>
 	</div>
+</div>
 	<script>
 		$('#myTabs a').click(function (e) {
 		  e.preventDefault()

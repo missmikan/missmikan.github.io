@@ -71,15 +71,9 @@
 			padding: 0.5em;
 		}
 		.list_name select{
-		    width: 73%;
+		    width: 100%;
 		    display: inline-block;
 		    font-size: 1em;
-		}
-		.list_name:before{
-			content: "書單名稱：";
-			color: #333;
-			font-size: 0.9em;
-			font-weight: 600;
 		}
 		.no-border tr td,.no-border2 tr td{
 			border-top: 0 !important;
@@ -137,6 +131,7 @@
 			font-weight: 900;
 			font-size: 1.3em;
 			text-align: center;
+			display: block;
 		}
 		.booklist_one .book_name{
 			display:block;
@@ -167,6 +162,16 @@
 		.delete_btn{
 			position: relative;bottom:10px
 		}
+		.btn-gray, .btn-gray:visited{
+			background-color: #999;
+			color: #FFF;
+		}
+		.btn-gray:active{
+			background-color: #666;
+			color: #FFF;
+		}
+		{
+
 		@media screen and (max-width: 768px){
 			.wrapper{
 				height: calc(100vh - 40px);
@@ -206,9 +211,9 @@
 		    </div>
 		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		      <div class="panel-body">
-		        <table class="table no-border" style="background-color: #FCFFF2;font-size: 1.1em;border-radius: 1em;">
+		        <table class="table no-border" style="background-color: #EEFFF0;font-size: 1.1em;border-radius: 1em;">
 		        	<tr>
-		        		<td>活動書籍</td>
+		        		<td><span style="color:#0288D1">曬書節書籍</span></td>
 		        		<td>10本</td>
 		        		<td>定價</td>
 		        		<td><span style="text-decoration: line-through;">$4212</span></td>
@@ -230,7 +235,7 @@
 		        		<td>$2981</td>
 		        	</tr>
 		        </table>
-		        <table class="table no-border2" style="background-color: #EEFFF0;font-size: 1.1em;border-radius: 1em;margin-bottom: 10px">
+		        <table class="table no-border2" style="background-color: #FCFFF2;font-size: 1.1em;border-radius: 1em;margin-bottom: 10px">
 		        	<tr>
 		        		<td>一般書籍</td>
 		        		<td>10本</td>
@@ -279,7 +284,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -293,7 +298,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
@@ -314,7 +319,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -328,7 +333,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
@@ -349,7 +354,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -363,7 +368,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
@@ -384,7 +389,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -398,7 +403,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
@@ -419,7 +424,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -433,7 +438,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
@@ -454,7 +459,7 @@
 					<span class="discount66">66折</span>
 				</td>
 				<td>
-					<span class="price">$876</span><br>
+					<span class="price">$876</span>
 					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
 					<input type="text" value="1" style="width: 2em;text-align: center;">
 					<button class="btn btn-default btn-xs">+</button>
@@ -468,7 +473,7 @@
 					</div>
 				</td>
 				<td colspan="2" style="border:0;padding-top:0;">
-					<a href="#" class="btb btn-danger btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
+					<a href="#" class="btb btn-gray btn-sm pull-right delete_btn"><span class="glyphicon glyphicon-trash"></span></a>
 				</td>
 
 			</tr>
