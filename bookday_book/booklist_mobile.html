@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		.wrapper{
+			max-width: 1000px;
+			margin: 0 auto;
+			padding-top: 40px;
+		}
+		.top_bar{
+			background-color: rgba(50,60,135,0.9);
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.top_bar a:link,.top_bar a:visited{
+			color: #FFF;
+			font-size: 1.1em;
+			font-weight: 900;
+		}
+		.back_mainpage{
+			position: fixed;
+		    bottom: 3.4em;
+		    left: 1em;
+		    z-index: 999;
+		    background-color: yellow;
+		    width: calc(100% - 80px);
+		    height: 50px;
+		    line-height: 50px;
+		    text-align: center;
+		    font-size: 1.2em;
+		    color: #333;
+		}
+		.back-top-top{
+			padding: 1em;
+			background-color: rgba(50,60,135,0.9);
+			color: #FFF;
+			position: fixed;
+			bottom: 4em;
+			right: 1em;
+			z-index: 999;
+		}
+		.back-top-top:hover{
+			color: #FFF;
+			background-color: rgba(244,81,30 ,0.9);
+		}
+		.bottom_footer{
+			background-color: #EAEAEA;
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			z-index: 500;
+		}
+		.list_name{
+			font-size: 1.4em;
+			color: #666;
+			font-weight: 300;
+			padding: 0.5em;
+		}
+		.list_name:before{
+			content: "書單名稱：";
+			color: #333;
+			font-size: 0.9em;
+			font-weight: 600;
+		}
+		.no-border tr td,.no-border2 tr td{
+			border-top: 0 !important;
+			font-size: 1.1em;
+		}
+		.no-border tr:nth-child(3){
+			color: #f44336;
+			font-weight: 600;
+		}
+		.no-border tr:last-child td:nth-child(4),.no-border2 tr:last-child td:nth-child(4){
+			font-weight: 900;
+		}
+		.booklist_one tr td:nth-child(1){
+			width: 5%;
+		}
+		.booklist_one tr td:nth-child(2){
+			width: 60%;
+		}
+		.booklist_one tr td:nth-child(3){
+			width: 10%;
+		}
+		.booklist_one tr td:nth-child(4){
+			width: 25%;
+		}
+		.booklist_one .no-border{
+			margin-bottom: 0
+		}
+		.book_author{
+			font-size: 1.1em;
+		}
+		.book_author .one{
+			color: #666;
+			font-weight: 300;
+		}
+		.book_author .two{
+			color: #8CC63F;
+			font-weight: 300;
+		}
+		.booklist_one .numbers{
+			font-size: 1.4em;
+			vertical-align: middle;
+		}
+		.booklist_one .price{
+			color:red;
+			font-weight: 900;
+			font-size: 1.3em;
+			text-align: center;
+		}
+		.booklist_one .book_name{
+			display:block;
+			color:#333;
+			width:100%;
+			height:2.6em;
+			overflow: hidden;
+		}
+		.discount7{
+			padding:0.2em 0.2em;
+			background-color: #DC4777;
+			color:#FFF;
+			font-size: 1.1em;
+			border-radius: 0.2em
+		}
+		.discount66{
+			padding:0.2em 0.2em;
+			background-color: #6C54B1;
+			color:#FFF;
+			font-size: 1.1em;
+			border-radius: 0.2em
+		}
+		@media screen and (max-width: 768px){
+			.wrapper{
+				height: calc(100vh - 40px);
+				overflow-y: scroll; 
+			}
+
+		}
+	</style>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<a href="#top" class="back-top-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+	<a href="#" class="back_mainpage">繼續去選購</a>
+	<div class="top_bar">
+			<a href="www.bookday.com.tw" style="font-size: 1.4em;font-weight: 300;letter-spacing: 0.05em;">Bookday</a>
+
+			<a href="#" class="pull-right" style="margin-right: 1em;">登入</a>
+			<a href="#" class="pull-right" style="margin-right: 1em;">我的書單</a>
+	</div>
+	<div class="wrapper">
+		<div class="list_name">全誼實驗國小曬書節書單</div>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		      	共選擇<span>20</span>本，折扣後總額<span>$8354</span>
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#1565C0;float:right;">詳細資訊 <span class="glyphicon glyphicon-menu-down"></span></a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+		        <table class="table no-border" style="background-color: #FCFFF2;font-size: 1.1em;border-radius: 1em;">
+		        	<tr style="border-bottom: 1px solid #CCC;">
+		        		<td>活動書籍</td>
+		        		<td>10本</td>
+		        		<td>定價</td>
+		        		<td>$4212</td>
+		        	</tr>
+		        	<tr>
+		        		<td></td>
+		        		<td></td>
+		        		<td>活動價</td>
+		        		<td>$3123</td>
+		        	</tr>
+		        	<tr style="border-bottom: 1px solid #CCC;">
+		        		<td colspan="3" style="text-align: right;">滿2000再打96折</td>
+		        		<td>$-154</td>
+		        	</tr>
+		        	<tr>
+		        		<td></td>
+		        		<td></td>
+		        		<td></td>
+		        		<td>$2981</td>
+		        	</tr>
+		        </table>
+		        <table class="table no-border2" style="background-color: #EEFFF0;font-size: 1.1em;border-radius: 1em;margin-bottom: 10px">
+		        	<tr style="border-bottom: 1px solid #CCC;">
+		        		<td>一般書籍</td>
+		        		<td>10本</td>
+		        		<td>定價</td>
+		        		<td>$4212</td>
+		        	</tr>
+		        	<tr style="border-bottom: 1px solid #CCC;">
+		        		<td></td>
+		        		<td></td>
+		        		<td>活動價</td>
+		        		<td>$3123</td>
+		        	</tr>
+		        	<tr>
+		        		<td></td>
+		        		<td></td>
+		        		<td></td>
+		        		<td>$3123</td>
+		        	</tr>
+		        </table>
+		        <div style="text-align: right;font-size: 1.3em;font-weight: 600;padding-right: 0.4em;color:#212121;">
+		        	<span>$2981</span>
+					<span>+</span>
+					<span>$3123</span>
+					<span>=</span>
+					<span>$8354</span>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<table class="table booklist_one">
+			<!-- 列表 一本書 -->
+			<tr>
+				<td class="numbers">1</td>
+				<td>
+					<table class="table no-border">
+						<tr>
+							<td style="width:40%"><img src="9789578630284.jpg" alt="" class="img-responsive" style="max-height: 60px;"></td>
+							<td style="width:60%;"><span class="book_name">一看就懂地理百科（新裝珍藏版）</span></td>
+						</tr>
+					</table>			
+				</td>
+				<td>
+					<span style="font-size: 1.1em;text-decoration: line-through;">$1000</span><br>
+					<span class="discount66">66折</span>
+				</td>
+				<td>
+					<span class="price">$876</span><br>
+					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
+					<input type="text" value="1" style="width: 2em;text-align: center;">
+					<button class="btn btn-default btn-xs">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:0;padding-top:0;padding-left: 2em">
+					<div class="book_author">
+						<span class="one">遠足文化</span>
+						<span class="two">遠足地理百科編輯組</span>
+					</div>
+				</td>
+			</tr>
+			<!-- 列表結束 -->
+			<!-- 列表 一本書 -->
+			<tr>
+				<td class="numbers">2</td>
+				<td>
+					<table class="table no-border">
+						<tr>
+							<td style="width:40%"><img src="9789578630284.jpg" alt="" class="img-responsive" style="max-height: 60px;"></td>
+							<td style="width:60%;"><span class="book_name">一看就懂地理百科（新裝珍藏版）</span></td>
+						</tr>
+					</table>			
+				</td>
+				<td>
+					<span style="font-size: 1.1em;text-decoration: line-through;">$1000</span><br>
+					<span class="discount7">7折
+					</span>
+				</td>
+				<td>
+					<span class="price">$876</span><br>
+					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
+					<input type="text" value="1" style="width: 2em;text-align: center;">
+					<button class="btn btn-default btn-xs">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:0;padding-top:0;padding-left: 2em">
+					<div class="book_author">
+						<span class="one">遠足文化</span>
+						<span class="two">遠足地理百科編輯組</span>
+					</div>
+				</td>
+			</tr>
+			<!-- 列表結束 -->
+			<!-- 列表 一本書 -->
+			<tr>
+				<td class="numbers">3</td>
+				<td>
+					<table class="table no-border">
+						<tr>
+							<td style="width:40%"><img src="9789578630284.jpg" alt="" class="img-responsive" style="max-height: 60px;"></td>
+							<td style="width:60%;"><span class="book_name">一看就懂地理百科（新裝珍藏版）</span></td>
+						</tr>
+					</table>			
+				</td>
+				<td>
+					<span style="font-size: 1.1em;text-decoration: line-through;">$1000</span><br>
+					<span class="discount7">7折
+					</span>
+				</td>
+				<td>
+					<span class="price">$876</span><br>
+					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
+					<input type="text" value="1" style="width: 2em;text-align: center;">
+					<button class="btn btn-default btn-xs">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:0;padding-top:0;padding-left: 2em">
+					<div class="book_author">
+						<span class="one">遠足文化</span>
+						<span class="two">遠足地理百科編輯組</span>
+					</div>
+				</td>
+			</tr>
+			<!-- 列表結束 -->
+			<!-- 列表 一本書 -->
+			<tr>
+				<td class="numbers">4</td>
+				<td>
+					<table class="table no-border">
+						<tr>
+							<td style="width:40%"><img src="9789578630284.jpg" alt="" class="img-responsive" style="max-height: 60px;"></td>
+							<td style="width:60%;"><span class="book_name">一看就懂地理百科（新裝珍藏版）</span></td>
+						</tr>
+					</table>			
+				</td>
+				<td>
+					<span style="font-size: 1.1em;text-decoration: line-through;">$1000</span><br>
+					<span class="discount7">7折
+					</span>
+				</td>
+				<td>
+					<span class="price">$876</span><br>
+					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
+					<input type="text" value="1" style="width: 2em;text-align: center;">
+					<button class="btn btn-default btn-xs">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:0;padding-top:0;padding-left: 2em">
+					<div class="book_author">
+						<span class="one">遠足文化</span>
+						<span class="two">遠足地理百科編輯組</span>
+					</div>
+				</td>
+			</tr>
+			<!-- 列表結束 -->
+			<!-- 列表 一本書 -->
+			<tr>
+				<td class="numbers">5</td>
+				<td>
+					<table class="table no-border">
+						<tr>
+							<td style="width:40%"><img src="9789578630284.jpg" alt="" class="img-responsive" style="max-height: 60px;"></td>
+							<td style="width:60%;"><span class="book_name">一看就懂地理百科（新裝珍藏版）</span></td>
+						</tr>
+					</table>			
+				</td>
+				<td>
+					<span style="font-size: 1.1em;text-decoration: line-through;">$1000</span><br>
+					<span class="discount7">7折
+					</span>
+				</td>
+				<td>
+					<span class="price">$876</span><br>
+					<button class="btn btn-default btn-xs" style="display: inline;">-</button>
+					<input type="text" value="1" style="width: 2em;text-align: center;">
+					<button class="btn btn-default btn-xs">+</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="border:0;padding-top:0;padding-left: 2em">
+					<div class="book_author">
+						<span class="one">遠足文化</span>
+						<span class="two">遠足地理百科編輯組</span>
+					</div>
+				</td>
+			</tr>
+			<!-- 列表結束 -->
+
+		</table>
+
+	</div>
+		<div class="bottom_footer">
+			<span style="color:#666;font-size: 1em;font-weight: 600;">
+				<a href="www.bookday.com.tw">前往電腦版</a>
+			</span>
+			<span style="color:#666;font-size: 1em;font-weight: 600;margin-right: 1em;">
+				購書專線：(02)2264-5422
+			</span>
+			<span style="color:#666;font-size: 1em;font-weight: 600;">
+				<a href="mailto:bookday.service@gmail.com"><span class="glyphicon glyphicon-envelope"></span> 客服信箱</a>
+			</span>
+		</div>
+	</div>
+</div>
+	<script>
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+	</script>
+</body>
+</html>
