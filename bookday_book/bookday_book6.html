@@ -22,9 +22,14 @@
 			width: 100%;
 		    overflow: auto;
 		    white-space: nowrap;
-		    background-color: #FFCA28;
 		    border-radius: 0.3px;
 		    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7bd20+1,f7bd20+5,ffb200+90 */
+background: rgb(247,189,32); /* Old browsers */
+background: -moz-linear-gradient(top, rgb(247,189,32) 1%, rgb(247,189,32) 5%, rgb(255,178,0) 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgb(247,189,32) 1%,rgb(247,189,32) 5%,rgb(255,178,0) 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgb(247,189,32) 1%,rgb(247,189,32) 5%,rgb(255,178,0) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', endColorstr='#ffb200',GradientType=0 ); /* IE6-9 */
 		}
 		div.scrollmenu a{
 		    display: inline-block;
@@ -36,28 +41,30 @@
 		    color: #5D4037;
 		    font-size: 1.1em;
 		    font-weight: 900;
+		   	border-right: 1px solid #FF9800;
 		}
 /* 		div.scrollmenu a:nth-child(3n-1) {
-		    
+		    background-color: #FFCA28;
 		}
 		div.scrollmenu a:nth-child(3n) {
-		    background-color: #3F51B5;
+		    background-color: #FFCC80;
 		}
 		div.scrollmenu a:nth-child(3n+1) {
-		    background-color: #7986CB;
+		    background-color: #FFECB3;
 		} */
 		div.scrollmenu a:hover {
-		    background-color: #FF9800;
+		    background-color: #EF6C00;
 		    color: #FFF;
 		}
 		.main .bg-warning{
 			font-family: Myriad Pro,"微軟正黑體";
-			padding: 0.5em 1em;
-			font-size: 1.2em;
+			padding: 0.2em 1em;
+			font-size: 1em;
 			font-weight: 900;
 		}
 		.main .bg-warning .book_select{
 			color: #0059A5;
+			font-size: 1.2em;
 		}
 		.main .bg-warning .book_select:before{
 			content: "已選 ";
@@ -384,6 +391,9 @@
 			    float: none;
 			    display: block;
 			    text-align: left;
+			}
+			div.scrollmenu a{
+			   	border-right: 0;
 			}
 
 		}
