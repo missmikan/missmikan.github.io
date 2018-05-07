@@ -22,7 +22,9 @@
 			width: 100%;
 		    overflow: auto;
 		    white-space: nowrap;
-		    background-color: #43A047;
+		    background-color: #FFCA28;
+		    border-radius: 0.3px;
+		    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
 		}
 		div.scrollmenu a{
 		    display: inline-block;
@@ -31,18 +33,22 @@
 		    padding: 14px;
 		    text-decoration: none;
 		    margin-right: -4px;
+		    color: #5D4037;
+		    font-size: 1.1em;
+		    font-weight: 900;
 		}
-		div.scrollmenu a:nth-child(3n-1) {
-		    background-color: #00897B;
+/* 		div.scrollmenu a:nth-child(3n-1) {
+		    
 		}
 		div.scrollmenu a:nth-child(3n) {
-		    background-color: #00796B;
+		    background-color: #3F51B5;
 		}
 		div.scrollmenu a:nth-child(3n+1) {
-		    background-color: #00695C;
-		}
+		    background-color: #7986CB;
+		} */
 		div.scrollmenu a:hover {
-		    background-color: #26A69A;
+		    background-color: #FF9800;
+		    color: #FFF;
 		}
 		.main .bg-warning{
 			font-family: Myriad Pro,"微軟正黑體";
@@ -325,6 +331,8 @@
 			min-width: 140px !important;
 		}
 
+
+
 		@media screen and (max-width: 768px){
 			.main .card{
 				padding: 0.5em;
@@ -346,14 +354,19 @@
 				display: inline-block;
 			}
 			.search_bar{
-				width: 100%;
+				width: 48%;
 			}
 			.select{
-				width: 100%;
+				width: 48%;
+				margin-right: 4%;
 			}
 			.wrapper{
 				height: calc(100vh - 40px);
 				overflow-y: scroll; 
+			}
+			.scrollmenu{
+			    overflow-y: auto !important;
+    			overflow-x: hidden!important;
 			}
 			.scrollmenu a:not(:first-child) {
 				display: none;
@@ -415,7 +428,7 @@
 			
 			<div>
 			<div style="background-color: #E8EAF6">
-			<div class="scrollmenu" id="myNavbar">
+			<div class="scrollmenu sticky" id="myNavbar">
 				<a href="#allbook">全部出版社</a>	
 			  <a href="#books1">小天下</a>
 			  <a href="#books2">親子天下</a>
@@ -988,6 +1001,9 @@
 		    owl.trigger('stop.owl.autoplay')
 		})
 	});
+	</script>
+	<script>
+		
 	</script>
 </body>
 </html>
