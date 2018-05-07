@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owl.theme.default.min.css">
 	<style>
 		.wrapper{
 			max-width: 1000px;
@@ -17,6 +19,7 @@
 			background-image: url('bookday_banner.jpg');
 		}
 		div.scrollmenu {
+			width: 100%;
 		    background-color: #333;
 		    overflow: auto;
 		    white-space: nowrap;
@@ -198,7 +201,7 @@
 			color: #666;
 			text-decoration: line-through;
 		}
-/* 		.card .price_original:before{
+		/*.card .price_original:before{
 			content: "原價";
 		}
 		.card .price_original:after{
@@ -212,7 +215,7 @@
 			position: relative;
 			bottom: 0.25em;
 		}
-/* 		.card .price_sale:before{
+		/* .card .price_sale:before{
 			content: " 特價 ";
 			color: #333;
 			font-size: 0.9em;
@@ -263,7 +266,7 @@
 			font-size: 1.1em;
 			font-weight: 900;
 		}
-		.back-top-top{
+		.back-top-top,.back-top-top:visited{
 			padding: 1em;
 			background-color: rgba(50,60,135,0.9);
 			color: #FFF;
@@ -272,7 +275,7 @@
 			right: 1em;
 			z-index: 999;
 		}
-		.back-top-top:hover{
+		.back-top-top:active{
 			color: #FFF;
 			background-color: rgba(244,81,30 ,0.9);
 		}
@@ -294,10 +297,17 @@
 		.scrollmenu .icon {
 		    display: none;
 		}
+		.owl-item .card{
+			margin-bottom: 0;
+			padding-bottom: 0;
+			background-color: #E8EAF6;
+		}
+		.owl-nav{
+			display: none;
+		}
 
 		@media screen and (max-width: 768px){
 			.main .card{
-				background-color: #F6F6F6;
 				padding: 0.5em;
 				box-sizing: border-box;
 	    		padding-bottom: 0.1em;
@@ -326,21 +336,23 @@
 				height: calc(100vh - 40px);
 				overflow-y: scroll; 
 			}
-			.scrollmenu a:not(:first-child) {display: none;}
-			  .scrollmenu a.icon {
+			.scrollmenu a:not(:first-child) {
+				display: none;
+			}
+			.scrollmenu a.icon {
 			    float: right;
 			    display: block;
-			  }
+			}
 			.scrollmenu.responsive a.icon {
 			    position: absolute;
 			    right: 0;
 			    top: 0;
-			  }
-			  .scrollmenu.responsive a {
+			}
+			.scrollmenu.responsive a {
 			    float: none;
 			    display: block;
 			    text-align: left;
-			  }
+			}
 
 		}
 	</style>
@@ -349,6 +361,7 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="owl.carousel.min.js"></script>
 	<script>
 		function myFunction() {
     var x = document.getElementById("myNavbar");
@@ -372,24 +385,6 @@
 		<div class="header" id="top">
 		</div>
 		<div class="main">
-		<div class="scrollmenu" id="myNavbar">
-			<a href="#allbook">全部出版社</a>	
-		  <a href="#books1">小天下</a>
-		  <a href="#books2">親子天下</a>
-		  <a href="#books3">臺灣麥克</a>
-		  <a href="#books4">維京國際</a>
-		  <a href="#books5">三采文化</a>
-		  <a href="#books6">小魯文化</a>
-		  <a href="#books7">青林國際</a>
-		  <a href="#books8">未來出版</a>  
-		  <a href="#books9">三之三</a>
-		  <a href="#books10">大塊文化</a>
-		  <a href="#books11">秀威少年</a>
-		  <a href="#books12">網路與書</a>
-		  <a href="#books13">麋鹿多媒體</a>
-			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>	
-
 			<p class="bg-warning">
 				<span class="book_select">20</span> 
 				<!-- <span class="money_original">12,345</span> -->
@@ -400,8 +395,231 @@
 			</p>
 			
 			<div>
-			<div>
-			 <div class="pull-left select" style="margin-bottom: 5px;">
+			<div style="background-color: #E8EAF6">
+			<div class="scrollmenu" id="myNavbar">
+				<a href="#allbook">全部出版社</a>	
+			  <a href="#books1">小天下</a>
+			  <a href="#books2">親子天下</a>
+			  <a href="#books3">臺灣麥克</a>
+			  <a href="#books4">維京國際</a>
+			  <a href="#books5">三采文化</a>
+			  <a href="#books6">小魯文化</a>
+			  <a href="#books7">青林國際</a>
+			  <a href="#books8">未來出版</a>  
+			  <a href="#books9">三之三</a>
+			  <a href="#books10">大塊文化</a>
+			  <a href="#books11">秀威少年</a>
+			  <a href="#books12">網路與書</a>
+			  <a href="#books13">麋鹿多媒體</a>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+
+			<div class="owl-carousel owl-theme">
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    					<div class="add_book">
+    					<div class="btn-group">
+						  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="glyphicon glyphicon-plus"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<li><a href="#">建立新書單</a></li>
+						  	<li role="separator" class="divider"></li>
+						    <li><a href="#">書單1</a></li>
+						    <li><a href="#">書單2</a></li>
+						    <li><a href="#">書單3</a></li>
+						  </ul>
+						</div>
+					</div>
+    				</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+			</div>
+
+
+
+			 <div class="pull-left select" style="padding-top: 15px">
 			    <!-- <button class="btn btn-default">金額由低到高↑</button>
 			    <button class="btn btn-default">出版社排序/篩選</button>
 			    <button class="btn btn-default">出版日期新到舊</button> -->
@@ -417,15 +635,13 @@
 			</div>    
 			  
 			</div> 
-			
-			<div class="pull-right search_bar">
+			<div class="pull-right search_bar" style="padding-top: 15px">
 				<input type="search" placeholder="搜尋您要的書籍" class="form-control search_book">
 			    <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
 			    
 			</div>
 			<div class="clearfix"></div>
 			</div>
-
 			<div class="row">
 				<div class="col-md-2 col-xs-6">
 	    			<div class="card">
@@ -448,21 +664,17 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
 	    			</div>
-	    		</div>
+	    		</div>	
 				<div class="col-md-2 col-xs-6">
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
-	    					<span class="discount66">66折</span>
+	    					<span class="discount7">7折</span>
 	    					<div class="add_book">
 	    					<div class="btn-group">
 							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -479,10 +691,6 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
@@ -510,10 +718,6 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
@@ -524,7 +728,7 @@
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
-	    					<span class="discount66">66折</span>
+	    					<span class="discount7">7折</span>
 	    					<div class="add_book">
 	    					<div class="btn-group">
 							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -541,10 +745,6 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
@@ -572,10 +772,6 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
@@ -586,7 +782,7 @@
 	    			<div class="card">
 	    				<div class="book_img">
 	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
-	    					<span class="discount66">66折</span>
+	    					<span class="discount7">7折</span>
 	    					<div class="add_book">
 	    					<div class="btn-group">
 							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -603,16 +799,120 @@
 						</div>
 	    				</div>
 	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
-	    				<p style="height:1em;">
-	    					<span class="date">107-04-03</span>
-							<span class="author">幾米</span>
-	    				</p>
 	    				<p>
 	    					<span class="press">大塊文化出版股份有限公司</span>
 	    					<span class="price_sale">180</span>
 	    				</p>
 	    			</div>
-	    		</div>      		
+	    		</div>
+				<div class="col-md-2 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
+	    					<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="glyphicon glyphicon-plus"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
+	    				</div>
+	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
+	    				<p>
+	    					<span class="press">大塊文化出版股份有限公司</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    			</div>
+	    		</div>  
+				<div class="col-md-2 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
+	    					<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="glyphicon glyphicon-plus"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
+	    				</div>
+	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
+	    				<p>
+	    					<span class="press">大塊文化出版股份有限公司</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    			</div>
+	    		</div>  
+				<div class="col-md-2 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
+	    					<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="glyphicon glyphicon-plus"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
+	    				</div>
+	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
+	    				<p>
+	    					<span class="press">大塊文化出版股份有限公司</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    			</div>
+	    		</div>  
+				<div class="col-md-2 col-xs-6">
+	    			<div class="card">
+	    				<div class="book_img">
+	    					<a href="#"><img src="9789578630284.jpg" alt=""></a>
+	    					<span class="discount7">7折</span>
+	    					<div class="add_book">
+	    					<div class="btn-group">
+							  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span class="glyphicon glyphicon-plus"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							  	<li><a href="#">建立新書單</a></li>
+							  	<li role="separator" class="divider"></li>
+							    <li><a href="#">書單1</a></li>
+							    <li><a href="#">書單2</a></li>
+							    <li><a href="#">書單3</a></li>
+							  </ul>
+							</div>
+						</div>
+	    				</div>
+	    				<p class="book_T"><a href="#">一看就懂地理百科</a></p>
+	    				<p>
+	    					<span class="press">大塊文化出版股份有限公司</span>
+	    					<span class="price_sale">180</span>
+	    				</p>
+	    			</div>
+	    		</div>     		
 			</div>
 		  </div>
 
@@ -632,6 +932,43 @@
 		  e.preventDefault()
 		  $(this).tab('show')
 		})
+	</script>
+	<script>
+	$(document).ready(function(){
+	  $('.owl-carousel').owlCarousel({
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:2,
+		            nav:true
+		        },
+		        600:{
+		            items:3,
+		            nav:false
+		        },
+		        1000:{
+		            items:5,
+		            nav:true,
+		            loop:false
+		        }
+		    }
+		})
+	  var owl = $('.owl-carousel');
+		owl.owlCarousel({
+		    loop:true,
+		    margin:10,
+		    autoplay:true,
+		    autoplayTimeout:2500,
+		    autoplayHoverPause:true
+
+		});
+		$('.play').on('click',function(){
+		    owl.trigger('play.owl.autoplay',[1000])
+		})
+		$('.stop').on('click',function(){
+		    owl.trigger('stop.owl.autoplay')
+		})
+	});
 	</script>
 </body>
 </html>
