@@ -35,13 +35,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 		    display: inline-block;
 		    color: white;
 		    text-align: center;
-		    padding: 14px;
+		    padding: 14px 6px;
 		    text-decoration: none;
 		    margin-right: -4px;
 		    color: #5D4037;
 		    font-size: 1.1em;
 		    font-weight: 900;
-		   	border-right: 1px solid #FF9800;
+		   	border-right: 1px solid #FFF;
+		}
+		div.scrollmenu a:nth-child(14){
+		   	border-right: 0px;
 		}
 /* 		div.scrollmenu a:nth-child(3n-1) {
 		    background-color: #FFCA28;
@@ -382,6 +385,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			    float: right;
 			    display: block;
 			}
+			div.scrollmenu a {
+			    border-right: 0px;
+			    border-bottom: 1px solid #FFF;
+			}
 			.scrollmenu.responsive a.icon {
 			    position: absolute;
 			    right: 0;
@@ -439,7 +446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			<div>
 			<div style="background-color: #E8EAF6">
 			<div class="scrollmenu sticky" id="myNavbar">
-				<a href="#allbook">全部出版社</a>	
+				<a href="#allbook">全部</a>	
 			  <a href="#books1">小天下</a>
 			  <a href="#books2">親子天下</a>
 			  <a href="#books3">臺灣麥克</a>
