@@ -16,6 +16,23 @@
 			height: 170px;
 			background-image: url('bookday_banner.jpg');
 		}
+		div.scrollmenu {
+		    background-color: #333;
+		    overflow: auto;
+		    white-space: nowrap;
+		}
+
+		div.scrollmenu a {
+		    display: inline-block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px;
+		    text-decoration: none;
+		}
+
+		div.scrollmenu a:hover {
+		    background-color: #777;
+		}
 		.main .bg-warning{
 			font-family: Myriad Pro,"微軟正黑體";
 			padding: 0.5em 1em;
@@ -270,6 +287,12 @@
 			text-align: center;
 			z-index: 500;
 		}
+		.scrollmenu{
+			position: relative;
+		}
+		.scrollmenu .icon {
+		    display: none;
+		}
 
 		@media screen and (max-width: 768px){
 			.main .card{
@@ -302,6 +325,21 @@
 				height: calc(100vh - 40px);
 				overflow-y: scroll; 
 			}
+			.scrollmenu a:not(:first-child) {display: none;}
+			  .scrollmenu a.icon {
+			    float: right;
+			    display: block;
+			  }
+			.scrollmenu.responsive a.icon {
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			  }
+			  .scrollmenu.responsive a {
+			    float: none;
+			    display: block;
+			    text-align: left;
+			  }
 
 		}
 	</style>
@@ -310,6 +348,16 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>
+		function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "scrollmenu") {
+        x.className += " responsive";
+    } else {
+        x.className = "scrollmenu";
+    }
+}
+	</script>
 </head>
 <body>
 	<a href="#top" class="back-top-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
@@ -323,6 +371,24 @@
 		<div class="header" id="top">
 		</div>
 		<div class="main">
+		<div class="scrollmenu" id="myNavbar">
+			<a href="#allbook">全部出版社</a>	
+		  <a href="#books1">小天下</a>
+		  <a href="#books2">親子天下</a>
+		  <a href="#books3">臺灣麥克</a>
+		  <a href="#books4">維京國際</a>
+		  <a href="#books5">三采文化</a>
+		  <a href="#books6">小魯文化</a>
+		  <a href="#books7">青林國際</a>
+		  <a href="#books8">未來出版</a>  
+		  <a href="#books9">三之三</a>
+		  <a href="#books10">大塊文化</a>
+		  <a href="#books11">秀威少年</a>
+		  <a href="#books12">網路與書</a>
+		  <a href="#books13">麋鹿多媒體</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>	
+
 			<p class="bg-warning">
 				<span class="book_select">20</span> 
 				<!-- <span class="money_original">12,345</span> -->
