@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>桃園投票</title>
+<!--
+Classic Template
+http://www.templatemo.com/tm-488-classic
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <!-- Place somewhere in the <head> of your document -->
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+        <!-- load JS files -->
+    <!-- <script src="js/jquery-1.11.3.min.js"></script>  -->            <!-- jQuery (https://jquery.com/download/) -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
+    <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+    
+</head>
+
+    <body>
+       
+        <div class="tm-home-img-container">
+            <img src="img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
+        </div>
+
+        <section class="tm-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+                        <h2 class="tm-gold-text tm-title">桃園投票測試用標題</h2>
+                        <p>剪刀石頭布，這是提案的副標題說明，這是提案的副標題說明！</p>   
+                        <p class="tm-subtitle orange_text">即日起至107.8.20</p>             
+                    </div>
+                    <!-- 管理權 -->
+                   <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center"> 
+                        <div class="button_tool">
+                            <button class="btn btn-primary">上傳xls檔</button>
+                            <button class="btn btn-primary">下載xls檔</button>
+                            <button class="btn btn-primary">上傳圖片zip</button>
+                            <button class="btn btn-primary">下載圖片zip</button>
+                            <button class="btn btn-success">統計報表</button>
+                        </div>
+                    </div> -->
+                    <!-- 管理權end -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 top-title" id="VoteChoose">
+
+                    <!-- 已登入 -->
+                    <!--  <p class="tm-subtitle">
+
+                        歡迎 <span>P助</span>，您已投了 <span>1</span> 票，需再選擇 <span>2</span> 票
+                        <button class="tm-btn tm-btn-gray2 text-uppercase">送出</button>
+
+                        <a href="#" class="pull-right">觀看即時投票結果</a>
+                    </p> -->
+
+
+                    <!-- 未登入 -->
+                        <p class="tm-subtitle">請先 <button class="tm-btn text-uppercase tm-btn-gray" type="button" data-toggle="modal" data-target=".loginpage">登入</button> 進行投票</p>
+
+                        <!-- Large modal -->
+                        <div class="modal fade loginpage" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content" style="text-align: center;">
+                              <h4 class="tm-margin-b-20 tm-gold-text" >請登入您的身份來進行投票</h4>
+                              <p>注意：若您為107年8月1日後入籍桃園市之民眾，因資料還未更新至系統，故無法投票。</p>
+                              <form class="form-horizontal">
+                                <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-2 control-label">卡號/身分證</label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-2 control-label">出生年月日</label>
+                                  <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-2 control-label">驗證碼</label>
+                                  <div class="col-sm-5">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="請輸入右側圖片驗證碼">
+                                  </div>
+                                  <div class="col-sm-5">
+                                    <img src="img/testnumber.jpeg" alt="" class="img-responsive">
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-lg btn-primary">登入</button>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </form>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+
+
+                <!-- 投票項目  -->
+                <!-- 已投票項目為vote.png class為vote_icon
+                     未投票項目為no_vote.png class為no_vote
+                 -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/vote.png" alt="" class="vote_icon">
+                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">龍山文創，銀青共創 讓世界看見萬華文化底蘊讓世界看見萬華文化底蘊</h4></a>
+                            <a href="#" type="button" class="tm-btn text-uppercase" data-toggle="modal" data-target=".bs-example-modal-lg">看更多</a>    
+                        </div>  
+                        
+                        <!-- Large modal -->
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <!-- Place somewhere in the <body> of your page -->
+                              <!-- <div class="flexslider">
+                                <ul class="slides">
+                                  <li data-thumb="img/tm-img-310x180-1.jpg">
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                  <li data-thumb="img/tm-img-310x180-2.jpg">
+                                    <img src="img/tm-img-310x180-2.jpg" />
+                                  </li>
+                                  <li data-thumb="img/tm-img-310x180-3.jpg">
+                                    <img src="img/tm-img-310x180-3.jpg" />
+                                  </li>
+                                  <li data-thumb="img/tm-img-310x180-4.jpg">
+                                    <img src="img/tm-img-310x180-4.jpg" />
+                                  </li>
+                                  <li data-thumb="img/tm-img-310x180-1.jpg">
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                </ul>
+                              </div> -->
+                              <!-- Place somewhere in the <body> of your page -->
+                              <div id="slider" class="flexslider">
+                                <ul class="slides">
+                                  <li>
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-2.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-3.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-4.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                  <!-- items mirrored twice, total of 12 -->
+                                </ul>
+                              </div>
+                              <div id="carousel" class="flexslider">
+                                <ul class="slides">
+                                  <li>
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-2.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-3.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-4.jpg" />
+                                  </li>
+                                  <li>
+                                    <img src="img/tm-img-310x180-1.jpg" />
+                                  </li>
+                                  <!-- items mirrored twice, total of 12 -->
+                                </ul>
+                              </div>
+                              <h4 class="tm-margin-b-20 tm-gold-text">龍山文創，銀青共創 讓世界看見萬華文化底蘊讓世界看見萬華文化底蘊</h4>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺文化美食趣GOGO讚</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺服飾商圈</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">彩繪桂林水門入口意象</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">龍山文創，銀青共創 讓世界看見萬華文化底蘊讓世界看見萬華文化底蘊</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺文化美食趣GOGO讚</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href=""><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺服飾商圈</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">彩繪桂林水門入口意象</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/vote.png" alt="" class="vote_icon">
+                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">龍山文創，銀青共創 讓世界看見萬華文化底蘊讓世界看見萬華文化底蘊</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺文化美食趣GOGO讚</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺服飾商圈</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">彩繪桂林水門入口意象</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">龍山文創，銀青共創 讓世界看見萬華文化底蘊讓世界看見萬華文化底蘊</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺文化美食趣GOGO讚</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href=""><h4 class="tm-margin-b-20 tm-gold-text vote-title">艋舺服飾商圈</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-content-box">
+                            <img src="img/no_vote.png" alt="" class="no_vote">
+                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <a href="#"><h4 class="tm-margin-b-20 tm-gold-text vote-title">彩繪桂林水門入口意象</h4></a>
+                            <a href="#" class="tm-btn text-uppercase">看更多</a>    
+                        </div>  
+
+
+                    </div>
+                </div> <!-- row -->
+
+            </div>
+        </section>
+        
+        <footer class="tm-footer">
+            <div class="container-fluid">
+
+
+                <div class="row">
+                    <div class="col-xs-12 tm-copyright-col">
+                        <p class="tm-copyright-text" style="text-align: center;">Copyright 2018 桃園市政府版權所有</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("VoteChoose");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+        <!-- Place in the <head>, after the three links -->
+       <script type="text/javascript">
+          $(function(){
+            //SyntaxHighlighter.all();
+          });
+          //$(window).load(function(){
+            // setTimeout(function(){
+            //   $('.flexslider').flexslider({
+            //   animation: "slide",
+            //   controlNav: "thumbnails",
+            //   start: function(slider){
+            //     $('body').removeClass('loading');
+            //   }
+            // });
+            // }, 2000);
+            // $('.flexslider').flexslider({
+            //   animation: "slide",
+            //   controlNav: "thumbnails",
+            //   start: function(slider){
+            //     $('body').removeClass('loading');
+            //   }
+            // });
+          //});
+        </script>
+       <script type="text/javascript">
+          // $(function(){
+          //   SyntaxHighlighter.all();
+          // });
+          $(window).load(function(){
+            $('#carousel').flexslider({
+              animation: "slide",
+              controlNav: false,
+              animationLoop: false,
+              slideshow: false,
+              itemWidth: 210,
+              itemMargin: 5,
+              asNavFor: '#slider' 
+            });
+
+            $('#slider').flexslider({
+              animation: "slide",
+              controlNav: false,
+              animationLoop: false,
+              slideshow: false,
+              sync: "#carousel",
+              start: function(slider){
+                $('body').removeClass('loading');
+              }
+            });
+          });
+        </script>
+       
+</body>
+</html>

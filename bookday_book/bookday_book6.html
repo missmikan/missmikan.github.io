@@ -5,19 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css"/>
 	<style>
 		.wrapper{
 			max-width: 1000px;
 			margin: 0 auto;
-			padding-top: 40px;
+			padding-top: 47px;
 		}
 		.header{
 			width: 100%;
 			height: 170px;
 			background-image: url('bookday_banner.jpg');
 		}
+/* New */
+		.main{
+			margin-top: 0;
+			padding-left: 0;
+		}
+/* ---------------------- */
 		div.scrollmenu {
 			width: 100%;
 		    overflow: auto;
@@ -39,7 +45,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 		    text-decoration: none;
 		    margin-right: -4px;
 		    color: #5D4037;
-		    font-size: 1.1em;
+		    font-size: 1.29em;
 		    font-weight: 900;
 		   	border-right: 1px solid #FFF;
 		}
@@ -146,6 +152,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			padding: 0.5em;
 			position: relative;
 			overflow: hidden;
+			display: flex;
+			align-items: center;
 		}
 		.book_img .discount7{
 			display: inline-block;
@@ -172,7 +180,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			border-radius: 5px;
 		}
 		.card .book_img img{
-			max-height: 185px;
+			/* max-height: 185px; */
+			max-width: 100%;
 		}
 		.card .book_T{
 		    width: 100%;
@@ -187,7 +196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 		    -webkit-line-clamp: 1;
 		    -webkit-box-orient: vertical;
 		    margin-top: 0em;
-		    margin-bottom: 0em;
+		    margin-bottom: 0em;	
 		}
 		.card p{
 			padding: 0 0.5em;
@@ -211,7 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 		    height: 1.1em;
 		    display: inline-block;
 		}
-		.card .press{
+		.	card .press{
 			display: inline-block;
 			overflow: hidden;
 		    white-space: nowrap;
@@ -251,7 +260,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			font-size: 0.9em;
 			font-weight: 400;
 		}
-		.card .add_book{
+		.card .add_book2{
 			text-align: center;
 		}
 		.main .col-md-3, .main .col-xs-6{
@@ -264,13 +273,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			padding-top: 10px;
 
 		}
-		.main .card .add_book{
+		.main .card .add_book2{
 			text-align: center;
 			position: absolute;
 			bottom: 87px;
     		right: 19px;
 		}
-		.main .owl-carousel .add_book{
+		.main .owl-carousel .add_book2{
 			text-align: center;
 			position: absolute;
 			bottom: 70px;
@@ -321,6 +330,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			text-align: center;
 			z-index: 500;
 		}
+		.search_bar input{
+			width: 73% !important;
+		}
 		.scrollmenu{
 			position: relative;
 		}
@@ -341,7 +353,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			min-width: 140px !important;
 		}
 
-
+/* New */
+	   .slider {
+	      width: 93%;
+	      margin: 0 auto;
+	    }
+	    .slick-slide {
+	      margin: 0px 10px;
+	    }
+	    .slick-slide img {
+	      width: 100%;
+	    }
+	    .slick-prev:before,
+	    .slick-next:before {
+	      color: black;
+	    }
+	    .slick-slide {
+	      transition: all ease-in-out .3s;
+	      opacity: .2;
+	    }	    
+	    .slick-active {
+	      opacity: 1;
+	    }
+	    .slick-current {
+	      opacity: 1;
+	    }
+/* -------------------------- */
 
 		@media screen and (max-width: 768px){
 			.main .card{
@@ -367,7 +404,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 				width: 48%;
 			}
 			.select{
-				width: 48%;
+				width: 46%;
 				margin-right: 4%;
 			}
 			.wrapper{
@@ -408,6 +445,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			div.scrollmenu a{
 			   	border-right: 0;
 			}
+			.logo_title{
+				width: 100% !important;
+			}
+			.logo_title .searchform-input{
+				display: none !important;
+			}
+			.logo_title .service li:first-child{
+				display: none !important;
+			}
+/* New */
+			.logo_header{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		   	.slider {
+		      	width: 90%;
+		    }
+/* -------------------------- */
 
 		}
 	</style>
@@ -416,7 +471,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="owl.carousel.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
 	<script>
 		function myFunction() {
     var x = document.getElementById("myNavbar");
@@ -452,22 +508,220 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 			<div>
 			<div style="background-color: #E8EAF6">
 			<div class="scrollmenu sticky" id="myNavbar">
-				<a href="#allbook">全部</a>	
-			  <a href="#books1">小天下</a>
-			  <a href="#books2">親子天下</a>
+				<a href="#allbook">全部</a>
 			  <a href="#books3">臺灣麥克</a>
 			  <a href="#books4">維京國際</a>
-			  <a href="#books5">三采文化</a>
+			  <a href="#books2">親子天下</a>
 			  <a href="#books6">小魯文化</a>
 			  <a href="#books7">青林國際</a>
-			  <a href="#books8">未來出版</a>  
-			  <a href="#books9">三之三</a>
 			  <a href="#books10">大塊文化</a>
+			  <a href="#books1">小天下</a>
+			  <a href="#books5">三采文化</a>
+			  <a href="#books9">三之三</a>
 			  <a href="#books11">秀威少年</a>
 			  <a href="#books12">網路與書</a>
+			  <a href="#books8">未來出版</a>  
 			  <a href="#books13">麋鹿多媒體</a>
 				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
+
+			<section class="variable slider">
+			    <div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+    			<div class="card">
+    				<div class="book_img">
+    					<a href="#"><img src="9789862138786.jpg" alt=""></a>
+    					<span class="discount66">66折</span>
+    				</div>
+    				<div class="add_book">
+    					<button type="button" class="btn btn-success btn-sm">
+						    <span class="glyphicon glyphicon-plus"></span>
+						</button>
+					</div>
+    				<p class="book_T"><a href="#">不愛讀書不是你的錯（限量精裝作者親簽版）</a></p>
+    				<p>
+    					<span class="press">大塊文化出版股份有限公司</span>
+    					<span class="price_sale">180</span>
+    				</p>
+    			</div>
+			</section>
+
+
+
 
 			<div class="owl-carousel owl-theme">
     			<div class="card">
@@ -925,45 +1179,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', end
 		  $(this).tab('show')
 		})
 	</script>
-	<script>
-	$(document).ready(function(){
-	  $('.owl-carousel').owlCarousel({
-		    responsiveClass:true,
-		    responsive:{
-		        0:{
-		            items:2,
-		            nav:true
-		        },
-		        600:{
-		            items:3,
-		            nav:false
-		        },
-		        1000:{
-		            items:5,
-		            nav:true,
-		            loop:false
-		        }
-		    }
-		})
-	  var owl = $('.owl-carousel');
-		owl.owlCarousel({
-		    loop:true,
-		    margin:10,
-		    autoplay:true,
-		    autoplayTimeout:2500,
-		    autoplayHoverPause:true
-
-		});
-		$('.play').on('click',function(){
-		    owl.trigger('play.owl.autoplay',[1000])
-		})
-		$('.stop').on('click',function(){
-		    owl.trigger('stop.owl.autoplay')
-		})
-	});
-	</script>
-	<script>
-		
-	</script>
+ <script type="text/javascript">
+    $(document).on('ready', function() { 
+      $(".variable").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        autoplay: true,
+        autoplaySpeed: 1000, 
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
+      });
+      
+    });
+  </script>
 </body>
 </html>

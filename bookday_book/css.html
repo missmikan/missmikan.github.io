@@ -1,0 +1,422 @@
+	<style>
+		.wrapper{
+			max-width: 1000px;
+			margin: 0 auto;
+			padding-top: 47px;
+		}
+		.header{
+			width: 100%;
+			height: 170px;
+			background-image: url('bookday_banner.jpg');
+		}
+		.main{
+			margin-top: 0;
+		}
+		div.scrollmenu {
+			width: 100%;
+		    overflow: auto;
+		    white-space: nowrap;
+		    border-radius: 0.3px;
+		    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7bd20+1,f7bd20+5,ffb200+90 */
+background: rgb(247,189,32); /* Old browsers */
+background: -moz-linear-gradient(top, rgb(247,189,32) 1%, rgb(247,189,32) 5%, rgb(255,178,0) 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgb(247,189,32) 1%,rgb(247,189,32) 5%,rgb(255,178,0) 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgb(247,189,32) 1%,rgb(247,189,32) 5%,rgb(255,178,0) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bd20', endColorstr='#ffb200',GradientType=0 ); /* IE6-9 */
+		}
+		div.scrollmenu a{
+		    display: inline-block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 6px;
+		    text-decoration: none;
+		    margin-right: -4px;
+		    color: #5D4037;
+		    font-size: 1.29em;
+		    font-weight: 900;
+		   	border-right: 1px solid #FFF;
+		}
+		div.scrollmenu a:nth-child(14){
+		   	border-right: 0px;
+		}
+/* 		div.scrollmenu a:nth-child(3n-1) {
+		    background-color: #FFCA28;
+		}
+		div.scrollmenu a:nth-child(3n) {
+		    background-color: #FFCC80;
+		}
+		div.scrollmenu a:nth-child(3n+1) {
+		    background-color: #FFECB3;
+		} */
+		div.scrollmenu a:hover {
+		    background-color: #EF6C00;
+		    color: #FFF;
+		}
+		.main .bg-warning{
+			font-family: Myriad Pro,"微軟正黑體";
+			padding: 0.2em 1em;
+			font-size: 1em;
+			font-weight: 900;
+		}
+		.main .bg-warning .book_select{
+			color: #0059A5;
+			font-size: 1.2em;
+		}
+		.main .bg-warning .book_select:before{
+			content: "已選 ";
+			color: #333;
+		}
+		.main .bg-warning .book_select:after{
+			content: " 本";
+			color: #333;
+		}
+		.main .bg-warning .money_original:before{
+			content: "原價 ";
+			color: #333;
+		}
+		.main .bg-warning .money_original:after{
+			content: " 元";
+			color: #333;
+		}
+		.main .bg-warning .money_sale{
+			color: #FF002B;
+			font-size: 1.2em;
+		}
+		.main .bg-warning .money_sale:before{
+			content: "活動價 ";
+			color: #333;
+		}
+		.main .bg-warning .money_sale:after{
+			content: " 元";
+			color: #333;
+		}
+		.main .nav-tabs > li.active > a, .main .nav-tabs > li.active > a:hover, .main .nav-tabs > li.active > a:focus {
+		    color: #FFF;
+		    cursor: default;
+		    background-color: #FBB03B;
+		    border: 0;
+		    border-bottom-color: transparent;
+		    border-bottom: 4px solid #F7931E;
+		}
+		.main .nav-tabs > li > a {
+		    margin-right: 2px;
+		    background-color: #EAEAEA;
+		    color: #999;
+		    line-height: 1.42857143;
+		    border: 1px solid transparent;
+		    border-radius: 4px 4px 0 0;
+		    border-bottom: 4px solid #999;
+		    font-size: 1.1em;
+		}
+		.main .nav > li > a {
+		    padding: 5px 30px;
+		}
+		.main .nav-tabs {
+		    border-bottom: 0;
+		}
+		.main .card{
+			background-color: #F6F6F6;
+			padding: 0.7em;
+			box-sizing: border-box;
+    		padding-bottom: 0.1em;
+		}
+
+		.tools{
+			list-style: none;
+			padding-left: 0;
+		}
+		.tools li{
+			float: left;
+		}
+		.card{
+			margin-bottom: 15px;
+		}
+		.card .book_img{
+			width: 100%;
+			height: 200px;
+			background-color: #FFF;
+			text-align: center;
+			padding: 0.5em;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+		}
+		.book_img .discount7{
+			display: inline-block;
+			padding: 0.3em 0.5em;
+			background-color: rgba(216,27,96 ,0.8);
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: #FFF;
+			font-weight: 600;
+			font-size: 1.2em;
+			border-radius: 5px;
+		}
+		.book_img .discount66{
+			display: inline-block;
+			padding: 0.3em 0.5em;
+			background-color: rgba(81,45,168 ,0.8);
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: #FFF;
+			font-weight: 600;
+			font-size: 1.2em;
+			border-radius: 5px;
+		}
+		.card .book_img img{
+			/* max-height: 185px; */
+			max-width: 100%;
+		}
+		.card .book_T{
+		    width: 100%;
+		    height: 1.3em;
+		    font-size: 1.2em;
+		    font-weight: 600;
+		    text-align: justify;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    display: inline-block;
+		    display: -webkit-box;
+		    -webkit-line-clamp: 1;
+		    -webkit-box-orient: vertical;
+		    margin-top: 0em;
+		    margin-bottom: 0em;	
+		}
+		.card p{
+			padding: 0 0.5em;
+		}
+		.card .book_T a:link,.card .book_T a:visited{
+			color: #294068;
+			text-decoration: none;
+		}
+		.card .date{
+			font-size: 1.2em;
+			color: #39B54A;
+			display: inline-block;
+		}
+		.card .author{
+			font-size: 1.2em;
+			color: #F7931E;
+			overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    max-width: 7em;
+		    height: 1.1em;
+		    display: inline-block;
+		}
+		.	card .press{
+			display: inline-block;
+			overflow: hidden;
+		    white-space: nowrap;
+		    /* text-overflow: ellipsis; */
+		    max-width: 4em;
+		    font-size: 1.1em;
+    		color: #666;
+		}
+		.card .price_original{
+			font-size: 1em;
+			color: #666;
+			text-decoration: line-through;
+		}
+		/*.card .price_original:before{
+			content: "原價";
+		}
+		.card .price_original:after{
+			content: "元";
+		} */
+		.card .price_sale{
+			display: inline-block;
+			font-size: 1.2em;
+			color: red;
+			font-weight: 900;
+			position: relative;
+			bottom: 0.25em;
+		}
+		/* .card .price_sale:before{
+			content: " 特價 ";
+			color: #333;
+			font-size: 0.9em;
+			font-weight: 400;
+		} */
+		.card .price_sale:after{
+			content: " 元";
+			color: #333;
+			font-size: 0.9em;
+			font-weight: 400;
+		}
+		.card .add_book2{
+			text-align: center;
+		}
+		.main .col-md-3, .main .col-xs-6{
+		    padding-right: 5px !important;
+		    padding-left: 5px !important;
+		}
+		.main .row{
+			margin-right: -5px !important;
+			margin-left: -5px !important;
+			padding-top: 10px;
+
+		}
+		.main .card .add_book2{
+			text-align: center;
+			position: absolute;
+			bottom: 87px;
+    		right: 19px;
+		}
+		.main .owl-carousel .add_book2{
+			text-align: center;
+			position: absolute;
+			bottom: 70px;
+    		right: 22px;
+		}
+		.search_book{
+				width: 79%;
+				display: inline-block;
+		}
+		.top_bar{
+			background-color: rgba(50,60,135,0.9);
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 99;
+		}
+		.top_bar a:link,.top_bar a:visited{
+			color: #FFF;
+			font-size: 1.1em;
+			font-weight: 900;
+		}
+		.back-top-top,.back-top-top:visited{
+			padding: 1em;
+			background-color: rgba(50,60,135,0.9);
+			color: #FFF;
+			position: fixed;
+			bottom: 4em;
+			right: 1em;
+			z-index: 999;
+		}
+		.back-top-top:active{
+			color: #FFF;
+			background-color: rgba(244,81,30 ,0.9);
+		}
+		.bottom_footer{
+			background-color: #EAEAEA;
+			height:40px;
+			line-height: 40px;
+			padding-left: 1em;
+			padding-right: 1em;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			z-index: 500;
+		}
+		.search_bar input{
+			width: 73% !important;
+		}
+		.scrollmenu{
+			position: relative;
+		}
+		.scrollmenu .icon {
+		    display: none;
+		}
+		.owl-item .card{
+			margin-bottom: 0;
+			padding-bottom: 0;
+			background-color: #E8EAF6;
+		}
+		.owl-nav{
+			display: none;
+		}
+		.dropdown-menu{
+			position: absolute;
+			left: -103px !important;
+			min-width: 140px !important;
+		}
+
+
+
+		@media screen and (max-width: 768px){
+			.main .card{
+				padding: 0.5em;
+				box-sizing: border-box;
+	    		padding-bottom: 0.1em;
+			}
+			.main .nav > li > a {
+			    padding: 5px 18px;
+			}
+			.header{
+				width: 100%;
+				height: 105px;
+				background-image: url('bookday_banner-m.jpg');
+				background-size: cover;
+			    background-position: center;
+			}
+			.search_book{
+				width: calc(100% - 50px);
+				display: inline-block;
+			}
+			.search_bar{
+				width: 48%;
+			}
+			.select{
+				width: 46%;
+				margin-right: 4%;
+			}
+			.wrapper{
+				height: calc(100vh - 40px);
+				overflow-y: scroll; 
+			}
+			.scrollmenu{
+			    overflow-y: auto !important;
+    			overflow-x: hidden!important;
+			}
+			.scrollmenu a:not(:first-child) {
+				display: none;
+			}
+			.scrollmenu a.icon {
+			    float: right;
+			    display: block;
+			}
+			div.scrollmenu a {
+			    border-right: 0px;
+			    border-bottom: 1px solid #FFF;
+			}
+			div.scrollmenu a:first-child {
+			    border-bottom:0px;
+			}
+			div.scrollmenu a:last-child {
+			    border-bottom:0px;
+			}
+			.scrollmenu.responsive a.icon {
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			}
+			.scrollmenu.responsive a {
+			    float: none;
+			    display: block;
+			    text-align: left;
+			}
+			div.scrollmenu a{
+			   	border-right: 0;
+			}
+			.logo_title{
+				width: 100% !important;
+			}
+			.logo_title .searchform-input{
+				display: none !important;
+			}
+			.logo_title .service li:first-child{
+				display: none !important;
+			}
+
+		}
+	</style>
