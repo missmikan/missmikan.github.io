@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>編班作業</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div style="max-width: 1000px;margin:2em auto 0">
+		<div class="t_title">
+			<div class="t_title1">
+				<span>107</span>學年
+				<span>上</span>學期編班作業
+			</div>
+			<div class="t_title2">
+				<span>106</span>學年
+				<span>下</span>學期 升級至
+				<span>107</span>學年 上學期
+			</div>
+			<button class="btn btn-default btn-sm pull-right">名冊列印</button>
+			<button class="btn btn-default btn-sm pull-right">操作記錄</button>
+			<div class="clearfix"></div>
+		</div>
+		<div class="t_main">
+			<table class="table table1">
+				<thead>
+					<tr>
+						<th class="All_year">
+							<span>106</span>學年<span>下</span>學期<br>
+							年班學生
+						</th>
+						<th class="Mt_GO">執行<br>動作</th>
+						<th class="class_save" colspan="2">
+							<span>107</span>學年<span>上</span>學期 <br>編班作業暫存區<br>
+							<!-- <span class="point_yellow">請設定各年級升級作業方式</span> -->
+							<!-- (編班結果 <span class="point_yellow">尚未升級</span> 至<span>107</span>學年<span>上</span>學期學籍資料中	)
+
+							<button class="btn btn-danger btn-sm">
+								<span class="glyphicon glyphicon-refresh"></span> 同步升級
+							</button>
+							<button class="btn btn-default btn-sm">不參加編班設定</button> -->
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>二年級
+							<span>10</span>班
+							<span>237</span>人</td>
+						<td>
+							<select name="" id="" class="form-control">
+								<option value="">-請選擇作業-</option>
+								<option value="" selected>重新編班</option>
+								<option value="">直接升級</option>
+							</select>
+						</td>
+						<td>
+							<span>三</span>年級
+							<!-- <span class="point_red">請設定班級</span> -->
+							<span>7</span>班，學生
+							<span>255</span>人/ 
+							導師<span>7</span>人
+							<div>
+								<button class="btn btn-green btn-sm disabled">設定班組</button>
+								<button class="btn btn-green btn-sm">導師設定</button>
+								<button class="btn btn-green btn-sm">特殊學生</button>
+								<button class="btn btn-green btn-sm">編班作業</button>
+								<button class="btn btn-green btn-sm">手動調班</button>
+								<button class="btn btn-green btn-sm">座號設定</button>
+								<button class="btn btn-green btn-sm">學生名冊</button>
+							</div>
+						</td>
+						<td><!-- 已完成編班 -->
+							<button class="btn btn-danger">返回</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table2">
+				<tr>
+					<td>
+						<span>107</span>學年 <span>上</span>學期 編班作業暫存區
+						<span class="point_red">三年級</span>
+						<span class="point_red">設定班組</span>
+					</td>
+					<td>
+						<form action="" class="form-inline">
+							普通班總數
+							<select name="" id="" class="form-control">
+								<option value="">4班</option>
+								<option value="">5班</option>
+							</select>
+							+ 特教班級總數
+							<select name="" id="" class="form-control">
+								<option value="">2班</option>
+								<option value="">3班</option>
+							</select>
+							合計 <span>7</span>班
+							<button class="btn btn-primary pull-right">儲存</button>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span class="point_blue">
+							實際參加編班人數<span>124</span>人
+							(男<span>64</span>人
+
+							/女<span>60</span>人
+
+							)
+						</span>
+						<span class="point_red">
+							+特殊生抵扣人數<span>6</span>人（男<span>4</span>人/女<span>2</span>人）
+						</span>
+						<span class="point_green">
+							=電腦編班虛擬人數<span>130</span>人
+							(男<span>68</span>人 / 女<span>62</span>人)
+						</span>
+					</td>
+				</tr>
+			</table>
+
+
+			<table class="table table3">
+				<thead>
+					<tr>
+						<th>序號</th>
+						<th>暫編班組</th>
+						<th>班級類別</th>
+						<th>編班註記</th>
+						<th>編班人數設定</th>
+						<th>作業</th>	
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01</td>
+						<td>三年A班</td>
+						<td>
+							<select name="" id="" class="form-control">
+								<option value="">普通班</option>
+								<option value="">普通班(舞蹈班)</option>
+								<option value="">特教班(身心障礙班)</option>
+							</select>
+						</td>
+						<td>
+							<select name="" id=""class="form-control">
+								<option value="">參加編班</option>
+								<option value="">指定學生入班</option>
+								<option value="">106(下)二年六班 直升</option>
+							</select>
+							
+						</td>
+						<td>
+							男<span>10</span>+女<span>12</span>=<span>22</span>
+							<button class="btn btn-warning btn-sm">選擇學生</button>
+						</td>
+						<td><a href="#">學生名冊</a></td>	
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>三年B班</td>
+						<td>
+							<select name="" id="" class="form-control">
+								<option value="">普通班</option>
+								<option value="">普通班(舞蹈班)</option>
+								<option value="">特教班(身心障礙班)</option>
+							</select>
+						</td>
+						<td>
+							<select name="" id=""class="form-control">
+								<option value="">參加編班</option>
+								<option value="">指定學生入班</option>
+								<option value="">106(下)二年六班 直升</option>
+							</select>
+							
+						</td>
+						<td>
+							<form action="" class="form-inline">
+								男 <input type="text" value="17" class="form-control people_add">
+								+女 <input type="text" value="15" class="form-control people_add">
+								= <input type="text" value="32" class="form-control people_add">
+							</form>
+						</td>
+						<td><a href="#">學生名冊</a></td>	
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>	

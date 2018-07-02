@@ -1,0 +1,187 @@
+@charset 'UTF-8';
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+	font-family: ‘Noto Sans TC’, verdana,sans-serif;
+}
+.t_title{
+	padding: 0.5em 1em;
+	background-color: #EFEFEF;
+	margin-bottom: 1em;
+}
+.t_title1{
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #01579B;
+	display: inline;
+	line-height: 30px;
+}
+.t_title2{
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #616161;
+	display: inline;
+	line-height: 30px;
+}
+.t_main .table1 th{
+	font-size: 1.1em;
+}
+.t_main .table1 tbody tr td{
+	vertical-align: middle;
+}
+.t_main .table1 tbody tr td:first-child{
+	background-color: #E3F2FD;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.t_main .table1 tbody tr td:nth-child(2){
+	background-color: #F9FBE7;
+
+}
+.t_main .table1 tbody tr td:nth-child(3),.t_main .table1 tbody tr td:nth-child(4){
+	background-color: #FFF;
+	font-size: 1.2em;
+	font-weight: 500;
+	padding-left: 1em;
+	color: #546E7A;
+}
+.t_main .table2 th{
+	font-size: 1.1em;
+}
+.t_main .table2 tbody tr td{
+	vertical-align: middle;
+}
+.t_main .table2 tbody tr td:first-child{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.t_main .table2 tbody tr:first-child td{
+	background-color: #ECEFF1;
+	color: #37474F;
+}
+.t_main .table3 th{
+	font-size: 1.1em;
+	background-color: #B2EBF2;
+}
+.t_main .table3 tbody tr td{
+	vertical-align: middle;
+}
+.t_main .table3 tbody tr td:first-child{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.t_main .table4{
+	width: 54%;
+	float: left;
+	margin-right: 4%;
+}
+.t_main .table4 tr th{
+	color: #0D47A1;
+	font-size: 1.1em;
+}
+.t_main .table4 tr td{
+	vertical-align: middle;
+}
+.t_main .table4 tr td ul{
+	list-style: none;
+	padding-left: 0;
+}
+.Score{
+	width: 42%;
+	float: left;
+	padding: 1em;
+	position: relative;
+	background: #F6F6F6;
+	border: 1px solid #ff5252;
+}
+.Score:after, .Score:before{
+	right: 100%;
+	top: 135px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.Score:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #F6F6F6;
+	border-width: 16px;
+    margin-top: -16px;
+}
+.Score:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #ff5252;
+	border-width: 18px;
+	margin-top: -18px;
+}
+.t_main .table5{
+	width: 100%;
+}
+.t_main .table5 tr th{
+	font-size: 1.2em;
+	padding: 0.5em 0;
+}
+.t_main .table5 tr td{
+	padding: 0.5em 0;
+}
+
+.people_add{
+	width: 4em !important;
+}
+.point_red{
+	color: #ff5252 !important;
+	font-weight: 400;
+}
+.point_yellow{
+	color: yellow !important;
+	font-weight: bold;
+}
+.point_blue{
+	color: #1565C0;
+	font-weight: 400;
+}
+.point_green{
+	color: #00796B;
+	font-weight: 400;
+}
+.All_year{
+	background-color: #01579B;
+	color: #FFF;
+	text-align: center;
+}
+.class_save{
+	background-color: #0097A7;
+	color: #FFF;
+	padding-left: 1em !important;
+}
+.Mt_GO{
+	background-color: #7CB342;
+	color: #FFF;
+	text-align: center;
+}
+.small_title{
+	font-size: 1em;
+	color: #666;
+	font-weight: 400;
+	padding-left: 1em;
+}
+.btn-green{
+	background-color: #7CB342;
+	color: #FFF;
+	border: 0;
+	font-weight: 600;
+}
+.btn-green:hover{
+	background-color: #2E7D32;
+	color: #FFF;
+	transition: 0.3s;
+}
+.btn.disabled{
+	opacity: 0.3;
+}
+.quantity button,.quantity input{
+	width: 2.8em !important;
+}
