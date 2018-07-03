@@ -28,6 +28,7 @@ body{
 }
 .t_main .table1 tbody tr td{
 	vertical-align: middle;
+	/* padding: 0.8em 0.5em; */
 }
 .t_main .table1 tbody tr td:first-child{
 	background-color: #E3F2FD;
@@ -53,8 +54,8 @@ body{
 	vertical-align: middle;
 }
 .t_main .table2 tbody tr td:first-child{
-	font-size: 1.1em;
-	font-weight: 500;
+	font-size: 1.2em;
+	font-weight: 600;
 }
 .t_main .table2 tbody tr:first-child td{
 	background-color: #ECEFF1;
@@ -87,13 +88,27 @@ body{
 	list-style: none;
 	padding-left: 0;
 }
+.t_main .table4 tr td ul li{
+	padding: 0.5em 0;
+	font-size: 1.1em;
+	color: #37474F;
+	font-weight: 600;
+}
+.t_main_content{
+	padding: 10px;
+	border: 1px solid #F6F6F6;
+}
+.t_main .people_total tr td{
+	background-color: #FFF !important;
+	font-size: 0.9em !important;
+}
 .Score{
 	width: 42%;
 	float: left;
 	padding: 1em;
 	position: relative;
 	background: #F6F6F6;
-	border: 1px solid #ff5252;
+	/* border: 1px solid #ff5252; */
 }
 .Score:after, .Score:before{
 	right: 100%;
@@ -113,7 +128,7 @@ body{
 }
 .Score:before {
 	border-color: rgba(194, 225, 245, 0);
-	border-right-color: #ff5252;
+	/* border-right-color: #ff5252; */
 	border-width: 18px;
 	margin-top: -18px;
 }
