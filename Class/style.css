@@ -70,8 +70,8 @@ body{
 	font-size: 1em;
 }
 .t_main .table2 tbody tr:first-child td:first-child{
-	background-color: #64B5F6;
-	color: #FFF;
+	background-color: #E3F2FD;
+    color: #0D47A1;
 }
 .t_main .table3{
 	font-size: 0.9em;
@@ -127,6 +127,9 @@ body{
 .t_main .people_total tr td{
 	background-color: #FFF !important;
 	font-size: 0.9em !important;
+}
+.class_people span{
+	padding: 0 11px;
 }
 .Score{
 	width: 42%;
@@ -279,4 +282,11 @@ body{
 	background-color: yellow;
 	color: #333;
 	transition: 0.3s;
+}
+.table2 .input-sm{
+	padding: 0px 5px !important;
+	height: 25px !important;
+}
+.table2 button{
+	padding: 3px 5px !important;
 }

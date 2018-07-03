@@ -90,8 +90,8 @@
 						<td>
 							<span>107</span>(<span>上</span>) 編班作業暫存區
 							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="point_yellow">三年級</span>
-							<span class="point_yellow">設定班組</span>
+							<span class="point_red">三年級</span>
+							<span class="point_red">設定班組</span>
 						</td>
 						<td>
 							<form action="" class="form-inline">
@@ -106,8 +106,8 @@
 									<option value="">3班</option>
 								</select>
 								合計 <span>7</span> 班
-								<button class="btn btn-sm btn-default pull-right">取消</button>
-								<button class="btn btn-sm btn-primary pull-right" style="margin-right: 10px;">儲存</button>
+								<button class="btn btn-xs btn-default pull-right">取消</button>
+								<button class="btn btn-xs btn-primary pull-right" style="margin-right: 10px;">儲存</button>
 								
 							</form>
 						</td>
@@ -157,7 +157,7 @@
 				</table>
 
 
-				<table class="table table3 table-bordered">
+				<table class="table table3 table-hover">
 					<thead>
 						<tr>
 							<th>序號</th>
@@ -165,6 +165,7 @@
 							<th>班級類別</th>
 							<th>編班註記</th>
 							<th>編班人數設定</th>
+							<th>指定學生</th>
 							<th>作業</th>	
 						</tr>
 					</thead>
@@ -187,10 +188,12 @@
 								</select>
 								
 							</td>
-							<td>
+							<td class="class_people">
 								男<span>10</span>＋女<span>12</span>＝<span>22</span>
-								<button class="btn btn-warning btn-sm">選擇學生</button>
 							</td>
+							<td>
+								<button class="btn btn-warning btn-sm">選擇學生</button>
+							</td>	
 							<td><a href="#">學生名冊</a></td>	
 						</tr>
 						<tr>
@@ -217,6 +220,9 @@
 									＋女 <input type="text" value="15" class="form-control  input-sm  people_add">
 									＝<input type="text" value="32" class="form-control  input-sm people_add">
 								</form>
+							</td>
+							<td>
+								<button class="btn btn-warning btn-sm">選擇學生</button>
 							</td>
 							<td><a href="#">學生名冊</a></td>	
 						</tr>
