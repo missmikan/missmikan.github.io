@@ -5,26 +5,32 @@ body{
 	font-family: ‘Noto Sans TC’, verdana,sans-serif;
 }
 .t_title{
-	padding: 0.5em 1em;
+	padding: 2px 1em;
 	background-color: #EFEFEF;
 	margin-bottom: 1em;
 }
 .t_title1{
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: 600;
 	color: #01579B;
 	display: inline;
 	line-height: 30px;
 }
 .t_title2{
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 400;
 	color: #616161;
 	display: inline;
 	line-height: 30px;
 }
+.table{
+	margin-bottom: 5px;
+}
 .t_main .table1 th{
-	font-size: 1.1em;
+	font-size: 1em;
+	vertical-align: middle;
+	padding: 4px;
+	font-weight: 400;
 }
 .t_main .table1 tbody tr td{
 	vertical-align: middle;
@@ -32,20 +38,21 @@ body{
 }
 .t_main .table1 tbody tr td:first-child{
 	background-color: #E3F2FD;
-	font-size: 1.1em;
-	font-weight: 500;
+	font-size: 1em;
+	font-weight: 400;
 }
 
 .t_main .table1 tbody tr td:nth-child(2){
-	background-color: #F9FBE7;
+	
 
 }
 .t_main .table1 tbody tr td:nth-child(3),.t_main .table1 tbody tr td:nth-child(4){
-	background-color: #FFF;
-	font-size: 1.2em;
-	font-weight: 500;
+	/* background-color: #F9FBE7; */
+	font-size: 0.8em;
+	font-weight: 400;
 	padding-left: 1em;
 	color: #546E7A;
+	background-color: #F9FBE7;
 }
 .t_main .table2 th{
 	font-size: 1.1em;
@@ -54,8 +61,10 @@ body{
 	vertical-align: middle;
 }
 .t_main .table2 tbody tr td:first-child{
-	font-size: 1.2em;
 	font-weight: 600;
+}
+.t_main .table2 tbody tr:nth-child(2) td{
+	font-size: 1em;
 }
 .t_main .table2 tbody tr:first-child td{
 	background-color: #ECEFF1;
@@ -95,7 +104,7 @@ body{
 	font-weight: 600;
 }
 .t_main_content{
-	padding: 10px;
+/* 	padding: 10px; */
 	border: 1px solid #F6F6F6;
 }
 .t_main .people_total tr td{
@@ -144,7 +153,8 @@ body{
 }
 
 .people_add{
-	width: 4em !important;
+    width: 2.5em !important;
+    padding: 6px;
 }
 .point_red{
 	color: #ff5252 !important;
@@ -160,20 +170,21 @@ body{
 }
 .point_green{
 	color: #00796B;
-	font-weight: 400;
+	font-weight: 350;
 }
 .All_year{
-	background-color: #01579B;
+	background-color: #64B5F6;
 	color: #FFF;
 	text-align: center;
 }
 .class_save{
-	background-color: #0097A7;
+	background-color: #90A4AE;
 	color: #FFF;
 	padding-left: 1em !important;
+	vertical-align: middle;
 }
 .Mt_GO{
-	background-color: #7CB342;
+	background-color: #78909C;
 	color: #FFF;
 	text-align: center;
 }
@@ -184,10 +195,11 @@ body{
 	padding-left: 1em;
 }
 .btn-green{
-	background-color: #7CB342;
+	background-color: #00838F;
 	color: #FFF;
 	border: 0;
-	font-weight: 600;
+	font-weight: 300;
+	padding: 3px 3px ;
 }
 .btn-green:hover{
 	background-color: #2E7D32;
@@ -196,6 +208,10 @@ body{
 }
 .btn.disabled{
 	opacity: 0.3;
+}
+.btn-back{
+    padding: 3px 10px;
+    font-size: 0.8em;
 }
 .quantity button,.quantity input{
 	width: 2.8em !important;
