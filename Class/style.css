@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body{
-	font-family: 'Noto Sans TC', verdana,sans-serif;
+	font-family: 'Noto Sans TC', 'verdana',sans-serif;
 }
 .t_title{
 	padding: 2px 1em;
@@ -30,7 +30,7 @@ body{
 .t_main .table1 th{
 	font-size: 1em;
 	vertical-align: middle;
-	padding: 4px;
+	padding: 2px 4px;
 	font-weight: 400;
 }
 .t_main .table1 tbody tr td{
@@ -43,37 +43,44 @@ body{
 	font-weight: 400;
 }
 
-.t_main .table1 tbody tr td:nth-child(2){
-	
-
+.t_main .table1 tbody tr td:nth-child(2) select{
+	font-size: 0.8em;
 }
 .t_main .table1 tbody tr td:nth-child(3),.t_main .table1 tbody tr td:nth-child(4){
-	/* background-color: #F9FBE7; */
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: 400;
 	padding-left: 1em;
 	color: #546E7A;
 	background-color: #F9FBE7;
 }
 .t_main .table2 th{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 .t_main .table2 tbody tr td{
 	vertical-align: middle;
+	padding: 2px;
+	font-size: 1em;
+	padding-left: 1em;
 }
 .t_main .table2 tbody tr td:first-child{
-	font-weight: 600;
+	font-weight: 400;
 }
 .t_main .table2 tbody tr:nth-child(2) td{
 	font-size: 1em;
 }
-.t_main .table2 tbody tr:first-child td{
-	background-color: #ECEFF1;
-	color: #37474F;
+.t_main .table2 tbody tr:first-child td:first-child{
+	background-color: #64B5F6;
+	color: #FFF;
+}
+.t_main .table3{
+	font-size: 0.9em;
+	background-color: #FFF;
 }
 .t_main .table3 th{
-	font-size: 1.1em;
-	background-color: #B2EBF2;
+	font-size: 1em;
+	color: #546E7A;
+	font-weight:400;
+	/* background-color: #F9FBE7; */
 }
 .t_main .table3 tbody tr td{
 	vertical-align: middle;
@@ -89,7 +96,8 @@ body{
 }
 .t_main .table4 tr th{
 	color: #0D47A1;
-	font-size: 1.1em;
+	font-size: 1em;
+	font-weight: 400;
 }
 .t_main .table4 tr td{
 	vertical-align: middle;
@@ -99,10 +107,15 @@ body{
 	padding-left: 0;
 }
 .t_main .table4 tr td ul li{
-	padding: 0.5em 0;
-	font-size: 1.1em;
+	padding: 0.2em 0;
+	font-size: 1em;
 	color: #37474F;
-	font-weight: 600;
+	font-weight: 400;
+}
+.t_main .table5 tr th{
+	font-weight: 400;
+	font-size: 1em !important;
+	color: #546E7A;
 }
 .t_main_content{
 /* 	padding: 10px; */
@@ -171,7 +184,7 @@ body{
 }
 .point_green{
 	color: #00796B;
-	font-weight: 350;
+	font-weight: 400;
 }
 .All_year{
 	background-color: #64B5F6;
@@ -188,6 +201,7 @@ body{
 	background-color: #78909C;
 	color: #FFF;
 	text-align: center;
+    width: 10%;
 }
 .small_title{
 	font-size: 1em;
