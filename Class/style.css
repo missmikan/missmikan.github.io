@@ -1,8 +1,9 @@
 @charset 'UTF-8';
 
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 body{
-	font-family: ‘Noto Sans TC’, verdana,sans-serif;
+	font-family: 'Noto Sans TC', verdana,sans-serif;
 }
 .t_title{
 	padding: 2px 1em;
