@@ -99,6 +99,17 @@ h2 { font-size: 2em; }
 	font-size: 0.85em;
 	font-weight: 200;
 }
+.Close{
+	color: #E91E63;
+	font-size: 1.2em;
+	padding: 10px 0;
+	float: right;
+	cursor: pointer;
+	font-weight: 600;
+}
+.Close:hover{
+	color: #F06292;
+}
 @media (max-width: 1390px) {
 	.container-fluid {
 		padding-left: 5%;
@@ -148,11 +159,12 @@ h2 { font-size: 2em; }
 	width: 100%;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    height: 3.8em;
+    height: 4.2em;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.3em;
+    line-height: 1.5em;
     margin-bottom: 1em;
+    font-weight: 400;
     text-align: justify;
     display: -webkit-box;
 }
