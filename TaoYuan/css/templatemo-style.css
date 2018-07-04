@@ -1,16 +1,12 @@
-/* 
 
-Classic Template
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-http://www.templatemo.com/tm-488-classic
-
------------------------------*/
 
 body {
 	color: #8c8c8c;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 300;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 14px;
+	font-weight: 350;
 	overflow-x: hidden;
 }
 
@@ -21,7 +17,7 @@ a:focus {
 	outline: none;
 }
 
-h2 { font-size: 2.2rem; }
+h2 { font-size: 2em; }
 .tm-thin-font { font-weight: 300; }
 
 .container-fluid {
@@ -47,11 +43,10 @@ h2 { font-size: 2.2rem; }
 
 }
 .tm-content-box .vote_icon{
-	position: absolute;
-	left: 15%;
-	top: 10%;
-	cursor: pointer;
-	width: 80%;
+    position: absolute;
+    left: -3%;
+    top: -3%;
+    cursor: pointer;
 }
 .tm-content-box .no_vote{
 	position: absolute;
@@ -75,7 +70,7 @@ h2 { font-size: 2.2rem; }
 }
 .orange_text{
 	color: #7CB342;
-	font-weight: 600;
+	font-weight: 400;
 }
 .loginpage form .form-group{
 	margin-bottom: 10px;
@@ -83,6 +78,25 @@ h2 { font-size: 2.2rem; }
 .img-responsive{
 	max-width: 100%;
 	height: auto;
+}
+.motion{
+	width: 100%;
+	margin: 20px 0;
+	font-size: 1.2em;
+	vertical-align: top;
+}
+.motion tbody tr th{
+	width: 15%;
+	vertical-align: top;
+	color: #EC407A;
+}
+.motion tbody tr td{
+	width: 85%;
+	padding: 0 10px 15px;
+}
+.motion_detail{
+	font-size: 0.85em;
+	font-weight: 200;
 }
 @media (max-width: 1390px) {
 	.container-fluid {
@@ -127,13 +141,13 @@ h2 { font-size: 2.2rem; }
 
 }
 
-.tm-gold-text { color: #EC407A; }
+.tm-gold-text { color: #616161; }
 
 .vote-title{
-    width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-    height: 2.6em;
+	width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 3.8em;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.3em;
@@ -169,13 +183,13 @@ h2 { font-size: 2.2rem; }
 }
 
 .tm-title {
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 	line-height: 1.4;
     text-decoration: overline;
 }
 
 .tm-subtitle {
-	font-size: 1.4rem;
+	font-size: 1.2em;
 /* 	max-width: 800px; */
 	margin: 0 auto 10px;
 
@@ -186,9 +200,9 @@ h2 { font-size: 2.2rem; }
 	margin: 0 auto;
 }
 
-h3 { font-size: 1.65rem; }
+h3 { font-size: 1.3em; }
 h4 { 
-	font-size: 1.4rem;
+	font-size: 1.2em;
 	line-height: 1.6;
 }
 .tm-subtitle span{
@@ -199,16 +213,16 @@ h4 {
 
 .tm-btn {
 	color: white;
-	background-color: #EC407A;
+	background-color: #F9A825;
 	border: none;
 	border-radius: 5px;
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 2px 14px;
 }
 
 .tm-btn:hover,
 .tm-btn:focus {
-	background-color: #906E09;
+	background-color: #FDD835;
 	color: white;
 	outline: none;
 }
@@ -228,7 +242,7 @@ h4 {
 }
 
 .tm-margin-b-15 { margin-bottom: 15px; }
-.tm-margin-b-20 { margin-bottom: 20px; }
+.tm-margin-b-20 { margin-bottom: 5px; }
 .tm-margin-b-30 { margin-bottom: 30px; }
 .tm-margin-b-40 { margin-bottom: 40px; }
 .tm-margin-t-big { margin-top: 90px; }
@@ -281,6 +295,16 @@ h4 {
 .tm-copyright-text { 
 	color: #999999; 
 	margin-bottom: 0;
+}
+.btn-success.disabled{
+	background-color: #CCC;
+	color: #666;
+	border-color: #CCC;
+}
+.btn-success.disabled:hover{
+	background-color: #CCC;
+	color: #666;
+	border-color: #CCC;
 }
 
 hr { border-top: 1px solid #CCCCCC; }
@@ -398,7 +422,7 @@ p { line-height: 1.9; }
 @media (max-width: 897px) {
 	.tm-btn {
 		padding: 10px 15px;
-		font-size: 1rem;
+		font-size: 1em;
 	}
 }
 
@@ -488,7 +512,7 @@ p { line-height: 1.9; }
 @media (max-width: 543px) {
 	.tm-footer-links-container { padding-left: 0; }
 	.tm-xs-m-t { margin-top: 20px; }
-	.tm-btn { padding: 10px 30px; }
+	.tm-btn { padding: 8px 10px; }
 }
 
 @media(max-width: 510px) {
