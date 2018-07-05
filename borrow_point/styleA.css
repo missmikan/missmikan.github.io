@@ -1,0 +1,390 @@
+@charset 'UTF-8';
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body{
+	font-family: 'Verdana','Noto Sans TC', sans-serif;
+	background-color: #fcfcec;
+	background-image: url('img/bg.png');
+	margin: 0;
+}
+.picture1{
+	position: absolute;
+	top: 0;
+	left: 50px;
+}
+.picture1 img,.picture3 img,.picture4 img,.picture5 img{
+	max-width: 100%;
+}
+.picture3{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.picture2{
+	width: 20%;
+	position: absolute;
+	top: 35vh;
+	left: 0;
+	text-align: center;
+}
+.picture2 img{
+	max-width: 100%;
+}
+.picture4{
+	position: absolute;
+	bottom: 0px;
+	left: 50px;
+}
+.picture5{
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+}
+.school_name{
+	width: 100%;
+	position: absolute;
+	top: 23vh;
+	left: 0;
+	font-size: 2.8em;
+	font-weight: 600;
+	color: #754c24;
+	text-align: center;
+}
+.school_name2{
+	width: 100%;
+	padding-top: 0.5em;
+	font-size: 2.8em;
+	font-weight: 600;
+	color: #754c24;
+	text-align: center;
+}
+.input_text{
+	width: 100%;
+	position: absolute;
+	top: 45vh;
+	left: 0;
+	text-align: center;
+}
+footer{
+	width: 100%;
+	height: 25px;
+	background-color: #faf7b2;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.text{
+	font-size: 2em;
+}
+input[type="text"]{
+	width: 300px;
+	height: 40px;
+	font-size: 1.5em;
+	border-radius: 10px;
+	border: 3px solid #8cceb3;
+	background-color: #d9e021;
+	padding: 0 0.5em;
+	outline: none;
+	margin-bottom: 0.3em;
+}
+.Contents{
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.95);
+	padding-bottom: 20px;
+	position: relative;
+	z-index: 1;
+}
+.Contents .topbar{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #8C6239;
+	color: #FFF;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+.Contents .topbar img{
+	max-width: 100%;
+}
+.Contents .topbar .stuname{
+    float: left;
+    margin-left: 30px;
+}
+.Contents .topbar .logout{
+    float: right;
+    margin-right: 10px;
+}
+.Contents .big_head{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #FFF;
+	position: relative;
+	bottom: 35px;
+	left: 20px;
+	border: 8px solid #8C6239;
+	float: left;
+}
+.Contents .itemBoxOutter{
+	width: 100%;
+}
+.Contents .titleBar{
+	width: 95%;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	margin: 0 auto 10px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	padding: 0 1em;
+	box-sizing: border-box;
+	display: flex;
+    align-items: center;
+}
+.Contents .titleBar img{
+	margin-right: 0.5em;
+}
+.itemBox{
+	width: 50%;
+	float: left;
+	margin-bottom: 1em;
+	padding: 0 1em;
+	box-sizing: border-box;
+}
+.itemBox .ColorBox{
+	width: 100%;
+	height: 120px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0 auto 0.4em;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	
+	font-size: 2em;
+	padding-left: 1em;
+	box-sizing: border-box;
+}
+.itemBox .ColorBox a:link,.itemBox .ColorBox a:visited{
+	padding-left: 1em;
+	color: #FFF;
+	text-decoration: none;
+}
+.ColorBlue{
+	background-color: #2479DB;
+	border: 3px solid #29ABE2;
+}
+.ColorOrange{
+	background-color: #FF9C1E;
+	border: 3px solid #FCEE21;
+}
+.ColorGreen{
+	background-color: #7BC648;
+	border: 3px solid #D9E021;
+}
+.ColorPink{
+	background-color: #FF609E;
+	border: 3px solid #FF8279;
+}
+.ColorBox.ColorBlue:hover{
+	background-color: #2497DB;
+}
+.ColorBox.ColorOrange:hover{
+	background-color: #FFBF1E;
+}
+.ColorBox.ColorGreen:hover{
+	background-color: #A2C648;
+}
+.ColorBox.ColorPink:hover{
+	background-color: #FF879E;
+}
+.borderBlue{
+	border-left: 3px solid #2479DB;
+}
+.borderOrange{
+	border-left: 3px solid #FF9C1E;
+}
+.borderGreen{
+	border-left: 3px solid #7BC648;
+}
+.borderPink{
+	border-left: 3px solid #FF609E;
+}
+.detail{
+	width: calc((100% - 4px ) /2 );
+	float: left;
+	line-height: 1.6em;
+	font-weight: 500;
+	padding-left: 1em;
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+.detail span{
+	color:#0071BC ;
+}
+
+.clearfix{
+	clear: both;
+}
+.t_left{
+    display: inline-flex;
+    width: 30%;
+    align-items: center;
+}
+.t_right{
+	display: inline-flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+.t_right > span{
+	margin-right: 15px;
+}
+.t_right span > span{
+	color: yellow;
+}
+.table{
+	width: 95%;
+	margin: 0 auto;
+	table-layout: fixed;
+}
+.table tr th{
+	padding: 0.4em 0;
+	font-weight: 400;
+}
+.borrow tr th:nth-child(odd){
+	background-color: #90bced;
+	color: #FFF;
+}
+.borrow tr th:nth-child(even){
+	background-color: #bdd7f2;
+	color: #FFF;
+}
+.borrow tr th:nth-child(1){
+	width: 55%;
+}
+.borrow tr th:nth-child(2){
+	width: 15%;
+}
+.borrow tr th:nth-child(3){
+	width: 15%;
+}
+.borrow tr th:nth-child(4){
+	width: 15%;
+}
+.table tr td{
+	padding: 0.5em;
+	color: #4D4D4D;
+	border-bottom: 1px solid #EFEFEF;
+	width:100%;
+    word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+.table tr:nth-child(odd) td{
+	background-color: #FAFAFA;
+}
+.borrow tr td:nth-child(2){
+	color: #0071BC;
+	text-align: center;
+}
+.borrow tr td:nth-child(3){
+	text-align: center;
+}
+.borrow tr td:nth-child(4){
+	color: #009245;
+	text-align: center;
+}
+.points tr th:nth-child(odd){
+	background-color: #fccf94;
+	color: #FFF;
+}
+.points tr th:nth-child(even){
+	background-color: #fcdeba;
+	color: #FFF;
+}
+.points tr td:nth-child(2){
+	text-align: center;
+}
+.points tr td:nth-child(3){
+	color: #0071BC;
+	text-align: center;
+}
+.points tr td:nth-child(1){
+	text-align: center;
+}
+.points tr td:nth-child(5){
+	color: #009245;
+	text-align: center;
+}
+.vote tr th:nth-child(odd){
+	background-color: #82d5c3;
+	color: #FFF;
+}
+.vote tr th:nth-child(even){
+	background-color: #bce9d4;
+	color: #FFF;
+}
+.vote tr td:nth-child(3){
+	color: #0071BC;
+	text-align: center;
+}
+.vote tr td:nth-child(1){
+	text-align: center;
+	color: #009245;
+}
+.vote tr td:nth-child(5){
+	text-align: center;
+}
+.student tr th:nth-child(odd){
+	background-color: #feaed0;
+	color: #FFF;
+}
+.student tr th:nth-child(even){
+	background-color: #ffcfe3;
+	color: #FFF;
+}
+.student tr td:nth-child(3){
+	text-align: center;
+}
+.student tr td:nth-child(4){
+	text-align: center;
+}
+.student tr td:nth-child(1){
+	text-align: center;
+	color: #009245;
+}
+.student tr td:nth-child(2){
+	text-align: center;
+}
+.student tr .redtext{
+	color: red;
+}
+.btn-default{
+	background-color: #E6E6E6;
+	color: #1A1A1A;
+	border-radius: 5px;
+	padding: 0.2em 0.5em;
+	font-size: 0.7em;
+	border: 0;
+}
+.btn-default:hover{
+	background-color: #FFF;
+	transition: 0.3s;
+}
+.btn-yellow{
+	background-color: #FFFF72;
+	color: #603813;
+	border-radius: 5px;
+	padding: 0.2em 0.5em;
+	font-size: 0.7em;
+	border: 0;
+}
+.btn-yellow:hover{
+	background-color: #FFFFAF;
+	transition: 0.3s;
+}
