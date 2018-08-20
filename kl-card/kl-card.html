@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrapper{
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+		}
+		.top_banner{
+			width: 100%;
+			height: 115px;
+			background-color: #CCC;
+			margin-bottom: 12px;
+			background-image:url("kl-top.jpg") ;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			padding: 1em;
+			box-sizing: border-box;
+			position: relative;
+		}
+		.item{
+			width: 495px;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.item button{
+			cursor: pointer;
+		}
+		.item:nth-child(odd){
+			margin-right: 0px;
+		}
+		.item .title{
+			width: 100%;
+			height: 85px;
+			border-radius: 5px;
+			line-height: 70px;
+			font-size: 2em;
+			color: #FFF;
+			margin-bottom: 5px;
+			text-decoration: underline;
+			text-align: left;
+		}
+		.item .title img{
+			vertical-align: middle;
+			margin: 0 10px;
+		}
+		.item .content{
+			width: 100%;
+			height: 185px;
+			background-color: #FAFAFA;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			font-size: 0.95em;
+		}
+		.color1{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7931e+0,f7795f+100 */
+			background: rgb(247,147,30); /* Old browsers */
+			background: -moz-linear-gradient(top, rgb(247,147,30) 0%, rgb(247,121,95) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgb(247,147,30) 0%,rgb(247,121,95) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgb(247,147,30) 0%,rgb(247,121,95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7931e', endColorstr='#f7795f',GradientType=0 ); /* IE6-9 */
+		}
+		.color1:hover{
+			background: none;
+			background-color: #EF5000;
+		}
+		.color2{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3fc2ff+1,0090ef+100 */
+			background: rgb(63,194,255); /* Old browsers */
+			background: -moz-linear-gradient(top, rgb(63,194,255) 1%, rgb(0,144,239) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgb(63,194,255) 1%,rgb(0,144,239) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgb(63,194,255) 1%,rgb(0,144,239) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fc2ff', endColorstr='#0090ef',GradientType=0 ); /* IE6-9 */
+		}
+		.color2:hover{
+			background: none;
+			background-color: #0E7CDF;
+		}
+		.color3{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81c51e+1,67aa5f+100 */
+			background: rgb(129,197,30); /* Old browsers */
+			background: -moz-linear-gradient(top, rgb(129,197,30) 1%, rgb(103,170,95) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgb(129,197,30) 1%,rgb(103,170,95) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgb(129,197,30) 1%,rgb(103,170,95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81c51e', endColorstr='#67aa5f',GradientType=0 ); /* IE6-9 */
+		}
+		.color3:hover{
+			background: none;
+			background-color: #008F39;
+		}
+		.color4{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff2e2f+1,d51400+100 */
+			background: rgb(255,46,47); /* Old browsers */
+			background: -moz-linear-gradient(top, rgb(255,46,47) 1%, rgb(213,20,0) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgb(255,46,47) 1%,rgb(213,20,0) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgb(255,46,47) 1%,rgb(213,20,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2e2f', endColorstr='#d51400',GradientType=0 ); /* IE6-9 */
+		}
+		.color4:hover{
+			background: none;
+			background-color: #BC0000;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top_banner">
+			<div style="font-size: 3em;font-weight: bold;color:#4D4D4D;">基隆樂學卡</div>
+			<div style="font-size: 2em;padding:0.1em;border:2px solid #4D4D4D;position: absolute;right:25px;color:#4D4D4D">新辦 / 停卡 / 補發 / 退費系統</div>
+		</div>
+		<div class="item">
+			<button class="title color1">
+				<img src="item1.png" alt=""><span>停卡掛失</span>
+			</button>
+			<div class="content">
+				<b>卡片掉卡 / 遺失 / 無法使用</b>
+				<ol>
+					<li>請選擇「停卡掛失」功能。</li>
+					<li>確認停卡後即無法取消。</li>
+					<li>確認停卡後，持卡人須負擔停卡後3小時內票卡遭冒用金額之損失。</li>
+				</ol>
+			</div>
+		</div>
+		<div class="item">
+			<button class="title color2">
+				<img src="item2.png" alt=""><span>新申辦卡片</span>
+			</button>
+			<div class="content">
+				<b>新申請卡片 / 停卡後補辦</b>
+				<ol>
+					<li>如卡片遺失掉卡請先停卡後再以此功能進行補發卡片申辦。</li>
+					<li>確認送出卡片申請後，將無法刪除或取消。</li>
+					<li>申請卡片後如需繳費，於繳費後請將繳費單據妥善保存。</li>
+					<li>卡片資料將於確認繳費後提交至雲端印卡中心進行卡片印製。</li>
+					<li>如需查詢卡片製卡進度請使用查詢與繳費功能。</li>
+				</ol>
+			</div>
+		</div>
+		<div class="item">
+			<button class="title color3">
+				<img src="item3.png" alt=""><span>停卡退費</span>
+			</button>
+			<div class="content">
+				<b>已經辦理停卡，但卡片尚有餘額</b>
+				<p>確認停卡後，持卡人須負擔<span style="color:#F15A24;">停卡後3小時內</span>票卡遭冒用金額之損失。</p>
+				<ol>
+					<li>請確認已執行停卡步驟。</li>
+					<li>停卡後請執行「停卡退費」功能。</li>
+				</ol>
+				<p>或直接洽詢一卡通票證公司<span style="color:#F15A24;">(07)791-2000</span>申請退費</p>
+			</div>
+		</div>
+		<div class="item">
+			<button class="title color4">
+				<img src="item4.png" alt=""><span>問題卡片</span>
+			</button>
+			<div class="content">
+				<b>我沒有遺失卡片，但是卡片無法使用 / 儲值</b>
+				<p>請勿操作停卡掛失功能，請將票卡及填妥故障原因及退費資訊之<span style="color:#F15A24;">問題票卡處理作業單</span>寄回一卡通票證公司，票證公司確認後將視狀況處理，各項狀況描述如下： </p>
+				<ol>
+					<li>外觀完好但無法讀取:將免費補發新卡，並退還舊卡餘額。 </li>
+					<li>外觀損毀無法讀取：持卡人需自行付費申辦，並退還舊卡餘額。</li>
+					<li>其他可感應之問題票：由一卡通將原卡修復後逕寄還卡片。</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
