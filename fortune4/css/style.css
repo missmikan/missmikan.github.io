@@ -39,7 +39,7 @@ body{
 	font-size: 2em;
     color: #FFF;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-    padding: 1em;
+    padding: 0.5em;
 }
 .content{
 	width: 100%;
@@ -63,7 +63,7 @@ body{
 	transition: transform .5s;
 	cursor: pointer;
 }
-.news_content{
+.content .news_content{
 	width: 100%;
 	height: 7em;
 	text-overflow: ellipsis;
@@ -78,11 +78,27 @@ body{
     letter-spacing: 0.04em;
     text-align: justify;
 }
-.date{
+.modal .news_content{
+	color: #7b8184;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    padding: 2em 1em 1em;
+}
+.content .date{
 	padding: 0.2em 1em;
 	color: #FFF;
 	font-size: 1.2em;
 	margin-top: 0.5em;
+}
+.modal .t_1{
+    color: #5d698c;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+.modal .t_2{
+    color: #5d698c;
+    font-size: 1.5em;
+ 	font-weight: 600;
 }
 .news_box:hover{
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -142,6 +158,12 @@ body{
 	text-align: center;
 	line-height: 52px;
 }
+
+/* 覆蓋BOOTSTRAP */
+.modal-content{
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
 @media screen and ( max-width: 767px){
 	.news_box{
 		width: calc((100% - 20px) / 2);
