@@ -1,0 +1,177 @@
+@charset 'UTF-8';
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/dust_scratches.png');
+	z-index: -1;
+}
+.top_nav{
+	width: 100%;
+	height: 52px;
+	background-color: #000000;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.top_nav .brand{
+	max-width: 1000px;
+	margin: 0 auto;
+	color: #FFF;
+	font-size: 1.4em;
+	line-height: 52px;
+}
+.banner{
+	width: 100%;
+	height: 30vh;
+	min-height:240px;
+	overflow: hidden;
+	text-align: center;
+	background-image: url('../img/background2.jpg');
+	background-size: cover;
+    padding-top: 5em;
+    box-sizing: border-box;
+}
+.banner p{
+	font-size: 2em;
+    color: #FFF;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    padding: 1em;
+}
+.content{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+.title_bar{
+	text-align: center;
+	padding-bottom: 2px;
+	margin-bottom: 1em;
+	border-bottom: 10px solid #FFC800;
+}
+.news_box{
+	width: calc((100% - 30px) / 3);
+	margin-right: 15px;
+	margin-bottom: 15px;
+	height: 160px;
+	background-color: #FFF;
+	float: left;
+	transition: transform .5s;
+	cursor: pointer;
+}
+.news_content{
+	width: 100%;
+	height: 7em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+    display: -webkit-box;
+    line-height: 1.6em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    padding: 1em;
+    color: #7b8184;
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+    text-align: justify;
+}
+.date{
+	padding: 0.2em 1em;
+	color: #FFF;
+	font-size: 1.2em;
+	margin-top: 0.5em;
+}
+.news_box:hover{
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.3s;
+}
+
+.content .news_box:nth-child(1n) .date{
+	background-color: #C6AEE3;
+}
+.content .news_box:nth-child(2n) .date{
+	background-color: #9AC8FF;
+}
+.content .news_box:nth-child(3n) .date{
+	background-color: #FFC862;
+}
+.content .news_box:nth-child(4n) .date{
+	background-color: #FFA99A;
+}
+.content .news_box:nth-child(5n) .date{
+	background-color: #74CDDF;
+}
+.content .news_box:nth-child(6n) .date{
+	background-color: #CCDF0E;
+}
+.content .news_box:nth-child(7n) .date{
+	background-color: #64D5B5;
+}
+.content .news_box:nth-child(8n) .date{
+	background-color: #FFA74E;
+}
+.btn-red{
+	font-size: 1.5em;
+	padding: 0.8em 3em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,910000+100 */
+	background: rgb(204,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(204,0,0) 0%, rgb(145,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(204,0,0) 0%,rgb(145,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(204,0,0) 0%,rgb(145,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#910000',GradientType=0 ); /* IE6-9 */
+	color: #FFF;
+}
+.btn-red:hover{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+	background: rgb(255,168,76); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(255,168,76) 0%, rgb(255,123,13) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(255,168,76) 0%,rgb(255,123,13) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(255,168,76) 0%,rgb(255,123,13) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+	color: #FFF;
+	transition: 0.5s;
+}
+.footer{
+	width: 100%;
+	height: 52px;
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	line-height: 52px;
+}
+@media screen and ( max-width: 767px){
+	.news_box{
+		width: calc((100% - 20px) / 2);
+		margin-right: 10px;
+		margin-bottom: 15px;
+		height: 210px;
+	}
+	.content .news_box:nth-child(2n+1){
+		margin-right: 0px;
+	}
+	.content{
+		padding-left: 10px;
+	}
+	.top_nav .brand{
+		max-width: 90%;
+	}
+	.news_content{
+		height: 10.5em;
+	    -webkit-line-clamp: 6;
+	}
+	.banner{
+	    padding-top: 4em;
+	}
+	.banner p{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.content .news_box:nth-child(3n+1){
+		margin-right: 0px;
+	}
+}
