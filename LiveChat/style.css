@@ -208,6 +208,18 @@ body{
     50% {transform: translate(0,15px);}
     100% {transform: translate(0,0);}
 }
+.topbar button img{
+	vertical-align: middle;
+}
+.topbar button:hover{
+	cursor: pointer;
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	transform:scale(1.1);
+	transition: all 200ms ease-out;
+}
 .buttons_bar button img{
 	vertical-align: middle;
 }
