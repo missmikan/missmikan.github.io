@@ -14,17 +14,39 @@ body{
 	line-height: 66px;
 	color: #FFF;
 	font-size: 1.4em;
-	padding-left: 1em;
+	padding:0.3em 0.5em 0.3em 0.5em;
 	box-sizing: border-box;
 }
 .topbar img{
 	width: 40px;
 	display: inline;
 	position: relative;
-    top: 10px;
+	top: 10px;
+}
+.topbar > span{
+	position: relative;
+	bottom: 4px;
 }
 .topbar .orangecolor{
 	color: #FFC678;
+}
+.topbar span button{
+	margin-right: 3px;
+}
+.topbar a:link,.topbar a:visited{
+	color: #00d0ff;
+	font-size: 0.8em;
+}
+.topbar .leave{
+	border: 0;
+	width: 120px;
+	height: 40px;
+	font-size: 1em;
+	border-radius: 6px;
+	color: #556276;
+	background-color: #556276;
+	border: 1px solid #FFF;
+	color: #FFF;
 }
 .main{
 	width: 100%;
@@ -157,11 +179,7 @@ body{
 .buttons_bar .button4{
 	background-color: #D9E021;
 }
-.buttons_bar .leave{
-	background-color: #556276;
-	border: 1px solid #FFF;
-	color: #FFF;
-}
+
 /* loading */
 .load-wrapp {
     float: left;
