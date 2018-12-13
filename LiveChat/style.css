@@ -63,7 +63,7 @@ body{
 	font-size: 0.8em;
 }
 .topbar .leave{
-	    border: 0;
+    border: 0;
     width: 60px;
     height: 28px;
     font-size: 14px;
@@ -75,6 +75,7 @@ body{
     position: absolute;
     right: 7px;
     top: 11px;
+    line-height: 14px;
 }
 .p_school{
 	display: inline-block;
@@ -114,20 +115,13 @@ body{
     bottom: 2px;
     color: #556276;
     line-height: 23px;
+    font-size: 14px;
 }
 .p_access > button > img{
 	width: 20px;
 	height: 20px;
 	position: relative;
 	top: 0px;
-}
-.photosent{
-	max-width: 100%;
-	height: auto;
-}
-.photosent img{
-	max-width: 100%;
-	height: auto;
 }
 .main{
 	width: 100%;
@@ -453,4 +447,20 @@ body{
 .send_file .download a:link,.send_file .download a:visited{
 	color: #0071BC;
 	text-decoration: none;
+}
+
+
+/* 1213 */
+.orignal_picture img{
+	max-width: 100%;
+	height: auto;
+}
+.photosent{
+	max-width: 150px !important;
+	height: auto;
+}
+.photosent img{
+	max-width: 100%;
+	height: auto;
+	cursor:pointer; 
 }

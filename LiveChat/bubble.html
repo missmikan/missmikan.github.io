@@ -3,10 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- Start -->
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body orignal_picture">
+	        <img src="images/pic.jpg" alt="">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="outbox">
 		<div class="wrapper">
 			<div class="topbar">
@@ -36,6 +58,7 @@
 				<button class="button6"><img src="button1.png" alt="">與我聯繫</button>
 				<button class="button7"><img src="back.png" alt="">舊版</button>
 			</div>
+			
 			<div class="main">
 				<div class="talk_box_left">
 					<span class="MyBigHead"><img src="big.png" alt=""></span>
@@ -54,10 +77,8 @@
 				</div> -->
 				<div class="talk_box_left">
 					<span class="MyBigHead"><img src="big.png" alt=""></span>
-					<div class="talkbubble_left">
-						<div class="photosent">
-							<img src="images/pic.jpg" alt="">
-						</div>
+					<div class="talkbubble_left photosent">
+						<img src="images/pic.jpg" alt=""  data-toggle="modal" data-target="#myModal">
 					</div>
 					<span class="send_time_left">10:20:30</span>
 				</div>
