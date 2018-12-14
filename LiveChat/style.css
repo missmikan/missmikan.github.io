@@ -181,6 +181,12 @@ hr{
 	text-decoration: none;
 	line-height: 1.9em;
 }
+.talkbubble_right ul {
+	list-style: none;
+	padding-left: 0;
+	text-decoration: none;
+	line-height: 1.9em;
+}
 .talkbubble_right{
 	display: inline-block;
 	max-width:400px; 
@@ -228,6 +234,10 @@ hr{
     display: block;
     float: left;
     overflow: hidden;
+}
+.MyBigHead img{
+	max-width: 100%;
+	height: auto;
 }
 .buttons_bar{
 	width: 100%;
@@ -328,6 +338,16 @@ hr{
 	background-color: #778191;
 	padding-top: 10px;
 	box-sizing: border-box;
+}
+.text_modal_list{
+	display: none;
+	width: 100%;
+	padding: 1em;
+	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	left: 0px;
+	bottom: 125px;
+	z-index: 999;
 }
 .enter_area{
 	width: 97%;
