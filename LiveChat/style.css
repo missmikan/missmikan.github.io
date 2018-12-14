@@ -358,7 +358,7 @@ hr{
 	overflow: hidden;
 }
 .change_fontsize{
-	width: 15%;
+	width: 10%;
 	height: 100px;
 	background-color: #EFEFEF;
 	float: left;
@@ -538,4 +538,25 @@ hr{
 	max-width: 100%;
 	height: auto;
 	cursor:pointer; 
+}
+
+@media screen and ( max-width: 768px ){
+	.text_type_area {
+	    max-width: 49%;
+	    height: 100px;
+	    float: left;
+	}
+	.change_fontsize {
+	    width: 15%;
+	    min-width: 100px;
+	    height: 100px;
+	    background-color: #EFEFEF;
+	    float: left;
+	}
+	.buttons_bar{
+		height: auto;
+	}
+	.main{
+		height: calc(100vh - 237px);
+	}
 }
