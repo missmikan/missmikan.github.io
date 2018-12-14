@@ -128,11 +128,12 @@ hr{
 }
 .main{
 	width: 100%;
-	height: calc(100vh - 211px);
+	height: calc(100vh - 175px);
 	overflow: auto;
 	background-color: #EEF1F6;
-	padding: 1em;
+	padding: 50px 1em 1em;
 	box-sizing: border-box;
+	position: relative;
 	position: relative;
 }
 .typingtext{
@@ -245,6 +246,10 @@ hr{
 	background-color:#556276;
 	box-sizing: border-box;
 	padding:0em 0.5em 0em 0.5em;
+	position: fixed;
+	z-index: 9999;
+	top: 50px;
+	left: 0;
 }
 .buttons_bar button{
 	border: 0;
@@ -540,7 +545,7 @@ hr{
 	cursor:pointer; 
 }
 
-@media screen and ( max-width: 768px ){
+@media screen and ( max-width: 1000px ){
 	.text_type_area {
 	    max-width: 49%;
 	    height: 100px;
@@ -557,6 +562,6 @@ hr{
 		height: auto;
 	}
 	.main{
-		height: calc(100vh - 237px);
+		padding: 70px 1em 1em;
 	}
 }
