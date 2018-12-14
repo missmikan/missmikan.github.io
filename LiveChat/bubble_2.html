@@ -15,6 +15,27 @@
 </head>
 <body>
 <!-- Start -->
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="textModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<span style="font-size:1.2em;color:#0288D1;">快速回覆列表</span>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="list-group">
+			  <button type="button" class="list-group-item">您好，歡迎來訪全誼線上智能客服，我是客服Wendy，請問有什麼能夠幫助您的？</button>
+			  <button type="button" class="list-group-item">老師您好：關於圖書系統的問題，請老師告知學校代碼</button>
+			  <button type="button" class="list-group-item">老師您好：關於校務系統的問題，請老師告知學校代碼</button>
+			  <button type="button" class="list-group-item">老師您好：請提供系統問題截圖，請傳送圖片，以便釐清問題所在</button>
+			  <button type="button" class="list-group-item">老師您好：請提供系統問題截圖，請傳送圖片，以便釐清問題所在</button>
+			</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!-- Modal -->
 	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -29,6 +50,8 @@
 	    </div>
 	  </div>
 	</div>
+
+
 	<div class="outbox">
 		<div class="wrapper">
 			<div class="topbar">
@@ -67,6 +90,8 @@
 					<span class="send_time_right">10:30:30</span>
 					<div class="clearfix"></div>
 				</div> -->
+
+
 				<div class="talk_box_left">
 					<span class="MyBigHead"><img src="big.png" alt=""></span>
 					<div class="talkbubble_left photosent">
@@ -204,13 +229,11 @@
 		        	</div>
 	        		客服正在回覆訊息...</div>
 				</div>
-
 			<div class="enter_area_outter">
 				<div class="enter_area">
 					<div class="change_fontsize">
-						<div class="text_modal" alt=""  data-toggle="modal" data-target="#textModal">快速<br>回覆</div>
+						<div class="text_size" id="click" ><span class="glyphicon glyphicon-text-size"></span></div>
 					</div>
-
 					<div class="text_type_area">
 						<textarea name="" id="" width="100%" height="100px" style="resize: none;"></textarea>
 					</div>
@@ -223,8 +246,6 @@
 			</div>
 		</div>
 	</div>
-
-
 <!-- End -->
 	<script>
 		$(function(){
