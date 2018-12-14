@@ -342,8 +342,8 @@ hr{
 .text_modal_list{
 	display: none;
 	width: 100%;
-	padding: 1em;
-	background-color: rgba(255, 255, 255, 0.6);
+	padding: 0.5em 2em;
+	background-color:rgba(128,222,234 ,0.4);
 	position: absolute;
 	left: 0px;
 	bottom: 125px;
