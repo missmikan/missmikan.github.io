@@ -15,27 +15,6 @@
 </head>
 <body>
 <!-- Start -->
-	<!-- Modal -->
-	<div class="modal fade bs-example-modal-lg" id="textModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog modal-lg" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	      	<span style="font-size:1.2em;color:#0288D1;">快速回覆列表</span>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	      </div>
-	      <div class="modal-body">
-	        <div class="list-group">
-			  <button type="button" class="list-group-item">您好，歡迎來訪全誼線上智能客服，我是客服Wendy，請問有什麼能夠幫助您的？</button>
-			  <button type="button" class="list-group-item">老師您好：關於圖書系統的問題，請老師告知學校代碼</button>
-			  <button type="button" class="list-group-item">老師您好：關於校務系統的問題，請老師告知學校代碼</button>
-			  <button type="button" class="list-group-item">老師您好：請提供系統問題截圖，請傳送圖片，以便釐清問題所在</button>
-			  <button type="button" class="list-group-item">老師您好：請提供系統問題截圖，請傳送圖片，以便釐清問題所在</button>
-			</div>
-
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
 	<!-- Modal -->
 	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -72,26 +51,26 @@
 				</span>
 				<button class="leave">離開</button>
 			</div>
-			<div class="buttons_bar">
-				<button class="button1"><img src="button2.png" alt="">線上提問</button>
-				<button class="button2"><img src="button5.png" alt="">發問紀錄</button>
-				<button class="button3"><img src="button2.png" alt="">文字交談</button>
-				<button class="button4"><img src="megaphone.png" alt="">最新消息</button>
-				<button class="button5"><img src="clock-circular-outline.png" alt="">更版訊息</button>
-				<button class="button6"><img src="button1.png" alt="">與我聯繫</button>
-				<button class="button7"><img src="back.png" alt="">舊版</button>
-			</div>
 			
 			<div class="main">
-	<!-- 			<div class="talk_box_right">
-					<div class="talkbubble_right">
-						今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～今天天氣好晴朗～
-					</div>
-					<span class="send_time_right">10:30:30</span>
-					<div class="clearfix"></div>
-				</div> -->
 
+				<div class="buttons_bar">
+					<button class="button1"><img src="button2.png" alt="">線上提問</button>
+					<button class="button2"><img src="button5.png" alt="">發問紀錄</button>
+					<button class="button3"><img src="button2.png" alt="">文字交談</button>
+					<button class="button4"><img src="megaphone.png" alt="">最新消息</button>
+					<button class="button5"><img src="clock-circular-outline.png" alt="">更版訊息</button>
+					<button class="button6"><img src="button1.png" alt="">與我聯繫</button>
+					<button class="button7"><img src="back.png" alt="">舊版</button>
+				</div>
 
+				<div class="news">
+					<span class="glyphicon glyphicon-bullhorn"></span> 公告訊息：伺服器將於12月20日進行移機，屆時將不能使用系統，將維修至14:00準時開機。
+					<span class="close_button">
+						<button class="btn btn-default">關閉</button>
+					</span>
+				</div>
+				
 				<div class="talk_box_left">
 					<span class="MyBigHead"><img src="big.png" alt=""></span>
 					<div class="talkbubble_left photosent">
@@ -102,7 +81,7 @@
 
 				<div class="talk_box_right">
 					<div class="talkbubble_right photosent">
-						<img src="images/pic.jpg" alt=""  data-toggle="modal" data-target="#myModal">
+						<img src="images/dog.jpeg" alt=""  data-toggle="modal" data-target="#myModal">
 					</div>
 					<span class="send_time_right">10:20:30</span>
 				</div>
@@ -219,16 +198,25 @@
 				</div>
 
 				<!-- 客服人員回覆狀態 -->
-				<div class="typingtext">
-					<div class="load-wrapp">
-			            <div class="load-3">
-			                <div class="line"></div>
-			                <div class="line"></div>
-			                <div class="line"></div>
-			            </div>
-		        	</div>
-	        		客服正在回覆訊息...</div>
+				<div class="talk_box_left">
+					<span class="MyBigHead"><img src="big.png" alt=""></span>
+					<div class="talkbubble_left">
+						<div class="typingtext">
+			        		正在回覆訊息
+			        		<div class="load-wrapp">
+					            <div class="load-3">
+					                <div class="line"></div>
+					                <div class="line"></div>
+					                <div class="line"></div>
+					            </div>
+				        	</div>
+				        </div>
+					</div>
+					<span class="send_time_left">10:20:30</span>
 				</div>
+			
+			</div>
+
 			<div class="enter_area_outter">
 				<div class="enter_area">
 					<div class="change_fontsize">
