@@ -3,13 +3,6 @@ body{
 	font-size: 13px;
 	margin: 0;
 }
-/* 切換文字大小 
-	小：13px
-	中：14px
-	大：16px
-*/
-
-
 /* .outbox{
 	width: 100%;
 	height: calc((100vh - 10px) / 2);

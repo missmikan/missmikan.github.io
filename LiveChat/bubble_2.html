@@ -231,7 +231,7 @@
 			<div class="enter_area_outter">
 				<div class="enter_area">
 					<div class="change_fontsize">
-						<div class="text_size" alt=""  data-toggle="modal" data-target="#textModal"><span class="glyphicon glyphicon-text-size"></span></div>
+						<div class="text_size" id="click" ><span class="glyphicon glyphicon-text-size"></span></div>
 					</div>
 					<div class="text_type_area">
 						<textarea name="" id="" width="100%" height="100px" style="resize: none;"></textarea>
@@ -246,5 +246,22 @@
 		</div>
 	</div>
 <!-- End -->
+	<script>
+		$(function(){
+		 // 加上flag是為了讓文字有切換的效果
+		 var flag = false;
+		 // 在一個input上(id=click)註冊onclick事件
+		 $('#click').bind('click',function(){
+		  if (flag){
+		   $('body').css('font-size','13px');
+		   flag = false;
+		  }
+		  else {
+		   $('body').css('font-size','16px');
+		   flag = true;
+		  }
+		 });
+		});
+	</script>
 </body>
 </html>
