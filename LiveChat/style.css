@@ -24,8 +24,8 @@ hr{
 	width: 100%;
 	padding: 0.8em 4em;
 	background-color: rgba(255, 255, 255, 0.9);
-	position: sticky;
-	top: 0px;
+	position: absolute;
+	top: 36px;
 	left: 0;
 	z-index: 999;
 	font-size: 1.3em;
@@ -35,7 +35,7 @@ hr{
 }
 .news .close_button{
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	bottom: 10px;
 }
 .topbar{
@@ -265,7 +265,7 @@ hr{
 	top: 50px;
 	left: 0;
 }
-.buttons_bar button{
+.buttons_bar > button{
 	border: 0;
     /* width: 86px; */
     height: 28px;
@@ -582,7 +582,10 @@ hr{
 	    margin-right: 15px;
 	}
 	.news{
-		padding: 1.5em 2em;
+	    width: calc(100% + 2em);
+		/* padding: 1em 2em; */
+	    position: relative;
+    	left: -1em;
 		top: 0px;
 	}
 }
