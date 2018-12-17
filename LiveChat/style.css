@@ -22,7 +22,7 @@ hr{
 }
 .news{
 	width: 100%;
-	padding: 0.8em 4em;
+	padding: 0.8em 1em;
 	background-color: rgba(255, 255, 255, 0.9);
 	position: absolute;
 	top: 36px;
@@ -36,7 +36,7 @@ hr{
 .news .close_button{
 	position: absolute;
 	right: 20px;
-	bottom: 10px;
+	bottom: 6px;
 }
 .topbar{
 	width: 100%;
@@ -583,7 +583,7 @@ hr{
 	}
 	.news{
 	    width: calc(100% + 2em);
-		/* padding: 1em 2em; */
+		padding: 0.5em 2em;
 	    position: relative;
     	left: -1em;
 		top: 0px;
