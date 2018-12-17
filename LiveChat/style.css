@@ -573,7 +573,7 @@ hr{
 	    float: left;
 	}
 	.buttons_bar{
-		height: auto;
+		height: 62px;
 	}
 	.main{
 		padding: 70px 1em 1em;
@@ -587,5 +587,13 @@ hr{
 	    position: relative;
     	left: -1em;
 		top: 0px;
+	}
+}
+@media screen and (min-width:611px) and ( max-width: 1000px ){
+	.news{
+		top: 5px;
+	}
+	.buttons_bar{
+		height: 36px;
 	}
 }
