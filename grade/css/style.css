@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.outter{
+	width: 1000px;
+	margin: 0 auto;
+}
+.scoreTabs ul{
+	list-style: none;
+	display: flex;
+	padding-left: 0;
+	margin-bottom: 4px;
+	margin-top: 0;
+}
+.scoreTabs ul li{
+	width: calc(100%/8);
+	height: 31px;
+	font-size: 15px;
+	background-color: #0E8392;
+	color: #FFF;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.scoreTabs ul li:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.scoreTabs ul li:last-child{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.scoreTabs ul li:last-child{
+	margin-right: 0px;
+}
+.scoreTabs ul li:hover{
+	font-weight: 600;
+	transition: 0.2s;
+	/* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+	cursor: pointer;
+}
+.scoreTabs ul li.checked{
+	background-color: #209FB8;
+	font-weight: 600;
+}
+.Tab2{
+	width: 100%;
+	padding: 3px 0px 15px 0;
+	box-sizing: border-box;
+}
+span.title2{
+	color: #0E7767;
+	font-weight: 600;
+	margin-right: 7px;
+}
+span.title2:before{
+	content: "";
+	width: 5px;
+	height: 13px;
+	background-color: #0E7767;
+	display: inline-block;
+	margin-right: 3px;
+}
+span.title3{
+	font-size: 14px;
+}
+.Tab2 span.button{
+	border: 0;
+	background-color: transparent;
+	color: #0E7767;
+	cursor: pointer;
+	font-size: 18px;
+}
+.Tab2 span.button:hover{
+	color: #ffa501;
+}
+.Tab2 select{
+    background-color: transparent;
+    border:0px;
+    color: #3f4169;
+    font-size: 15px;
+    /*移除箭頭樣式*/
+	  appearance:none;
+	  -moz-appearance:none;
+	  -webkit-appearance:none;
+	  background: url("../images/angle-arrow-down.png") no-repeat right center transparent;
+	  padding-left: 3px;
+	  padding-right: 25px;
+	  outline: none;
+	  cursor: pointer;
+	  font-weight: 600;
+}
+.Tab2 select:hover{
+	  background: url("../images/angle-arrow-down-hover.png") no-repeat right center transparent;
+}
+/*IE隱藏箭頭樣式*/
+.Tab2 select::-ms-expand { 
+  display: none; 
+}
+.Tab2 ul.grade_type{
+	list-style: none;
+	padding-left: 0;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+.Tab2 ul.grade_type li{
+	padding: 2px 15px;
+	background-color: #0E7767;
+	display: inline-block;
+	color: #FFF;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.Tab2 ul.grade_type li:hover{
+	background-color: #44acbd;
+	transition: 0.2s;
+}
+.Tab2 button.back{
+	background-color: #D4145A;
+	color: #FFF;
+	border: 0;
+	padding: 4px 10px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+.Tab2 button.back:hover{
+	background-color: #fd4b8c;
+	font-weight: 600;
+	transition: 0.2s;
+}
+.Tab3{
+	display:flex;
+	position: relative;
+	margin-bottom: 5px;
+}
+.Tab3 .title3{
+	display: inline-flex;
+	align-items: center;
+	justify-content: left;
+}
+.Tab3 span.select1{
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+}
+.Tab3 select{
+    background-color: transparent;
+    border:1px solid #becadb;
+    color: #3f4169;
+    font-size: 14px;
+    border-radius: 15px;
+    /*移除箭頭樣式*/
+	  appearance:none;
+	  -moz-appearance:none;
+	  -webkit-appearance:none;
+	  background: url("../images/arrow-down-gray.png") no-repeat right center transparent;
+	  padding: 3px 40px 3px 10px;
+	  outline: none;
+	  cursor: pointer;
+	  font-weight: 600;
+}
+.Tab3 select:hover{
+	  background: url("../images/arrow-down-gray-hover.png") no-repeat right center transparent;
+}
+/*IE隱藏箭頭樣式*/
+.Tab3 select::-ms-expand { 
+  display: none; 
+}
+.scoreTable{
+	width: 100%;
+	font-size: 14px;
+}
+.scoreTable tr th{
+	background-color: #85CFBB;
+	color: #FFF;
+  padding: 3px 10px 3px;
+  text-align: left;
+}
+.scoreTable tbody tr:nth-child(even){
+	background-color: #F5F7F8;
+}
+.scoreTable tbody tr td{
+	padding:11px 10px;
+	color: #364247;
+}
+.scoreTable tbody tr td .s_button{
+	border: 0;
+	padding: 3px 5px;
+	font-size: 14px;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	position: relative;
+	margin-right: 4px;
+}
+.scoreTable tbody tr td .s_button:hover{
+	transition: 0.2s;
+}
+.scoreTable tbody tr td:first-child,.scoreTable tbody tr td:nth-child(2){
+	font-weight: 600;
+}
+.scoreTable tbody tr td:nth-child(3){
+	text-align: center;
+}
+.button1{
+	background-color: #A494CA;
+}
+.button2{
+	background-color: #9BD940;
+}
+.button3{
+	background-color: #FFA664;
+}
+.button4{
+	background-color: #03A7D5;
+}
+.button1:hover{
+	background-color: #604c8e;
+}
+.button2:hover{
+	background-color: #4f7b0f;
+}
+.button3:hover{
+	background-color: #ef6600;
+}
+.button4:hover{
+	background-color: #12738e;
+}
+.button_no_use{
+	background-color: #C6C6C6;
+	cursor: not-allowed !important;
+}
+.button_save:before{
+	content: "";
+	background: url('../images/lock.png') no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	top: -7px;
+  left: -7px;
+}
+.pull-right{
+	float: right;
+}

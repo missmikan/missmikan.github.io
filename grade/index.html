@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>成績管理</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="outter">
+		<div class="scoreTabs">
+			<ul>
+				<li class="checked"><img src="images/list-1.png" alt=""> 成績管理</li>
+				<li><img src="images/list-2.png" alt=""> 電腦閱卷</li>
+				<li><img src="images/list-3.png" alt=""> 補考作業</li>
+				<li><img src="images/list-4.png" alt=""> 成績勘誤</li>
+				<li><img src="images/list-5.png" alt=""> 能力指標</li>
+				<li><img src="images/list-6.png" alt=""> 表單列印</li>
+				<li><img src="images/list-7.png" alt=""> 成績列印</li>
+				<li><img src="images/list-8.png" alt=""> 管理設定</li>
+			</ul>
+		</div>
+		<div class="Tab2">
+			<span class="title2">班級成績</span>
+			<span class="button"><i class="fa fa-chevron-circle-left"></i></span>
+			<select>
+				<option value="">二年五班</option>
+				<option value="">二年六班</option>
+			</select>
+			<span class="button"><i class="fa fa-chevron-circle-right"></i></span>
+			<ul class="grade_type">
+				<li class="checked">定期一成績</li>
+				<li>定期二成績</li>
+				<li>定期三成績</li>
+				<li>畢業成績</li>
+			</ul>
+			<button class="pull-right back"><i class="fa fa-angle-left"></i> 返回</button>
+		</div>
+		<div class="Tab3">
+			<span class="title2">授課成績</span>
+			<span class="title3" style="margin-right:7px;">
+				<img src="images/lock.png" alt=""> 成績封存
+			</span>
+			<span class="title3">
+				<img src="images/ok.png" alt=""> 封存並結算
+			</span>
+			<span class="select1">
+				<select>
+					<option value="">查詢年班</option>
+				</select>
+				<select>
+					<option value="">查詢教師</option>
+				</select>
+			</span>
+		</div>
+
+		<!-- TABLE -->
+		<table class="scoreTable" cellspacing="0">
+			<thead>
+				<tr>
+					<th width="11%">班級</th>
+					<th width="16%">科目</th>
+					<th width="5%">節數</th>
+					<th width="68%">成績管理</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>二年五班</td>
+					<td>國語</td>
+					<td>5</td>
+					<td>
+						<button class="s_button button1">學習歷程紀錄</button>
+						<button class="s_button button2">平時成績</button>
+						<button class="s_button button3 button_save">定期一</button>
+						<button class="s_button button3">定期二</button>
+						<button class="s_button button_no_use">定期三</button>
+						<button class="s_button button4">學期成績</button>
+						<button class="s_button button4">努力程度</button>
+						<button class="s_button button4">文字描述</button>
+						<button class="s_button button4">能力指標</button>
+					</td>
+				</tr>
+				<tr>
+					<td>二年五班</td>
+					<td>鄉語</td>
+					<td>1</td>
+					<td>
+						<button class="s_button button1">學習歷程紀錄</button>
+						<button class="s_button button2">平時成績</button>
+						<button class="s_button button_no_use">定期一</button>
+						<button class="s_button button_no_use">定期二</button>
+						<button class="s_button button_no_use">定期三</button>
+						<button class="s_button button4">學期成績</button>
+						<button class="s_button button4">努力程度</button>
+						<button class="s_button button4">文字描述</button>
+						<button class="s_button button4">能力指標</button>
+					</td>
+				</tr>
+				<tr>
+					<td>二年五班</td>
+					<td>數學</td>
+					<td>3</td>
+					<td>
+						<button class="s_button button1">學習歷程紀錄</button>
+						<button class="s_button button2">平時成績</button>
+						<button class="s_button button_no_use">定期一</button>
+						<button class="s_button button_no_use">定期二</button>
+						<button class="s_button button_no_use">定期三</button>
+						<button class="s_button button4">學期成績</button>
+						<button class="s_button button4">努力程度</button>
+						<button class="s_button button4">文字描述</button>
+						<button class="s_button button4">能力指標</button>
+					</td>
+				</tr>							
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
