@@ -167,6 +167,59 @@ span.title3{
 .Tab3 select::-ms-expand { 
   display: none; 
 }
+.Tab4{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.Tab4 .title4{
+	display: inline-block;
+	padding: 0.1em 0.6em;
+	background-color: #85CFBB;
+	color: #FFF;
+	position: relative;
+	margin-right: 20px;
+}
+.Tab4 .title4:after{
+	content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 12px solid #85CFBB;
+  position: absolute;
+  top: 0px;
+  right: -12px;
+}
+.Tab4 .Tabs_Bar{
+	display: inline-block;
+}
+.Tab4 .Tabs_Bar ul{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;	
+}
+.Tab4 .Tabs_Bar ul li{
+	float: left;
+	display: inline-block;
+	border: 1px solid #85CFBB;
+  padding: 2px 8px;
+  border-radius: 8px;
+  margin-right: 6px;
+  cursor: pointer;
+  color: #0E7767;
+  font-size: 14px;
+}
+.Tab4 .Tabs_Bar ul li.checked{
+	background-color: #E8F8EE;
+	font-weight: 600;
+}
+.tips{
+	font-size: 14px;
+	color: #D4145A;
+	margin-bottom: 5px;
+}
 .scoreTable{
 	width: 100%;
 	font-size: 14px;
@@ -202,6 +255,41 @@ span.title3{
 }
 .scoreTable tbody tr td:nth-child(3){
 	text-align: center;
+}
+.grade_table{
+	text-align: center;
+}
+.grade_table-left{
+	width: 380px;
+	float: left;
+}
+.grade_table-left table{
+	width: 100%;
+}
+.grade_table-left .top_table tr:first-child td{
+	background-color: #85CFBB;
+	color: #FFF; 
+	font-size: 15px;
+	font-weight: 600;
+	padding: 11px 0px;
+}
+.grade_table-right{
+	width: 620px;
+  overflow-x: scroll;
+  display: inline-flex;
+}
+.grade_table-right .top_table tr:first-child td{
+	background-color: #85CFBB;
+	color: #FFF; 
+	font-size: 15px;
+	font-weight: 600;
+	min-width: 170px;
+}
+.grade_table-right .top_table tr:nth-child(2) td{
+	background-color: #E8F8EE; 
+	font-size: 12px;
+	padding: 0 2px;
+  width: 33%;
 }
 .button1{
 	background-color: #A494CA;
@@ -243,4 +331,95 @@ span.title3{
 }
 .pull-right{
 	float: right;
+}
+
+/* 滾動條樣式 */
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width:6px;
+    height:6px;
+    background-color:#F5F5F5;
+}
+/*定义滚动条轨道
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius:10px;
+    background-color:#F5F5F5;
+}
+/*定义滑块
+ 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#CCC;
+}
+.grade_table input{
+	border-radius: 5px;
+	border: 1px solid #66CCCC;
+	padding: 2px 4px;
+	text-align: center;
+	font-family: 'verdana';
+	font-weight: 600;
+	color: #4255A2;
+}
+.class_data{
+	font-size: 14px;
+	margin-top: 1px;
+}
+.class_data tr td{
+	padding: 4px 2px;
+}
+.class_data tr td:nth-child(1){
+	width: 10%;
+}
+.class_data tr td:nth-child(2){
+	width: 23%;
+
+}
+.class_data tr td:nth-child(3){
+	width: 8%;
+}
+.class_data tr td:nth-child(4){
+	width: 20%;
+}
+.class_data tr td:nth-child(5){
+	width: 13%;
+}
+.class_data tr td:nth-child(6){
+	width: 10%;
+}
+.class_data tr td:nth-child(7){
+	width: 13%;
+}
+
+.class_data tr td:nth-child(4) input{
+	width: 50px;
+}
+.class_data tr td:nth-child(5) input{
+	width: 30px;
+}
+.class_data tr td:nth-child(6) input{
+	width: 30px;
+}
+.class_data tr td:nth-child(7) input{
+	width: 30px;
+}
+.all_subject::-webkit-scrollbar {
+    display: none;
+}
+.subject{
+	min-width: 173px;
+	float: left;
+}
+.subject tr td{
+	padding:3px 2px;
+}
+.subject tr td input{
+	width: 30px;
+	padding: 2px 4px;
 }
