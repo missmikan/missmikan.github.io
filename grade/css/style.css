@@ -20,6 +20,9 @@
 	align-items: center;
 	justify-content: center;
 }
+.scoreTabs ul li img{
+	margin-right: 3px;
+}
 .scoreTabs ul li:first-child{
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -233,6 +236,9 @@ span.title3{
 .scoreTable tbody tr:nth-child(even){
 	background-color: #F5F7F8;
 }
+.scoreTable tbody tr:hover{
+	background-color: rgba(115, 236, 255, 0.1);
+}
 .scoreTable tbody tr td{
 	padding:11px 10px;
 	color: #364247;
@@ -298,11 +304,11 @@ span.title3{
 .grade_table-right .top_table tr td .grade_edit{
 	display: inline-block;
 	position: relative;
-	top: 2px;
 	cursor: pointer;
 }
 .grade_table-right .top_table tr td .grade_edit:hover{
-	top: 3px;
+	color:#ffd45a;
+	top: 2px;
 	transition: 0.1s;
 }
 .button1{
