@@ -270,7 +270,6 @@ span.title3{
 	background-color: #85CFBB;
 	color: #FFF; 
 	font-size: 15px;
-	font-weight: 600;
 	padding: 11px 0px;
 }
 .grade_table-right{
@@ -278,11 +277,16 @@ span.title3{
   overflow-x: scroll;
   display: inline-flex;
 }
-.grade_table-right .top_table tr:first-child td{
+.grade_table-right .top_table tr:first-child td:nth-child(odd){
+	background-color: #877ead;
+	color: #FFF; 
+	font-size: 15px;
+	min-width: 170px;
+}
+.grade_table-right .top_table tr:first-child td:nth-child(even){
 	background-color: #85CFBB;
 	color: #FFF; 
 	font-size: 15px;
-	font-weight: 600;
 	min-width: 170px;
 }
 .grade_table-right .top_table tr:nth-child(2) td{
@@ -290,6 +294,16 @@ span.title3{
 	font-size: 12px;
 	padding: 0 2px;
   width: 33%;
+}
+.grade_table-right .top_table tr td .grade_edit{
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	cursor: pointer;
+}
+.grade_table-right .top_table tr td .grade_edit:hover{
+	top: 3px;
+	transition: 0.1s;
 }
 .button1{
 	background-color: #A494CA;
@@ -412,6 +426,9 @@ span.title3{
 .all_subject::-webkit-scrollbar {
     display: none;
 }
+.grade_type .checked{
+	background-color: #85CFBB !important;
+}
 .subject{
 	min-width: 173px;
 	float: left;
@@ -419,7 +436,27 @@ span.title3{
 .subject tr td{
 	padding:3px 2px;
 }
+.subject:nth-child(odd) tr td input{
+	border-color: #c6b7f3;
+}
 .subject tr td input{
 	width: 30px;
 	padding: 2px 4px;
+}
+td.girl{
+	color: #D4145A;
+}
+td.boy{
+	color:#008BD7;
+}
+.class_data td:nth-child(2){
+	text-align: left;
+}
+.stuname:after{
+	content: "";
+	display: inline-block;
+	background: url('../images/specail.png') no-repeat;
+	width: 12px;
+	height: 12px;
+	margin-left: 3px;
 }

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>成績管理</title>
+	<title>成績管理2</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="outter">
-		<div class="scoreTabs">
+		<div class="scoreTabs" style="display: none;">
 			<ul>
 				<li class="checked"><img src="images/list-1.png" alt=""> 成績管理</li>
 				<li><img src="images/list-2.png" alt=""> 電腦閱卷</li>
@@ -150,37 +150,62 @@
 			<div class="grade_table-right" style="position:sticky;top:0;background-color: #FFF;">
 				<table class="top_table">
 					<tr>
-						<td colspan="3" width="170">
+						<td colspan="3">
 							<span>國語</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
+								
 						</td>
-						<td colspan="3" width="170">
+						<td colspan="3">
 							<span>鄉語</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>數學</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>綜合</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>本土語言</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>實驗數學</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>實驗英文</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 						<td colspan="3">
 							<span>自然</span>
 							(<span>5.0</span>hr)
+							<span class="grade_edit">
+								<img src="images/edit.png" alt="">
+							</span>
 						</td>
 					</tr>
 					<tr>
@@ -215,8 +240,8 @@
 				<table class="class_data">
 					<tr>
 						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td><span class="stuname">櫻桃子</span></td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -227,9 +252,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>02</td>
+						<td>穗波玉</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -240,9 +265,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>03</td>
+						<td>野口笑子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -253,9 +278,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>04</td>
+						<td>土橋年子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -266,9 +291,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>05</td>
+						<td>美環花子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -279,9 +304,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>06</td>
+						<td>冬田美鈴</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -292,9 +317,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>07</td>
+						<td>城崎姬子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -305,9 +330,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>08</td>
+						<td>笹山和子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -318,9 +343,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>09</td>
+						<td>前田廣美</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -331,9 +356,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>10</td>
+						<td>山田佳代子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -344,9 +369,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>11</td>
+						<td>伊藤由美子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -357,9 +382,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>12</td>
+						<td>石原安子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -370,9 +395,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
+						<td>13</td>
 						<td>櫻桃子</td>
-						<td>女</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -383,9 +408,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>14</td>
+						<td>野村敦子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -396,9 +421,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>15</td>
+						<td>小長谷理惠</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -409,9 +434,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>16</td>
+						<td>內田惠子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -422,9 +447,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>17</td>
+						<td>小島富美子</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -435,9 +460,9 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>18</td>
+						<td>牧村真紀</td>
+						<td class="girl">女</td>
 						<td>
 							<input type="text"></td>
 						<td>
@@ -448,9 +473,22 @@
 							<input type="text"></td>
 					</tr>
 					<tr>
-						<td>01</td>
-						<td>櫻桃子</td>
-						<td>女</td>
+						<td>19</td>
+						<td>花輪和彥</td>
+						<td class="boy">男</td>
+						<td>
+							<input type="text"></td>
+						<td>
+							<input type="text"></td>
+						<td>
+							<input type="text"></td>
+						<td>
+							<input type="text"></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>丸尾末男</td>
+						<td class="boy">男</td>
 						<td>
 							<input type="text"></td>
 						<td>
