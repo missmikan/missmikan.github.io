@@ -69,9 +69,24 @@ body{
 .t_main .table2 tbody tr:nth-child(2) td{
 	font-size: 1em;
 }
-.t_main .table2 tbody tr:first-child td:first-child{
+.t_main .table2 > tbody > tr:first-child > td:first-child{
 	background-color: #E3F2FD;
     color: #0D47A1;
+}
+.t_main .table2 tbody tr td .inner_table tr td{
+	padding: 0px;
+}
+.inner_table tr td:nth-child(1){
+	width: 108px;
+}
+.inner_table tr td:nth-child(2){
+	width: 55%;
+}
+.inner_table tr td:nth-child(3){
+	width: 20%;
+}
+.inner_table tr td:nth-child(4){
+	width: 10%;
 }
 .t_main .table3{
 	font-size: 0.9em;
@@ -283,10 +298,86 @@ body{
 	color: #333;
 	transition: 0.3s;
 }
+
 .table2 .input-sm{
 	padding: 0px 5px !important;
 	height: 25px !important;
 }
 .table2 button{
 	padding: 3px 5px !important;
+}
+button.btn-pink{
+	background-color: #FFCBCA;
+	color: #2E243D;
+	border: 0;
+	border-radius: 5px;
+	display: inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    font-size: 600;
+    padding: 3px 4px !important;
+}
+button.btn-pink:hover{
+	background-color: #fd78ce;
+}
+button.btn-yellowgreen{
+	background-color: #CBE18B;
+	color: #2E243D;
+	border: 0;
+	border-radius: 5px;
+	display: inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    font-size: 600;
+    padding: 3px 4px !important;
+}
+button.btn-yellowgreen:hover{
+	background-color: #82d22b;
+}
+button.btn-blue{
+	background-color: #A0E7F3;
+	color: #2E243D;
+	border: 0;
+	border-radius: 5px;
+	display: inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    font-size: 600;
+    padding: 3px 4px !important;
+}
+button.btn-blue:hover{
+	background-color: #03a9f4;
+}
+button.btn-yellow{
+	background-color: #ffeb3b;
+	color: #2E243D;
+	border: 0;
+	border-radius: 5px;
+	display: inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    font-size: 600;
+    padding: 3px 4px !important;
+}
+button.btn-yellow:hover{
+	background-color: #ffbc00;
+}
+button.btn-darkblue{
+	background-color:#414F8D;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px;
+	display: inline-flex;
+    align-items: center;
+    margin-right: 3px;
+    font-size: 600;
+    padding: 3px 4px !important;
+}
+button.btn-darkblue:hover{
+	background-color:#2196f3;
+}
+button.btn-pink.checked,button.btn-yellowgreen.checked,button.btn-yellow.checked,button.btn-blue.checked{
+    background-color: #344152;
+    color: #fbff00;
+    border: 2px solid #728cd6;
 }
