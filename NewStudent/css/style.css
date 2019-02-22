@@ -173,7 +173,7 @@ nav > div > span{
 }
 .data_1 input[type|=text],.data_1 input[type|=date],.data_1 select,.data_2 input[type|=text],.data_2 input[type|=date],.data_2 select,.data_3 input[type|=text],.data_3 input[type|=date],.data_3 select{
 	display: inline;
-	width: calc(100% - 5em);
+	width: calc(100% - 6em);
 	height: 1.8em ;
 	padding: 0.2em;
 }
@@ -286,6 +286,15 @@ hr{
 .other_option:before{
 	clear:both;
 }
+.school{
+	width: 6em;
+}
+.place{
+	width:calc(100% - 4em) !important;
+}
+.move_place{
+	width: calc(100% - 4em) !important;
+}
 /* .btn-darkblue */
 @media screen and ( min-width: 401px ) and ( max-width: 767px ){
 	.list_menu > div > span {
@@ -349,13 +358,13 @@ hr{
 		display: inline-block;
 	}
 	.data_3 label{
-		width: 35%;
+		width: 4.2em;
 	}
 	.inline_block{
 		display: inline-block;
 	}
 	.address{
-		width:62% !important;
+		width:60% !important;
 	}
 	.data_1 form ul li,.data_2 form ul li,.data_3 form ul li{
 		display: block;
@@ -383,4 +392,16 @@ hr{
 	.form-group{
 		padding: 3px 10px;
 	}
+	.school{
+		width: 7em !important;
+	}
+	.place{
+		width:calc(100% - 8em) !important;
+	}
+	.move_place{
+		width: calc(100% - 5em) !important;
+	}
+	.address2{
+		width: calc(100% - 5em) !important;
+ 	}
 }
