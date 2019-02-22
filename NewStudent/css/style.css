@@ -305,6 +305,15 @@ hr{
 	.page1 .form-group div input{
 		display: inline-block;
 	}
+	.border_bar > span:first-child{
+		width: 100%;
+	}
+	.border_bar > span:nth-child(2){
+		width: 100%;
+	}
+	.border_bar > span:nth-child(3){
+		width: 100%;
+	}
 }
 @media screen and ( max-width: 400px ){
 	.main{
