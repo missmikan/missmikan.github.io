@@ -158,7 +158,7 @@
 					<li><span>4</span> 緊急聯絡人</li>
 				</ul>
 				<button class="btn btn-danger btn-sm pull-right">取消</button>
-				<button class="btn btn-primary btn-sm pull-right" style="margin-right: 5px;">儲存基本資料</button>
+				<button class="btn btn-primary btn-sm pull-right" style="margin-right: 5px;">儲存照片用餐資料</button>
 				
 				<div class="clearfix"></div>
 			</div>
@@ -456,13 +456,15 @@
 
 		<!-- 照片及用餐資料填寫 start-->
 		<div class="blue_title">2-1 學童照片電子檔案</div>
-		<div class="col-sm-4 col-xs-12 upload_img">
-			<input type="file">
+		<div class="col-sm-2 col-xs-12 upload_img">
+			<input type="file" name="file" id="file" class="inputfile"
+     data-multiple-caption="{count} files selected" multiple />
+			<label for="file"><strong>選擇檔案</strong></label>
 		</div>
-		<div class="col-sm-8 col-xs-12">
+		<div class="col-sm-10 col-xs-12">
 			<ol>
-				<li>學校需要學童照片電子檔案，請協助上載。</li>
-				<li>照片大小不可以小於 寬 * 高=340px * 420px</li>
+				<li>學校需要學童照片電子檔申請數位學生證，請協助上載。</li>
+				<li>照片尺寸需大於：340px (寬)* 420px(高)</li>
 				<li>您可以再次進入本網站上傳學童照片檔案。</li>
 			</ol>
 		</div>
@@ -497,5 +499,28 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<script>
+		var inputs = document.querySelectorAll( '.inputfile' );
+		Array.prototype.forEach.call( inputs, function( input )
+		{
+		  var label    = input.nextElementSibling,
+		      labelVal = label.innerHTML;
+
+		  input.addEventListener( 'change', function( e )
+		  {
+		      var fileName = '';
+		      if(this.files && this.files.length > 1 )
+		         fileName = (this.getAttribute('data-multiple-caption') || '')
+		         .replace( '{count}', this.files.length );
+		      else
+		          fileName = e.target.value.split( '\\' ).pop();
+
+		      if( fileName )
+		          label.querySelector( 'span' ).innerHTML = fileName;
+		      else
+		          label.innerHTML = labelVal;
+		  });
+		});
+	</script>
 </body>
 </html>
