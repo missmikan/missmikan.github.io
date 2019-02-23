@@ -234,6 +234,7 @@ nav > div > span{
 hr{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	border-top: 1px solid #dcdcdc;
 }
 .s_card{
     background-color: #EBEBEB;
@@ -331,6 +332,21 @@ hr{
 }
 .inputfile + label * {
   pointer-events: none;
+}
+.add_new{
+	color: #CCC;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	background-color: #fbfbfb;
+	cursor: pointer;
+}
+.add_new:hover{
+	color: #666;
+	background-color: #F2F2F2;
+	transition: 0.5s;
 }
 /* .btn-darkblue */
 @media screen and ( min-width: 421px ) and ( max-width: 767px ){
