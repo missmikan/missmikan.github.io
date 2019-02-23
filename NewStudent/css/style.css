@@ -333,7 +333,7 @@ hr{
   pointer-events: none;
 }
 /* .btn-darkblue */
-@media screen and ( min-width: 401px ) and ( max-width: 767px ){
+@media screen and ( min-width: 450px ) and ( max-width: 767px ){
 	.list_menu > div > span {
 		width: calc(98% / 3);
 	    display: inline-block;
@@ -352,7 +352,7 @@ hr{
 		width: 100%;
 	}
 }
-@media screen and ( max-width: 400px ){
+@media screen and ( max-width: 450px ){
 	.main{
 		display: block;
 	}
