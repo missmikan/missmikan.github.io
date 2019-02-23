@@ -188,9 +188,6 @@ nav > div > span{
 .data_1 input[type|=text],.data_2 input[type|=text],.data_3 input[type|=text]{
 	padding: 3px;
 }
-* select{
-	font-size: 0.95em;
-}
 /* {
 	display: inline;
 	width: 70%;
@@ -211,7 +208,7 @@ nav > div > span{
 }
 
 .address{
-	width:calc(100% - 28em) !important;
+	width:calc(100% - 29em) !important;
 }
 .list_menu > div > span {
 	width: calc((100% - 2em)/5);
