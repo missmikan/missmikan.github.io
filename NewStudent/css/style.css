@@ -176,6 +176,7 @@ nav > div > span{
 	width: calc(100% - 6em);
 	height: 1.8em ;
 	padding: 0.2em;
+	font-size: 0.95em;
 }
 .data_1 input[type|=checkbox],.data_1 input[type|=radio],.data_2 input[type|=checkbox],.data_2 input[type|=radio],.data_3 input[type|=checkbox],.data_3 input[type|=radio]{
 	margin-left: 0.3em;
@@ -309,13 +310,14 @@ hr{
   z-index: -1;
 }
 .inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 400;
     color: white;
     background-color: #8db7c3;
     display: inline-block;
     padding: 0.2em 0.5em;
     border-radius: 0.3em;
+    text-align: center;
 }
 
 .inputfile:focus + label,
@@ -369,7 +371,11 @@ hr{
 	nav > div > span{
 		display: block;	}
 	.main{
-		margin: 70px auto 0;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+		padding: 70px 0 20px;
+		background-attachment: fixed;
 	}
 	.page1 .form-group div input{
 		width: 100% !important;
