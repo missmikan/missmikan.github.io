@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全校職務分配表</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+		.wrap{
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.wrap header{
+			background-color: #00c2d0;
+			padding: 5px 10px;
+			color: #FFF;
+			font-size: 1.2em;
+		}
+		.wrap > .title{
+			background-color: #fbfbfb;
+			padding: 5px 10px;
+			color:#00a4b6;
+			font-size: 1.2em;
+		}
+		.purple{
+			color: #a077b9;
+		}
+		.sch_no{
+			color: #ffff72;
+			float: right;
+			font-weight: 600;
+		}
+		.phone{
+			font-weight: 600;
+		}
+		.phone:before{
+			content: "分機 ";
+			font-weight: 400;
+		}
+		.part_card{
+			width: calc((100% - 20px)/3);
+			background-color: #f8f8f8;
+			margin-right: 10px;
+    		margin-bottom: 10px;
+		}
+		.part_card:nth-child(3n){
+			margin-right: 0px;
+		}
+		.part_card .title{
+			color: #FFF;
+			padding: 3px 6px;
+		}
+		.part_card:nth-child(even) .title{
+			background-color: #009fd7;
+		}
+		.part_card:nth-child(odd) .title{
+			background-color: #8b95d7;
+		}
+		/* .part_card:nth-child(3n-1) .title{
+			background-color: #f59fce;
+		} */
+		.part_card table{
+			color: #666666;
+			padding: 0.2em 0.5em;
+			width: 100%;
+		}
+		.sch_data ul{
+			list-style: none;
+			padding-left: 0;
+			display: flex;
+		}
+		.sch_data ul li{
+			width: 33%;
+			color: #666666;
+		}
+		.sch_data a:link,.sch_data a:visited{
+			color: #2196f3;
+		}
+		.part_card table tr:nth-child(even){
+			background-color: rgba(0, 0, 0, 0.05)
+		}
+		.part_card table tr td{
+			padding: 7px 3px;
+		}
+		.part_card table tr td:first-child{
+			width: 34%;
+			font-weight: 600;
+		}
+		.part_card table tr td:nth-child(2){
+			width: 44%;
+		}
+		.school_master{
+			padding:5px 5px;
+			border:1px solid #CCC;border-radius: 10px;margin-bottom: 10px;
+			color: #666666;
+		}
+		.part_more{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			background-color: #f8f8f8;
+		}
+		.part_more .title{
+			width: 100%;
+			color: #FFF;
+			padding: 3px 6px;
+			background-color: #ea9860;
+		}
+		.part_more ul{
+			list-style: none;
+			padding-left: 0;
+			display: inline-flex;
+			width: calc(100% / 3);
+			margin: 0;
+		}
+		.part_more ul li{
+			color: #666;
+			padding: 7px 3px;
+		}
+		.part_more ul:nth-child(2n) li{
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+		.part_more ul li:first-child{
+			width: 33%;
+			font-weight: 600;
+			padding-left: 8px;
+		}
+		.part_more ul li:nth-child(2){
+			width: 42%;
+		}
+		.part_more ul li:nth-child(3){
+			width: 25%;
+		}
+		@media screen and (max-width: 767px){
+			.part_card{
+				width: 100%;
+			}
+			.sch_data ul li{
+				width: 100%;
+			}
+			.sch_data ul{
+				display: block;
+			}
+			.school_master span{
+				display: block;
+			}
+			.part_card{
+				margin-right: 0px;
+			}
+			.part_more ul{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<span>新北市土城區頂埔國民小學</span>
+			<span class="sch_no">014782</span>
+		</header>
+		<div class="title"><span class="purple">107年度下學期</span>全校職務分配表</div>
+		<div class="sch_data">
+			<ul>
+				<li>學校電話：(02)2268-6800</li>
+				<li>學校傳真：(02)2268-3121</li>
+				<li>學校信箱：<a href="mailto:b12i34Y5@ntpc.edu.tw">b12i34Y5@ntpc.edu.tw</a></li>
+			</ul>
+		</div>
+		<div class="school_master">
+			<span><i class="fa fa-user"></i> 校長 謝芳儒</span>
+			<span class="phone">101</span>
+			<span>行動電話：0912-345678</span>
+			<span>校長信箱：amd586@ntpc.edu.tw</span>
+		</div>
+		<div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
+			<div class="part_card">
+				<div class="title"><i class="fa fa-home"></i> 學務處</div>
+				<table cellspacing="0">
+					<tr>
+						<td>學務主任</td>
+						<td>王小明明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">114</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">115</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="part_card">
+				<div class="title"><i class="fa fa-home"></i> 學務處</div>
+				<table cellspacing="0">
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="part_card">
+				<div class="title"><i class="fa fa-home"></i> 學務處</div>
+				<table cellspacing="0">
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="part_card">
+				<div class="title"><i class="fa fa-home"></i> 學務處</div>
+				<table cellspacing="0">
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="part_card">
+				<div class="title"><i class="fa fa-home"></i> 學務處</div>
+				<table cellspacing="0">
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+					<tr>
+						<td>學務主任</td>
+						<td>王小明</td>
+						<td><span class="phone">113</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="part_more">
+				<div class="title"><i class="fa fa-user"></i> 導師室</div>
+				<ul>
+					<li>一年1班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年2班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年3班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年4班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年4班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年5班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年6班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年7班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+				<ul>
+					<li>一年8班</li>
+					<li>王小明</li>
+					<li class="phone">152</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
