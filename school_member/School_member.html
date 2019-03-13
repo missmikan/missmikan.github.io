@@ -31,10 +31,13 @@
 		}
 		.phone{
 			font-weight: 600;
+			color: #ec511c !important;
+    		font-family: 'Helvetica';
 		}
 		.phone:before{
 			content: "分機 ";
-			font-weight: 400;
+		    font-weight: 400;
+			color: #666;
 		}
 		.part_card{
 			width: calc((100% - 20px)/3);
@@ -48,6 +51,8 @@
 		.part_card .title{
 			color: #FFF;
 			padding: 3px 6px;
+			border-top-left-radius: 5px;
+    		border-top-right-radius: 5px;
 		}
 		.part_card:nth-child(even) .title{
 			background-color: #009fd7;
@@ -93,6 +98,9 @@
 			border:1px solid #CCC;border-radius: 10px;margin-bottom: 10px;
 			color: #666666;
 		}
+		.school_master > span{
+			margin-right: 25px;
+		}
 		.part_more{
 			width: 100%;
 			display: flex;
@@ -105,6 +113,8 @@
 			color: #FFF;
 			padding: 3px 6px;
 			background-color: #ea9860;
+			border-top-left-radius: 5px;
+    		border-top-right-radius: 5px;
 		}
 		.part_more ul{
 			list-style: none;
@@ -141,7 +151,7 @@
 			.sch_data ul{
 				display: block;
 			}
-			.school_master span{
+			.school_master > span{
 				display: block;
 			}
 			.part_card{
@@ -162,16 +172,15 @@
 		<div class="title"><span class="purple">107年度下學期</span>全校職務分配表</div>
 		<div class="sch_data">
 			<ul>
-				<li>學校電話：(02)2268-6800</li>
-				<li>學校傳真：(02)2268-3121</li>
-				<li>學校信箱：<a href="mailto:b12i34Y5@ntpc.edu.tw">b12i34Y5@ntpc.edu.tw</a></li>
+				<li><i class="fa fa-phone"></i> 學校電話：(02)2268-6800</li>
+				<li><i class="fa fa-fax"></i> 學校傳真：(02)2268-3121</li>
+				<li><i class="fa fa-envelope"></i> 學校信箱：<a href="mailto:b12i34Y5@ntpc.edu.tw">b12i34Y5@ntpc.edu.tw</a></li>
 			</ul>
 		</div>
 		<div class="school_master">
-			<span><i class="fa fa-user"></i> 校長 謝芳儒</span>
-			<span class="phone">101</span>
-			<span>行動電話：0912-345678</span>
-			<span>校長信箱：amd586@ntpc.edu.tw</span>
+			<span><i class="fa fa-user"></i> 校長 謝芳儒 <span class="phone">101</span></span>
+			<span><i class="fa fa-mobile"></i> 行動電話：0912-345678</span>
+			<span><i class="fa fa-envelope"></i> 校長信箱：<a href="mailto:amd586@ntpc.edu.tw">amd586@ntpc.edu.tw</a></span>
 		</div>
 		<div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
 			<div class="part_card">
@@ -183,8 +192,8 @@
 						<td><span class="phone">113</span></td>
 					</tr>
 					<tr>
-						<td>學務主任</td>
-						<td>王小明</td>
+						<td>行政助理</td>
+						<td>張唯一</td>
 						<td><span class="phone">114</span></td>
 					</tr>
 					<tr>
