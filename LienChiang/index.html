@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<meta name="format-detection" content="telephone=no">
+		<title>連江縣政府教育處 - 校務行政系統</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="content">
+		<header>
+			<div id="header_left"></div>
+			<div id="header_right"></div>
+			<div id="mobile_title">校務行政系統</div>
+		</header>
+		<div id="main" class="container-fruid">
+			<!--左方區域-->
+			<div id="main_left">
+				<!--登入鈕-->
+				<!--PC登入鈕-->
+				<div id="login">
+				<a href="#" onclick="location.href='/WebAuth.do';">
+				<span class="glyphicon glyphicon-user" style="margin-right: 0.4em;">
+				</span>登入(Login)
+				</a>
+				</div>
+				<!--mobile登入鈕-->
+				<div id="mobile_login">
+					<a href="#" onclick="location.href='/WebAuth.do';"><div id="mobile_loginblock"><span class="glyphicon glyphicon-user" style="margin-right: 0.4em;">
+					</span>登入(Login)
+					</div>
+					</a>
+				</div>
+				<!--PC左方導覽列-->
+				<div id="nav">
+					<a href="#" target="_blank"><div class="nav_link color1"><span><img src="img/icon_8.png"></span>連江縣政府</div></a>
+					<a href="#" target="_blank"><div class="nav_link color2"><span><img src="img/icon_7.png"></span>連江縣教育處</div></a>
+					<a href="#" target="_blank"><div class="nav_link color3"><span><img src="img/icon_6.png"></span>連江縣十二年國教資訊網</div></a>
+					<a href="#" target="_blank"><div class="nav_link color4"><span><img src="img/icon_1.png"></span>網路中心</div></a>
+					<!-- <a href="#" target="_blank"><div class="nav_link color5"><span><img src="img/icon_5.png"></span>學生線上列印收據</div></a> -->
+				</div>
+
+				<!--手機導覽列-->
+				<div id="mobile_nav">
+					<a href="#" target="_blank"><div class="nav_mobile_1">
+						<div class="mobile_icon"><img src="img/mobile_icon_8.png"></div>
+					連江縣政府</div></a>
+					<a href="#" target="_blank"><div class="nav_mobile_2">
+						<div class="mobile_icon"><img src="img/mobile_icon_7.png"></div>
+					連江縣教育處</div></a>
+					<a href="#" target="_blank"><div class="nav_mobile_3">
+						<div class="mobile_icon"><img src="img/mobile_icon_6.png"></div>
+					連江縣十二年國教資訊網</div></a>
+					<a href="#" target="_blank"><div class="nav_mobile_4">
+						<div class="mobile_icon"><img src="img/mobile_icon_1.png"></div>
+					網路中心</div></a>
+					<!-- <a href="#" target="_blank"><div class="nav_mobile_5">
+						<div class="mobile_icon"><img src="img/mobile_icon_5.png"></div>
+					學生線上列印收據</div></a> -->
+					<div class="clearfix"></div>
+				</div>
+				<!--手機導覽列end-->
+			</div>
+			<!--右方區域-->
+			<div id="main_right">
+				<iframe src="/index_ifram.jsp" width="96%" height="360px" frameborder="0"></iframe>
+			</div>
+			<footer>
+				<div id="service">服務資訊</div>
+				<div id="service_info">
+				<!--PC版footer-->
+					<div id="pc_footer">
+						<div id="phone_number">
+							<!-- <span class="glyphicon glyphicon-earphone"></span>新北市客服專線：(02)8072-3456 分機550或551<br> -->
+							<span class="glyphicon glyphicon-phone-alt"></span>免付費服務電話：0800-880-928</div>
+							<div id="service_time">
+								<!-- 服務時間：上午8:30~12:00 下午13:30~17:30<br> -->
+								服務時間：上午9:00~11:30 下午13:30~16:40
+							</div>
+							<div id="declare">本系統由<a href="#">連江縣政府教育處</a>提供，係屬付費軟體，嚴禁轉載、販售</div>
+					</div>
+				<!--行動版footer-->
+					<div id="mobile_footer">
+						<div id="phone_number">
+							<!-- <span class="glyphicon glyphicon-earphone"></span>新北市客服專線：(02)8072-3456 分機550或551<br>
+							服務時間：上午8:30~12:00 下午13:30~17:30<br> -->
+							<span class="glyphicon glyphicon-phone-alt"></span>免付費服務電話：0800-880-928<br>
+							服務時間：上午9:00~11:30 下午13:30~16:40</div>
+							<div id="declare" style="margin-top:1em;">本系統由<a href="#">連江縣政府教育處</a>提供，係屬付費軟體，嚴禁轉載、販售</div>
+					</div>
+				</div>	
+				</footer>
+				</div>
+			</body>
+		</html>
