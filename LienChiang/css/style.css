@@ -215,7 +215,7 @@
 
 	footer{
 		width: 100%;
-		background-color: #28608c;	
+		background-color: #0c4d7d;	
 		padding: 1em 1em 1em 1em;
 	}
 
@@ -283,32 +283,25 @@
 		width: 100%;
 		min-width: 1000px;
 		height: 100px ;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2e1ff+0,A2D7FC+100;Blue+3D+%236 */
-		background: #79C2F1; /* Old browsers */
-	background: -webkit-linear-gradient(#79C2F1 0%, #A2D7FC 100%);
-	background: -o-linear-gradient(#79C2F1 0%, #A2D7FC 100%);
-	background: linear-gradient(#79C2F1 0%, #A2D7FC 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79C2F1', endColorstr='#A2D7FC',GradientType=0 ); /* IE6-9 */
-	
-		box-shadow:0px 1px 4px rgba(20%,20%,40%,0.5);
+		background-image: url('../img/banner.jpg');
 		position: relative;
 		z-index: 9;
 	}
 
-	#header_left{
+/* 	#header_left{
 		width: 595px;
 		height: 100px;
 		background-image: url('../img/banner_left.png');
 		position: absolute;
 		left: 10px;
-	}
-	#header_right{
+	} */
+/* 	#header_right{
 		width: 558px;
 		height: 100px;
 		background-image: url('../img/banner_right.png');
 		position: absolute;
 		right: 0;
-	}
+	} */
 	#mobile_title {
 		display: none;
 	}
@@ -322,7 +315,7 @@
 
 	#main_left{
 		width: 37%;
-		background-color: #cbe1f3;
+		background-color: #d8eaf9;
 		text-align: center;
 		padding-top: 3em;
 	}
@@ -433,8 +426,8 @@
 	}
 	footer{
 		width: 100%;
-		min-width: 1100px;
-		background-color: #28608c;	
+		/* min-width: 1100px; */
+		background-color: #0c4d7d;	
 		clear: left;
 		padding: 1em 3em 1em 3em;
 		position: relative;
@@ -442,19 +435,20 @@
 
 	#service {
 		width: 70%;
-		height: 2em;
+		/* height: 2em; */
 		text-align: center;
-		font-size: 1.4em;
-		line-height: 2em;
+		font-size: 1.2em;
+		/* line-height: 2em; */
 		color: #FFF;
 		border: 1px solid #FFF;
 		margin: 0 auto 0.2em auto;
+		padding: 0.3em;
 	}
 
 	#service_info{
 		width: 70%;
-		min-width: 721px;
-		margin: 0 auto 1em auto;	
+		/* min-width: 721px; */
+		margin: 0 auto;	
 		color: #FFF;
 		font-size: 1.1em
 	}
@@ -471,16 +465,16 @@
 	#phone_number {
 		width: 50%;
 		float: left;	
-		padding: 0.5em;
+		padding: 0.2em 0.5em;
 		line-height: 2em;
 	}
 
 	#service_time {
 		width: 50%;
-		height: 60px;
+		/* height: 60px; */
 		float: left;
 		padding: 0.5em;	
-		line-height: 2em;
+		/* line-height: 2em; */
 	}
 
 	.glyphicon-earphone , .glyphicon-phone-alt {
