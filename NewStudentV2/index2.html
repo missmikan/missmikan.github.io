@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新生線上報到登記</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div>新北市大安區幸安國民小學<span>108學年度新生報到入學資訊填寫</span></div>
+	</nav>
+	<div class="main">
+
+		<!-- 基本資料填寫start -->
+		<div class="gray_title">新生報到入學資訊填寫作業，請依序完成資料填寫</div>
+		<div class="border_bar">
+			<span>電子郵件地址：<span>yinghsuan@schoosoft.com.tw</span></span>
+			<span>新生身分證字號：<span>G123456789</span></span>
+			<span>新生出生年月日：<span>1061231</span></span>
+		</div>
+		<div style="padding:0.3em 0.5em">恭喜您！您的新生入學身份資料驗證 
+			<span style="color:green">通過</span>
+			<!-- <span style="color:red">不通過</span> --> 
+			，請繼續完成以下資料填寫</div>
+		<div class="content" style="padding:0.2em 0.5em">
+			<span class="bold">您選擇入學本校，幸安國小歡迎您的加入！</span> 
+			<!-- <span class="smText">如無法入學本校請務必確實勾選原因，勾選「其他」請務必說明理由</span> -->
+			<button class="btn btn-success btn-xs"><span class="glyphicon glyphicon-retweet"></span> 變更入學意願</button>
+			
+			<div class="step_bar">
+				<ul>
+					<li class="active"><span>1</span> 學生資料</li>
+					<li><span>2</span> 照片資料</li>
+					<li><span>3</span> 家庭資料</li>
+					<li><span>4</span> 緊急聯絡人</li>
+				</ul>
+				<!-- <button class="btn btn-danger btn-sm pull-right">取消</button>
+				<button class="btn btn-primary btn-sm pull-right" style="margin-right: 5px;">儲存基本資料</button> -->
+				
+				<div class="clearfix"></div>
+			</div>
+			<!-- <div>※因學校學籍管理與教學活動需要，請協助詳實填寫，相關資料將確實保密。</div>	 -->
+
+			<!-- 現在架構是2、4、10，2為標題，4、10為內容，每一個選項外面包content -->
+
+
+			<div class="new_student_data_1">
+				<div class="form-2">姓名/性別</div>
+				<div class="form-4">
+					<div class="content">
+						<input type="text" class="form-control" placeholder="請輸入學生姓名">
+					</div>
+					<div class="content">
+						<span><input type="radio" name="sex"> 男</span>
+						<span><input type="radio" name="sex"> 女</span>
+					</div>
+				</div>
+				<div class="form-2">英文名字</div>
+				<div class="form-4">
+					<!-- <div class="content">
+						<input type="checkbox"> <span>中翻英</span>
+					</div> -->
+					<div class="content">
+						<select name="" id="" style="width:auto" class="form-control">
+							<option value="">威妥瑪</option>
+							<option value="">漢語</option>
+							<option value="">通用</option>
+							<option value="">國音二</option>
+						</select> 
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-2">國籍</div>
+				<div class="form-4">
+					<div class="content">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">亞洲</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">中華民國</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-2">國籍</div>
+				<div class="form-4">
+					<div class="content">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">亞洲</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">中華民國</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-2">戶籍地址</div>
+				<div class="form-10">
+					<div class="content">
+						<input type="text" placeholder="郵遞區號" class="form-control" style="width:6em">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">新北市</option>
+						</select>
+					</div>
+					<div class="content">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">大安區</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">幸安里</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">1鄰</option>
+						</select>
+					</div>
+					<div class="content">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+
+<!-- 
+
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">學生姓名</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">性別</label>
+						<input type="radio" name="sex"> 男
+						<input type="radio" name="sex"> 女
+					</form>
+					<form class="col-sm-6 col-xs-12 form-group form-inline">
+						<label for="">英文名字</label>
+						<span class="inline_block">
+							<input type="checkbox"> 幫我中翻英
+							<select name="" id="" style="width:auto">
+								<option value="">威妥瑪</option>
+								<option value="">漢語</option>
+								<option value="">通用</option>
+								<option value="">國音二</option>
+							</select> 
+						</span>
+						<input type="text" class="form-control" style="width: calc(100% - 20em);">
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">班級</label>
+						<span>1</span>年
+						<span>12</span>班
+						<input type="text" class="form-control" style="width: 2em"> 號
+					</form>
+					<form class="col-sm-2 col-xs-12 form-group form-inline">
+						<label for="">學號</label>
+						<input type="text" class="form-control" style="width: 5em;">
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">出生日期</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-4 col-xs-12 form-group">
+						<label for="">國籍</label>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">亞洲</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">中華民國</option>
+						</select>
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group">
+						<label for="">護照種類</label>
+						<select name="" id="" class="form-control">
+							<option value=""> </option>
+						</select>
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group">
+						<label for="">身份證字號</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-2 col-xs-12 form-group">
+						<label for="">血型</label>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">O</option>
+						</select> 型
+					</form>
+					<form class="col-sm-2 col-xs-12 form-group">
+						<label for="">僑居地</label>
+						<input type="text" class="form-control place">
+					</form>
+					<form class="col-sm-2 col-xs-12 form-group">
+						<label for="">出生地</label>
+						<input type="text" class="form-control place">
+					</form>
+					<form class="col-sm-5 col-xs-12 form-group">
+						<label for="">電子郵件</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group">
+						<label for="">戶籍電話</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-4 col-xs-12 form-group">
+						<label for="">監護人行動電話</label>
+						<input type="text" class="form-control" style="width: calc(100% - 8em)">
+					</form>
+					<form class="col-sm-12 col-xs-12 form-group form-inline">
+						<label for="">戶籍地址</label>
+						<input type="text" placeholder="402" class="form-control" style="width: 2.5em">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">新北市</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">大安區</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">幸安里</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">1鄰</option>
+						</select>
+						<input type="text" class="form-control address">
+					</form>
+					<form class="col-sm-5 col-xs-12 form-group form-inline">
+						<input type="checkbox"><span class="point"> 通訊地同戶籍地</span>
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group">
+						<label for="">聯絡電話</label>
+						<input type="text" class="form-control">
+					</form>
+					<form class="col-sm-4 col-xs-12 form-group">
+						<label for="">學生行動電話</label>
+						<input type="text" class="form-control" style="width:calc(100% - 8em)">
+					</form>
+					<form class="col-sm-12 col-xs-12 form-group form-inline">
+						<label for="">聯絡地址</label>
+						<input type="text" placeholder="402" class="form-control" style="width: 2.5em">
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">新北市</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">大安區</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">幸安里</option>
+						</select>
+						<select name="" id="" class="form-control" style="width:auto">
+							<option value="">1鄰</option>
+						</select>
+						<input type="text" class="form-control address">
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">親子年齡</label>
+						<input type="checkbox" class="form-control"> 差距超過45歲
+					</form>
+					<form class="col-sm-3 col-xs-12 form-group form-inline">
+						<label for="">獨生子女</label>
+						<input type="checkbox" class="form-control"> 是獨生子女
+					</form>
+					<form class="col-sm-6 col-xs-12 form-group form-inline">
+						<label for="">網路情形</label>
+						<input type="checkbox" class="form-control"> 家中有網路
+					</form>
+					<form class="col-sm-12 col-xs-12 form-group form-inline">
+						<label for="">教養情形</label>
+						<ul>
+							<li>
+								<input type="checkbox" class="form-control"> 單親 關係
+								<select name="" id="" class="form-control" style="width:auto">
+									<option value="">與母同住</option>
+								</select>
+								<select name="" id="" class="form-control" style="width:auto;margin-right: 10px;">
+									<option value="">父亡</option>
+								</select>
+							</li>
+							<li>
+								<input type="checkbox" class="form-control"> 隔代 關係
+								<select name="" id="" class="form-control" style="width:auto">
+									<option value="">祖父</option>
+								</select>
+							</li>
+							<li>
+								<input type="checkbox" class="form-control"> 寄養 關係
+								<input type="text" class="form-control" style="width:5em">
+							</li>
+						</ul>
+						
+						
+						
+						
+					</form>
+					<form class="col-sm-12 col-xs-12 form-group form-inline list_menu">
+						<label for="" class="label_set">學生身份</label>
+						<div class="menu_set">
+							<span>
+								<input type="checkbox" class="form-control"> 一般學生
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 新住民子女
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 外籍生
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 資優生
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 邊疆生(蒙藏生)
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 海外僑生(回國僑生)
+							</span>
+							<span style="width: 100%">
+								<input type="checkbox" class="form-control"> 原住民
+								<span class="green_tag">身份別</span>
+								<select name="" id="" class="form-control" style="width:auto">
+									<option value="">平地</option>
+								</select>
+								<span class="green_tag">族別</span>
+								<select name="" id="" class="form-control"style="width:auto">
+									<option value="">阿美族</option>
+								</select>
+								<select name="" id="" class="form-control">
+									<option value="">請選擇原住民語認證</option>
+								</select>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="data_2">
+				<div class="row">
+					<form class="col-sm-12 col-xs-12 form-group form-inline list_menu">
+						<label for="" class="label_set">就學註記</label>
+						<div class="menu_set">
+							<span>
+								<input type="checkbox" class="form-control"> 高風險家庭
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 失業人士子女
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 安心就學輔導
+							</span>
+							<span>
+								<input type="checkbox" class="form-control"> 家庭收入30萬以下
+							</span>
+							<hr>
+							<span style="width: 100%">
+								<input type="checkbox" class="form-control"> 清寒證明
+								<select name="" id="" class="form-control">
+									<option value="">請選擇原住民語認證</option>
+								</select>
+								低收入戶有效期(年月)
+								<select name="" id="" class="form-control" style="width: 4em;">
+									<option value="">90</option>
+								</select>年
+								<select name="" id="" class="form-control" style="width: 3em;">
+									<option value="">3</option>
+								</select>月
+							</span>
+							<hr>
+							<span style="width: 100%">
+								<input type="checkbox" class="form-control"> 本人身障
+								<input type="checkbox" class="form-control"> 鑑輔會身心障礙學生鑑定
+								<input type="checkbox" class="form-control"> 顏面傷殘
+								<div>
+									<span class="inline_block">
+										<span class="green_tag">等級</span>
+										<select name="" id="" class="form-control" style="width:auto">
+											<option value=""> </option>
+										</select>
+									</span>
+
+									<span class="inline_block">
+										<span class="green_tag">類別</span>
+									<select name="" id="" class="form-control"style="width:auto">
+									</span>
+									
+										<option value=""> </option>
+									</select>
+
+									<span class="inline_block">
+										<span class="green_tag">備註</span>
+										<input type="text" class="form-control" placeholder="如有需說明的事項，請填寫" style="width: 19em">
+									</span>
+									
+								</div>
+							</span>
+						</div>
+					</form>
+					
+					<div class="col-sm-12 col-xs-12">
+						<form  class="col-sm-6 col-xs-12 form-group form-inline s_card">
+							<label for="" style="width: 100%;">有身心障礙手冊/證明</label>
+							<span>身心障礙手冊文號</span>
+							<input type="text" class="form-control">
+							<span>鑑定日期</span>
+							<input type="text" class="form-control">
+							<span>重新鑑定日期</span>
+							<input type="text" class="form-control">
+							<span>附件</span>
+							<a href="#">123.jpg</a>
+						</form>
+						<form  class="col-sm-6 col-xs-12 form-group form-inline s_card">
+							<label for="" style="width: 100%;">有鑑定安置輔導委員會證明</label>
+							<span>特教類別 鑑安輔文號</span>
+							<input type="text" class="form-control">
+							<span>鑑定日期</span>
+							<input type="text" class="form-control">
+							<span>重新鑑定日期</span>
+							<input type="text" class="form-control">
+							 <span>附件</span>
+							<a href="#">123.jpg</a> 
+						</form>
+					</div> -->
+					
+				</div>
+			</div>
+
+		</div>
+		<div class="form-group">
+		    <div class="col-sm-12" style="text-align: center;">
+		      <button type="submit" class="btn btn-primary">下一步</button>
+		      <button class="btn btn-danger">取消</button>
+		    </div>
+		</div>
+		<div class="clearfix"></div>
+		<!-- 基本資料填寫end -->
+	</div>
+</body>
+</html>
