@@ -10,7 +10,7 @@
 			margin: 0 auto;
 		}
 		.wrap header{
-			background-color: #00c2d0;
+			background-color: #006f90;
 			padding: 5px 10px;
 			color: #FFF;
 			font-size: 1.2em;
@@ -212,6 +212,12 @@
 		.part_more ul li:nth-child(3){
 			width: 25%;
 		}
+		.hidden-xs{
+			display: none;
+		}
+		.visible-xs{
+			display: inline-block;
+		}
 		@media screen and (max-width: 767px){
 			.part_card{
 				width: 100%;
@@ -239,6 +245,18 @@
 			.part_card .out ul {
 			    min-width: 100%;
 			}
+			.wrap header {
+			    background-color: #00c2d0;
+			    padding: 5px 10px;
+			    color: #FFF;
+			    font-size: 1.2em;
+			}
+			.hidden-xs{
+				display: block;
+			}
+			.visible-xs{
+				display: none;
+			}
 		}
 	</style>
 </head>
@@ -246,9 +264,13 @@
 	<div class="wrap">
 		<header>
 			<span>新北市土城區頂埔國民小學</span>
+		<!-- PC版顯示 -->
+			<span class="visible-xs"><span class="purple">107(下)</span>全校職務分配表</span>	
 			<span class="sch_no">014782</span>
 		</header>
-		<div class="title"><span class="purple">107(下)</span>全校職務分配表</div>
+		<!-- 手機版顯示 -->
+		<div class="title hidden-xs"><span class="purple">107(下)</span>全校職務分配表</div>
+
 		<div class="sch_data">
 			<ul>
 				<li><i class="fa fa-phone"></i> 學校電話：(02)2268-6800</li>
