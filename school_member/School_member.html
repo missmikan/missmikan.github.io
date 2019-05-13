@@ -5,155 +5,166 @@
 	<title>全校職務分配表第二版</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<style>
-		.school_member .wrap{
+		.wrap{
 			max-width: 1000px;
 			margin: 0 auto;
 		}
-		.school_member .wrap header{
+		.wrap header{
 			background-color: #00c2d0;
 			padding: 5px 10px;
 			color: #FFF;
 			font-size: 1.2em;
 		}
-		.school_member .wrap > .title{
+		.wrap > .title{
 		    background-color: #fbfbfb;
 		    padding: 2px 10px;
 		    color: #00a4b6;
 		    font-size: 1.2em;
 		    border: 1px solid #00a4b6;
+	        text-align: center;
+	        font-weight: 600;
 		}
-		.school_member .purple{
+		.purple{
 			color: #a077b9;
 		}
-		.school_member .sch_no{
+		.sch_no{
 			color: #ffff72;
 			float: right;
 			font-weight: 600;
 		}
-		.school_member .phone{
+		.phone{
 			font-weight: 600;
 			color: #ec511c !important;
     		font-family: 'Helvetica';
 		}
-		.school_member .phone:before{
+		.phone:before{
 			content: "分機 ";
 		    font-weight: 400;
 			color: #666;
 		}
-		.school_member .part_card{
+		.part_card{
 			background-color: #f8f8f8;			
     		margin-bottom: 10px;
 		}
-		.school_member .part_card1{
+		.part_card1{
 			width: calc(100% / 3);
 		}
-		.school_member .part_card .title{
+		.part_card .title{
 			color: #FFF;
 			padding: 3px 6px;
 			border-top-left-radius: 5px;
     		border-top-right-radius: 5px;
 		}
-		.school_member .part_card:nth-child(even) .title{
+		.part_card:nth-child(even) .title{
 			background-color: #009fd7;
 		}
-		.school_member .part_card:nth-child(odd) .title{
+		.part_card:nth-child(odd) .title{
 			background-color: #8b95d7;
 		}
-		.school_member .part_card .out{
+		.part_card .out{
 			max-width: 100%;
 			max-height: 245px;
 			display: flex;
 			flex-wrap: wrap;
 		}
-		.school_member .part_card .out ul{
+		.part_card .out ul{
 			margin-top: 0;
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
 			min-width: 330px;
 		}
-		.school_member .part_card .out ul li{
+		.part_card .out ul li{
 			height: 35px;
 			line-height: 35px;
 			padding-left: 6px;
 			box-sizing: border-box;
 			float: left;
 		}
-		.school_member .part_card .out ul li:nth-child(1){
+		.part_card .out ul li:nth-child(1){
 			width: 40%;
 			font-weight: 600;
 		}
-		.school_member .part_card .out ul li:nth-child(1):before{
+		.part_card:nth-child(even) .out ul li:nth-child(1):before{
 			content: "";
-		    width: 4px;
+		    width: 5px;
 		    height: 13px;
-		    border-radius: 10px;
-		    background-color: #8ba0c7;
+		    background-color: #8b95d7;
 		    display: inline-block;
 		    margin-right: 4px;
 		    position: relative;
 		    bottom: -1px;
 		}
-		.school_member .part_card .out ul li:nth-child(2){
+		.part_card:nth-child(odd) .out ul li:nth-child(1):before{
+			content: "";
+		    width: 5px;
+		    height: 13px;
+		    background-color: #009fd7;
+		    display: inline-block;
+		    margin-right: 4px;
+		    position: relative;
+		    bottom: -1px;
+		}
+		.part_card .out ul li:nth-child(2){
 			width: 30%;
 		}
-		.school_member .part_card .out ul li:nth-child(3){
+		.part_card .out ul li:nth-child(3){
 			width: 30%;
 		}
 		/* .part_card:nth-child(3n-1) .title{
 			background-color: #f59fce;
 		} */
-		.school_member .part_card table{
+		.part_card table{
 			color: #666666;
 			padding: 0.2em 0.5em;
 			width: 100%;
 		}
-		.school_member .sch_data ul{
+		.sch_data ul{
 			list-style: none;
 			padding-left: 0;
 			display: flex;
 		}
-		.school_member .sch_data ul li:nth-child(1){
+		.sch_data ul li:nth-child(1){
 			width: 25%;
 			color: #666666;
 		}
-		.school_member .sch_data ul li:nth-child(2){
+		.sch_data ul li:nth-child(2){
 			width: 25%;
 			color: #666666;
 		}
-		.school_member .sch_data ul li:nth-child(3){
+		.sch_data ul li:nth-child(3){
 			width: 50%;
 			color: #666666;
 		}
-		.school_member .sch_data a:link,.sch_data a:visited{
+		.sch_data a:link,.sch_data a:visited{
 			color: #2196f3;
 		}
-		.school_member .part_card table tr:nth-child(even){
+		.part_card table tr:nth-child(even){
 			background-color: rgba(0, 0, 0, 0.05)
 		}
-		.school_member .part_card table tr td{
+		.part_card table tr td{
 			padding: 7px 3px;
 		}
-		.school_member .part_card table tr td:first-child{
+		.part_card table tr td:first-child{
 			width: 34%;
 			font-weight: 600;
 		}
-		.school_member .part_card table tr td:nth-child(2){
+		.part_card table tr td:nth-child(2){
 			width: 35%;
 		}
-		.school_member .school_master{
+		.school_master{
 		    padding: 5px 5px;
 		    border: 1px solid #449bce;
 		    border-radius: 5px;
 		    margin-bottom: 10px;
-		    color: #666666;
+		    color: #000;
 		    background-color: aliceblue;
-		    font-size: 1.1em;
+		    font-size: 1.2em;
 		}
-		.school_member .school_master > span{
+		.school_master > span{
 			margin-right: 25px;
 		}
-		.school_member .part_more{
+		.part_more{
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
@@ -161,20 +172,20 @@
 			background-color: #f8f8f8;
 			margin-bottom: 10px;
 		}
-		.school_member .part_more .title{
+		.part_more .title{
 			width: 100%;
 			color: #FFF;
 			padding: 3px 6px;
 			border-top-left-radius: 5px;
     		border-top-right-radius: 5px;
 		}
-		.school_member .part_more:nth-child(even) .title{
+		.part_more:nth-child(even) .title{
 			background-color: #ea9860;
 		}
-		.school_member .part_more:nth-child(odd) .title{
+		.part_more:nth-child(odd) .title{
 			background-color: #92436b;
 		}
-		.school_member .part_more ul{
+		.part_more ul{
 			list-style: none;
 			padding-left: 0;
 			display: inline-flex;
@@ -183,61 +194,61 @@
 			width: 100%;
 			margin: 0;
 		}
-		.school_member .part_more ul li{
+		.part_more ul li{
 			color: #666;
 			padding: 7px 3px;
 		}
-		.school_member .part_more ul:nth-child(2n) li{
+		.part_more ul:nth-child(2n) li{
 			background-color: rgba(0, 0, 0, 0.05);
 		}
-		.school_member .part_more ul li:first-child{
+		.part_more ul li:first-child{
 			width: 33%;
 			font-weight: 600;
 			padding-left: 8px;
 		}
-		.school_member .part_more ul li:nth-child(2){
+		.part_more ul li:nth-child(2){
 			width: 42%;
 		}
-		.school_member .part_more ul li:nth-child(3){
+		.part_more ul li:nth-child(3){
 			width: 25%;
 		}
 		@media screen and (max-width: 767px){
-			.school_member .part_card{
+			.part_card{
 				width: 100%;
 			}
-			.school_member .sch_data ul li{
+			.sch_data ul li{
 				width: 100% !important;
 			}
-			.school_member .sch_data ul{
+			.sch_data ul{
 				display: block;
 			}
-			.school_member .school_master > span{
-				display: block;
+			.school_master > span{
+				display: inline-block;
 			}
-			.school_member .part_card{
+			.part_card{
 				margin-right: 0px;
 			}
-			.school_member .part_more ul{
+			.part_more ul{
 				width: 100%;
 			}
-			.school_member .part_card .out{
+			.part_card .out{
 				max-height: none;
 				display: flex;
 				flex-wrap: wrap;
 			}
-			.school_member .part_card .out ul {
+			.part_card .out ul {
 			    min-width: 100%;
 			}
 		}
 	</style>
 </head>
-<body class="school_member">
+<body>
 	<div class="wrap">
 		<header>
 			<span>新北市土城區頂埔國民小學</span>
 			<span class="sch_no">014782</span>
 		</header>
-		<div class="title"><span class="purple">107年度下學期學年度</span>全校職務分配表</div>
+		<div class="title"><span class="purple">107(下)</span>全校職務分配表</div>
 		<div class="sch_data">
 			<ul>
 				<li><i class="fa fa-phone"></i> 學校電話：(02)2268-6800</li>
