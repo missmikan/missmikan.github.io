@@ -6,10 +6,13 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<style>
+			@import url('https://fonts.googleapis.com/css?family=B612+Mono|Roboto&display=swap');
 			.wrapper{
 				max-width: 1000px;
 				margin: 0 auto;
 				scroll-behavior: smooth;
+				font-family: 'B612 Mono', monospace;
+				font-family: 'Roboto', sans-serif;
 			}
 			.header{
 				width: 100%;
@@ -68,43 +71,6 @@
 			}
 			.main{
 				margin-top: 0 !important;
-			}
-			.main .bg-warning{
-				font-family: Myriad Pro,"微軟正黑體";
-				padding: 0.5em 1em;
-				font-size: 1.2em;
-				font-weight: 900;
-			}
-			.main .bg-warning .book_select{
-				color: #0059A5;
-			}
-			.main .bg-warning .book_select:before{
-				content: "已選 ";
-				color: #333;
-			}
-			.main .bg-warning .book_select:after{
-				content: " 本";
-				color: #333;
-			}
-			.main .bg-warning .money_original:before{
-				content: "原價 ";
-				color: #333;
-			}
-			.main .bg-warning .money_original:after{
-				content: " 元";
-				color: #333;
-			}
-			.main .bg-warning .money_sale{
-				color: #FF002B;
-				font-size: 1.2em;
-			}
-			.main .bg-warning .money_sale:before{
-				content: "活動價 ";
-				color: #333;
-			}
-			.main .bg-warning .money_sale:after{
-				content: " 元";
-				color: #333;
 			}
 			.main .nav-tabs > li.active > a, .main .nav-tabs > li.active > a:hover, .main .nav-tabs > li.active > a:focus {
 			color: #FFF;
@@ -190,52 +156,20 @@
 				display: inline-block;
 			}
 			.card .author{
-				font-size: 1.2em;
-				color: #F7931E;
+				font-size: 1.1em;
+				color: #779059;
 				overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			max-width: 7em;
-			height: 1.1em;
-			display: inline-block;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				max-width: 7em;
+				display: inline-block;
 			}
 			.card .press{
 				overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			font-size: 1.1em;
-			color: #666;
-			}
-			.card .price_original{
-				font-size: 1em;
-				color: #666;
-				text-decoration: line-through;
-			}
-			.card .price_original:before{
-				content: "原價";
-			}
-			.card .price_original:after{
-				content: "元";
-			}
-			.card .price_sale{
-				font-size: 1.2em;
-				color: red;
-				font-weight: 900;
-			}
-			.card .price_sale:before{
-				content: " 特價 ";
-				color: #333;
-				font-size: 0.9em;
-				font-weight: 400;
-			}
-			.card .price_sale:after{
-				content: " 元";
-				color: #333;
-				font-size: 0.9em;
-				font-weight: 400;
-			}
-			.card .add_book{
-				text-align: center;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size: 1.1em;
+				color: #895990;
 			}
 			.main .col-md-3, .main .col-xs-6{
 			padding-right: 5px !important;
@@ -294,29 +228,31 @@
 				z-index: 500;
 			}
 			.book_isbn{
-				color: #656665;
-    			font-size: 13px;
+				color: #646664;
+    			font-size: 14px;
     			display: block;
 			}
 			.book_isbn:before{
-				content: "ISBN:";
+				/* content: "ISBN:"; */
 			}
 			.book_number{
 				color: #656665;
-    			font-size: 13px;
+    			font-size: 14px;
     			display: block;
 			}
 			.book_number:before{
-				content: "登錄號:";
+				content: "登  錄  號 : ";
 			}
 			.book_satus{
 				display: block;
-				color: #4caf50;
+				color: #009688;
 				font-weight: 500;
 				display: block;
 			}
 			.book_satus:before{
 				content: "借閱狀態：";
+				color: #666;
+				font-weight: 400;
 			}
 			.export{
 				position: absolute;
@@ -363,6 +299,7 @@
 			    	left: 15px;
     				bottom: 18px;
     				display: inline-block;
+    				width: 9em;
 				}
 				.search_book{
 					width: calc(100% - 50px);
