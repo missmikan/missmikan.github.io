@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>訊息快遞視窗</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		*{
+			font-family: "微軟正黑體";
+		}
+		body{
+			padding-top: 1em;
+		}
+		.title{
+			width: 100%;
+			height: 2em;
+			margin: 0 auto;
+			background-color: #8acde1;
+			color: #FFF;
+			line-height: 2em;
+			text-align: center;
+			font-size: 1.4em;
+			border-top-left-radius: 0.5em;
+			border-top-right-radius: 0.5em;
+		}
+
+		.messagebox table tr th{
+			width: 15%;
+			color: #28608c;
+			text-align: center;
+		}
+		.messagebox table tr td{
+			width: 85%;
+		}
+		.messagebox table tr:first-child th{
+			border-top-left-radius: 1em;
+
+		}
+		.messagebox table tr:first-child td{
+			border-top-right-radius: 1em;
+
+		}
+		.messagebox table tr:last-child th{
+			border-bottom-left-radius: 1em;
+
+		}
+		.messagebox table tr:first-child td{
+			border-bottom-right-radius: 1em;
+
+		}
+	@media screen and (max-width:768px){
+		.messagebox{
+			width: 100%;
+			max-width: 400px;
+			border-radius: 1em;
+			border: 1px solid #EFEFEF;
+			margin: 0 auto;
+
+		}
+	}
+	@media screen and (min-width:769px){
+		body{
+			max-width: 1100px;
+		}
+		.messagebox{
+			width: 90%;
+			max-width: 1000px;
+			border-radius: 1em;
+			border: 1px solid #EFEFEF;
+			margin: 0 auto;
+
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="messagebox">
+		<div class="title">訊息快遞視窗</div>
+		<table class="table table-striped">
+			<tr>
+				<th>類別</th>
+				<td>view</td>
+			</tr>
+			<tr>
+				<th>主旨</th>
+				<td>【成績管理】或【學校資料管理】excel下載無法正常開啟事宜說明</td>
+			</tr>
+			<tr>
+				<th>內容</th>
+				<td>近期微軟office進行更新，導致校務系統內相關excel檔下載後無法正常開啟，請使用open office或依附件步驟進行設定後即可正常開啟(附件所示設定畫面為微軟excel 2010，不同版本略有差異)。</td>
+			</tr>
+			<tr>
+				<th>對象</th>
+				<td>所有人員</td>
+			</tr>
+			<tr>
+				<th>人員</th>
+				<td>教育局</td>
+			</tr>
+			<tr>
+				<th>時間</th>
+				<td>105年08月15日　～　106年08月15日</td>
+			</tr>
+			<tr>
+				<th>連結</th>
+				<td><a href="#">連結網頁</a></td>
+			</tr>
+			<tr>
+				<th>附件</th>
+				<td><a href="#">下載附件</a></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
