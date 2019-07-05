@@ -42,7 +42,7 @@
 			margin: 40px auto 0;
 		}
 		.wrapper .slide{
-			height: 300px;
+			height: 400px;
 			overflow: hidden;
 			display: flex;
    			 align-items: center;
@@ -148,28 +148,72 @@
 											   color-stop(.6,#54DE5D))
 		}
 		.links_area{
-			display: flex;
-			flex-wrap: wrap;
+		    display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
 		}
 		.links_area .s_links{
+			width: 200px;
+			height: 50px;
 			margin-right: 5px;
+			margin-bottom: 12px;
 			color: #000;
 			font-weight: 500;
 			overflow: hidden;
 		}
-		.links_area .s_links:hover{
-			color: red;
+		.links_area .s_links img{
+			max-width: 100%;
+			transition: 0.5s;
+		}
+		.links_area .s_links:hover img{
+			display: none;
+			
 		}
 		.s_links span{
-			display: inline-block;
-			width: 100%;
-			text-align: center;
-			position: absolute;
-			z-index: 1;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
+			opacity: 0;
+		    width: 100%;
+		    height: 100%;
+		    text-align: center;
+		    position: absolute;
+		    z-index: 1;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, -50%);
+		    align-items: center;
+		    justify-content: center;
+	        color: #014c88;
+    		text-decoration: underline;
+
 		}
+
+		/* .s_links:hover span{
+			display: inline-block;
+		} */
+		.s_links:hover span{
+			display: inline-flex;
+			animation-name: LinkUP;
+			animation-duration: 0.6s;
+			animation-delay: 0.2s;
+			animation-fill-mode: forwards; 
+		}
+		@keyframes LinkUP{
+			0%{
+				opacity: 0;
+				top: 100%;
+			}
+			100%{
+				top: 50%;
+				opacity: 1;
+			}
+		}
+		/* @keyframes LinkDown{
+			0%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0;
+			}
+		} */
 		footer{
 			width: 100%;
 			color: #FFF;
@@ -220,12 +264,12 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img src="img/pic1.jpg" alt="...">
+		      <img src="img/pic2.jpg" alt="...">
 		      <div class="carousel-caption">
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="img/pic2.jpg" alt="...">
+		      <img src="img/pic1.jpg" alt="...">
 		      <div class="carousel-caption">
 		      </div>
 		    </div>
@@ -337,14 +381,14 @@
 				</ul>
 			</div>
 			<div class="col-sm-12 links_area">
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
-				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/linkbg.png" alt=""></a>
+				<a class="s_links" href="#"><span>全國實用技能學程輔導分發會</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
+				<a class="s_links" href="#"><span>這是快速連結</span><img src="img/link_sample.jpg" alt=""></a>
 			
 			</div>
 			<div class="clearfix"></div>
