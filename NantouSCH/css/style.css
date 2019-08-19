@@ -20,14 +20,20 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 8px 4px;
+    padding: 4px 4px;
     width: 50%;
     transition: 0.3s;
-    color: #666;
     font-size: 16px;
     font-weight: 600;
 }
-
+.content_3 .tab .tab1{
+    border-bottom: 5px inset #00bba8;
+    color: #00bba8;
+}
+.content_3 .tab .tab2{
+    border-bottom: 5px inset #e589bf;
+    color: #e589bf;
+}
 /* Change background color of buttons on hover */
 .content_3 .tab button:hover {
   background-color: #e2e2e2;
