@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>南投縣國民中學 - 校務行政系統</title>
+		<title>南投縣 - 校務行政系統</title>
 		<link rel="stylesheet" href="css/style.css">
 		
 	</head>
@@ -14,7 +14,7 @@
 				<img src="img/banner.jpg" alt="" class="hidden-xs">
 				<div class="visible-xs">
 					<img src="img/icon_8.png" alt="" style="width: 32px;height:32px;margin-right: 2px;">
-					<span class="bold">南投縣國民中學</span>
+					<span class="bold">南投縣</span>
 					<span>校務行政系統</span>
 				</div>
 			</div>
@@ -52,10 +52,29 @@
 					<li><a><img src="img/icon_1.png" alt=""><span>應用程式單一入口網</span></a></li>
 					<li><a><img src="img/envelope.png" alt=""><span>電子信箱</span></a></li>
 				</ul>
+				<div class="content_2">
+					<div style="font-size: 16px;width: 100%;margin-bottom:10px;" class="title">全誼校務APP下載</div>
+					<div style="margin-right: 5px;">
+						<img src="img/iosScss-2.png" alt="" width="68px" height="68px">
+					</div>
+					<div class="title_13" style="margin-right: 5px;">
+						<span>蘋果手機</span>
+						<span>IOS</span>
+						<a href="#"><img src="img/appstore.png" alt=""></a>
+					</div>
+					<div style="margin-right: 5px;">
+						<img src="img/AndroidScss-2.png" alt="" width="68px" height="68px">
+					</div>
+					<div class="title_13">
+						<span>安卓手機</span>
+						<span>Android</span>
+						<a href="#"><img src="img/googleplay.png" alt=""></a>
+					</div>
+				</div>
 			</div>
 			<!-- Weather & APP & News -->
 			<div class="right_area">
-				<div class="content_1">
+				<!-- <div class="content_1">
 					<div style="font-size: 20px;margin-bottom:15px;">
 						<span>7月11日</span>
 						<span>星期四</span>
@@ -79,28 +98,25 @@
 							<div style="font-size: 22px;">16%</div>
 						</div>
 					</div>
-				</div>
-				<div class="content_2">
-					<div style="font-size: 16px;width: 100%;margin-bottom:10px;" class="title">全誼校務APP下載</div>
-					<div style="margin-right: 5px;">
-						<img src="img/iosScss-2.png" alt="" width="68px" height="68px">
-					</div>
-					<div class="title_13" style="margin-right: 5px;">
-						<span>蘋果手機</span>
-						<span>IOS</span>
-						<a href="#"><img src="img/appstore.png" alt=""></a>
-					</div>
-					<div style="margin-right: 5px;">
-						<img src="img/AndroidScss-2.png" alt="" width="68px" height="68px">
-					</div>
-					<div class="title_13">
-						<span>安卓手機</span>
-						<span>Android</span>
-						<a href="#"><img src="img/googleplay.png" alt=""></a>
-					</div>
-				</div>
+				</div> -->
+				
 				<div class="content_3">
-					<div class="BG_title BG_green">
+					<div class="tab">
+					  <button class="tablinks tab1 active" onclick="openCity(event, 'School')">校務系統公告</button>
+					  <button class="tablinks tab2" onclick="openCity(event, 'Update')">系統更版公告</button>
+
+					</div>
+
+					<!-- Tab content -->
+					<div id="School" class="tabcontent">
+					  這邊放公告
+
+					</div>
+
+					<div id="Update" class="tabcontent">
+					  這邊放公告2
+					</div>
+					<!-- <div class="BG_title BG_green">
 						<img src="img/news.png" alt="" style="width: 20px;height:17px;display: inline-block;margin-right: 5px;top:2px;">校務系統公告
 					</div>
 					<div class="content">
@@ -134,9 +150,9 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
-				<div class="content_4">
+				<!-- <div class="content_4">
 					<div class="BG_title BG_pink">
 						<img src="img/setting.png" alt="" style="width: 20px;height:17px;display: inline-block;margin-right: 5px;top:2px;">系統更版公告
 					</div>
@@ -172,7 +188,7 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<footer>
 				<div class="title">服務資訊</div>
@@ -180,7 +196,7 @@
 					<span><img src="img/call-answer@2x.png" alt="" style="width:12px;height:12px;"> 免付費服務電話 <span class="bold">0800-880-928</span></span>
 					<span><img src="img/passage-of-time (1)@2x.png" alt="" style="width:12px;height:12px;"> 服務時間 <span class="bold">上午09:00-13:00 下午13:30-16:40</span></span>
 				</div>
-				<div class="gray_title">本系統由南投縣國民中學提供，係屬付費軟體，嚴禁轉載、販售</div>
+				<div class="gray_title">本系統由南投縣教育處提供，係屬付費軟體，嚴禁轉載、販售</div>
 			</footer>
 		</div>
 		<script
@@ -199,6 +215,29 @@
 		for(i = list.length; i--; )
 		icons.set(list[i], list[i]);
 		icons.play();
+		</script>
+		<script>
+			document.getElementById("School").style.display = "block";
+			function openCity(evt, cityName) {
+			  // Declare all variables
+			  var i, tabcontent, tablinks;
+
+			  // Get all elements with class="tabcontent" and hide them
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+			    tabcontent[i].style.display = "none";
+			  }
+
+			  // Get all elements with class="tablinks" and remove the class "active"
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+
+			  // Show the current tab, and add an "active" class to the button that opened the tab
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
 		</script>
 	</body>
 </html>
