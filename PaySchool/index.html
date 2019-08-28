@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>線上學雜費繳費系統</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<span class="pull-left">
+				<a href="#">線上學雜費繳費系統</a>
+			</span>
+			<span class="pull-right">
+				<span>王Ｏ明同學您好！</span>
+				<a href="#">登出</a>
+			</span>
+		</div>
+	</header>
+	<main>
+		<!-- 列表頁 -->
+		<div class="list_title">
+			<span>新北市頂埔國民小學</span>
+			<span>三年1班</span>
+			<span>王Ｏ明</span>
+			<span style="color:#11C3A0">繳費列表</span>
+		</div>
+		<div class="list">
+			<ul class="form_title">
+				<li>繳費狀態</li>
+				<li>繳費項目</li>
+				<li>繳費金額</li>
+				<li>繳費期限</li>
+			</ul>
+			<ul class="form_content">
+				<li id="list_1">
+					<ul>
+						<li>
+							<span style="color:#FF9090">尚未繳費</span>
+							<!-- <span style="color:#227EAF">完成繳費</span>
+							<span style="color:#9D9D9D">逾期未繳</span> -->
+						</li>
+						<li class="flip">
+							<span class="titleOne">104學年度寒假育樂營費用(第3次繳費)104學年度寒假育樂營費用(第3次繳費)104學年度寒假育樂營費用(第3次繳費)</span>
+							<button class="pull-right btn-noborder">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</button>
+						</li>
+						<li>
+							<button class="btn-greenblue">前往繳費</button>
+						</li>
+						<li>$259</li>
+						<li>108/10/22</li>
+					</ul>
+					<div class="panel">
+						<div class="left_area">
+							<table>
+								<tr>
+									<td>繳費期限</td>
+									<td>108/10/22</td>
+								</tr>
+								<tr>
+									<td>繳費狀態</td>
+									<td>尚未繳費 <button class="btn-greenblue">前往繳費</button></td>
+								</tr>
+								<tr>
+									<td>繳費帳號</td>
+									<td>4088165113101554</td>
+								</tr>
+								<tr>
+									<td>繳費時間</td>
+									<td>尚無繳費資料</td>
+								</tr>
+								<tr>
+									<td>繳費類別</td>
+									<td>尚無繳費資料</td>
+								</tr>
+							</table>
+
+						</div>
+						<div class="right_area">
+							<div>繳費明細</div>
+							<ol>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+								<li>
+									<span>標題標題</span>
+									<span class="price">244</span>
+								</li>
+							</ol>
+							<div class="total">
+								$1224
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</li>
+
+				<li id="list_2">
+					<ul>
+						<li>
+							<!-- <span style="color:#FF9090">尚未繳費</span> -->
+							<span style="color:#227EAF">完成繳費</span>
+							<!-- <span style="color:#9D9D9D">逾期未繳</span> -->
+						</li>
+						<li class="flip">
+							<span class="titleOne">104學年度寒假育樂營費用(第3次繳費)</span>
+							<button class="pull-right btn-noborder">
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+							</button>
+						</li>
+						<li>
+							<button class="btn-purple">繳費收據</button>
+						</li>
+						<li>$259</li>
+						<li>108/10/22</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 列表頁End -->
+	</main>
+	<script>
+		$("#list_1 .flip").click(function(){
+		    $("#list_1").toggleClass("open");
+		    $(".panel").slideToggle("fast");
+		});
+		
+	</script>
+</body>
+</html>

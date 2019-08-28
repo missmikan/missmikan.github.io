@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>線上學雜費繳費系統</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<span class="pull-left">
+				<a href="#">線上學雜費繳費系統</a>
+			</span>
+			<span class="pull-right">
+				<span>王Ｏ明同學您好！</span>
+				<a href="#">登出</a>
+			</span>
+		</div>
+	</header>
+	<main>
+		<!-- 登入頁 -->
+		<div class="topTitle">
+			<h2>線上學雜費繳費系統</h2>
+			<h4>請選擇學生就讀學校與輸入學生身分證字號</h4>
+		</div>
+		<div class="login_box">
+			<h5>學生就讀學校</h5>
+			<select name="" id="">
+				<option value="1">土城區</option>
+			</select>
+			<select name="" id="">
+				<option value="1">頂埔國民小學</option>
+			</select>
+			<div style="width: 58%;float:left;margin-right: 2%;">
+				<h5>學生身分證字號</h5>
+				<input type="text" placeholder="請輸入學生身分證字號">
+			</div>
+			<div style="width: 40%;float:left;">
+				<h5>學生生日</h5>
+				<input type="text" placeholder="例：890101">
+			</div>
+			<div class="clearfix"></div>
+			<div style="color:#B1770B;font-size: 14px;margin:5px 0;">※例如民國89年1月1日出生，請輸入890101</div>
+			<div>
+				<h5>驗證碼</h5>
+				<div style="display: flex;align-items: center;">
+					<img src="img/Image 2.png" alt="">
+					<button class="btn-noborder">
+						<i class="fa fa-repeat" aria-hidden="true"></i>
+					</button>
+					<input type="text" placeholder="請輸入驗證碼">
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<button class="login" onclick="location.href='index.html'">登入</button>
+		</div>
+		<!-- 登入頁End -->
+	</main>
+	<script>
+		$("#list_1 .flip").click(function(){
+		    $("#list_1").toggleClass("open");
+		    $(".panel").slideToggle("fast");
+		});
+		
+	</script>
+</body>
+</html>
