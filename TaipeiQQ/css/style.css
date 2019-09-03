@@ -1,12 +1,13 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap');
 
 *{
 	box-sizing: border-box;
 	position: relative;
 }
 body{
-	font-family: 'Noto Sans TC', sans-serif;
 	font-family: 'Roboto', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	font-size: 14px;
 	display: flex;
 	align-items: center;
