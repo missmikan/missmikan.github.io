@@ -426,10 +426,53 @@ button.GreenBlue:hover{
 	transform: scale(1.05);
 }
 @media screen and (max-width: 768px){
+	body{
+		width: 100%;
+		height: auto;
+	}
+	main{
+		height: auto;
+		padding: 15px;
+	}
 	.nav div{
 		max-width: 1000px;
 		margin: 0 auto;
 		text-align: center;
+	}
+	.grayBar{
+		width: 100%;
+		height: auto;
+		background-color: #F2F2F2;
+		display: block;
+		padding-left:15px;
+		margin-bottom: 20px;
+	}
+	.grayBar div{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.menuBar{
+		margin-bottom: 10px;
+	}
+	.timeline .contentBox .left {
+	    width: 27%;
+	    padding: 0 15px 0 0;
+	}
+	.timeline .contentBox .right {
+	    width: 77%;
+	    padding: 0 0 13px 13px;
+	}
+	.btn-gray{
+		width: auto;
+		height: auto;
+		padding: 0.3em 0.6em;
+		margin-bottom: 5px;
+	}
+	.btn-greenblue{
+		width: auto;
+		height: auto;
+		padding: 0.3em 0.6em;
+		margin-bottom: 5px;
 	}
 }
 /* 登入頁面End */
