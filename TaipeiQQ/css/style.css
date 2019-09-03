@@ -1,0 +1,435 @@
+@charset 'UTF-8';
+
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	padding-top: 45px;
+}
+main{
+	background-color: #FFF;
+	width: 100%;
+	max-width: 1000px;
+	min-height: calc(100vh - 45px );
+	margin: 0 auto;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+	padding: 15px 30px;
+}
+.nav{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 1.4em;
+}
+.nav div{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.nav a:link,.nav a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+.FlexCenter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn-gray{
+	width: 90px;
+    height: 35px;
+	background-color: #AAAAAA;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.btn-greenblue{
+	width: 100px;
+    height: 35px;
+	background-color: #23C990;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: background-color,transform,0.3s;
+}
+.btn-greenblue:hover{
+	transform: scale(1.1);
+	background-color: #FF9300;
+}
+.btn-greenblue2{
+	width: 100px;
+    height: 35px;
+	background-color: #23B6C9;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: background-color,transform,0.3s;
+}
+.btn-greenblue2:hover{
+	transform: scale(1.1);
+	background-color: #FF9300;
+}
+
+
+.pull-right{
+	float: right;
+}
+.grayBar{
+	width: 100%;
+	height: 45px;
+	background-color: #F2F2F2;
+	display: flex;
+	align-items: center;
+	padding-left:15px;
+	margin-bottom: 20px;
+}
+.grayBar div{
+	margin-right: 20px;
+}
+.grayBar div > span:nth-child(2){
+	color: #004DDE;
+	font-size: 15px;
+	font-weight: 600;
+}
+.menuBar{
+	margin-bottom: 10px;
+}
+.timeline{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	font-size: 16px;
+}
+.timeline .contentBox{
+	display: inline-flex;
+}
+.timeline .contentBox .left{
+	width: 35%;
+	text-align: right;
+	padding: 0 15px;
+}
+.timeline .contentBox .right{
+	width: 65%;
+	border-left: 3px solid #FF9300;
+	display: inline-flex;
+	padding: 0 13px;
+    min-height: 50px;
+}
+.timeline .contentBox.orange .left{
+	color: #FF9300;
+}
+.timeline .contentBox.orange .right{
+	border-left: 3px solid #FF9300;
+}
+.timeline .contentBox.orange .right:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: -14px;
+	z-index: 1;
+	background-color:#FF9300;
+	border: 2px solid #FFF; 
+	border-radius: 15px;
+}
+.timeline .contentBox.ING .right:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: -14px;
+	z-index: 1;
+	background-color:#FF9300;
+	border: 2px solid #FFF; 
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px red;
+	animation: ING 1.5s infinite;
+}
+@keyframes ING{
+	0%{
+		background-color:#FF9300;
+		box-shadow: 0px 0px 2px red;
+	}
+	50%{
+		background-color:red;
+		box-shadow: 0px 0px 10px red;
+	}
+	100%{
+		background-color:#FF9300;
+		box-shadow: 0px 0px 2px red;
+	}
+}
+.timeline .contentBox.gray .left{
+	color: #CCC;
+}
+.timeline .contentBox.gray .right{
+	border-left: 3px solid #CCC;
+}
+.timeline .contentBox.gray .right:before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: -14px;
+	z-index: 1;
+	background-color:#CCC;
+	border: 2px solid #FFF; 
+	border-radius: 15px;
+}
+.timeline .contentBox.gray .right > div:first-child{
+	font-weight: 600;
+	color: #CCC;
+	min-width: 6em;
+}
+.timeline .contentBox.orange .right > div:first-child{
+	font-weight: 600;
+	color: #0054A8;
+	min-width: 6em;
+}
+.timeline .contentBox.orange .right > div:nth-child(2){
+	font-size: 14px;
+}
+.timeline .contentBox.orange .right div ul{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+}
+.timeline .contentBox.orange .right div ul li .greenText{
+	color: #23C990;
+	margin-right: 5px;
+}
+.timeline .contentBox.orange .right div ul li .OrangeText{
+	color: #FF9300;
+	margin-right: 5px;
+}
+.timeline .contentBox:first-child .right{
+	border-left:3px solid transparent;
+}
+.timeline .contentBox.orange .right .message{
+	display: flex;
+	color: #6E6E6E;
+	font-weight: 400;
+	font-size: 13px;
+	margin-top: 10px;
+}
+.timeline .contentBox.orange .right .message img{
+    margin-right: 2px;
+    top: 2px;
+}
+
+/* 登入頁面---------------------------------
+ */
+.topTitle{
+	font-weight: 300;
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #000;
+	color: #FFF;
+	font-size: 1.8em;
+}
+
+.login_box{
+	box-sizing: border-box;
+	max-width: 400px;
+	background-color: #FFF;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	animation: login_box 0.5s ease-in-out both;
+}
+.login_box2{
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	animation: login_box 0.5s ease-in-out both;
+}
+.login_box2 button{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.login_box2 button img{
+	width: 25px;
+	height: auto;
+	margin-right: 5px;
+}
+@keyframes login_box{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	20%{
+		opacity: 1;
+	}
+	75%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1)
+	}
+}
+.login_content{
+	padding: 30px 50px;
+	font-size: 1.3em;
+}
+.login_content input{
+	width: calc(100% - 3em);
+	height: 40px;
+	border: 0;
+	background-color: transparent;
+	font-size: 1.05em;
+	margin: 5px 0;
+	padding-left: 5px;
+	box-sizing: border-box;
+	color: #000;
+	font-weight: 600;
+	border-bottom: 1px solid #23C990;
+	margin-left: 5px;
+	transition: border-bottom 0.2s;
+}
+.login_content.w100 input{
+	width: 100%;
+	text-align: center;
+}
+.login_content input:hover{
+	border-bottom: 1px solid #FF9300;
+}
+.login_content input:focus{
+	outline: none;
+	border-bottom: 3px solid #FF9300;
+}
+.login_content input::-webkit-input-placeholder{
+ /* WebKit browsers */
+	color:#CCCCCC;
+}
+.login_content input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color:#CCCCCC;
+}
+.login_content input::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:#CCCCCC;}
+.login_content input:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:#CCCCCC;}
+
+.tips{
+	margin-top: 20px;
+}
+.tips .title{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.tips .title span:before{
+	content: "";
+	display: inline-block;
+	width: calc(50% - 4.5em);
+	height: 1px;
+	background-color: #CCC;
+    position: relative;
+    bottom: 5px;
+    margin-right: 3px;
+}
+.tips .title span:after{
+	content: "";
+	display: inline-block;
+	width: calc(50% - 5em);
+	height: 1px;
+	background-color: #CCC;
+    position: relative;
+    bottom: 5px;
+    margin-left: 3px;
+}
+.tips .content{
+	font-size: 0.9em;
+	font-weight: 300;
+	color: #606060;
+}
+.tips .content ol{
+	padding-left: 20px;
+	margin-bottom: 0;
+}
+button.login{
+	width: 100%;
+	max-width: 400px;
+	height: 60px;
+	background-color: #23C990;
+	color: #FFF;
+	font-size: 1.25em;
+	margin-top: 20px;
+	border: 0;
+	cursor: pointer;
+}
+button.login:hover{
+	background-color: #FF9300;
+	transition: 0.3s;
+}
+button.Green{
+	width: 100%;
+	height: 60px;
+	background-color: #23C990;
+	color: #FFF;
+	font-size: 1.25em;
+	margin-bottom: 20px;
+	border: 0;
+	cursor: pointer;
+	transition: background-color,transform 0.3s;
+}
+button.GreenBlue{
+	width: 100%;
+	height: 60px;
+	background-color: #23B6C9;
+	color: #FFF;
+	font-size: 1.25em;
+	margin-bottom: 20px;
+	border: 0;
+	cursor: pointer;
+	transition: background-color,transform 0.3s;
+}
+button.Green:hover{
+	background-color: #FF9300;
+	transform: scale(1.05);
+}
+button.GreenBlue:hover{
+	background-color: #FF9300;
+	transform: scale(1.05);
+}
+@media screen and (max-width: 768px){
+	.nav div{
+		max-width: 1000px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+/* 登入頁面End */
