@@ -52,42 +52,41 @@ main{
 	justify-content: center;
 }
 .btn-gray{
-	width: 90px;
-    height: 35px;
+	width: 85px;
+    height: 29px;
 	background-color: #AAAAAA;
 	color: #FFF;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	border: 0;
 	border-radius: 5px;
 }
 .btn-greenblue{
-	width: 100px;
-    height: 35px;
-	background-color: #23C990;
-	color: #FFF;
-	font-size: 16px;
-	font-weight: 600;
-	border: 0;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color,transform,0.3s;
-	margin-left: 5px;
+    width: 85px;
+    height: 29px;
+    background-color: #23C990;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color,transform,0.3s;
+    margin-left: 5px;
 }
 .btn-greenblue:hover{
 	transform: scale(1.1);
 	background-color: #FF9300;
 }
 .btn-greenblue2{
-	width: 100px;
-    height: 35px;
+	width: 85px;
+    height: 29px;
 	background-color: #23B6C9;
 	color: #FFF;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	border: 0;
 	border-radius: 5px;
-	margin-right: 5px;
 	cursor: pointer;
 	transition: background-color,transform,0.3s;
 }
@@ -105,7 +104,6 @@ main{
 	height: 45px;
 	display: flex;
 	align-items: center;
-	padding-left:15px;
 	margin-bottom: 20px;
 }
 .grayBar div{
