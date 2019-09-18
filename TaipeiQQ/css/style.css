@@ -723,6 +723,9 @@ main .tool button:hover{
 	border: 2px solid #FFF; 
 	border-radius: 15px;
 }
+.timeline .contentBox:first-child .right:before{
+	top: 0px;
+}
 .timeline .contentBox.gray .right > div:first-child{
 	font-weight: 600;
 	color: #CCC;
@@ -1360,6 +1363,9 @@ button.GreenBlue:hover{
 		background-color:#CCC;
 		border: 2px solid #FFF; 
 		border-radius: 15px;
+	}
+	.timeline .contentBox:first-child .right:before{
+		top: -22px;
 	}
 }
 /* 登入頁面End */
