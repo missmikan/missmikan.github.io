@@ -419,7 +419,7 @@ main .tool button:hover{
 	left: 0;
 	z-index: 9;
 	background-color: #000;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	color: #FFF;
 }
 .nav > div{
@@ -670,8 +670,8 @@ main .tool button:hover{
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	top: -2px;
-	left: -14px;
+	top: 3px;
+	left: -12px;
 	z-index: 1;
 	background-color:#FF9300;
 	border: 2px solid #FFF; 
@@ -682,8 +682,8 @@ main .tool button:hover{
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	top: -2px;
-	left: -14px;
+	top: 3px;
+	left: -12px;
 	z-index: 1;
 	background-color:#FF9300;
 	border: 2px solid #FFF; 
@@ -716,8 +716,8 @@ main .tool button:hover{
 	position: absolute;
 	width: 20px;
 	height: 20px;
-	top: -2px;
-	left: -14px;
+	top: 3px;
+	left: -12px;
 	z-index: 1;
 	background-color:#CCC;
 	border: 2px solid #FFF; 
@@ -761,7 +761,7 @@ main .tool button:hover{
 }
 .timeline .contentBox.orange .right .message img{
     margin-right: 2px;
-    top: 2px;
+    bottom: 1px;
 }
 /* 登入頁面---------------------------------
  */
@@ -1319,6 +1319,47 @@ button.GreenBlue:hover{
 	.timeline .contentBox{
 		width: 100%;
 		background-color: #F7F7F7;
+	}
+	.timeline .contentBox.orange .right:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -20px;
+		left: -12px;
+		z-index: 1;
+		background-color:#FF9300;
+		border: 2px solid #FFF; 
+		border-radius: 15px;
+	}
+	.timeline .contentBox.orange .left {
+	    border-left: 3px solid #FF9300;
+	}
+	.timeline .contentBox.ING .right:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -20px;
+		left: -12px;
+		z-index: 1;
+		background-color:#FF9300;
+		border: 2px solid #FFF; 
+		border-radius: 15px;
+		box-shadow: 0px 0px 5px red;
+		animation: ING 1.5s infinite;
+	}
+	.timeline .contentBox.gray .right:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: 2px;
+		left: -12px;
+		z-index: 1;
+		background-color:#CCC;
+		border: 2px solid #FFF; 
+		border-radius: 15px;
 	}
 }
 /* 登入頁面End */
