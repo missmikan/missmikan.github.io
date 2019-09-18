@@ -1,181 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>臺北市校園霸凌系統</title>
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-</head>
-<body>
-	<div class="nav">
-		<div><a href="#">臺北市校園<b>霸凌案件<span style="color:yellow;">查詢系統</span></b></a></div>
-	</div>
-	<main>
-		<div class="grayBar">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>臺北市校園霸凌系統</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script
+		src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="nav">
 			<div>
-				<span>案件編號</span>
-				<span>356784</span>
-			</div>
-			<div>
-				<span>目前進度</span>
-				<span>調查程序中</span>
-			</div>
-			<div>
-				<span>結案期限</span>
-				<span>108-06-30</span>
-				<span>(尚餘51日) 敬請依規範更新進度，謝謝您！</span>
-			</div>
-			<div style="position:absolute;right:0;margin-right: 0">
-				<button class="btn-greenblue2">返回列表</button>
+				<a href="#">臺北市校園<b>霸凌案件<span class="T-yellow">查詢系統</span></b></a>
+				<div class="pull-right ">
+					<span>臺北市教育局</span>
+					<span class="T-yellow">王天明</span>
+					<a href="#">登出</a>
+				</div>
 			</div>
 		</div>
-		<div class="menuBar">
+		<main>
+			<div class="grayBar">
+				<div>
+					<span>案件編號</span>
+					<span>356784</span>
+				</div>
+				<div>
+					<span>目前進度</span>
+					<span>調查程序中</span>
+				</div>
+				<div>
+					<span>結案期限</span>
+					<span>108-06-30</span>
+					<span>(尚餘51日) 敬請依規範更新進度，謝謝您！</span>
+				</div>
+				<div>
+					<button class="btn-greenblue2 back">返回列表</button>
+					<button class="btn-purple" data-toggle="modal" data-target="#myModal3">案件資料</button>
+				</div>
+			</div>
+			<div class="menuBar">
+				<div>
+					<span class="complete">
+						<button>成案 <i class="fa fa-pencil" aria-hidden="true"></i></button>
+					</span>
+					<button disabled="disabled"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+					<span class="complete">
+						<button>受理</button>
+					</span>
+					<button disabled="disabled"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+					<span class="complete">
+						<button>召開會議</button>
+					</span>
+					<button disabled="disabled"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+					<span class="complete">
+						<button>調查程序中</button>
+					</span>
+					<button id="toggle"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+					<div class="NewStep">
+						<button data-toggle="modal" data-target="#myModal">1.召開會議</button>
+						<button>2.調查程序</button>
+						<button>3.結案會議</button>
+					</div>
+				</div>
+			</div>
 			
-			<div>
-				<button class="btn-gray" disabled="disabled">成案</button>
-			</div>
-			<!-- 箭頭 -->
-			<div id="arrowAnim" class="gray">
-			  <div class="arrowSliding">
-			    <div class="arrow"></div>
-			  </div>
-			</div>
-			<!-- 箭頭 -->
-			<div>
-				<button class="btn-gray" disabled="disabled">受理</button>
-			</div>
-			<!-- 箭頭 -->
-			<div id="arrowAnim" class="green">
-			  <div class="arrowSliding">
-			    <div class="arrow"></div>
-			  </div>
-			  <div class="arrowSliding delay1">
-			    <div class="arrow"></div>
-			  </div>
-			  <div class="arrowSliding delay2">
-			    <div class="arrow"></div>
-			  </div>
-			  <div class="arrowSliding delay3">
-			    <div class="arrow"></div>
-			  </div>
-			</div>
-			<!-- 箭頭 -->
-			<div>
-				<button class="btn-greenblue">召開會議</button>
-				<button class="btn-greenblue">調查程序中</button>
-				<button class="btn-greenblue">結案會議</button>
-			</div>
-			<!-- 箭頭 -->
-			<div id="arrowAnim" class="gray">
-			  <div class="arrowSliding">
-			    <div class="arrow"></div>
-			  </div>
-			</div>
-			<!-- 箭頭 -->
-			<div>
-				<button class="btn-gray">結案</button>
-			</div>
-			<div class="grayline"></div>
-		</div>
-		
-		<!-- 時間軸div排列方向為由下往上 -->
-		<div class="timeline">
-			<div class="orange contentBox">
-				<div class="left">
-					108-05-01
+			<!-- 時間軸div排列方向為由下往上 -->
+			<div class="timeline">
+				<div class="orange contentBox">
+					<div class="left">
+						108-05-01
+					</div>
+					<div class="right">
+						<div>成案</div>
+						<div>
+							<ul>
+								<li>郝仁愛 108-05-01 登錄成案 案件編號：356784</li>
+								<li class="message">
+									<div class="greenText"><img src="img/Mask Group 13.svg" alt="">簡訊已發送</div>
+									<ul>
+										<li>郝仁愛 05-01 17:33 送出申請</li>
+										<li>陳孝長 05-01 21:55 核可發送</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="right">
-					<div>成案</div>
-					<div>
-						<ul>
-							<li>郝仁愛 108-05-01 登錄成案 案件編號：356784</li>
-							<li class="message">
-								<div class="greenText"><img src="img/Mask Group 13.svg" alt="">簡訊已發送</div>
-								<ul>
-									<li>郝仁愛 05-01 17:33 送出申請</li>
-									<li>陳孝長 05-01 21:55 核可發送</li>
-								</ul>
-							</li>
-						</ul>
+				<!-- contentBox -->
+				<div class="orange contentBox">
+					<div class="left">
+						108-05-01
+					</div>
+					<div class="right">
+						<div>受理</div>
+						<div>
+							<ul>
+								<li>郝仁愛 108-05-01 登錄受理</li>
+								<li class="message">
+									<div class="greenText"><img src="img/Mask Group 13.svg" alt="">簡訊已發送</div>
+									<ul>
+										<li>郝仁愛 05-01 17:33 送出申請</li>
+										<li>陳孝長 05-01 21:55 核可發送</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- contentBox End -->
+				<!-- contentBox -->
+				<!-- 目前狀態加一個.ING -->
+				<!-- 已到狀態.orange / 未到狀態.gray -->
+				<div class="orange ING contentBox">
+					<div class="left">
+						108-05-01
+					</div>
+					<div class="right">
+						<div>召開會議</div>
+						<div>
+							<ul>
+								<li>召集人：陳孝長</li>
+								<li>因應小組成員(3)：陳孝長、郝仁愛</li>
+								<li>家長代表人數(1)：王錦華</li>
+								<li>學者專家人數(1)：蔡淑華</li>
+								<li class="message">
+									<!-- .OrangeText 簽核中 / .greenText 發送成功 -->
+									<div class="OrangeText"><img src="img/Mask Group 14.svg" alt="">簡訊簽核中</div>
+									<ul>
+										<li>郝仁愛 05-01 17:33 送出申請</li>
+										<li>陳孝長 簽核中
+											<button class="btn-darkblue" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil" aria-hidden="true"></i> 簽核</button>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- contentBox End -->
+				<!-- contentBox -->
+				<div class="gray contentBox">
+					<div class="left">
+						
+					</div>
+					<div class="right">
+						<div>結案會議</div>
+					</div>
+				</div>
+				<!-- contentBox End -->
+				<div class="gray contentBox">
+					<div class="left">
+						108-06-30<br>
+						辦理期限
+					</div>
+					<div class="right">
+						<div>結案</div>
+					</div>
+				</div>
+				<!-- contentBox End -->
+			</main>
+
+			<!-- 召開會議 -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+							<h4 class="modal-title" id="myModalLabel">案件編號<span>356784</span>召開會議內容及簽核事項</h4>
+						</div>
+						<div class="modal-body">
+							<div class="btm-10">
+								<h4 class="T-blue inline">案件進度</h4>
+								<span>召開會議</span>
+							</div>
+							<div class="btm-10">
+								<span class="T-gray">召集人</span>
+								<input type="text" placeholder="請輸入姓名" class="form-input inline">
+							</div>
+							<div class="flex btm-10">
+								<div class="w-3 mgr-15 btm-15">
+									<div class="T-gray btm-5">因應小組成員</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增小組成員
+									</button>
+								</div>
+								<div class="w-3 mgr-15 btm-15">
+									<div class="T-gray btm-5">家長代表</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增家長代表
+									</button>
+								</div>
+								<div class="w-3 mgr-15 btm-15">
+									<div class="T-gray btm-5">學者專家</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增學者專家
+									</button>
+								</div>
+							</div>
+							<div class="btm-10">
+								<h4 class="T-blue">以下簡訊內容將發送至雙方監護人手機，請確認：</h4>
+								<textarea name="" id="" class="form-textarea">您好，本案業經防制校園霸凌因應小組會議會開決議確認為校園霸凌事件，後續將寄送結果通知書並追踨輔導。</textarea>
+							</div>
+							<div class="flex">
+								<div class="w-2 mgr-15">
+									<h4 class="T-blue">行為人之監護人手機號碼</h4>
+									<label for="" class="T-gray">監護人1</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input"><br>
+									<label for="" class="T-gray">監護人2</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input">
+								</div>
+								<div class="w-2 mgr-15">
+									<h4 class="T-blue">被行為人之監護人手機號碼</h4>
+									<label for="" class="T-gray">監護人1</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input"><br>
+									<label for="" class="T-gray">監護人2</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer T-center flex wrap">
+							<!-- 送申請 -->
+							<div class="w-1">
+								<button class="btn btn-gr"><i class="fa fa-paper-plane"></i> 送簽核申請</button>
+							</div>
+							<div class="w-1 T-gray fz-14">(發送申請至陳孝長)</div>
+
+							<!-- 簽核 -->
+							<!-- <button class="btn btn-deepblue flex-1"><i class="fa fa-check"></i> 同意</button>
+							<button class="btn btn-warning mgr-10 flex-1"><i class="fa fa-arrow-left"></i> 退回</button>
+							<input type="text" class="form-input inline flex-3" placeholder="請輸入退回原因(可不填)"> -->
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- contentBox -->
-			<div class="orange contentBox">
-				<div class="left">
-					108-05-01
-				</div>
-				<div class="right">
-					<div>受理</div>
-					<div>
-						<ul>
-							<li>郝仁愛 108-05-01 登錄受理</li>
-							<li class="message">
-								<div class="greenText"><img src="img/Mask Group 13.svg" alt="">簡訊已發送</div>
-								<ul>
-									<li>郝仁愛 05-01 17:33 送出申請</li>
-									<li>陳孝長 05-01 21:55 核可發送</li>
-								</ul>
-							</li>
-						</ul>
+			<!-- 召開會議End -->
+
+			<!-- 簽核資料 -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+							<h4 class="modal-title" id="myModalLabel">案件編號<span>356784</span>召開會議內容及簽核事項</h4>
+						</div>
+						<div class="modal-body">
+							<div class="btm-10">
+								<h4 class="T-blue inline">案件進度</h4>
+								<span>召開會議</span>
+							</div>
+							<div class="btm-10">
+								<span class="T-gray">召集人</span>
+								<input type="text" placeholder="請輸入姓名" class="form-input inline">
+							</div>
+							<div class="flex btm-10">
+								<div class="w-3 mgr-15">
+									<div class="T-gray btm-5">因應小組成員</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增小組成員
+									</button>
+								</div>
+								<div class="w-3 mgr-15">
+									<div class="T-gray btm-5">家長代表</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增家長代表
+									</button>
+								</div>
+								<div class="w-3 mgr-15">
+									<div class="T-gray btm-5">學者專家</div>
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<input type="text" placeholder="請輸入姓名" class="form-input">
+									<button class="btn btn-ltgray w-1">
+									<i class="fa fa-plus-circle"></i>
+									新增學者專家
+									</button>
+								</div>
+							</div>
+							<div class="btm-10">
+								<h4 class="T-blue">以下簡訊內容將發送至雙方監護人手機，請確認：</h4>
+								<textarea name="" id="" class="form-textarea">您好，本案業經防制校園霸凌因應小組會議會開決議確認為校園霸凌事件，後續將寄送結果通知書並追踨輔導。</textarea>
+							</div>
+							<div class="flex">
+								<div class="w-2 mgr-15">
+									<h4 class="T-blue">行為人之監護人手機號碼</h4>
+									<label for="" class="T-gray">監護人1</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input"><br>
+									<label for="" class="T-gray">監護人2</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input">
+								</div>
+								<div class="w-2 mgr-15">
+									<h4 class="T-blue">被行為人之監護人手機號碼</h4>
+									<label for="" class="T-gray">監護人1</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input"><br>
+									<label for="" class="T-gray">監護人2</label>
+									<input type="text" placeholder="請輸入手機號碼" class="form-input">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer T-center flex">
+							<!-- 送申請 -->
+							<!-- <button class="btn btn-gr"><i class="fa fa-paper-plane"></i> 送簽核申請</button>
+							<div class="T-gray fz-14">(發送申請至陳孝長)</div> -->
+
+							<!-- 簽核 -->
+							<button class="btn btn-deepblue flex-1"><i class="fa fa-check"></i> 同意</button>
+							<button class="btn btn-warning mgr-10 flex-1"><i class="fa fa-arrow-left"></i> 退回</button>
+							<input type="text" class="form-input inline flex-3" placeholder="請輸入退回原因(可不填)" style="height:40px">
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- contentBox End -->
-			<!-- contentBox -->
-			<!-- 目前狀態加一個.ING -->
-			<!-- 已到狀態.orange / 未到狀態.gray -->
-			<div class="orange ING contentBox">
-				<div class="left">
-					108-05-01
-				</div>
-				<div class="right">
-					<div>召開會議</div>
-					<div>
-						<ul>
-							<li>召集人：陳孝長</li>
-							<li>因應小組成員(3)：陳孝長、郝仁愛</li>
-							<li>家長代表人數(1)：王錦華</li>
-							<li>學者專家人數(1)：蔡淑華</li>
-							<li class="message">
-							<!-- .OrangeText 簽核中 / .greenText 發送成功 -->
-								<div class="OrangeText"><img src="img/Mask Group 14.svg" alt="">簡訊簽核中</div>
-								<ul>
-									<li>郝仁愛 05-01 17:33 送出申請</li>
-									<li>陳孝長 簽核中</li>
-								</ul>
-							</li>
-						</ul>
+			<!-- 簽核資料 -->
+
+
+			<!-- 案件資料 -->
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+							<h4 class="modal-title" id="myModalLabel">案件編號<span>356784</span>案件資料</h4>
+						</div>
+						<div class="modal-body">
+							<div class="flex">
+								<div class="w-2 mgr-10">
+									<h5 class="T-blue">行為人1</h5>
+									<div class="flex wrap content bg-ltgr T-gray btm-10">
+										<div class="w-2 mgr-15">
+											<div>學生姓名</div>
+											<input type="text" class="form-input w-1" placeholder="行為人姓名">
+										</div>
+										<div class="w-2">
+											<div>身分證號</div>
+											<input type="text" class="form-input w-1" placeholder="行為人身分證字號">
+										</div>
+										<div class="w-2 mgr-15">
+											<div>就讀學校</div>
+											<select name="" id="" class="form-select">
+												<option value="1">頂埔國民小學</option>
+											</select>
+										</div>
+										<div class="w-2">
+											<div>就讀班級</div>
+											<select name="" id="" class="form-select inline">
+												<option value="1">1</option>
+											</select>
+											<span class="">年</span>
+											<select name="" id="" class="form-select inline">
+												<option value="1">1</option>
+											</select>
+											<span>班</span>
+										</div>
+										<h5 class="T-green w-1">監護人1</h5>
+										<div class="w-2 mgr-15">
+											<div>手機號碼</div>
+											<input type="text" class="form-input w-1" placeholder="請輸入手機號碼">
+										</div>
+										<div class="w-2">
+											<div>電子信箱</div>
+											<input type="mail" class="form-input w-1" placeholder="例如：sample@gmail.com">
+										</div>
+										<button class="w-1 btn btn-gr"><i class="fa fa-plus"></i> 增加監護人</button>
+									</div>
+									<button class="btn btn-ltgray w-1">
+										<i class="fa fa-plus-circle"></i>
+										新增行為人
+									</button>
+								</div>
+								<div class="w-2 mgr-10">
+									<h5 class="T-blue">行為人2</h5>
+									<div class="flex wrap content bg-ltred T-gray btm-10">
+										<div class="w-2 mgr-15">
+											<div>學生姓名</div>
+											<input type="text" class="form-input w-1" placeholder="被行為人姓名">
+										</div>
+										<div class="w-2">
+											<div>身分證號</div>
+											<input type="text" class="form-input w-1" placeholder="被行為人身分證字號">
+										</div>
+										<div class="w-2 mgr-15">
+											<div>就讀學校</div>
+											<select name="" id="" class="form-select">
+												<option value="1">頂埔國民小學</option>
+											</select>
+										</div>
+										<div class="w-2">
+											<div>就讀班級</div>
+											<select name="" id="" class="form-select inline">
+												<option value="1">1</option>
+											</select>
+											<span class="">年</span>
+											<select name="" id="" class="form-select inline">
+												<option value="1">1</option>
+											</select>
+											<span>班</span>
+										</div>
+										<h5 class="T-ltred w-1">監護人1</h5>
+										<div class="w-2 mgr-15">
+											<div>手機號碼</div>
+											<input type="text" class="form-input w-1" placeholder="請輸入手機號碼">
+										</div>
+										<div class="w-2">
+											<div>電子信箱</div>
+											<input type="mail" class="form-input w-1" placeholder="例如：sample@gmail.com">
+										</div>
+										<button class="w-1 btn btn-ltred"><i class="fa fa-plus"></i> 增加監護人</button>
+									</div>
+									<button class="btn btn-ltgray w-1">
+										<i class="fa fa-plus-circle"></i>
+										新增被行為人
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer T-left T-gray">
+							<div class="flex btm-10">
+								<div class="flex-1">申請調查日期</div>
+								<div class="flex-6">
+									<input type="date" class="form-input inline">
+								</div>
+							</div>
+							<div class="flex btm-10">
+								<div class="flex-1">申請調查事項</div>
+								<div class="flex-6">
+									<textarea name="" id="" class="form-textarea" placeholder="請輸入調查事項"></textarea>
+								</div>
+							</div>
+							<div class="flex flex-center">
+								<button class="btn btn-deepblue">確認修改</button>
+								<button class="btn btn-default">取消</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- contentBox End -->
-			<!-- contentBox -->
-			<div class="gray contentBox">
-				<div class="left">
-					
-				</div>
-				<div class="right">
-					<div>結案會議</div>
-				</div>
-			</div>
-			<!-- contentBox End -->
-			<div class="gray contentBox">
-				<div class="left">
-					108-06-30<br>
-					辦理期限
-				</div>
-				<div class="right">
-					<div>結案</div>
-				</div>
-			</div>
-			<!-- contentBox End -->
-		</div>
-	</main>
-</body>
-</html>
+			<!-- 案件資料End -->
+
+
+
+			<script>
+				$(document).ready(function(){
+					$('#toggle').click(function(){
+						$('.NewStep').animate({width:'toggle'},350);
+					});
+				});
+				$('#myModal').on('shown.bs.modal', function () {
+				$('#myInput').focus()
+				})
+			</script>
+		</body>
+	</html>

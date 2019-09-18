@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>臺北市校園霸凌系統</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="nav">
+		<div>
+			<a href="#">臺北市校園<b>霸凌案件<span style="color:yellow;">查詢系統</span></b></a>
+			<div class="pull-right ">
+				<span>臺北市教育局</span>
+				<span class="yellow">王天明</span>
+				<a href="#">登出</a>
+			</div>
+		</div>
+	</div>
+	<main>
+		<!-- 電腦版選單 -->
+		<div class="tabs xs-hidden">
+			<ul>
+				<li class="active">全部<span>512</span></li>
+				<li>待審核<span>3</span></li>
+				<li>逾期<span>3</span></li>
+				<li>成案<span>10</span></li>
+				<li>受理<span>33</span></li>
+				<li>調查程序中<span>212</span></li>
+				<li>召開會議<span>15</span></li>
+				<li><span>結案</span><span>205</span></li>
+			</ul>
+			<button class="pull-right"><i class="fa fa-cog" aria-hidden="true"></i> 管理設定</button>
+			<button class="pull-right green_button"><i class="fa fa-bar-chart" aria-hidden="true"></i> 統計</button>
+		</div>
+
+		<!-- 手機版選單 -->
+		<div class="tabs xs-block">
+			<select name="" id="">
+				<option value="1">全部(512)</option>
+				<option value="2">待審核(3)</option>
+				<option value="3">逾期(3)</option>
+				<option value="4">成案(10)</option>
+				<option value="5">受理(33)</option>
+			</select>
+			
+			<button class="pull-right green_button"><i class="fa fa-plus"></i> 新增案件</button>
+			<button class="pull-right"><i class="fa fa-cog" aria-hidden="true"></i> 管理</button>
+			<button class="pull-right green_button"><i class="fa fa-bar-chart" aria-hidden="true"></i> 統計</button>
+		</div>
+		
+		<!-- 電腦版搜尋 -->
+		<div class="tool xs-hidden">
+			<input type="search" placeholder="輸入學校關鍵字"><button><i class="fa fa-search"></i></button>
+			<input type="search" placeholder="請輸入案件編號"><button><i class="fa fa-search"></i></button>
+			<input type="search" placeholder="搜尋手機號碼"><button><i class="fa fa-search"></i></button>
+			<button class="pull-right"><i class="fa fa-plus"></i> 新增案件</button>
+		</div>
+
+		<!-- 手機版搜尋 -->
+		<div class="tool xs-block">
+			<select name="" id="" style="width:30%">
+				<option value="">搜尋學校</option>
+				<option value="">案件編號</option>
+				<option value="">手機號碼</option>
+			</select>
+			<input type="search" placeholder="輸入關鍵字" style="width:calc(70% - 2.6em);"><button><i class="fa fa-search"></i></button>
+		</div>
+		<div class="list">
+			<ul class="title">
+				<li>案件編號</li>
+				<li>學校</li>
+				<li>最後更新時間</li>
+				<li>結案期限</li>
+				<li>目前進度</li>
+			</ul>
+			<div class="clearfix"></div>
+			<ul class="content">
+				<li class="late">
+					<ul>
+						<li>356784</li>
+						<li>新北市土城區頂埔國民小學</li>
+						<li>2天前</li>
+						<li>108.06.30</li>
+						<li>
+							<span>受理</span>
+							<span>陳孝長簡訊簽核中</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>356784</li>
+						<li>新北市土城區頂埔國民小學</li>
+						<li>今日</span></li>
+						<li>108.06.30</li>
+						<li>
+							<span>召開會議</span>
+							<span>簡訊已發送</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>356784</li>
+						<li>新北市土城區頂埔國民小學</li>
+						<li>6天前</span></li>
+						<li>108.06.30</li>
+						<li>
+							<span>受理</span>
+							<span>陳孝長簡訊簽核中</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>356784</li>
+						<li>新北市土城區頂埔國民小學</li>
+						<li>108.06.11<span>8天未更新 <i class="fa fa-exclamation-triangle"></i></span></li>
+						<li>108.06.30</li>
+						<li>
+							<span>受理</span>
+							<span>陳孝長簡訊簽核中</span>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</main>
+</body>
+</html>

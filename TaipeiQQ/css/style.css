@@ -11,12 +11,267 @@ body{
 	font-size: 14px;
 	display: flex;
 	align-items: center;
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/background2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0;
 	width: 100%;
+	height: 100vh;
 }
+
+.flex{
+	display: flex;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.flex-center{
+	align-items: center;
+	justify-content: center;
+}
+.flex-1{
+	flex: 1;
+}
+.flex-2{
+	flex: 2;
+}
+.flex-3{
+	flex: 3;
+}
+.flex-4{
+	flex: 4;
+}
+.flex-5{
+	flex: 5;
+}
+.flex-6{
+	flex: 6;
+}
+.clearfix{
+	clear: both;
+}
+.T-center{
+	text-align: center;
+}
+.T-right{
+	text-align: right;
+}
+.T-left{
+	text-align: left;
+}
+.w-1{
+	width: 100%;
+}
+.w-2{
+	width: calc((100% - 15px) / 2);
+}
+.w-3{
+	width: calc((100% - 30px) / 3);
+}
+.w-4{
+	width: calc((100% - 45px) / 4);
+}
+.modal-dialog {
+	width: 100%;
+    max-width: 800px;
+}
+.inline{
+	display: inline;
+}
+.lh-16{
+	line-height: 1.6em;
+}
+.btm-5{
+	margin-bottom: 5px
+}
+.btm-10{
+	margin-bottom: 10px
+}
+.btm-15{
+	margin-bottom: 15px
+}
+.btm-20{
+	margin-bottom: 20px
+}
+.mgr-10{
+	margin-right: 10px;
+}
+.mgr-15{
+	margin-right: 15px;
+}
+.mgr-20{
+	margin-right: 20px;
+}
+.center{
+	text-align: center;
+}
+.T-blue{
+	color: #002780;
+}
+.T-gray{
+	color: #818181;
+}
+.T-yellow{
+	color: yellow;
+}
+.T-green{
+	color: #23C990;
+}
+.T-ltred{
+	color: #FF90BB;
+}
+.T-14{
+	font-size: 14px;
+}
+.T-16{
+	font-size: 16px;
+}
+.form-input{
+	width: 100%;
+	height: 30px;
+	padding: 3px 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #D5D5D5;
+	outline: none;
+	color: #000;
+}
+.form-select{
+	width: 100%;
+	height: 30px;
+	padding: 3px 5px;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #D5D5D5;
+	outline: none;
+	color: #000;
+}
+.form-textarea{
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #D5D5D5;
+	overflow: auto;
+	border-radius: 5px;
+}
+.form-input.inline{
+	width: auto;
+}
+.form-select.inline{
+	width: auto;
+}
+.btn{
+	border: 0;
+	border-radius: 5px;
+	transition: opacity,transform 0.2s;
+}
+.btn:hover{
+	opacity: 0.8;
+	transform: scale(1.02);
+}
+.btn-ltgray{
+	background-color: #F5F5F5;	
+	color: #959595;
+}
+.btn-ltgray:hover{
+	background-color: #333;	
+	color: #fff;
+}
+.btn-gr{
+	background-color: #23C990;	
+	color: #fff;
+}
+.btn-gr:hover{
+	background-color: #218e68;	
+	color: #fff;
+}
+.btn-ltred{
+	background-color: #FF90BB;	
+	color: #fff;
+}
+.btn-ltred:hover{
+	background-color: #FF458D;	
+	color: #fff;
+}
+.btn-deepblue{
+	background-color: #012880;	
+	color: #fff;
+}
+.btn-deepblue:hover{
+	background-color: #021C58;	
+	color: #fff;
+}
+.btn-default{
+	background-color: #FFF;	
+	color: #2F2F2F;
+	border: 1px solid #B5B5B5;
+}
+button.close{
+	z-index: 999;
+	color: #FFF;
+	font-size: 2em;
+	opacity: 1;
+}
+h4.modal-title{
+	background-color: #002780;
+	color: #FFF;
+	margin: 0 -15px;
+	padding: 5px 10px;
+	font-size: 14px;
+	text-align: center;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 0;
+}
+main .tabs select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: 2px solid #23C990;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("https://raw.githubusercontent.com/ourjs/static/gh-pages/2015/arrow.png") no-repeat scroll right center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  /* padding-right: 14px; */
+  padding: 5px 20px 5px 10px;
+  width: 55%;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+main .tool select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: 2px solid #23C990;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("https://raw.githubusercontent.com/ourjs/static/gh-pages/2015/arrow.png") no-repeat scroll right center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  /* padding-right: 14px; */
+  padding: 5px 20px 5px 10px;
+  width: 20%;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
 main{
 	background-color: #FFF;
 	width: 100%;
@@ -26,6 +281,128 @@ main{
 	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 	padding: 15px 30px;
 	margin-top: 45px;
+}
+main .tabs ul{
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+main .tabs ul li{
+	color: #6F6F6F;
+	display: inline-block;
+	margin-right: 5px;
+	background-color: #EAEAEA;
+	padding: 5px 10px;
+	font-size: 1.1em;
+}
+main .tabs ul li.active{
+	color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+	background-color: #23C990;
+	padding: 5px 10px;
+	font-size: 1.1em;
+}
+main .tabs ul li span{
+	color: #fff;
+	padding: 0px 5px;
+	background-color: #6F6F6F;
+	border-radius: 3px;
+	font-size: 0.8em;
+	margin-left: 3px;
+}
+main .tabs ul li.active span{
+	color: #23C990;
+	padding: 0px 5px;
+	background-color: #fff;
+	border-radius: 3px;
+	font-size: 0.8em;
+	margin-left: 3px;
+}
+main .tabs ul li:hover{
+	color: #6F6F6F;
+	display: inline-block;
+	margin-right: 5px;
+	background-color: #DDDDDD;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+main .tabs select{
+
+}
+main .tool{
+	font-size: 1.2em;
+}
+main .tool input{
+	border: 2px solid #23C990;
+	height: 30px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px;
+	outline: none;
+}
+main .tool input:focus{
+	border: 2px solid #FF9300;
+}
+main .tabs button{
+	background-color: #6F6F6F;
+	color: #fff;
+	height: 30px;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	margin-left: 5px;
+}
+main .tabs button:hover{
+	background-color: #333;
+}
+main .tool button{
+	background-color: #23C990;
+	color: #fff;
+	height: 30px;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+main .tool input+button{
+	background-color: #23C990;
+	color: #fff;
+	height: 30px;
+	border: 1px solid #23C990;
+	right: 2px;
+	bottom: 1px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	outline: none;
+	cursor: pointer;
+}
+.green_button{
+	background-color: #39A202 !important;
+	color: #fff;
+	height: 30px;
+	border: 1px solid #39A202 !important;
+	right: 2px;
+	bottom: 1px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	outline: none;
+	cursor: pointer;
+}
+main .tool input:focus+button{
+	background-color: #FF9300;
+	border: 1px solid #FF9300;
+}
+main .tool button:hover{
+	background-color: #FF9300;
+	color: #fff;
+	height: 30px;
+	border: 1px solid #FF9300;
+	bottom: 1px;
+
 }
 .nav{
 	width: 100%;
@@ -37,8 +414,9 @@ main{
 	z-index: 9;
 	background-color: #000;
 	font-size: 1.4em;
+	color: #FFF;
 }
-.nav div{
+.nav > div{
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -60,6 +438,7 @@ main{
 	font-weight: 600;
 	border: 0;
 	border-radius: 5px;
+	margin-right: 5px;
 }
 .btn-greenblue{
     width: 85px;
@@ -72,11 +451,111 @@ main{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color,transform,0.3s;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 .btn-greenblue:hover{
 	transform: scale(1.1);
 	background-color: #FF9300;
+}
+.menuBar span{
+	display: inline-flex;
+	align-items: center;
+}
+.menuBar span.complete button{
+    width: 85px;
+    height: 29px;
+    background-color: #23C990;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color,transform,0.3s;
+    margin-right: 5px;
+}
+.menuBar span.complete+button{
+    border: 0;
+    background-color: transparent;
+    color: #23C990;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color,transform,0.3s;
+    margin-right: 5px;
+	cursor: pointer;
+}
+.menuBar > div > button:last-of-type:hover{
+    color: orange;
+    transform: scale(1.1);
+}
+.menuBar .complete button:hover{
+	background-color: orange;	
+}
+/* .menuBar span.complete:after{
+	content: "\f0a9";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	margin:0px 10px 0px 5px;
+	text-decoration:none;
+
+	color: #23C990;
+	font-size: 2em;
+	display: inline-block;
+	cursor: pointer;
+} */
+.menuBar span:last-child:after{
+	content: ;
+}
+/* .menuBar span:last-child:hover::after{
+	color: orange;
+	transform: scale(1.2);
+} */
+.menuBar > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.menuBar .NewStep{
+	display: none;
+	height: 30px;
+}
+.menuBar .NewStep button{
+	width: 85px;
+    height: 29px;
+    background-color: #0054A8;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 2px solid #023C77;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color,transform,0.3s;
+    margin-right: 5px;
+}
+.menuBar .NewStep button:hover{
+    background-color: orange;
+    transform: scale(1.05);
+    border-bottom: 0;
+}
+.btn-darkblue{
+	width: 85px;
+    height: 29px;
+    background-color: #0054A8;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color,transform,0.3s;
+    margin-right: 5px;
+}
+.btn-darkblue:hover{
+    background-color: orange;
+    transform: scale(1.05);
+    border-bottom: 0;
 }
 .btn-greenblue2{
 	width: 85px;
@@ -94,7 +573,22 @@ main{
 	transform: scale(1.1);
 	background-color: #FF9300;
 }
-
+.btn-purple{
+	width: 85px;
+    height: 29px;
+	background-color: #815c98;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 600;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color,transform,0.3s;
+}
+.btn-orange:hover{
+	transform: scale(1.1);
+	background-color: #ff0c00;
+}
 
 .pull-right{
 	float: right;
@@ -105,10 +599,11 @@ main{
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	justify-content: space-between;
 }
-.grayBar div{
+/* .grayBar div{
 	margin-right: 20px;
-}
+} */
 .grayBar div > span:nth-child(2){
 	color: #004DDE;
 	font-size: 15px;
@@ -117,7 +612,6 @@ main{
 .menuBar{
 	margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .menuBar button{
@@ -134,11 +628,14 @@ main{
 .timeline{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column-reverse;
 	font-size: 16px;
+	width: 100%;
+	line-height: 1.6em;
 }
 .timeline .contentBox{
 	display: inline-flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 .timeline .contentBox .left{
 	width: 35%;
@@ -242,7 +739,7 @@ main{
 	color: #FF9300;
 	margin-right: 5px;
 }
-.timeline .contentBox:first-child .right{
+.timeline .contentBox:last-child .right{
 	border-left:3px solid transparent;
 }
 .timeline .contentBox.orange .right .message{
@@ -311,7 +808,7 @@ main{
 }
 .login_content{
 	padding: 30px 50px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 .login_content input{
 	width: calc(100% - 3em);
@@ -359,12 +856,13 @@ color:#CCCCCC;}
 	text-align: center;
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 8px;
 }
 
 .tips .title span:before{
 	content: "";
 	display: inline-block;
-	width: calc(50% - 4.5em);
+	width: calc(50% - 6em);
 	height: 1px;
 	background-color: #CCC;
     position: relative;
@@ -374,7 +872,7 @@ color:#CCCCCC;}
 .tips .title span:after{
 	content: "";
 	display: inline-block;
-	width: calc(50% - 5em);
+	width: calc(50% - 6em);
 	height: 1px;
 	background-color: #CCC;
     position: relative;
@@ -389,6 +887,12 @@ color:#CCCCCC;}
 .tips .content ol{
 	padding-left: 20px;
 	margin-bottom: 0;
+}
+.tips .content button img{
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    top: 2px;
 }
 button.login{
 	width: 100%;
@@ -415,6 +919,7 @@ button.Green{
 	border: 0;
 	cursor: pointer;
 	transition: background-color,transform 0.3s;
+	border-radius: 5px;
 }
 button.GreenBlue{
 	width: 100%;
@@ -426,6 +931,7 @@ button.GreenBlue{
 	border: 0;
 	cursor: pointer;
 	transition: background-color,transform 0.3s;
+	border-radius: 5px;
 }
 button.Green:hover{
 	background-color: #FF9300;
@@ -499,30 +1005,154 @@ button.GreenBlue:hover{
    80% { opacity:1; transform: translateX(15px); }	
   100% { opacity:0; transform: translateX(30px); }	
 }
+.list ul.title{
+	color: #fff;
+	margin-top: 10px;
+}
+.list ul{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0;
+}
 
-
+.list ul.title li{
+	padding: 0.2em 0.5em;
+	background-color: #0456A9;
+}
+.list ul li{
+	float: left;
+	width: 100%;
+	padding: 4px;
+	transition: background-color,transform 0.3s;
+}
+.list > ul.content > li:nth-child(even){
+	background-color: #F8F8F8;
+}
+.list > ul.content > li:hover{
+	background-color: #E5FCF2;
+	cursor: pointer;
+	transform: scale(1.02);
+}
+.list ul li ul{
+	width: 100%;
+}
+.list ul.title li:nth-child(1){
+	width: 10%;
+}
+.list ul.title li:nth-child(2){
+	width: 22%;
+}
+.list ul.title li:nth-child(3){
+	width: 23%;
+}
+.list ul.title li:nth-child(4){
+	width: 10%;
+}
+.list ul.title li:nth-child(5){
+	width: 35%;
+}
+.list ul li ul li:nth-child(1){
+	width: 10%;
+	color: #0456A9;
+	padding-left:0.5em ;
+}
+.list ul li ul li:nth-child(2){
+	width: 22%;
+}
+.list ul li ul li:nth-child(3){
+	width: 23%;
+}
+.list ul li ul li:nth-child(3) span{
+	color: red;
+	font-weight: 300;
+	margin-left: 10px;
+}
+.list ul li ul li:nth-child(4){
+	width: 10%;
+}
+.list ul li ul li:nth-child(5){
+	width: 35%;
+	font-weight: 600;
+}
+.list ul li ul li:nth-child(5) span:nth-child(1){
+    width: 6em;
+    display: inline-block;
+}
+.list ul li ul li:nth-child(5) span:nth-child(2){
+	color: #888888;
+	font-weight: 300;
+	margin-left: 10px;
+	font-size: 13px;
+}
+.xs-hidden{
+	display: block;
+}
+.xs-block{
+	display: none;
+}
+.content{
+	width: 100%;
+	padding: 10px;
+}
+.bg-ltgr{
+	background-color: #EAFDF6
+}
+.bg-ltred{
+	background-color: #F8F2F2
+}
 /* 箭頭End */
 @media screen and (max-width: 768px){
+	.flex{
+		flex-wrap: wrap;
+	}
+	.w-2{
+		width: 100%;
+	}
+	.w-3{
+		width: 100%;
+	}
+	.w-4{
+		width: 100%;
+	}
 	body{
 		width: 100%;
-		height: auto;
+		height: 100vh;
 	}
 	main{
 		height: auto;
 		padding: 15px;
 	}
+	.nav {
+
+	    font-size: 1.1em;
+	}
 	.nav div{
 		max-width: 1000px;
 		margin: 0 auto;
-		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	main .tool{
+		margin-bottom: 10px
+	}
+	.btn-greenblue2.back{
+		position: absolute;
+		right: 10px;
+		top: -80px;
+	}
+	.btn-purple{
+		width: 100%;
 	}
 	.grayBar{
 		width: 100%;
 		height: auto;
 		background-color: #F2F2F2;
 		display: block;
-		padding-left:15px;
+		padding:15px;
 		margin-bottom: 20px;
+	}
+	.tabs{
+		margin-bottom: 5px;
 	}
 	.grayBar div{
 		margin-right: 0;
@@ -550,6 +1180,136 @@ button.GreenBlue:hover{
 		height: auto;
 		padding: 0.3em 0.6em;
 		margin-bottom: 5px;
+	}
+	.xs-hidden{
+		display: none;
+	}
+	.xs-block{
+		display: block;
+	}
+	main .tool input+button{
+		bottom: 0px;
+	}
+	.list ul.title{
+		display: none;
+	}
+	.list > ul.content > li{
+	    background-color: #FDFDFD !important;
+	    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.list > ul.content > li.late{
+	    background-color: #FFF4F4 !important;
+	}
+	.list ul li ul li:nth-child(1){
+		width: 25%;
+	}
+	.list ul li ul li:nth-child(1):before{
+		content: "案件編號";
+		width: 100%;
+		display: block;
+		color: #0456A9;
+	}
+	.list ul li ul li:nth-child(2){
+		width: 75%;
+	}
+	.list ul li ul li:nth-child(2):before{
+		content: "學校名稱";
+		width: 100%;
+		display: block;
+		color: #0456A9;
+	}
+	.list ul li ul li:nth-child(3){
+		width: 55%;
+		float: right;
+	}
+	.list ul li ul li:nth-child(3):before{
+		content: "最後更新日期";
+		width: 100%;
+		display: block;
+		color: #0456A9;
+	}
+	.list ul li ul li:nth-child(4){
+		width: 25%;
+	}
+	.list ul li ul li:nth-child(4):before{
+		content: "結案日期";
+		width: 100%;
+		display: block;
+		color: #0456A9;
+	}
+	.list ul li ul li:nth-child(5){
+		width: 20%;
+	}
+	.list ul li ul li:nth-child(5):before{
+		content: "狀態";
+		width: 100%;
+		display: block;
+		color: #0456A9;
+	}
+	.list ul li ul li:nth-child(5) span:nth-child(2){
+		display: none;
+	}
+	.timeline{
+		padding: 0 15px;
+	}
+	.timeline .contentBox .left{
+		width: 100%;
+		border-left: 3px solid #CCC;
+		text-align: left;
+		padding: 0 15px;
+	}
+	.timeline .contentBox .right{
+		width: 100%;
+		border-left: 0;
+		flex-wrap: wrap;
+	}
+	.timeline .contentBox div{
+		padding-bottom: 8px;
+		line-height: 1.4em;
+	}
+	.timeline .contentBox.gray .right > div:first-child{
+		width: 100%;
+	}
+	.timeline .contentBox.orange .right > div:first-child{
+		width: 100%;
+	}
+	.timeline .contentBox.orange .right > div:nth-child(2){
+		width: 100%;
+	}
+	.timeline .contentBox.gray .right:before {
+	    top: -18px;
+	}
+	.timeline .contentBox.orange .right:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -18px;
+		left: -14px;
+		z-index: 1;
+		background-color:#FF9300;
+		border: 2px solid #FFF; 
+		border-radius: 15px;
+	}
+	.timeline .contentBox.ING .right:before{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: -18px;
+		left: -14px;
+		z-index: 1;
+		background-color:#FF9300;
+		border: 2px solid #FFF; 
+		border-radius: 15px;
+		box-shadow: 0px 0px 5px red;
+		animation: ING 1.5s infinite;
+	}
+	.timeline .contentBox{
+		width: 100%;
+		background-color: #F7F7F7;
 	}
 }
 /* 登入頁面End */
