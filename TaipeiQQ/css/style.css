@@ -395,6 +395,9 @@ main .tool input+button{
 	outline: none;
 	cursor: pointer;
 }
+.green_button:hover{
+	background-color: #009688 !important;
+}
 main .tool input:focus+button{
 	background-color: #FF9300;
 	border: 1px solid #FF9300;
