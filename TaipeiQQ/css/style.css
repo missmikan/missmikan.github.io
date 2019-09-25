@@ -486,14 +486,39 @@ main .tool button:hover{
     color: #23C990;
     font-size: 2em;
     cursor: pointer;
-    transition: background-color,transform,0.3s;
+    /* transition: background-color,transform,0.3s; */
     margin-right: 5px;
 	cursor: pointer;
 }
-.menuBar > div > button:last-of-type:hover{
+.menuBar span.complete+#toggle i{
+	color: orange;
+	animation: NextStep 0.8s infinite;
+}
+@keyframes NextStep{
+	0%{
+		color: red;
+		right: 0px;
+		/* border: 0px solid red; */
+		/* transform: scale(1); */
+	}
+	50%{
+		color: orange;
+		right: 5px;
+		/* transform: scale(1.05); */
+		/* border: 3px solid red; */
+	}
+
+	100%{
+		color: red;
+		right: 0px;
+		/* transform: scale(1.1); */
+		/* border: 0px solid red; */
+	}
+}
+/* .menuBar > div > button:last-of-type:hover{
     color: orange;
     transform: scale(1.1);
-}
+} */
 .menuBar .complete button:hover{
 	background-color: orange;	
 }
