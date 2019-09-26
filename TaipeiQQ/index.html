@@ -62,12 +62,23 @@
 					<span class="complete">
 						<button>調查程序中</button>
 					</span>
-					<button id="toggle"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
-					<div class="NewStep">
-						<button data-toggle="modal" data-target="#myModal">1.召開會議</button>
-						<button>2.調查程序</button>
-						<button>3.結案會議</button>
-					</div>
+					<span>
+						<button id="toggle">
+							<!-- <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> -->
+							<!-- <span style="width: 30px;height:30px;border-radius:15px;background-color: red"></span> -->
+							<i class="fa fa-plus"></i>
+							更新進度
+							<span class="FINGER"><i class="fa fa-hand-o-up" aria-hidden="true"></i></span>
+						</button>
+						<div class="NewStep">
+							<ul>
+								<li><button data-toggle="modal" data-target="#myModal">召開會議</button></li>
+								<li><button>調查程序</button></li>
+								<li><button>結案會議</button></li>
+							</ul>
+						</div>
+		
+					</span>
 				</div>
 			</div>
 			
@@ -458,8 +469,12 @@
 			<!-- 案件資料End -->
 
 
-
 			<script>
+				$("#toggle").click(function(){
+				  $(".NewStep").slideToggle();
+				});
+			</script>
+			<!-- <script>
 				$(document).ready(function(){
 					$('#toggle').click(function(){
 						$('.NewStep').animate({width:'toggle'},350);
@@ -468,6 +483,6 @@
 				$('#myModal').on('shown.bs.modal', function () {
 				$('#myInput').focus()
 				})
-			</script>
+			</script> -->
 		</body>
 	</html>
