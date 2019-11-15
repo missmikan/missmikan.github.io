@@ -1,0 +1,748 @@
+@charset "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style:none;
+}
+button{
+	border:0;
+}
+.clear{
+	clear:both;
+}
+br{
+	font-weight:normal;
+}
+body{
+	background-color:#EAEAEA;
+}
+header,footer{
+	width:100%;
+	position:fixed;
+}
+header{
+	background-color:#fff;
+	top: 0;
+	box-shadow:0px 3px 6px #D9D9D9;
+}
+.top,.down,.sign_out{
+	max-width:1000px;
+	margin: 0 auto;
+}
+header.top{
+	display:flex;
+	max-width:1000px;
+}
+header .nav,footer span{
+	float:right;
+}
+header h1{
+	font-size:16px;
+}
+header a{
+	text-decoration:none;
+	color:#1148A0;
+	font-weight:bold;
+}
+/* 第一頁登入按鈕 */
+header button{
+	padding:5px 20px;
+	color:#fff;
+	background-color:#FF7F00;
+}
+/* footer的顏色設定 */
+footer{
+	background-color:#313131;
+	bottom:0px;
+	padding:5px 0;
+	font-size:14px;
+}
+footer p{
+	color:#fff;
+}
+footer p span{
+	color:#909090;
+}
+footer p:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/phone.png");
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	position:relative;
+	top:3px;
+	padding-right:5px;
+}
+/* 登入後的上面列表 */
+header{
+	padding:5px 0;
+	z-index:1;
+}
+header .top,header .nav,header .sign_out{
+	display:flex;
+	align-items:center;
+}
+header .title{
+	flex:2;
+}
+header .nav .person{
+	display:inline-block;
+}
+header .nav .person span{
+	display:block;
+	font-size:14px;
+	font-weight:normal;	
+}
+header .nav .person span:first-child{
+	color:#48411E;
+}
+header .nav .person span:nth-child(2){
+	color:#2F2E5F;
+}
+header ul{
+	display:inline-flex;
+}
+header li{
+	color:#1148A0;
+}
+header li span{
+	color:#707070;
+	font-weight:normal;
+}
+header .person{
+	padding-right:5px;
+	text-align:right;
+}
+header .nav li a{
+	padding:3px 5px;
+	font-weight:bold;
+}
+/* 內容開始囉～ */
+main{
+	margin:0 auto;
+	margin-top:60px;
+	max-width:1000px;
+}
+/* 公告欄 */
+.broadcast{
+	background-color:#fff;
+	color:#5F5650;
+	font-size:14px;
+	padding:5px;
+}
+.broadcast span{
+	float:right;
+	padding:5px;
+}
+.broadcast p{
+	float:left;
+}
+.broadcast p:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/broadcast.png");
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	position:relative;
+	top:4px;
+	padding-right:5px;
+}
+.broadcast span:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/clock.png");
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	position:relative;
+	top:3px;
+	padding-right:3px;
+}
+/* 進行中與已結束的大外框 */
+.ing, .end{
+	padding-top:20px;
+	margin-bottom:5px;
+	font-weight:bold;
+	font-size:20px;
+}
+.ing{
+	color:#FF7F00;
+}
+.end{
+	color:#313131;
+}
+/* sign-up報名第一頁 大框框們統一css*/
+.sign-up{
+	padding:5px 10px;
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:2px;
+	box-shadow:0px 3px 6px #D9D9D9;
+}
+.sign-up .left h3{
+	font-size:20px
+}
+.sign-up .left .left_title a{
+	font-size:16px;
+	color:#1148A0;
+	font-weight:bold;
+}
+.sign-up .left .download{
+	font-size:14px;
+}
+.sign-up .left h2 span,.sign-up .left span,.sign-up .left h6{
+	font-size:14px;
+	color:#313131;
+	font-weight:normal;
+}
+.sign-up .day{
+	display:block;
+}
+.sign-up .left{
+	flex:3;
+}
+.sign-up .right{
+	display:flex;
+	flex:1.5;
+	align-items:center;
+	justify-content:flex-end;
+}
+.sign-up .right span,.sign-up .right button{
+	font-size:14px;
+	font-weight:normal;
+}
+.sign-up .right .font_red{
+	color: #FF3E3E;
+}
+.sign-up .right button{
+	margin-left:5px;
+	border-radius:3px;
+}
+/* 第一頁 css配件區 進行中的*/
+.bgc_white{
+	background-color:#fff;
+}
+.btn_green{
+	background-color:#00AA89;
+}
+.btn_yellow{
+	background-color: #F4B33A;
+}
+.btn_big_size{
+	width:92px;
+	height:48px;
+	color:#fff;
+}
+/* 第一頁 css配件區 已結束的*/
+.bgc_gray{
+	background-color:#F0F0F0;
+}
+.btn_gray{
+	background-color:#989898;
+}
+.font_gray{
+	color:#313131;
+}
+/* 第二頁 配件區 最上面那條的 */
+.btn_mid_size{
+	width:65px;
+	height:34px;
+	color:#fff;
+}
+.bgc_yellow2{
+	background-color:#FFF6C6;
+}
+.sign-up .left .chapter .download{
+	font-size:14px;
+	color:#1148A0;
+	font-weight:normal;
+}
+/*內容區的icon們 */
+.day:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/day.png");
+	background-repeat:no-repeat;
+	width:13px;
+	height:13px;
+	position:relative;
+	top:0px;
+	padding-right:2px;
+}
+.order:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/order.png");
+	background-repeat:no-repeat;
+	width:13px;
+	height:13px;
+	position:relative;
+	top:0px;
+	padding-right:2px;
+}
+.chapter:before{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/chapter.png");
+	background-repeat:no-repeat;
+	width:13px;
+	height:13px;
+	position:relative;
+	top:1px;
+	padding-left:0px;
+}
+.download:after{
+	content:"";
+	display:inline-block;
+	background-image:url("../img/download.png");
+	background-repeat:no-repeat;
+	width:14px;
+	height:14px;
+	position:relative;
+	top:2px;
+}
+ /* 第二頁 內容區 */
+.left .chapter{
+	margin-left:10px
+}
+.week li{
+	float:left;
+	margin-top:10px;
+	font-size:13px;
+}
+.week a{
+	text-decoration:none;
+	background-color:#74D5E2;
+	padding:3px 15px;
+	margin-right:5px;
+	color:#fff;
+}
+/* active的色票 */
+.week a:hover{
+	background-color:#418D98;
+}
+.week .active a{
+	background-color:#1148A0;
+}
+/* 第二頁 列表區*/
+.list{
+	display:flex;
+	font-size:14px;
+	padding:5px 5px;
+	max-width:1000px;
+}
+.list div:nth-child(1){
+	display:inline-flex;
+	width:3%;
+	align-items:center;
+}
+.list div:nth-child(2){
+	width:22%;
+	padding-right:10px;
+}
+.list div:nth-child(3){
+	width:12%;
+	padding-right:10px;
+}
+.list div:nth-child(4){
+	width:12%;
+}
+.list div:nth-child(5){
+	display:inline-flex;
+	width:6%;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.list div:nth-child(6){
+	display:inline-flex;
+	width:7%;
+	align-items:center;
+	justify-content:center;
+}
+.list div:nth-child(7){
+	display:inline-flex;
+	width:7%;
+	align-items:center;
+	justify-content:center;
+}
+.list div:nth-child(8){
+	display:inline-flex;
+	width:7%;
+	align-items:center;
+	justify-content:center;
+}
+.list div:nth-child(9){
+	display:inline-flex;
+	width:5%;
+	align-items:center;
+	justify-content:center;
+}
+.list div:nth-child(10){
+	width:13%;
+	text-align:right;
+}
+
+.bar{
+	background-color:#1148A0;
+	color:#fff;
+	margin-top:3px;
+}
+.color1{
+	height: 3em;
+	background-color:#fff;
+}
+.color1 div:nth-child(9){
+	color:#FF7F00;
+}
+.color1 div:nth-child(10){
+	width:16%;
+}
+.color1 a,.color2 a{
+	color:#1148A0;
+}
+.color2{
+	background-color: #FEFFEB;
+	height: 3em;
+}
+.color2 div:nth-child(9){
+	color:#FF7F00;
+}
+.color2 div:nth-child(10){
+	width:16%;
+	align-items:flex-start;
+	flex-wrap:wrap;
+}
+.color2 div .btn_give_up{
+	align-items:flex-end;
+}
+.list .money{
+	color:#1148A0;
+	font-weight:bold;
+}
+.list .admit{
+	color:#0B5E6E;
+	font-weight:normal;
+}
+.list .food{
+	color:#343434;
+	font-weight:normal;
+}
+
+.phone_title,.side_title{
+	display:none;
+}
+
+/* 把多的字收起來的css */
+.list .indent,.list .list_title{
+	height: 3em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+/* 第二頁 列表按鈕區 */
+.btn_sign_up{
+	background-color:#00AA89;
+	color:#fff;
+	border-radius:3px;
+	padding:8px;
+}
+.btn_give_up{
+	background-color:#FF9393;
+	color:#fff;
+	border-radius:3px;
+	padding:3px 6px;
+}
+.mid{
+	margin:auto 0;
+}
+
+/* 課程資訊彈跳視窗 內頁 */
+.window{
+	max-width:1000px;
+	background-color:#fff;
+	margin:0 auto;
+}
+.window .close{
+	float:right;
+	background-color:#FF3939;
+	color:#fff;
+	padding:3px 8px;
+	border-radius:3px;
+	font-size:16px;
+}
+.window_title{
+	background-color:#1148A0;
+	padding:3px;
+	margin:5px 0;
+}
+.window_title span:nth-child(1){
+	color:#fff;
+	font-size:18px;
+	margin-left:10px
+}
+.window_title span:nth-child(2){
+	color:#FFC993;
+	font-size:14px;
+}
+.outside{
+	display:flex;
+	flex-wrap:wrap;
+}
+.long{
+	width:48%;
+}
+
+.inside{
+	margin-left:10px;
+	font-size:14px;
+	font-weight:normal;
+	padding:3px;
+}
+.inside span{
+	display:inline-flex;
+}
+.inside span:nth-child(1){
+	color:#1148A0;
+	align-items: flex-start;
+}
+.inside span:nth-child(2){
+	color:#313131;
+}
+hr{
+	width:99%;
+	height:1px;
+	background-color:#1148A0;
+	margin:0 auto;
+}
+.longer{
+	width:97%;
+	margin:3px 9px;
+}
+.download{
+	color:#1148A0;
+}
+.window_left,.window_right{
+	width:48%
+}
+
+/* RWD */
+@media(max-width: 768px){
+	header .title{
+		padding-left:10px
+	}
+	.left .chapter{
+		display:block;
+		margin-left: 0;
+	}
+	.top,.down,.ing,.end{
+		margin:0 10px;
+	}
+	.broadcast{
+		padding:3px 10px;
+	}
+		/* 第二頁 列表區*/
+.phone_title,.side_title{
+	display:inline-block;
+}
+.list{
+	display:inline-block;
+	margin-top:3px;
+	padding:5px 13px
+}
+.list div:nth-child(1){
+	display:none;
+}
+.list div:nth-child(2){
+	width:75%;
+	padding-right:0px;
+}
+.list div:nth-child(3){
+	width:75%;
+	padding-right:10px;
+}
+.list div:nth-child(4){
+	width:75%;
+}
+.list div:nth-child(5){
+	display:inline-block;
+	width:75%;
+}
+.list div:nth-child(6){
+	display:inline-block;
+	width:75%;
+}
+.list div:nth-child(7){
+	display:inline-flex;
+	width:25%;
+}
+.list div:nth-child(8){
+	display:inline;
+	width:30%;
+}
+.list div:nth-child(9){
+	display:inline;
+	width:20%;
+}
+.list div:nth-child(10){
+	width:23%;
+	float:right;
+
+}
+.list .number{
+	width:7%
+}
+.side_title{
+	color:#313131;
+	display:contents;
+}
+.phone_title{
+	width:23%;
+}
+.bar{
+	display:none;
+	}
+.list .list_title a{
+	text-decoration:none;
+	color:#1148A0;
+}
+.list .list_title{
+	padding-bottom:3px;
+	padding-top:3px;
+}
+.week{
+	margin-left:10px;
+	margin-bottom:30px
+}
+.color1,.color2{
+	height:auto;
+	width:96%;
+}
+.order{
+	display:none;
+}
+/* 把多的字收起來的css */
+.list .list_title{
+	height:1.5em;
+	-webkit-line-clamp:1;
+}
+.list .indent{
+	height:1.5em;
+	-webkit-line-clamp:1;
+}
+/* 報名與放棄按鈕 */
+	.list{
+		position:relative;
+	}
+
+	.btn_position{
+		position:absolute;
+		top:10px;
+		right:20px;
+	}
+
+}
+@media(max-width: 674px){
+	.bgc_yellow2{
+		margin-top:80px
+	}
+	.sign-up .right{
+		flex:0.5;
+		flex-direction:column-reverse;
+		justify-content:center;
+	}
+	.sign-up .right .font_red{
+		text-align:center;
+	}
+	 header .nav, header .sign_out{
+		display:block;
+	}
+	header .nav{
+		padding-left:10px
+	}
+	header .nav .person span{
+		display:inline-block;
+	}
+	header .nav button,header .top .nav button{
+		float:right;
+		margin-right:10px
+	}
+	/* 按鈕調整區 */
+	.btn_big_size{
+		width:75px;
+		height:30px;
+	}
+	.btn_mid_size{
+		height:30px
+	}
+	/* 第三頁 */
+	.window_left,.window_right{
+		width:100%
+	}
+	.week{
+	margin-bottom:60px
+	}
+
+}
+@media(max-width:585px){
+	/* 把多的字收起來的css */
+	.list .list_title{
+		height:3em;
+		-webkit-line-clamp:2;
+	}
+	.list .indent{
+		height:1.5em;
+		-webkit-line-clamp:1;
+	}
+}
+
+@media(max-width:414px){
+	main{
+		margin-top:60px
+	}
+	.broadcast span{
+		display:none;
+	}
+	.title a span{
+		display:none;
+	}
+	
+	.left h2{
+		padding:0;
+	}
+	.bgc_yellow2{
+		margin-top:85px
+	}
+	
+/* 第三頁 */
+	.window_left,.window_right{
+		width:100%
+	}
+	.window_left .inside span:nth-child(2){
+		width:80%
+	}
+	.window_right .inside span:nth-child(2){
+		width:80%
+	}
+
+
+}
+
+@media(max-width:375px){
+	.list div:nth-child(7){
+		display:inline-flex;
+		width:27%;
+	}
+
+}
+
+
+
+
