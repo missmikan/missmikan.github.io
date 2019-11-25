@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>學生資料</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="menuBar">
+				<ul>
+					<li>
+					<img src="img/01.svg" alt="">首頁</li>
+					<li class="active"><img src="img/02.svg" alt="">個案管理</li>
+					<li><img src="img/03.svg" alt="">課程計畫</li>
+					<li><img src="img/04.svg" alt="">設定</li>
+				</ul>
+			</div>
+			<div class="index_main">
+				<div class="top">
+					<div class="tools">
+						<button class="red-btn"><span class="glyphicon glyphicon-remove"></span>退回審核</button>
+						<button class="g-btn"><span class="glyphicon glyphicon-ok"></span>審核通過</button>
+						<button class="b-btn"><span class="glyphicon glyphicon-new-window"></span> 匯出資料</button>
+						<button class="g-btn"><span class="glyphicon glyphicon-pencil"></span> 編輯資料</button>
+					</div>
+				</div>
+				<div class="stu_data">
+					<div class="left">
+						<!-- 學生大頭照 -->
+						<div class="head_img">
+							<img src="img/head.jpg" alt="">
+						</div>
+						<!-- 此為電腦版選單，手機版切換為下拉式，合併至手機版學生資訊區塊內 -->
+						<div class="stu_list hidden-xs">
+							<div class="well no-padding">
+								<div>
+									<ul class="nav nav-list nav-menu-list-style">
+										<li class="divider"></li>
+										<li><label class="tree-toggle nav-header border1">學生基本資料</label>
+										<ul class="nav nav-list tree">
+											<li class="active"><a href="#">學生個人資料</a></li>
+											<li><a href="#">就學記錄</a></li>
+											<li><a href="#">家庭成員資料</a></li>
+											<li><a href="#">家庭狀況與需求</a></li>
+										</ul>
+									</li>
+									<li><label class="tree-toggle nav-header border2">學生能力/興趣/需求評估</label>
+									<ul class="nav nav-list tree">
+										<li><a href="#">測驗與評量資料</a></li>
+										<li><a href="#">學習興趣分析</a></li>
+										<li><a href="#">生活學習適應</a></li>
+										<li><a href="#">學生特殊表現</a></li>
+										<li><a href="#">需求觀察與分析</a></li>
+										<li><a href="#">特殊教育需求綜合評析</a></li>
+									</ul>
+								</li>
+								<li><label class="tree-toggle nav-header border3">課程設計與評量</label></li>
+								<li><label class="tree-toggle nav-header border4">個別輔導紀錄</label></li>
+								<li><label class="tree-toggle nav-header border5">個別輔導計畫調整評估</label></li>
+							</ul>
+						</div>
+					</div>
+					<button class="yearspast_button">107年上學期評估</button>
+					<button class="yearspast_button">107年下學期評估</button>
+				</div>
+			</div>
+			<!-- 手機版學生資訊 -->
+			<div class="right visible-xs-inline-block">
+					<div class="student">
+						<span class="Name">林巧婷</span>
+						<span>一年1班</span>
+						<span>01號</span>
+						<div class="xs-block">
+							<span>學號：</span>
+							<span>108001</span>
+						</div>
+					</div>
+					<div>
+						<span class="blue_title">資優類型</span>
+						<span>
+							<span class="tag_A">一般智能</span>
+							<span class="tag_B">學術</span>
+							<span class="tag_C">領導</span>
+						</span>
+					</div>
+					<div>
+						<span class="blue_title">安置型態</span>
+						<span>縮短修業年限(全部學科跳級)</span>
+					</div>
+					<div>
+						<span class="blue_title">個案類型</span>
+						<span>ＯＯＯＯ</span>
+					</div>
+					<select name="" id="" class="form-control">
+						<option value="">學生基本資料</option>
+					</select>
+					<select name="" id="" class="form-control">
+						<option value="">學生個人資料</option>
+					</select>
+			</div>
+
+					<!-- 學生資料 -->
+					<div class="head_data">
+						<!-- 電腦版學生資訊 -->
+						<div class="left hidden-xs">
+							<div class="student">
+								<span class="Name">林巧婷</span>
+								<span>一年1班</span>
+								<span>01號</span>
+								<span>學號：</span>
+								<span>108001</span>
+							</div>
+							<div>
+								<span class="blue_title">資優類型</span>
+								<span>
+									<span class="tag_A">一般智能</span>
+									<span class="tag_B">學術</span>
+									<span class="tag_C">領導</span>
+								</span>
+							</div>
+							<div>
+								<span class="blue_title">安置型態</span>
+								<span>縮短修業年限(全部學科跳級)</span>
+							</div>
+							<div>
+								<span class="blue_title">個案類型</span>
+								<span>ＯＯＯＯ</span>
+							</div>
+						</div>
+						<!-- end. -->
+
+						<!-- 評估簽核紀錄 -->
+						<div class="right">
+							<div class="title">評估簽核紀錄</div>
+							<ul>
+								<li>108-11-04 校長 陳為民 評估簽核通過</li>
+								<li>108-10-31 輔導主任 蕭瑋瑋 評估簽核通過</li>
+								<li>108-10-30 個案管理師 王欣欣 送出簽核</li>
+							</ul>
+						</div>
+
+						<!-- 學生基本資料 -->
+						<div class="stu_detail">
+							<div class="title">個人學生資料</div>
+							<div style="background-color: #FFF;">
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">中文姓名</div>
+										<div class="col-md-9 col-xs-9">林巧婷</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">身分證號</div>
+										<div class="col-md-9 col-xs-9">C123456789</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">性別/生日</div>
+										<div class="col-md-9 col-xs-9">女 / 91-01-12</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">出生地</div>
+										<div class="col-md-9 col-xs-9">臺中</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">監護人</div>
+										<div class="col-md-9 col-xs-9">
+											<span>王小明</span>
+											<span>(父)</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">特殊身份</div>
+										<div class="col-md-9 col-xs-9">原住民學生、軍公教子女</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">手機</div>
+										<div class="col-md-9 col-xs-9">0912345678</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">E-mail</div>
+										<div class="col-md-9 col-xs-9">okawe12@schoolsoft.com.tw</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">戶籍電話</div>
+										<div class="col-md-9 col-xs-9">04-22341241</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">通訊電話</div>
+										<div class="col-md-9 col-xs-9">04-22341241</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">戶籍地址</div>
+										<div class="col-md-9 col-xs-9">臺中市南區忠明南路216巷5弄100號502室</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										<div class="col-md-3 col-xs-3 blue_title">通訊地址</div>
+										<div class="col-md-9 col-xs-9">臺中市南區忠明南路758號25樓</div>
+									</div>
+								</div>
+
+
+
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<!-- 個人年班資料 -->
+						<div class="stu_detail years_data">
+							<div class="title">個人年班資料</div>
+							<div style="background-color: #FFF;padding-bottom: 15px;">
+								<div class="col-md-6 col-xs-12">
+									<div class="row">
+										<div class="col-md-3 col-xs-3">上學期</div>
+										<div class="col-md-3 col-xs-3">三年5班</div>
+										<div class="col-md-2 col-xs-2">15號</div>
+										<div class="col-md-4 col-xs-4">王至宜老師</div>
+
+										<div class="col-md-3 col-xs-3">下學期</div>
+										<div class="col-md-3 col-xs-3">三年5班</div>
+										<div class="col-md-2 col-xs-2">15號</div>
+										<div class="col-md-4 col-xs-4">王至宜老師</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="row">
+										<div class="col-md-3 col-xs-3">上學期</div>
+										<div class="col-md-3 col-xs-3">四年5班</div>
+										<div class="col-md-2 col-xs-2">15號</div>
+										<div class="col-md-4 col-xs-4">王至宜老師</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				
+			
+		</div>
+	</div>
+</div>
+<script>
+		$('.tree-toggle').click(function () {	$(this).parent().children('ul.tree').toggle(200);
+});
+$(function(){
+$('.tree-toggle').parent().children('ul.tree').toggle(200);
+})
+</script>
+</body>
+</html>

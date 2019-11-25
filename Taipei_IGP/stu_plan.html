@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>課程計畫表</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script   src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+
+			<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog modal-lg" role="document">
+			    <div class="modal-content" style="padding:20px;">
+			    	<div class="b_title">
+			    		<span class="glyphicon glyphicon-folder-open"></span>  
+			    		<span> 複製歷年課程計畫</span>
+			    	</div>
+			    	<form action="" class="form-inline">
+				      <select name="" id="" class="form-control" style="width: 49%;float: left;">
+				      	<option value="">107學年度</option>
+				      </select>
+				      <select name="" id="" class="form-control" style="width: 49%;float: left;">
+				      	<option value="">資優國文</option>
+				      </select>
+			      </form>
+			      <div class="clearfix"></div>
+			      <div style="text-align: center;padding-top: 10px;">
+			      	<button class="gray-btn">取消</button>
+			      	<button class="b-btn">複製</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="menuBar">
+				<ul>
+		    		<li>
+		    			<img src="img/01.svg" alt="">首頁</li>
+		    		<li><img src="img/02.svg" alt="">個案管理</li>
+		    		<li class="active"><img src="img/03.svg" alt="">課程計畫</li>
+		    		<li><img src="img/04.svg" alt="">設定</li>
+		    	</ul>
+			</div>
+			<div class="index_main">
+				<!-- 個案管理----老師/年級/分類 選擇區塊 -->
+				<div class="top">
+					<div class="tools">
+						<!-- <button class="b-btn"><span class="glyphicon glyphicon-new-window"></span> 匯出</button> -->
+						<button class="b-btn" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-paste"></span> 複製課程計畫</button>
+						<button class="g-btn"><span class="glyphicon glyphicon-pencil"></span> 編輯課程計畫</button>
+					</div>
+				</div>
+				<div class="stu_plan">
+					<div class="b_title">
+						<span class="glyphicon glyphicon-list-alt"></span>
+						 資優資源班課程計畫
+						 <span class="color_blue">資優國文四年級</span>
+					</div>
+						<div class="plan_area">
+							<div class="col-md-6">
+								<span class="d_title">課程名稱</span>
+								<span class="className">資優國文</span>
+							</div>
+							<div class="col-md-6">
+								<span class="d_title">課程類別</span>
+								<span>必修</span>
+							</div>
+							<div class="col-md-6">
+								<span class="d_title">每週節數</span>
+								<span>4</span>
+								<button class="tiffany-btn s-btn">
+									<span class="glyphicon glyphicon-pencil"></span> 編輯
+								</button>
+							</div>
+							<div class="col-md-6">
+								<span class="d_title">部定課程調整</span>
+								<span>國語文</span>
+							</div>
+							<div class="col-md-6">
+								<span class="d_title">課程調整原則</span>
+								<span>國語文</span>
+							</div>
+							<div class="col-md-6">
+								<span class="d_title">校定課程</span>
+								<span>特殊需求(專長領域)</span>
+							</div>
+						</div>
+						<div class="plan_area">
+							<div class="col-md-12">
+								<span class="d_title">教學者</span>
+								<span>
+									<span>劉一天</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<button class="tiffany-btn s-btn">
+									<span class="glyphicon glyphicon-plus"></span> 新增老師
+								</button>
+							</div>
+							<div class="col-md-3">
+								<span class="d_title">教學對象</span>
+								<span>四年級</span>
+							</div>
+							<div class="col-md-9 stuName">
+								<span>
+									<span>一年1班 1號 王小明</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<span>
+									<span>一年1班 1號 王小明</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<span>
+									<span>一年1班 1號 王小明</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<span>
+									<span>一年1班 1號 王小明</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<span>
+									<span>一年1班 1號 王小明</span><button class="red-f-btn"><span class="glyphicon glyphicon-remove"></span></button>
+								</span>
+								<button class="tiffany-btn s-btn">
+									<span class="glyphicon glyphicon-plus"></span> 新增學生
+								</button>
+							</div>
+						</div>
+						<div class="plan_area">
+							<div class="left">
+									<span class="d_title" style="padding-left: 15px;">核心素養</span>
+								</div>
+								<div class="right">
+									<div class="c_title">總綱</div>
+									<ul class="study_item">
+										<li>
+											<span>A1</span>
+											<span>剪刀石頭布的意義</span>
+										</li>
+										<li>
+											<span>A2</span>
+											<span>找朋友</span>
+										</li>
+										<li>
+											<span>A3</span>
+											<span>黑白猜的意義</span>
+										</li>
+									</ul>
+									<div class="c_title">領綱</div>
+									<ul class="study_item">
+										<li>
+											<span>A1</span>
+											<span>剪刀石頭布的意義</span>
+										</li>
+										<li>
+											<span>A2</span>
+											<span>找朋友</span>
+										</li>
+										<li>
+											<span>A3</span>
+											<span>黑白猜的意義</span>
+										</li>
+									</ul>
+								</div>
+						</div>
+						<div class="plan_area">
+							<div class="col-md-12">
+								<span class="d_title">議題融入</span>
+								<span>家庭教育、生命教育、性平教育、多元文化、閱讀素養</span>
+							</div>
+						</div>
+						<div class="plan_area">
+							<div class="col-md-12">
+								<span class="d_title">與其他領域/科目之連結</span>
+								<span>無</span>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="week_class_table">
+							<div class="t_head">
+								<ul>
+									<li>週次</li>
+									<li>單元名稱</li>
+									<li>課程內容說明</li>
+									<li>備註</li>
+								</ul>
+							</div>
+							<div class="t_body">
+								<ul>
+									<li><span class="weekTime">1</span></li>
+									<li>第一課 燭之武退秦師</li>
+									<li>
+									一、知識探求方面：
+							       1-1認識左傳的性質及其在文學、史學上的地位。
+							       1-2了解外交人才對於國家安全的重要性。
+									二、能力培養方面：
+							       2-1能於寫作時運用對話以呈現人物個性和複雜的情節。
+							       2-2練習運用演說或辯論方式，將自己對事物的看法，清楚的表達出來。
+							       2-3學習如何將一事件之始末有條理的加以記敘。
+									三、情意陶冶方面：
+							       3-1培養能為群體之利益而忘卻私人恩怨的胸懷。
+							       3-2體會如能具備流利的口才，並嫻熟於當前情勢，將有助於意見的表達、事理的剖析。
+
+									</li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

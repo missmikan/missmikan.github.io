@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>個案管理師分類</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div id="myOverlay" class="overlay">
+		  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		  <div class="overlay-content">
+		    <form action="/action_page.php">
+		      <input type="text" placeholder="搜尋老師或學生" name="search">
+		      <button type="submit"><span class="glyphicon glyphicon-search"></span></i></button>
+		    </form>
+		  </div>
+		</div>
+	    <div class="menuBar">
+	    	<ul>
+	    		<li>
+	    			<img src="img/01.svg" alt="">首頁</li>
+	    		<li class="active"><img src="img/02.svg" alt="">個案管理</li>
+	    		<li><img src="img/03.svg" alt="">課程計畫</li>
+	    		<li><img src="img/04.svg" alt="">設定</li>
+	    	</ul>
+	    	<div class="search hidden-xs">
+    			<input type="text" placeholder="搜尋老師或學生">
+    			<button class="b-btn"><span class="glyphicon glyphicon-search"></span></button>
+    		</div>
+    		<div class="search_mobile visible-xs">
+    			<button onclick="openSearch()"><span class="glyphicon glyphicon-search"></span></button>
+    		</div>
+	    </div>
+	    <div class="index_main">
+	    	<!-- 個案管理----老師/年級/分類 選擇區塊 -->
+	    	<div class="top">
+	    		<div class="all_tag">
+					<ul class="tag_1">
+						<!-- .active為選取狀態 -->
+						<li class="active"><span class="glyphicon glyphicon-user"></span> 個案管理師</li>
+						<li><span class="glyphicon glyphicon-th-list"></span> 年級</li>
+					</ul>
+					<ul class="tag_2">
+						<!-- .active為選取狀態 -->
+						<li class=" tag_A active">一般智能(<span>8</span>)</li>
+						<li class="tag_B">學術(<span>5</span>)</li>
+						<li class="tag_C">音樂(<span>8</span>)</li>
+						<li class="tag_D">美術(<span>8</span>)</li>
+						<li class="tag_E">舞蹈(<span>8</span>)</li>
+						<li class="tag_F">創造(<span>8</span>)</li>
+						<li class="tag_G">領導(<span>8</span>)</li>
+						<li class="tag_H">其他(<span>8</span>)</li>
+					</ul>
+	    		</div>
+	    		<div class="tools">
+	    			
+		    		<button class="g-btn"><span class="glyphicon glyphicon-plus"></span>新增資優生</button>
+	    		</div>
+    		</div>
+			<!-- 個案管理----老師 -->
+			<div class="teacher_table">
+				<div class="t_head">
+					<ul>
+						<li>個管師</li>
+						<li>管理學生</li>
+						<li>資優類別</li>
+						<li>安置型態</li>
+					</ul>
+				</div>
+				<div class="t_body">
+					<!-- 一個老師 -->
+					<div class="cell">
+						<div class="cell_L">
+							<span>劉一天</span>(<a>4</a>)
+							<button class="b-f-btn">
+								<span class="glyphicon glyphicon-list-alt"></span>
+							</button>
+						</div>
+						<div class="cell_R">
+							<!-- 學生1 -->
+							<ul>
+								
+								<li>
+									<div>
+										<span>三年1班</span>
+										<span>14號</span>
+										<a>林譽維</a>
+										<button class="b-f-btn sche_btn" data-toggle="modal" data-target="#myModal">
+											<span class="glyphicon glyphicon-list-alt"></span>
+										</button>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span class="tag_A">一般智能</span>
+										<span class="tag_B">學術</span>
+										<span class="tag_C">音樂</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>縮短修業年限(全部學科跳級)</span>
+									</div>
+								</li>
+							</ul>
+							<!-- 學生2 -->
+							<ul>
+								
+								<li>
+									<div>
+										<span>三年1班</span>
+										<span>14號</span>
+										<a>林譽維</a>
+										<button class="b-f-btn sche_btn">
+											<span class="glyphicon glyphicon-list-alt"></span>
+										</button>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span class="tag_A">一般智能</span>
+										<span class="tag_B">學術</span>
+										<span class="tag_C">音樂</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>縮短修業年限(全部學科跳級)</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<!-- 老師end -->
+					<!-- 一個老師 -->
+					<div class="cell">
+						<div class="cell_L">
+							<span>劉一天</span>(<a>4</a>)
+							<button class="b-f-btn">
+								<span class="glyphicon glyphicon-list-alt"></span>
+							</button>
+						</div>
+						<div class="cell_R">
+							<!-- 學生1 -->
+							<ul>
+								
+								<li>
+									<div>
+										<span>三年1班</span>
+										<span>14號</span>
+										<a>林譽維</a>
+										<button class="b-f-btn sche_btn">
+											<span class="glyphicon glyphicon-list-alt"></span>
+										</button>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span class="tag_A">一般智能</span>
+										<span class="tag_B">學術</span>
+										<span class="tag_C">音樂</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>縮短修業年限(全部學科跳級)</span>
+									</div>
+								</li>
+							</ul>
+							<!-- 學生2 -->
+							<ul>
+								
+								<li>
+									<div>
+										<span>三年1班</span>
+										<span>14號</span>
+										<a>林譽維</a>
+										<button class="b-f-btn sche_btn">
+											<span class="glyphicon glyphicon-list-alt"></span>
+										</button>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span class="tag_A">一般智能</span>
+										<span class="tag_B">學術</span>
+										<span class="tag_C">音樂</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>縮短修業年限(全部學科跳級)</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<!-- 老師end -->
+
+				</div>
+			</div>
+	    </div>
+    </div>
+    <script>
+	function openSearch() {
+	  document.getElementById("myOverlay").style.display = "block";
+	}
+
+	function closeSearch() {
+	  document.getElementById("myOverlay").style.display = "none";
+	}
+	</script>
+</body>
+</html>
+
+						
