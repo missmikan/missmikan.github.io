@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap");
 .menuBar ul, .t_head ul, .t_body ul, .index_main .top .all_tag ul, .index_main .left_area .t_head ul, .index_main .left_area .t_body ul, .schedule ul, .stu_data .head_data .right ul {
   list-style: none;
   padding-left: 0;
@@ -11,7 +12,7 @@
   font-size: 14px; }
 
 .tiffany-btn, .b-f-btn, .gray-f-btn, .s-btn {
-  padding: 1px 6px;
+  padding: 4px 6px;
   border: 0;
   border-radius: 3px;
   font-size: 10px; }
@@ -154,7 +155,9 @@ h5 {
 
 body {
   background-color: #F2F2F2;
-  font-size: 15px; }
+  font-size: 15px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto', sans-serif; }
 
 .wrapper {
   max-width: 1000px;
@@ -283,7 +286,7 @@ body {
     bottom: 2px; }
 
 .t_head {
-  background-color: #385F95; }
+  background-color: #69a4fd; }
   .t_head ul {
     width: 100%;
     display: -webkit-box;
@@ -295,7 +298,7 @@ body {
     .t_head ul li {
       display: inline-block;
       color: #FFF;
-      padding: 8px; }
+      padding: 4px 8px; }
 
 .t_body ul {
   width: 100%;
@@ -442,7 +445,7 @@ body {
         align-self: baseline; }
   .index_main .search {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     margin-right: -3px;
     float: right; }
     @media (max-width: 768px) {
@@ -485,9 +488,12 @@ body {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
     .index_main .left_area .t_head {
-      background-color: #385F95;
+      background-color: #69a4fd;
       -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
       .index_main .left_area .t_head ul {
@@ -495,7 +501,7 @@ body {
         .index_main .left_area .t_head ul li {
           display: inline-block;
           color: #FFF;
-          padding: 8px 3px; }
+          padding: 4px 3px; }
           .index_main .left_area .t_head ul li:first-child {
             width: 17%;
             text-align: center; }
@@ -1200,7 +1206,7 @@ li {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    padding: 0 1em;
+    padding: 0 0 0 1em;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;

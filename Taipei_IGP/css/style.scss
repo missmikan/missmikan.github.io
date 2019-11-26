@@ -1,4 +1,6 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap');
+
 $main-blue:#385F95;
 
 %ul_style{
@@ -13,7 +15,7 @@ $main-blue:#385F95;
 	font-size: 14px;
 }
 %small_button{
-	padding: 1px 6px;
+	padding: 4px 6px;
     border: 0;
     border-radius: 3px;
     font-size: 10px;
@@ -172,6 +174,8 @@ h5{
 body{
 	background-color: #F2F2F2;
 	font-size:15px;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .wrapper{
 	max-width:1000px;
@@ -332,7 +336,7 @@ body{
 	}
 }
 .t_head{
-	background-color: #385F95;
+	background-color: #69a4fd;
 	ul{
 		width:100%;
 		display: flex;
@@ -341,7 +345,7 @@ body{
 		li{
 			display:inline-block;
 			color:#FFF;
-			padding:8px;
+			padding:4px 8px;
 		}
 	}
 }
@@ -517,7 +521,7 @@ body{
 
 	.search{
 		display: inline-block;
-		margin-bottom: 9px;
+		margin-bottom: 10px;
 		margin-right: -3px;
 		float:right;
 		@media (max-width:768px){
@@ -556,9 +560,10 @@ body{
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 5px;
+			align-items: center;
 		}
 		.t_head{
-			background-color: #385F95;
+			background-color: #69a4fd;
 			box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
 			ul{
 				width:100%;
@@ -566,7 +571,7 @@ body{
 				li{
 					display:inline-block;
 					color:#FFF;
-					padding:8px 3px;
+					padding:4px 3px;
 					&:first-child{
 						width:17%;
 						text-align:center;
@@ -1427,7 +1432,7 @@ li{
 	.head_data{
 		width:calc(100% - 200px);
 		order:2;
-		padding:0 1em;
+		padding:0 0 0 1em;
 		display: inline-flex;
 		flex-wrap: wrap;
 		align-self: baseline;
