@@ -85,10 +85,11 @@ h5 {
 
 .b_title {
   margin-top: 0.5em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #3D4550;
   width: 100%;
-  height: 30px; }
+  height: 30px;
+  font-weight: 500; }
 
 .c_title {
   margin-top: 0.4em;
