@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <title>課程繳費查詢</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/table.css">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- 複合式搜尋start. -->
+	<form action="" class="form form-inline" style="max-width: 1200px;margin:10px auto;">
+		<label for="searchClass">課程名稱</label>
+		<input type="text" placeholder="查詢課程名稱" id="searchClass" class="form-control">
+		
+		<label for="YearClass">學生年班</label>
+		<select name="" id="YearClass" class="form-control">
+			<<optgroup label="一年級">
+				<option value="">一年1班</option>
+				<option value="">一年2班</option>
+			</optgroup>
+			<<optgroup label="二年級">
+				<option value="">二年1班</option>
+				<option value="">二年2班</option>
+			</optgroup>
+		</select>
+
+		<label for="StuName">學生姓名</label>
+		<input type="text" placeholder="請輸入學生姓名" id="StuName" class="form-control">
+
+		<label for="Week">星期</label>
+		<select name="" id="Week" class="form-control">
+			<option value="">一</option>
+			<option value="">二</option>
+			<option value="">三</option>
+			<option value="">四</option>
+			<option value="">五</option>
+			<option value="">六</option>
+			<option value="">日</option>
+		</select>
+
+		<label for="paytimes">銷帳次數</label>
+		<select name="" id="paytimes" class="form-control">
+			<option value="">1次</option>
+			<option value="">2次以上</option>
+		</select>
+
+		<label for="pay_status">繳費狀態</label>
+		<select name="" id="pay_status" class="form-control">
+			<option value="">尚未繳費</option>
+			<option value="">超商繳費</option>
+			<option value="">銀行繳費</option>
+		</select>
+		<button class="send">送出查詢</button>
+	</form>
+	<!-- 複合式查詢end. -->
+	<!-- 課程繳費清冊 -->
+    <div class="paybook_class">
+		
+    	<table class="activity_table" cellspacing="0">
+    		<tr>
+    			<th>編號</th>
+    			<th>課程名稱</th>
+    			<th>名額/錄取人數</th>
+    			<th>應收總額</th>
+    			<th>已繳人數</th>
+    			<th>已繳總額</th>
+    			<th>講師費</th>
+    			<th>餐費</th>
+    			<th>用餐人數</th>
+    		</tr>
+    		<tr>
+    			<td>01</td>
+    			<td><a href="table2.html">三.科學班</a></td>
+    			<td>20 / 18</td>
+    			<td><span class="money">3200</span></td>
+    			<td>15</td>
+    			<td><span class="money">2800</span></td>
+    			<td><span class="money">500</span></td>
+    			<td><span class="money">450</span></td>
+    			<td>18</td>
+    		</tr>
+    		<tr>
+    			<td>02</td>
+    			<td><a href="table2.html">五.直排輪班</a></td>
+    			<td>20 / 18</td>
+    			<td><span class="money">3200</span></td>
+    			<td>15</td>
+    			<td><span class="money">2800</span></td>
+    			<td><span class="money">500</span></td>
+    			<td><span class="money">450</span></td>
+    			<td>18</td>
+    		</tr>
+    	</table>
+    </div>
+
+</body>
+</html>
