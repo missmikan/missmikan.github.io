@@ -172,17 +172,28 @@ h1,h2,h3,h4,h5,h6,p{
 	background-color: #3B7D86;
 	border-radius: 3px 3px 0 0 ;
 	padding: 5px 0;
+	position: relative;
+}
+.page-02-step-top span.step_number{
+	font-size: 3em;
+    position: absolute;
+    left: 0.4em;
+    top: -0.6em;
+    color: #7cfff4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .page-02-step-img{
-	display: block;
-	text-align: center;
-	padding: 5px;
-	width: 60%;
-	height: 100px;
-	background-color: #EFEFEF;
-	margin: 5px auto 5px;
-	border-radius: 5px;
+	display: flex;
+    text-align: center;
+    padding: 5px;
+    width: 60%;
+    height: 100px;
+    background-color: #EFEFEF;
+    margin: 5px auto 5px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-02-step-word{
