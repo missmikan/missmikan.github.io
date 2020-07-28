@@ -1,123 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>校園出入訪客登記</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,600|Roboto&display=swap');
-		body{
-			font-size: 16px;
-			background-color: #f8fbff;
-		}
-		nav{
-			font-size: 2.4rem;
-			background-color: #0288D1;
-			padding: 0.5rem;
-			text-align: center;
-			color: #FFF;
-		}
-		h3{
-			display: inline-block;
-			min-width: 4.4em;
-			text-align: right;
-			margin-right: 1em;
-			font-size: 1.3em;
-		}
-		.container{
-			background-color: #FFF;
-		}
-		.reason{
-			display: flex;
-			align-items: baseline;
-		}
-		.form-check{
-			width: calc(100% - 9em);
-			display: inline-block;
-		}
-		.form-check > span{
-			display: inline-block;
-		}
-		.write{
-			color: #e84950;
-			margin-left: 0.4rem;
-		}
-		.yellow{
-			color: #aefff8;
-		}
-		label{
-			min-width: 4em;
-			margin-right: 1.2rem;
-			font-size: 1.8rem;
-			margin-bottom: 1rem;
-		}
-
-	</style>
-	
-</head>
-<body class="Jiayi_bg">
-	<nav>
-		<!-- 這裡要塞校名簡稱 -->
-		<span class="yellow">市立幸安國小</span>校園出入訪客登記
-	</nav>
-	<div class="container">
-		<h2>請填寫訪客資料</h2>
-		<form action="" class="form row">
-			<div class="col-md-12 reason">
-				<h3><span class="write">事由</span></h3>
-				<div class="form-check">
-					<span><input type="radio" name="reason" id="one" value="one"><label for="one"> 洽公</label></span>
-					<span><input type="radio" name="reason" id="two" value="two"><label for="two"> 訪談</label></span>
-					<span><input type="radio" name="reason" id="six" value="six"><label for="six"> 授課</label></span>
-					<span><input type="radio" name="reason" id="three" value="three"><label for="three"> 家長探視</label></span>
-					<span><input type="radio" name="reason" id="four" value="four"><label for="four"> 廠商作業</label></span>
-					<span><input type="radio" name="reason" id="five" value="five"><label for="five"> 志工服務</label></span>
-					
-					<span><input type="radio" name="reason" id="seven" value="seven"><label for="seven"> 租借場地</label></span>
+	<head>
+		<meta charset="UTF-8">
+		<title>校園出入訪客登記</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,600|Roboto&display=swap');
+			body{
+				font-size: 16px;
+				background-color: #f8fbff;
+			}
+			nav{
+				font-size: 2.4rem;
+			    background-color: #ef8e55;
+			    padding: 0.8rem;
+			    text-align: center;
+			    color: #FFF;
+			    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+			    position: fixed;
+			    width: 100%;
+			}
+			h3{
+				display: inline-block;
+				min-width: 4em;
+				text-align: right;
+				margin-right: 1em;
+				font-size: 1.1em;
+			}
+			.container{
+				background-color: #FFF;
+			}
+			.reason{
+				display: flex;
+				align-items: baseline;
+			}
+			.form-check{
+				width: calc(100% - 3em);
+				display: inline-flex;
+				flex-wrap: wrap;
+			}
+			/* .form-check > span{
+				display: inline-block;
+			} */
+			.point{
+				color: #ef8e54;
+			}
+			.yellow{
+				color: #FFF;
+				font-weight: 500;
+			}
+			.inputGroup {
+				background-color: #fff;
+				display: inline-block;
+				position: relative;
+				margin-right: 0.3em;
+				margin-bottom: 0.5em;
+			}
+			.inputGroup label {
+				padding: 7px 10px;
+				border-radius: 3px;
+				width: 100%;
+				display: block;
+				text-align: left;
+				color: #345a82;
+				cursor: pointer;
+				position: relative;
+				z-index: 2;
+				-webkit-transition: color 200ms ease-in;
+				transition: color 200ms ease-in;
+				overflow: hidden;
+				border: 1px solid #345a82;
+				font-size: 1.1em;
+				margin-bottom: 0;
+			}
+			.inputGroup label:before {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				content: '';
+				background-color: #345a82;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%) scale3d(1, 1, 1);
+				transform: translate(-50%, -50%) scale3d(1, 1, 1);
+				-webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+				transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+				opacity: 0;
+				z-index: -1;
+			}
+			.inputGroup label:after {
+				content: '';
+			}
+			.inputGroup input:checked ~ label {
+				color: #fff;
+			}
+			.inputGroup input:checked ~ label:before {
+				-webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
+				transform: translate(-50%, -50%) scale3d(56, 56, 1);
+				opacity: 1;
+			}
+			.inputGroup input:checked ~ label:after {
+				background-color: #54E0C7;
+				border-color: #54E0C7;
+				display: none;
+			}
+			.inputGroup input {
+				position: absolute;
+				left: 0px;
+				top: 50%;
+				visibility: hidden;
+			}
+			label,
+			label::before,
+			label::after {
+				box-sizing: inherit;
+			}
+			.hr{
+				color: #999;
+				margin: 1em auto 0.5em;
+				text-align: center;
+			}
+			.hr:before,.hr:after{
+			    content: " ";
+			    width: 40%;
+			    height: 1px;
+			    background-color: #EFEFEF;
+			    display: inline-block;
+			    position: relative;
+			    bottom: 5px;
+			    clear: both;
+			}
+		</style>
+		
+	</head>
+	<body class="Jiayi_bg">
+		<nav>
+			<!-- 這裡要塞校名簡稱 -->
+			<span class="yellow">市立幸安國小</span>校園出入訪客登記
+		</nav>
+		<div class="container">
+			<h2>請填寫訪客資料</h2>
+			<form action="" class="form row">
+				<div class="col-md-12 reason">
+					<h3 class="point">事由</h3>
+					<div class="form-check">
+						<span class="inputGroup"><input type="radio" name="reason" id="one" value="one"><label for="one"> 洽公</label></span>
+						<span class="inputGroup"><input type="radio" name="reason" id="two" value="two"><label for="two"> 訪談</label></span>
+						<span class="inputGroup"><input type="radio" name="reason" id="six" value="six"><label for="six"> 授課</label></span>
+						<span class="inputGroup"><input type="radio" name="reason" id="three" value="three"><label for="three"> 家長探視</label></span>
+						<span class="inputGroup"><input type="radio" name="reason" id="four" value="four"><label for="four"> 廠商作業</label></span>
+						<span class="inputGroup"><input type="radio" name="reason" id="five" value="five"><label for="five"> 志工服務</label></span>
+						
+						<span class="inputGroup"><input type="radio" name="reason" id="seven" value="seven"><label for="seven"> 租借場地</label></span>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<h3><span class="write">拜訪單位</span></h3>
-				<select class="form-control" style="display:inline-block;width: calc(100% - 10em)">
-				  <option>選擇單位</option>
-				</select>
-			</div>
-			<div class="col-md-6">
-				<h3><span class="write">拜訪人員</span></h3>
-				<select class="form-control" style="display:inline-block;width: calc(100% - 10em)">
-				  <option>選擇人員</option>
-				</select>
-			</div>
-			<div class="col-md-6">
-				<h3>姓名</h3>
-				<input type="text" class="form-control" placeholder="請輸入姓名" style="display:inline-block;width: calc(100% - 10em)">
-			</div>
-			<div class="col-md-6">
-				<h3>來訪人數</h3>
-				<button class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button>
-				<input type="text" class="form-control" placeholder="人數" style="display:inline-block;width: calc(100% - 15.8em)">
-				<button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-			</div>
-			<div class="col-md-6">
-				<h3>手機號碼</h3>
-				<input type="text" class="form-control" placeholder="請輸入手機號碼" style="display:inline-block;width: calc(100% - 10em)">
-			</div>
-			<div class="col-md-6">
-				<h3>身分證號</h3>
-				<input type="text" class="form-control" placeholder="請輸入身分證字號" style="display:inline-block;width: calc(100% - 10em)">
-			</div>
-			<div class="col-md-6">
-				<h3>車牌號碼</h3>
-				<input type="text" class="form-control" placeholder="請輸入車牌號碼" style="display:inline-block;width: calc(100% - 10em)">
-			</div>
-			<div class="clearfix"></div>
-			<div style="padding:2rem;text-align: center;">
-				<button class="btn btn-primary btn-lg btn-block">確定送出</button>
-			</div>
-			
-		</form>
-	</div>
-</body>
+				<div class="col-md-6">
+					<h3 class="point">拜訪單位</h3>
+					<select class="form-control" style="display:inline-block;width: calc(100% - 8em)">
+						<option>選擇單位</option>
+					</select>
+				</div>
+				<div class="col-md-6">
+					<h3 class="point">拜訪人員</h3>
+					<select class="form-control" style="display:inline-block;width: calc(100% - 8em)">
+						<option>選擇人員</option>
+					</select>
+				</div>
+				<div class="clearfix"></div>
+				<div class="hr">選填</div>
+				<div class="col-md-6">
+					<h3>姓名</h3>
+					<input type="text" class="form-control" placeholder="請輸入姓名" style="display:inline-block;width: calc(100% - 8em)">
+				</div>
+				<div class="col-md-6">
+					<h3>來訪人數</h3>
+					<button class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button>
+					<input type="text" class="form-control" placeholder="人數" style="display:inline-block;width: calc(100% - 13.8em)">
+					<button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+				</div>
+				<div class="col-md-6">
+					<h3>手機號碼</h3>
+					<input type="text" class="form-control" placeholder="請輸入手機號碼" style="display:inline-block;width: calc(100% - 8em)">
+				</div>
+				<div class="col-md-6">
+					<h3>身分證號</h3>
+					<input type="text" class="form-control" placeholder="請輸入身分證字號" style="display:inline-block;width: calc(100% - 8em)">
+				</div>
+				<div class="col-md-6">
+					<h3>車牌號碼</h3>
+					<input type="text" class="form-control" placeholder="請輸入車牌號碼" style="display:inline-block;width: calc(100% - 8em)">
+				</div>
+				<div class="clearfix"></div>
+				<div style="padding:2rem;text-align: center;">
+					<button class="btn btn-primary btn-lg btn-block">確定送出</button>
+				</div>
+				
+			</form>
+		</div>
+	</body>
 </html>
