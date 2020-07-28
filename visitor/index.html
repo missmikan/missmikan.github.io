@@ -19,8 +19,25 @@
 			text-align: center;
 			color: #FFF;
 		}
+		h3{
+			display: inline-block;
+			min-width: 4.4em;
+			text-align: right;
+			margin-right: 1em;
+		}
 		.container{
 			background-color: #FFF;
+		}
+		.reason{
+			display: flex;
+			align-items: baseline;
+		}
+		.form-check{
+			width: calc(100% - 9em);
+			display: inline-block;
+		}
+		.form-check > span{
+			display: inline-block;
 		}
 		.write{
 			color: red;
@@ -28,12 +45,13 @@
 			margin-left: 0.4rem;
 		}
 		label{
-			margin-right: 0.25rem;
+			min-width: 4em;
+			margin-right: 1.2rem;
+			font-size: 2rem;
+			margin-bottom: 1rem;
 		}
 
 	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	
 </head>
 <body class="Jiayi_bg">
@@ -41,51 +59,52 @@
 	<div class="container">
 		<h2>請填寫訪客資料</h2>
 		<form action="" class="form row">
-			<div class="col-md-12">
-				<h3>事由<span class="write">※必填</span></h3>
+			<div class="col-md-12 reason">
+				<h3><span class="write">※</span>事由</h3>
 				<div class="form-check">
-					<input type="radio" name="reason" id="one" value="one"><label for="one"> 洽公</label>
-					<input type="radio" name="reason" id="two" value="two"><label for="two"> 訪談</label>
-					<input type="radio" name="reason" id="three" value="three"><label for="three"> 家長探視</label>
-					<input type="radio" name="reason" id="four" value="four"><label for="four"> 廠商作業</label>
-					<input type="radio" name="reason" id="five" value="five"><label for="five"> 志工服務</label>
-					<input type="radio" name="reason" id="six" value="six"><label for="six"> 授課</label>
-					<input type="radio" name="reason" id="seven" value="seven"><label for="seven"> 租借場地</label>
+					<span><input type="radio" name="reason" id="one" value="one"><label for="one"> 洽公</label></span>
+					<span><input type="radio" name="reason" id="two" value="two"><label for="two"> 訪談</label></span>
+					<span><input type="radio" name="reason" id="six" value="six"><label for="six"> 授課</label></span>
+					<span><input type="radio" name="reason" id="three" value="three"><label for="three"> 家長探視</label></span>
+					<span><input type="radio" name="reason" id="four" value="four"><label for="four"> 廠商作業</label></span>
+					<span><input type="radio" name="reason" id="five" value="five"><label for="five"> 志工服務</label></span>
+					
+					<span><input type="radio" name="reason" id="seven" value="seven"><label for="seven"> 租借場地</label></span>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<h3>拜訪單位<span class="write">※必填</span></h3>
-				<select class="form-control">
+				<h3><span class="write">※</span>拜訪單位</h3>
+				<select class="form-control" style="display:inline-block;width: calc(100% - 10em)">
 				  <option>選擇單位</option>
 				</select>
 			</div>
 			<div class="col-md-6">
-				<h3>拜訪人員<span class="write">※必填</span></h3>
-				<select class="form-control">
+				<h3><span class="write">※</span>拜訪人員</h3>
+				<select class="form-control" style="display:inline-block;width: calc(100% - 10em)">
 				  <option>選擇人員</option>
 				</select>
 			</div>
 			<div class="col-md-6">
 				<h3>姓名</h3>
-				<input type="text" class="form-control" placeholder="請輸入姓名">
+				<input type="text" class="form-control" placeholder="請輸入姓名" style="display:inline-block;width: calc(100% - 10em)">
 			</div>
 			<div class="col-md-6">
 				<h3>來訪人數</h3>
 				<button class="btn btn-default"><span class="glyphicon glyphicon-minus"></span></button>
-				<input type="text" class="form-control" placeholder="請輸入姓名" style="display:inline-block;width: calc(100% - 6em)">
+				<input type="text" class="form-control" placeholder="人數" style="display:inline-block;width: calc(100% - 15.8em)">
 				<button class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
 			</div>
 			<div class="col-md-6">
 				<h3>手機號碼</h3>
-				<input type="text" class="form-control" placeholder="請輸入手機號碼">
+				<input type="text" class="form-control" placeholder="請輸入手機號碼" style="display:inline-block;width: calc(100% - 10em)">
 			</div>
 			<div class="col-md-6">
-				<h3>身分證字號</h3>
-				<input type="text" class="form-control" placeholder="請輸入身分證字號">
+				<h3>身分證號</h3>
+				<input type="text" class="form-control" placeholder="請輸入身分證字號" style="display:inline-block;width: calc(100% - 10em)">
 			</div>
 			<div class="col-md-6">
 				<h3>車牌號碼</h3>
-				<input type="text" class="form-control" placeholder="請輸入車牌號碼">
+				<input type="text" class="form-control" placeholder="請輸入車牌號碼" style="display:inline-block;width: calc(100% - 10em)">
 			</div>
 			<div class="clearfix"></div>
 			<div style="padding:2rem;text-align: center;">
