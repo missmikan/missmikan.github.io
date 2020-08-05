@@ -53,7 +53,7 @@ header {
       position: relative;
       top: 2px; }
   .request .alle_list {
-    font-size: 14px; }
+    font-size: 15px; }
   @media screen and (max-width: 768px) {
     .request .alle_list.card-w {
       padding: 0;
@@ -94,12 +94,12 @@ header {
           .request .request_list_width li ul li span {
             display: inline-block; }
           .request .request_list_width li ul li:nth-child(1) {
-            width: 55%;
+            width: 50%;
             -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
             order: 1; }
           .request .request_list_width li ul li:nth-child(2) {
-            width: 25%;
+            width: 30%;
             -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
             order: 2;

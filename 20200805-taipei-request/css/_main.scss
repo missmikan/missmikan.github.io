@@ -54,7 +54,7 @@ header {
 		}
   }
   .alle_list{
-    font-size: 14px;
+    font-size: 15px;
   }
   .alle_list.card-w {
     @include mobile {
@@ -108,11 +108,11 @@ header {
               display: inline-block;
             }
             &:nth-child(1) {
-              width: 55%;
+              width: 50%;
               order: 1;
             }
             &:nth-child(2) {
-              width: 25%;
+              width: 30%;
 							order: 2;
 							text-align: right;
             }
