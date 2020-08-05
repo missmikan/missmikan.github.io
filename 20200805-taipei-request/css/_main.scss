@@ -52,7 +52,10 @@ header {
 			position: relative;
 			top:2px;
 		}
-	}
+  }
+  .alle_list{
+    font-size: 14px;
+  }
   .alle_list.card-w {
     @include mobile {
       padding: 0;
