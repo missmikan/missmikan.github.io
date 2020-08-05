@@ -53,7 +53,7 @@ header {
       position: relative;
       top: 2px; }
   .request .alle_list {
-    font-size: 15px; }
+    font-size: 14px; }
   @media screen and (max-width: 768px) {
     .request .alle_list.card-w {
       padding: 0;
