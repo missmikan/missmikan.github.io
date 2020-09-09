@@ -3,9 +3,11 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-home/blob/master/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 body {
   padding-top: 56px;
   font-size: 14px;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 .h1, h1 {
     font-size: 1.5rem;
