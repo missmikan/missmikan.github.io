@@ -30,3 +30,9 @@ body {
 .bg-dark {
     background-color: #2767a7!important;
 }
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+}
