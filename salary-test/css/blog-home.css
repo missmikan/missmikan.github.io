@@ -5,4 +5,26 @@
  */
 body {
   padding-top: 56px;
+  font-size: 14px;
+}
+.h1, h1 {
+    font-size: 1.5rem;
+}
+.h2, h2 {
+    font-size: 1.3rem;
+}
+.h5, h5 {
+    font-size: 1.1rem;
+}
+.card-body {
+    padding: 0.7rem 1rem;
+}
+.pb-5, .py-5{
+	padding-bottom: 1rem !important;
+}
+.pt-5, .py-5 {
+    padding-top: 1rem !important;
+}
+.bg-dark {
+    background-color: #2767a7!important;
 }
