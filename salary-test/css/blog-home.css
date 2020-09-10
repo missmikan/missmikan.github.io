@@ -36,3 +36,9 @@ footer{
 	bottom: 0;
 	z-index: 1;
 }
+.card-footer {
+    padding: .5rem 1.25rem;
+    background-color: rgba(0,0,0,.0);
+    border-top: 0px;
+    text-align: right;
+}
