@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box;
+}
+.bg_cover{
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../images/bg.png');
+	background-size: cover;
+	background-position: center;
+	.titles{
+		display: block;
+		position: absolute;
+		top:20vh;
+		left:10vw;
+		
+		h2{
+			font-size: 2.8em;
+			color: $text-color;
+			font-weight: 800;
+			margin-bottom: 0.2em;
+		}
+		h4{
+			font-size: 2.2em;
+			color: $text-color;
+			font-weight: 300;
+			margin-bottom: 1em;
+		}
+		.btn{
+			padding:0.6em 3em;
+			font-size: 1.6em;
+			border-radius: 2em;
+			border:0;
+		}
+		.btn_login{
+			background-color: $button-color;
+			color:#FFF;
+			&:hover{
+				cursor: pointer;
+				background-color: orange;
+				transform: scale(1.1);
+				transition: 0.1s;
+				box-shadow: 2px 2px 3px rgba(0,0,0,0.15)
+			}
+		}
+	}
+	.mobile_img{
+		display:none;
+	}
+}
+@media screen and (max-width: 640px){
+	.bg_cover{
+		background-image:none;
+		.titles{
+			position: static;
+			text-align: center;
+			padding-top:2.3em;
+			h2{
+				font-size: 2.2em;
+			}
+			h4{
+				font-size: 1.4em;
+			}
+		}
+	}
+	.circle_wrapper{
+		height:72vh;
+		width: 100%;
+		overflow: hidden;
+		position:absolute;
+		bottom:0;
+		.circle{
+			position:absolute;
+			left:-150%;
+			width:400%;
+			height: 400%;
+			border-radius: 200%;
+			background: #4568DC;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to top, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to top, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		    display:flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+    		align-items: baseline;
+    		.btn{
+    			padding:0.3em 3em;
+				font-size: 1.6em;
+    		}
+    		.btn_login{
+    			margin-top: 1.5em;
+    			background-color: orange;
+    			position:relative;
+    			z-index: 99;
+    		}
+		}
+		.mobile_img{
+			display:block;
+			// max-width: 95%;
+			// margin: 0 auto;
+			width:100%;
+			padding:1em;
+			position:absolute;
+			bottom:1.5em;
+			img{
+				width: 100%;
+				margin:0 auto;
+			}
+		}
+
+	}
+	
+}

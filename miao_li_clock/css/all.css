@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.bg_cover {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position: center; }
+  .bg_cover .titles {
+    display: block;
+    position: absolute;
+    top: 20vh;
+    left: 10vw; }
+    .bg_cover .titles h2 {
+      font-size: 2.8em;
+      color: #1E224E;
+      font-weight: 800;
+      margin-bottom: 0.2em; }
+    .bg_cover .titles h4 {
+      font-size: 2.2em;
+      color: #1E224E;
+      font-weight: 300;
+      margin-bottom: 1em; }
+    .bg_cover .titles .btn {
+      padding: 0.6em 3em;
+      font-size: 1.6em;
+      border-radius: 2em;
+      border: 0; }
+    .bg_cover .titles .btn_login {
+      background-color: #4C54AF;
+      color: #FFF; }
+      .bg_cover .titles .btn_login:hover {
+        cursor: pointer;
+        background-color: orange;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s;
+        -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15); }
+  .bg_cover .mobile_img {
+    display: none; }
+
+@media screen and (max-width: 640px) {
+  .bg_cover {
+    background-image: none; }
+    .bg_cover .titles {
+      position: static;
+      text-align: center;
+      padding-top: 2.3em; }
+      .bg_cover .titles h2 {
+        font-size: 2.2em; }
+      .bg_cover .titles h4 {
+        font-size: 1.4em; }
+  .circle_wrapper {
+    height: 72vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0; }
+    .circle_wrapper .circle {
+      position: absolute;
+      left: -150%;
+      width: 400%;
+      height: 400%;
+      border-radius: 200%;
+      background: #4568DC;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #B06AB3, #4568DC);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-gradient(linear, left bottom, left top, from(#B06AB3), to(#4568DC));
+      background: -webkit-linear-gradient(bottom, #B06AB3, #4568DC);
+      background: -o-linear-gradient(bottom, #B06AB3, #4568DC);
+      background: linear-gradient(to top, #B06AB3, #4568DC);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline; }
+      .circle_wrapper .circle .btn {
+        padding: 0.3em 3em;
+        font-size: 1.6em; }
+      .circle_wrapper .circle .btn_login {
+        margin-top: 1.5em;
+        background-color: orange;
+        position: relative;
+        z-index: 99; }
+    .circle_wrapper .mobile_img {
+      display: block;
+      width: 100%;
+      padding: 1em;
+      position: absolute;
+      bottom: 1.5em; }
+      .circle_wrapper .mobile_img img {
+        width: 100%;
+        margin: 0 auto; } }
