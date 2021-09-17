@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70.394" height="217.561" viewBox="0 0 70.394 217.561">
+  <g id="Group_309" data-name="Group 309" transform="translate(-238 -1263)">
+    <g id="Group_173" data-name="Group 173" transform="translate(-23 1804.287) rotate(-90)">
+      <g id="Group_112" data-name="Group 112" transform="translate(323.725 261)">
+        <g id="Rectangle_68" data-name="Rectangle 68" transform="translate(0)" fill="#ffb610" stroke="#efa806" stroke-width="1">
+          <path d="M0,0H217.561a0,0,0,0,1,0,0V60.394a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V0A0,0,0,0,1,0,0Z" stroke="none"/>
+          <path d="M1,.5H216.561a.5.5,0,0,1,.5.5V60.394a9.5,9.5,0,0,1-9.5,9.5H10a9.5,9.5,0,0,1-9.5-9.5V1A.5.5,0,0,1,1,.5Z" fill="none"/>
+        </g>
+      </g>
+      <text id="步_驟_四" data-name="步
+驟
+四" transform="translate(471.506 278.697) rotate(90)" fill="#fff" font-size="34" font-family="PingFangTC-Semibold, PingFang TC" font-weight="600" letter-spacing="0.04em"><tspan x="0" y="0">步</tspan><tspan y="0" font-family="STIXIntegralsUpSm-Bold, STIXIntegralsUpSm" font-weight="700"></tspan><tspan x="0" y="51">驟</tspan><tspan y="51" font-family="STIXIntegralsUpSm-Bold, STIXIntegralsUpSm" font-weight="700"></tspan><tspan x="0" y="102">四</tspan></text>
+    </g>
+  </g>
+</svg>
